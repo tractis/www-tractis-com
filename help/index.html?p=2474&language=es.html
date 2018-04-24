@@ -1,0 +1,597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>Tractis - Contracts you can enforce</title>
+<!-- Mimic Internet Explorer 7 -->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" type="image/x-icon" href="../images/tractis-help-favicon.ico" />
+<link rel="shortcut icon" type="image/icon" href="../images/tractis-help-favicon.ico" />
+<link rel="apple-touch-icon" href="https://www.tractis.com/images/iphone-favicon.png" />
+<link href="../stylesheets/tractis/main.css%3F1521105613.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/island_tractis.css%3F1521105588.css" media="screen" rel="stylesheet" type="text/css" />
+
+<!--[if lte IE 6]>
+  <link href="/stylesheets/ie6.css?1521105588" media="screen" rel="stylesheet" type="text/css" />    
+  <![endif]-->
+<!--[if gte IE 7]>
+  <link href="/stylesheets/ie7.css?1521105588" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link rel="stylesheet" href="wp-content/themes/tractis/style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+<link rel="stylesheet" href="../stylesheets/print-help.css" type="text/css" media="print" />
+  <script type="text/javascript" src="../jquery/jquery.js%3F1360401146"></script>
+  <script>jQuery.noConflict();</script>
+  
+  	
+  
+</head>
+
+<body id="tractis-help">
+<div id="topbar" class="classname">
+<div class="fill">
+  <ul class="mainbar">
+
+
+
+
+
+      <li><a href="/">Home</a></li>
+
+
+
+
+
+      
+
+
+
+
+
+      
+
+    </ul>
+    
+      <p class="loginbar">
+        
+        
+      </p>
+    
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+<div id="header">
+  <div class="logo">
+    <h1><a href="/">Tractis</a></h1>
+    
+      <ol>
+  <li><strong>Spain</strong></li>
+  
+    <li><div id="change_contry"><a href="index.html%3Fp=2474&amp;language=es.html#" onclick="tractis_ajax(&quot;/pagepart/change_country&quot;, 'change_contry'); return false;">Change country</a></div></li>
+  
+</ol>
+<ol>
+  <li><strong>in English</strong></li>
+  <li><a href="index.html%3Fp=2474&amp;language=es.html#" onclick="tractis_ajax_link(&quot;/pagepart/change_lang?lang=ca&amp;format=html&quot;, true); return false;">Catalan</a> · <a href="index.html%3Fp=2474&amp;language=es.html#" onclick="tractis_ajax_link(&quot;/pagepart/change_lang?lang=es&amp;format=html&quot;, true); return false;">Spanish</a></li>
+</ol>
+
+    
+    <div class="clear"></div>
+  </div>
+
+  
+  
+  <div class="clear"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	window.onload = function() { document.title='Tractis - Crear contrato'.replace(/</g,'&lt;').replace(/>/g,'&gt;').unescapeHTML() } 
+//]]>
+
+</script>
+<div id="breadcrumb">
+<p><strong>Te encuentras aquí:</strong> <a href="/help">Ayuda</a>  <a href='index.html%3Fp=2474&amp;language=es.html'></a> → <a href='index.html%3Fcat=8&amp;language=es.html'>Tractis Signatures</a> → <a href='index.html%3Fcat=292&amp;language=es.html'>Tractis Contracts</a> → <a href='index.html%3Fcat=289&amp;language=es.html'>Integración con Tractis Contracts</a> → <a href='index.html%3Fcat=143&amp;language=es.html'>Integración con Tractis Contracts vía API</a> </p>
+</div>
+<div id="subheader">
+<div class="titles">
+<h2>Ayuda</h2>
+</div>
+<div class="clear"></div>
+</div>
+
+<div id="main">
+<div id="content">
+<div class="help-search">
+	<form method="get" id="searchform" action="index.html">
+	<table border="0" cellpadding="5">
+		<tr>
+			<td class="nowrap" style="width:50%"><label>¿Cómo podemos ayudarte?:</label></td>
+			<td style="width:43%"><input type="text" value="" name="s" id="s" /></td>
+			<td><input type="submit" id="searchsubmit" value="Buscar" /></td>
+		</tr>
+	</table>
+	</form>
+</div>
+		
+
+<div class="post" id="post-2474">
+			
+			<div class="post-header">
+				<h3>Crear contrato</h3>
+			</div>
+
+			<div class="entry">
+				
+				<p>Asegúrate de tener claros los <a href="index.html%3Fp=2470&amp;language=es.html">requisitos de la API REST de Tractis</a> antes de empezar la integración.</p>
+<h3>Descripción</h3>
+<p>Esta acción permite la creación de contratos en Tractis. La acción puede recibir parámetros para configurar:</p>
+<ul>
+<li>El nombre del contrato.</li>
+<li>Las etiquetas del contrato.</li>
+<li>Las notas del contrato.</li>
+<li>La plantilla que queremos usar.</li>
+<li>En caso de cargar una plantilla con <a title="Variables en Tractis" href="index.html%3Fp=439&amp;language=es.html">variables</a>, los valores de las mismas.</li>
+<li>La gente que tiene acceso al contrato así como sus permisos.</li>
+<li>Los elementos visibles en la página del contrato.</li>
+</ul>
+<p>El único parámetro obligatorio, como veremos a continuación, es el nombre. El resto de configuraciones son opcionales.</p>
+<p>La acción se invoca con: <strong>POST /contracts</strong></p>
+<h3>Crear de un contrato simple</h3>
+<p>La invocación más sencilla de esta acción es crear un contrato con un nombre únicamente. Como hemos dicho antes, el único parámetro obligatorio es el nombre del contrato. La invocación sería así (hemos dejado únicamente las cabeceras más relevantes):</p>
+<pre><code>
+  $ curl -u demo@tractis.com:password \
+         -H 'Accept: application/xml' \
+         -H 'Content-Type: application/xml' \
+         -i -X POST https://www.tractis.com/contracts \
+         -d \
+'&lt;contract&gt;
+  &lt;name&gt;Contrato de confidencialidad&lt;/name&gt;
+&lt;/contract&gt;'
+  HTTP/1.1 201 Created
+  Status: 201 Created
+  Location: https://www.tractis.com/contracts/<strong>949981041</strong>
+  Content-Type: application/xml; charset=utf-8
+
+</code></pre>
+<p>En la respuesta podemos ver como Tractis devuelve el código HTTP 201 Created confirmando así que el contrato se ha creado correctamente. También vemos cómo emplea la cabecera Location para indicar la URL del contrato creado en la que podemos identificar la ID del contrato creado.</p>
+<p>A continuación se listan algunos parámetros básicos de un contrato.</p>
+<div class="stdhelptable">
+<table class="hlptable hleft">
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><code>name</code><br />
+<small>(obligatorio)</small></th>
+<td>Nombre del contrato.</td>
+</tr>
+<tr>
+<th><code>show-menu</code></th>
+<td>(<code>true</code>/<code>false</code>)&nbsp;</p>
+<p>Especifica si el menú principal de Tractis será utilizado en la presentación del contrato. El valor por defecto es <code>true</code></td>
+</tr>
+<tr>
+<th><code>notes</code></th>
+<td>Notas del contrato. Podemos emplear el parámetro <code>sticky_notes</code> para que las notas aparezcan sobre el contrato.</td>
+</tr>
+<tr>
+<th><code>sticky-notes</code></th>
+<td>(<code>true</code>/<code>false</code>)&nbsp;</p>
+<p>Especifica si las notas se ven siempre en la página del contrato, sobre el contrato. El valor por defecto es <code>false</code></td>
+</tr>
+<tr>
+<th><code>tag-list</code></th>
+<td>Lista de etiquetas que serán aplicadas al contrato. Las etiquetas de la lista deben estar separadas por comas.&nbsp;</p>
+<p>Estas etiquetas son útiles para clasificar los contratos ya que luego podemos recuperar listados de contratos con determinadas etiquetas.</td>
+</tr>
+<tr>
+<th><code>redirect-when-signed</code></th>
+<td>URL a la que será redirigido el usuario una vez haya firmado el contrato.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="contrato_con_plantilla">Crear un contrato a partir de una plantilla</h3>
+<p>Como ya hemos comentado, al crear un contrato podemos basarlo en una plantilla de Tractis. Al utilizar una plantilla el contrato se creará con el texto que hay en la plantilla y, si la plantilla tiene <a title="Variables en Tractis" href="index.html%3Fp=439&amp;language=es.html">variables</a>, podemos rellenarlas en la misma petición en la que creamos el contrato.</p>
+<p>A continuación vemos un ejemplo de un contrato creado a partir de una plantilla donde rellenamos las variables de dicha plantilla:</p>
+<pre><code>
+  $ curl -u demo@tractis.com:password \
+         -H 'Accept: application/xml' \
+         -H 'Content-Type: application/xml' \
+         -i -X POST https://www.tractis.com/contracts \
+         -d \
+ '&lt;contract&gt;
+   &lt;name&gt;Escrituras de constitución de una SL&lt;/name&gt;
+   &lt;template&gt;<strong>249186096</strong>&lt;/template&gt;
+   &lt;auto-complete&gt;
+     &lt;compañía&gt;
+       &lt;capital-social-en-euros&gt;Valor del capital social&lt;/capital-social-en-euros&gt;
+       &lt;valor-de-cada-participación&gt;Valor de cada participación&lt;/valor-de-cada-participación&gt;
+       &lt;denominación-social&gt;Valor de la denominación social&lt;/denominación-social&gt;
+       &lt;objeto-social&gt;Valor de objeto social&lt;/objeto-social&gt;
+       &lt;domicilio-social&gt;Valor del domicilio social&lt;/domicilio-social&gt;
+     &lt;/compañía&gt;
+   &lt;/auto-complete&gt;
+ &lt;/contract&gt;'
+ HTTP/1.1 201 Created
+ Status: 201 Created
+ Location: https://www.tractis.com/contracts/723497093
+ Content-Type: application/xml; charset=utf-8
+
+</code></pre>
+<p>Para esta prueba hemos usado una plantilla pública: <a href="https://www.tractis.com/templates/249186096">https://www.tractis.com/templates/<strong>249186096</strong></a>. Así que podéis hacer la prueba vosotros mismos.</p>
+<p>Tal y como hemos visto, los parámetros para la utilización de plantillas son:</p>
+<div class="stdhelptable">
+<table class="hlptable hleft">
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><code>template</code></th>
+<td>ID de la plantilla que será utilizada para crear el contrato.&nbsp;</p>
+<p>Se puede obtener fácilmente la ID de la plantilla mirando su URL:</p>
+<p><a href="https://www.tractis.com/templates/249186096">https://www.tractis.com/templates/<strong>249186096</strong></a></td>
+</tr>
+<tr>
+<th><code>auto-complete</code></th>
+<td>Conjunto de variables de la plantilla así como los valores que serán asignados a cada variable.&nbsp;</p>
+<p>Podemos ver un XML con la <a href="index.html%3Fp=2472&amp;language=es.html">lista de variables de una plantilla</a> para tener una estructura base de ejemplo.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Hay que tener en cuenta que <strong>todos los parámetros que estamos viendo en las distintas secciones de esta página se pueden usar juntos</strong>. Por tanto, podemos crear un contrato a partir de una plantilla que tenga una serie de tags y unas notas.</p>
+<h3>Crear un contrato e invitar a un participante</h3>
+<p>Cuando creamos un contrato podemos enviar una invitación para participar en el contrato a otra persona y con qué permisos queremos que participe.</p>
+<pre><code>
+  $ curl -u demo@tractis.com:password \
+         -H 'Accept: application/xml' \
+         -H 'Content-Type: application/xml' \
+         -i -X POST https://www.tractis.com/contracts \
+         -d \
+ '&lt;contract&gt;
+    &lt;name&gt;Contrato de ejemplo con envío de invitación&lt;/name&gt;
+    &lt;team&gt;
+      &lt;member&gt;
+        &lt;email&gt;ernesto.jimenez@tractis.com&lt;/email&gt;
+        &lt;sign&gt;true&lt;/sign&gt;
+        &lt;write&gt;true&lt;/write&gt;
+      &lt;/member&gt;
+    &lt;/team&gt;
+  &lt;/contract&gt;'
+  HTTP/1.1 201 Created
+  Status: 201 Created
+  Location: https://www.tractis.com/contracts/139343253
+  Content-Type: application/xml; charset=utf-8
+
+</code></pre>
+<p>A continuación podemos ver los parámetros que adepta <code>&lt;member&gt;</code></p>
+<div class="stdhelptable">
+<table class="hlptable hleft">
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="header1" colspan="2">Parámetros de <code>&lt;member&gt;</code></th>
+</tr>
+<tr>
+<th> <code>email</code>&nbsp;</p>
+<p><small>(obligatorio)</small></th>
+<td>Especifica el mail al que será enviada la invitación o token.</td>
+</tr>
+<tr>
+<th><code>sign</code></th>
+<td>(<code>true</code>/<code>false</code>)&nbsp;</p>
+<p>Especifica si el participante tendrá permisos de firma. El valor por defecto es <code>false</code>.</td>
+</tr>
+<tr>
+<th><code>write</code></th>
+<td>(<code>true</code>/<code>false</code>)&nbsp;</p>
+<p>Especifica si el participante tendrá permisos para editar el contrato. El valor por defecto es <code>false</code>.</td>
+</tr>
+<tr>
+<th><code>invited</code></th>
+<td>(<code>true</code>/<code>false</code>)&nbsp;</p>
+<p>Especifica si el participante necesitará iniciar sesión en Tractis para acceder al contrato. Cuando el valor es <code>true</code>, Tractis enviará una invitación a ese participante y está tendrá que iniciar sesión en Tractis. Si el valor es <code>false</code>, la persona recibirá una URL con un token aleatorio donde podrá leer y firmar el contrato sin tener que iniciar sesión en Tractis.</td>
+</tr>
+<tr>
+<th><code>invitation_notify</code></th>
+<td>(<code>true</code>/<code>false</code>)&nbsp;</p>
+<p>Especifica si se desea enviar una notificación de invitación por email al participante (si no se indica el parámetro, el valor toma el valor <code>true</code>). Cuando el valor es <code>true</code>, Tractis enviará el email de notificación al participante.</td>
+</tr>
+<tr>
+<th><code>validate_cert_dni_attribute</code></th>
+<td>(<code>11111111X</code>)&nbsp;</p>
+<p>Especifica si se desea comprobar que el número de electronic ID (p.ej: DNIe) alegado es igual al número de electronic ID contenido en el certificado utilizado para firmar. Si los números no coinciden, Tractis no permitirá realizar la firma e informará al usuario para que corrija el problema.</td>
+</tr>
+<tr>
+<th><code>pin_enabled</code></th>
+<td>(<code>true</code>/<code>false</code>)  Default: false&nbsp;</p>
+<p>Especifica que se activa el forzado de nº de móvil para la firma con Clickwrap Avanzado.</td>
+</tr>
+<tr>
+<th><code>pin_to</code></th>
+<td>(<code>34607123456</code>)&nbsp;</p>
+<p>Especifica el número de móvil para la firma con Clickwrap Avanzado. Se enviará el SMS durante la creación del contrato y fuerza al firmante a disponer de ese número.</p>
+<p>El número debe tener el código de país, ej. para móvil de España: 34607123456</td>
+</tr>
+<tr>
+<th><code>pin_first_name</code></th>
+<td>(<code>Jose Luis</code>)&nbsp;</p>
+<p>Si el firmante no dispone de cuenta en Tractis, se le creará una durante el proceso de firma, si se informa el parámetro pin_first_name se usará como &#8220;Nombre&#8221; durante el registro de cuenta en la pasarela de firma con Clickwrap Avanzado y se prepopulará automáticamente (el usuario resultante podrá cambiar estos datos en su perfil de usuario)</td>
+</tr>
+<tr>
+<th><code>pin_last_name</code></th>
+<td>(<code>Gordo Romero</code>)&nbsp;</p>
+<p>Si el firmante no dispone de cuenta en Tractis, se le creará una durante el proceso de firma, si se informa el parámetro pin_first_name se usará como &#8220;Apellidos&#8221; durante el registro de cuenta en la pasarela de firma con Clickwrap Avanzado y se prepopulará automáticamente (el usuario resultante podrá cambiar estos datos en su perfil de usuario)</td>
+</tr>
+<tr>
+<th><code>pin_text</code></th>
+<td>(<code>Hola cliente, el PIN para poder firmar el contrato ##CONTRACT_ID## es este ##PIN##</code>)&nbsp;</p>
+<p>Texto personalizado que se le enviará al usuario firmante durante la firma con Clickwrap avanzado, se deben especificar los placeholders siguientes: (1) ##CONTRACT_ID## que se traducirá al id del contrato al que corresponde el PIN y (2) ##PIN## que se traducirá al PIN que el usuario tendrá que introducir durante el proceso de firma con Clickwrap avanzado.</td>
+</tr>
+<tr>
+<th><code>pin_sender</code></th>
+<td>(<code>ACME INC</code>) Default Tractis&nbsp;</p>
+<p>Texto o número personalizado que se usará como remitente en el envío del PIN durante el proceso de firma con Clickwrap avanzado. Máximo 11 caracteres.</p>
+<p><strong>Importante:</strong> Esta funcionalidad requiere aprobación previa de Tractis, por favor, enviar un email a info@tractis.com para su activación en tu cuenta.</td>
+</tr>
+<tr>
+<th><code>access_control_enabled</code></th>
+<td>(<code>true/false</code>) Default false&nbsp;</p>
+<p>Habilita el control de acceso al contrato cuando se usa la pasarela de contratación (API /contracts/gateway) con firmante anónimo (no se require iniciar sesión para la firma).</td>
+</tr>
+<tr>
+<th><code>access_control_method</code></th>
+<td>(<code>pin</code>)&nbsp;</p>
+<p>Especifica el método de control de acceso al contrato cuando se usa la pasarela de contratación (API /contracts/gateway) con firmante anónimo (no se require iniciar sesión para la firma). Actualmente sólo &#8220;pin&#8221;, necesita access_control_enabled = true y el parámetro pin_to informado.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="contratos_anonimos">Enviando contratos para firmar a tu cliente sin que se registre en Tractis</h3>
+<p>En la última tabla hemos visto que el parámetro <code>invited</code> permite especificar que no queremos enviar una invitación al contrato que requiera iniciar sesión en Tractis, sino que queremos que nuestro cliente reciba un e-mail con una URL aleatoria mediante la que podrá ver y firmar el contrato sin necesidad de ser usuario registrado en Tractis.</p>
+<p>Además, como podemos ver en el siguiente ejemplo, cuando no vamos a enviar una invitación a Tractis tenemos la posibilidad de especificar el asunto y/o el cyerpo del e-mail que el usuario recibirá para indicarle la URL.</p>
+<pre><code>
+  $ curl -u demo@tractis.com:password \
+         -H 'Accept: application/xml' \
+         -H 'Content-Type: application/xml' \
+         -i -X POST https://www.tractis.com/contracts \
+         -d \
+ '&lt;contract&gt;
+   &lt;name&gt;Contrato de ejemplo con envío de invitación&lt;/name&gt;
+   &lt;team&gt;
+     &lt;member&gt;
+       &lt;email&gt;ernesto.jimenez@tractis.com&lt;/email&gt;
+       &lt;sign&gt;true&lt;/sign&gt;
+       &lt;invited&gt;false&lt;/invited&gt;
+       &lt;message&gt;
+         &lt;subject&gt;Renting contract&lt;/subject&gt;
+         &lt;body&gt;
+Hello Ernesto,
+As we talked, here is the url with your contract to sign.
+##URL##
+
+Regards
+John Doe
+         &lt;/body&gt;
+       &lt;/message&gt;
+     &lt;/member&gt;
+   &lt;/team&gt;
+  &lt;/contract&gt;'
+  HTTP/1.1 201 Created
+  Status: 201 Created
+  Location: https://www.tractis.com/contracts/139343253
+  Content-Type: application/xml; charset=utf-8
+
+</code></pre>
+<p>Los parámetros de <code>&lt;message&gt;</code> son:</p>
+<div class="stdhelptable">
+<table class="hlptable hleft">
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="header1" colspan="2">Parámetros de <code>&lt;Message&gt;</code></th>
+</tr>
+<tr>
+<th><code>subject</code></th>
+<td>Texto del título del mensaje.</td>
+</tr>
+<tr>
+<th><code>body</code></th>
+<td>Texto del cuerpo del mensaje en texto plano (no se soporta HTML).&nbsp;</p>
+<p>Si el cuerpo del mensaje incluye la cadena <code>##URL##</code> Tractis sustituirá esta cadena por la URL aleatoria para que el usuario acceda al contrato. Si no incluímos esta cadena, Tractis incluirá la URL automáticamente al final del mensaje.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Ejemplo de creación de contrato completo</h3>
+<p>Como dijimos anteriormente, podemos combinar los distintos parámetros que hemos visto en las secciones de esta página. A continuación mostramos un ejemplo de creación de un contrato completo con:</p>
+<ul>
+<li>Nombre y tags.</li>
+<li>Texto de una plantilla con las variables rellenadas.</li>
+<li>URL enviada a nuestro cliente en un e-mail personalizado para que lo firme sin necesidad de ser usuario de Tractis</li>
+</ul>
+<pre><code>
+  $ curl -u demo@tractis.com:password \
+         -H 'Accept: application/xml' \
+         -H 'Content-Type: application/xml' \
+         -i -X POST https://www.tractis.com/contracts \
+         -d \
+ '&lt;contract&gt;
+   &lt;name&gt;Escrituras de constitución de la SL de ernesto jiménez&lt;/name&gt;
+   &lt;tag-list&gt;escrituras sl, ernesto jiménez&lt;/tag-list&gt;
+   &lt;template&gt;249186096&lt;/template&gt;
+   &lt;team&gt;
+     &lt;member&gt;
+       &lt;email&gt;ernesto.jimenez@tractis.com&lt;/email&gt;
+       &lt;sign&gt;true&lt;/sign&gt;
+       &lt;invited&gt;false&lt;/invited&gt;
+       &lt;message&gt;
+         &lt;subject&gt;Escrituras de la SL&lt;/subject&gt;
+         &lt;body&gt;
+Hola Ernesto,
+
+Aquí tienes las escrituras de constitución del la S.L. para que las firmes
+##URL##
+
+Comprueba que todo está en orden y firma con tu DNI electrónico cuando puedas.
+
+Un saludo
+Demo User
+         &lt;/body&gt;
+       &lt;/message&gt;
+     &lt;/member&gt;
+   &lt;/team&gt;
+   &lt;auto-complete&gt;
+     &lt;compañía&gt;
+       &lt;capital-social-en-euros&gt;20.000.000 €&lt;/capital-social-en-euros&gt;
+       &lt;valor-de-cada-participación&gt;200 €&lt;/valor-de-cada-participación&gt;
+       &lt;denominación-social&gt;Super-Hiper-Mega-Empresa&lt;/denominación-social&gt;
+       &lt;objeto-social&gt;hacer cosas chulas&lt;/objeto-social&gt;
+       &lt;domicilio-social&gt;C/ El Quinto Pino&lt;/domicilio-social&gt;
+     &lt;/compañía&gt;
+   &lt;/auto-complete&gt;
+ &lt;/contract&gt;'
+  HTTP/1.1 201 Created
+  Status: 201 Created
+  Location: https://www.tractis.com/contracts/139343253
+  Content-Type: application/xml; charset=utf-8
+
+</code></pre>
+
+				
+
+			</div>
+
+	</div>
+</div>
+
+	<div id="menu">
+		<script type="text/javascript">function setLang() {document.getElementById("glink").href = "https://translate.google.com/translate?u=http://www.tractis.com/help/?p=2474&sl=es&tl=" + document.fgt.tl.value;return;} </script><div class="menus info"><div class="mtitle"><h3>Translate this article</h3></div><form name="fgt" action="https://translate.google.com/translate" method="GET"><input type="hidden" name="u" value="http://www.tractis.com/help/?p=2474" /><input name="sl" value="es" type="hidden" /><div class="mcontent"><p>Select your language and translate this article using Google Translate.</p><div class="grilla"><div class="labels"><label>Translate to:</label></div><div class="inputs"><select name="tl" style="width:auto" onChange="setLang()" ><option value='' selected >Choose your language...</option>
+<option value='ar'>Arabic</option>
+<option value='bg'>Bulgarian</option>
+<option value='ca'>Catalan</option>
+<option value='zh-CN'>Chinese (Simplified)</option>
+<option value='zh-TW'>Chinese (Traditional)</option>
+<option value='hr'>Croatian</option>
+<option value='cs'>Czech</option>
+<option value='da'>Danish</option>
+<option value='nl'>Dutch</option>
+<option value='en'>English</option>
+<option value='tl'>Filipino</option>
+<option value='fi'>Finnish</option>
+<option value='fr'>French</option>
+<option value='de'>German</option>
+<option value='el'>Greek</option>
+<option value='iw'>Hebrew</option>
+<option value='hi'>Hindi</option>
+<option value='id'>Indonesian</option>
+<option value='it'>Italian</option>
+<option value='ja'>Japanese</option>
+<option value='ko'>Korean</option>
+<option value='lv'>Latvian</option>
+<option value='lt'>Lithuanian</option>
+<option value='no'>Norwegian</option>
+<option value='pl'>Polish</option>
+<option value='pt'>Portuguese</option>
+<option value='ro'>Romanian</option>
+<option value='ru'>Russian</option>
+<option value='sr'>Serbian</option>
+<option value='sk'>Slovak</option>
+<option value='sl'>Slovenian</option>
+<option value='es'>Spanish</option>
+<option value='sv'>Swedish</option>
+<option value='uk'>Ukrainian</option>
+<option value='vi'>Vietnamese</option>
+</select></div><div class="clear"></div></div></div><div class="mfooter"><a class="button" id="glink" href="index.html%3Fp=2474&amp;language=es.html#" >Translate</a></h3></div></form></div>				
+	</div>
+	
+	<div class="clear"></div>
+
+</div>
+
+
+
+
+
+<div id="footer">
+  
+  <h6 class="isologo">Tractis</h6>
+  <p>© 2018 Tractis. ·
+  <a href="https://www.tractis.com/legal_notice">Legal Notice</a> ·
+  <a href="https://www.tractis.com/terms_of_service">Terms of Service</a> ·
+  <a href="https://www.tractis.com/privacy_policy">Privacy Policy</a> ·
+  <a href="https://www.tractis.com/help">Help</a> ·
+  
+  <a href="mailto:tractis@tractis.comm">Contact</a></p>
+  
+  
+  
+  <div class="clear"></div>
+</div>
+
+
+
+<script src="../javascripts/tractis/en.js%3F1502104086" type="text/javascript"></script>
+
+
+
+
+
+<script src="../javascripts/certificate_hunter.js%3F1521105588" type="text/javascript"></script>
+<div id="alerts"><input id="alerts-shown" name="alerts-shown" type="hidden" value="false" /><script type="text/javascript">
+//<![CDATA[
+Alerts.initial(function(){
+  
+});
+//]]>
+</script></div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-128262-1");
+pageTracker._setDomainName(".tractis.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+  </body>
+</html>

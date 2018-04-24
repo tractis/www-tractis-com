@@ -1,0 +1,802 @@
+
+/*
+Quick customization values are:
+- css_value_0, css_value_1, ...
+- provenient of 548011 EAEAEA X 1953A7 067600 333333 E20079 000000 eaeaea eaeaea E20079 E20079 E20079 C9006C C9006C B0005E ffffff 950050 7A0042 ffffff 000000 X X X X X X X X X X X X X X X
+-   pairs of quick_customization business account tractis form
+*/
+
+
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  _padding: 0 0 20px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #666;
+  _text-align: center;
+}
+
+.x-form-check-wrap {
+  height:auto;
+}
+
+div.clr {
+  clear: both;
+}
+
+img {
+  border:0;
+}
+
+  div#super {
+    width: 780px;
+    margin: 25px auto;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: #999 1px 1px 1px;
+    -moz-box-shadow: #999 1px 1px 1px;
+    _text-align: left;
+  }
+  
+  
+  div#footer {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    background: #444 url(https://www.tractis.com/images/buttons-lightbg-all.png) repeat-x left -8px;
+    _background: #444;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+  }
+  
+    div#footer p {
+      color: #fff;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: bold;
+      text-shadow: #333 0 -1px 0;
+      margin: 0; 
+    }
+    
+      div#footer a {
+        text-decoration: none;
+        color: #BACC00;
+      }
+    
+      div.legal {
+        float: left;
+      }
+    
+    div.slogan {
+      color: #fff;
+      background: #5E9D09 url(https://www.tractis.com/images/buttons-lightbg-all.png) repeat-x left 0;
+      _background-image: none !important;
+      padding: 15px;
+      border-top: 1px solid #4C8007;
+      border-bottom: 1px solid #4C8007;
+    }
+    
+    div.slogan h2 {
+      font-size: 36px;
+      text-shadow: #5E9D09 0 -1px 0;
+      margin: 0;
+      letter-spacing: -0.03em;
+    }
+    
+    div.slogan h3 {
+      margin: 0;
+      font-size: 100%;
+    }
+
+      div.slogan div.saber {
+        width: 45%;
+        font-size: 16px;
+        float: right;
+      }
+
+      div.particip h2 {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+      }
+      
+      div.particip h1 {
+        font-size: 32px;
+        text-align: center;
+        margin: 0;
+      }
+
+    #solicitar-form {
+      margin-left: 200px;
+    }
+
+      div.header h1 {
+        width: 200px;
+        height: 60px;
+        margin: 25px 0 15px 15px;
+        float: left;
+      }
+      
+      div.header h1.htrac {
+        width: 200px;
+        margin-top: 50px !important;
+      }
+      
+      div.header h1.hred {
+        width: 210px;
+        height: 60px;
+        float: right !important;
+        margin-right: 15px;
+      }
+      
+        div.header h1 a {
+          background: #fff url(/red-es/images/logotipo-home-all.png) no-repeat top left;
+          display: block;
+          text-indent: -9999px;
+          width: 200px;
+          height: 60px;
+        }
+        
+        div.header h1.htrac a {
+          background: #fff url(/red-es/images/logotipo-home-all.png) no-repeat top left;
+          display: block;
+          text-indent: -9999px;
+          width: 200px;
+          height: 60px;
+        }
+        
+        div.header h1.hred a {
+          background: #fff url(/red-es/images/mtyc-logo.png) no-repeat top left;
+          width: 210px;
+          height: 60px;
+        }
+        
+        
+      div.header ul  {
+        float: right;
+        border-top: 3px solid #5E9D09;
+        list-style: none;
+        padding: 5px 15px 0 15px;
+        margin: 0;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+      }
+      
+        div.header ul li {
+          display: inline;
+          font-weight: bold;
+          font-size: 12px;
+          padding-left: 10px;
+        }
+        
+        div.header ul li a:link, div.header ul li a:visited, div.header ul li a:action {
+          color: #;
+        }
+        
+        div.header ul li a:hover {
+          color: #;
+        }
+      
+      
+    
+    div#content {
+      padding: 15px;
+    }
+    
+    
+    div.apoyo {
+      float: left;
+      margin-top: 0px;
+    }
+    
+    div.partners {
+      float: left;
+      margin-top: 0px;
+      margin-left: 135px;
+    }
+    
+    div.aloja {
+      float: right;
+      margin-top: 0;
+    }
+    
+      div.apoyo p {
+        margin: 0;
+      }
+       
+      div.apoyo a, div.partners a, div.aloja a {
+        display: block;
+        float: left;
+        margin-right: 15px;
+        height: 22px;
+        text-indent: -9999px;
+      }
+      
+        div.partners a.axa {
+          margin-right: 0 !Important;
+        }
+      
+        div.partners a.axa {
+          background: url(/red-es/images/axalogo.png) no-repeat;
+          width: 91px;
+        }
+        
+        div.partners a.jazztel {
+          background: url(/red-es/images/jazztelogo.png) no-repeat;
+          width: 76px;
+        }
+        
+        div.partners a.caixagalicia {
+          background: url(/red-es/images/caixagalicia.png) no-repeat;
+          width: 106px;
+          margin-top: -1px;
+        }
+        
+        div.aloja a.acens {
+          background: url(/red-es/images/acens.png) no-repeat 0 3px;
+          width:71px;
+          margin-top: -1px;
+        }
+        
+      
+        div.apoyo a.tractislogo, div.partners a.tractislogo {
+          background: url(/red-es/images/tractislogo.png) no-repeat;
+          width: 84px;
+        }
+        
+        div.apoyo a.redes {
+          background: url(/red-es/images/redeslogo.png) no-repeat;
+          width: 57px;
+        }
+        
+        
+    div.article p, div.article ul, div.article ol {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 16px
+    }
+    
+    div.article h2, div.article h3, div.article h4, div.article h5 {
+      color: #5E9D09;
+      margin: 0 0 3px 0;
+    }
+    
+    
+      div.article h4 {
+        margin: 20px 0 3px 0;
+      }
+    
+    div.article a {
+      color: #36c;
+    }
+    
+    div.article strong {
+      font-weight: bold;
+      color: #333;
+    }
+    
+    
+    a.button {
+      font-family: Helvetica;
+      color: #fff;
+      background: #5E9D09 url(https:/www.tractis.com/images/light.png) repeat-x right -8px;
+      border: 1px solid #4C8007;
+      text-shadow: #4C8007; 0 -1px 0;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 4px 7px;
+      text-decoration: none;
+      /* propietary */
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      cursor: pointer;
+    }
+
+    a.button:hover {
+      background-color: #4C8007;
+      border: 1px solid #3D6606;
+      text-shadow: #3D6606; 0 -1px 0;
+    }
+    
+    
+    div.header-p {
+      color: #fff;
+      background: #73A41C;
+      padding: 15px;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-bottom: 1px solid #558000;
+      text-shadow: #558000 0 -1px 0;
+      text-align: center;
+    }
+
+    div.header-p h2 {
+      font-size: 18px;
+      margin: 0 0 5px 0;
+    }
+
+    div.header-p h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+
+    div.participa div.article h2, div.participa div.article h1, div.participa div.article h3, div.participa div.article h4 {
+      color: #5E9D09;
+    }
+    
+    div.col1 div.article h3 {
+      color: #5E9D09;
+    }
+    
+    
+    
+    div#sidebar {
+      float: right;
+      margin: 0 0 40px 20px;
+    }
+    
+      div#sidebar img {
+        margin: 10px 0;
+      }
+      
+      div#sidebar .logos {
+        text-align: center;
+      }
+      
+      div#sidebar h4 {
+        margin-bottom: 10px;
+      }
+      
+      div.banner {
+        background: #eee;
+        padding: 15px;
+        margin-bottom: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+      }
+      
+      div.banner:hover {
+        background: #ffc;
+      }
+      
+        div.banner input {
+          width: 100%;
+          padding: 5px 0;
+          display: block;
+          margin-top: 10px;
+        }
+        /*
+       div.col1 {
+         float: left;
+         width: 500px;
+       }
+       */
+       
+       div.col2 {
+         float: right;
+         width: 240px;
+       }
+       
+       div.logos {
+                width: 100%;
+                margin: 0 auto;
+              }
+
+              div.logos a {
+                display:block;
+                float:left;
+                height:60px;
+                margin-left:35px;
+                margin-bottom:20px;
+                text-align:center;
+                vertical-align:middle;
+                width:200px;
+                overflow:hidden;
+                }
+         
+         img.dnielogo {
+           display: block;
+           float: right;
+           margin: 0 0 20px 20px;
+         }
+         
+         
+         div.faqer h4 {
+         background: #eee;
+         padding: 6px 7px;
+         margin-bottom: 20px;
+         -webkit-border-radius: 5px;
+         -moz-border-radius: 5px;
+         }
+         
+         
+         img.otroslogos {
+                    display: block;
+                    margin: 20px auto 0 auto;
+         border-top: 1px solid #555;
+         padding-top: 15px;
+                  }
+
+.search {
+  background-image:url(/red-es/images/find.png) !important;
+}    
+.clear {
+  background-image:url(/red-es/images/clear.gif) !important;
+}
+
+div.alerts {
+  border-top: 1px solid #cccc99;
+  border-bottom: 1px solid #cccc99;
+   padding: 15px 10px 0px 50px;
+  background: #ffc url(/red-es/images/imp.png) no-repeat 10px 15px;
+  font-weight: bold;
+  }
+}
+
+  div.alerts h4 {
+    color: #f60;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  div.alerts strong {
+    font-weight: bold;
+  }
+  
+  div.alerts p {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+  }
+  
+  div.alerts ul {
+  margin: 0 10px 10px 15px;
+  list-style: disc;
+  font-size: 12px;
+    }
+  
+  div.alerts p.dmer {
+    margin-top: 10px !important;
+  }
+  
+  div.leftcols {
+    width: 380px;
+    float: left;
+  }
+  
+  div.rightcols {
+    width: 330px;
+    float: right;
+  }
+  
+    div.rightcols h3, div.leftcols h3 {
+      color: #5E9D09;
+      margin-bottom: 10px;
+    }
+    
+    div.rightcols p, div.leftcols p {
+      margin-bottom: 10px;
+      width: 350px;
+      font-size: 14px;
+    }
+    
+    div.rightcols strong, div.leftcols strong {
+      font-weight: bold;
+    }
+    
+    div.rightcols ol {
+      font-size: 14px;
+    }
+    
+    div.rightcols ol li {
+      margin-bottom: 16px;
+      margin-left: 30px;
+      list-style-type: decimal;
+    }
+    
+    div.rightcols ul li {
+      margin-top: 10px;
+      margin-left: 30px;
+      list-style-type: disc;
+    }
+    
+    div#solicitar-form {
+    margin: 0;
+    }
+    
+    div.topalert {
+      border-bottom: 1px solid #cccc99;
+      padding: 10px;
+      background: #ffc;
+    }
+    
+    
+    div#newcontent table.steps {
+      width: 500px;
+      margin: 0px auto;
+
+    }
+
+      div#newcontent table.steps tr td {
+        vertical-align: top;
+        width: 30%;
+        text-align: center;
+        padding: 0;
+      }
+
+      div#newcontent table.steps tr td.ton {
+        border-top: 3px solid #5E9D09;
+      }
+
+      div#newcontent table.steps tr td.toff {
+        border-top: 3px solid #999;
+      }
+
+      div#newcontent table.steps td big {
+        color: #5E9D09;
+        font-size: 24px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin: 0;
+      }
+
+      div#newcontent table.steps td small {
+        color: #999;
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin: 0;
+      }
+
+      div#newcontent table.steps tr td.toff big {
+        font-size: 24px;
+        color: #999;
+      }
+
+      div#newcontent table.steps tr td.ton big {
+        font-size: 24px;
+      }
+
+      div#newcontent table.steps tr td.ton small {
+        font-size: 16px;
+        color: #5E9D09;
+      }
+
+      div#newcontent table.steps tr td.toff small {
+        font-size: 16px;
+        color: #999;
+      }
+
+      div#newcontent h2, div#content h2 {
+        text-align: center;
+        margin: 20px auto 20px auto;
+        font-size: 24px;
+        color: #5E9D09;
+        width: 500px;
+      }
+
+      div.contcont {
+        width: 500px;
+        margin: 0 auto;
+      }
+
+      div.contcont p {
+        font-size: 12px;
+        margin-bottom: 16px;
+      }
+      
+      div.contcont strong {
+        font-weight: bold;
+      }
+      
+      div.contcont ul li {
+        list-style-type: circle;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      
+      div.contcont ul {
+        margin: 20px 10px;
+        padding-left: 4px;
+      }
+
+      div.buttonsend {
+        background: #f9f9f9;
+        padding: 10px;
+        border: 1px solid #f1f1f1;
+        margin: 0 0 30px 0;
+      }
+
+      div.buttonsend input {
+        display: block;
+        font-size: 20px;
+        margin: 0 auto 0 auto;
+
+      }
+      
+      div#ext-comp-1003, div#ext-comp-1002 {
+        margin: 10px auto;
+      }
+      
+      div#newcontent div.contcont h3 {
+        margin-bottom: 5px;
+        color: #5E9D09;
+        text-align: center;
+      }
+      
+      div#newcontent div.contcont h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: #5E9D09;
+        text-align: center;
+      }
+    
+      div#super div#footer p.disclaimer {
+        color: #999;
+        font-size: 10px;
+        font-weight: normal;
+        margin-top: 10px
+      }
+      
+      
+      ul.parte1 {
+        float: left;
+        width: 130px;
+      }
+      
+      ul.parte2 {
+        float: right;
+        width: 500px;
+      }
+      
+
+
+       table.pedido {
+         width: 80%;
+         border: 1px solid #ccc;
+         border-collapse: collapse;
+         margin: 0 auto 20px auto;
+       }
+
+       table.pedido thead tr th {
+         text-align: left;
+         background: #eee;
+         padding: 5px;
+         font-size: 14px;
+         color: #333;
+         font-weight: bold;
+       }
+
+         strong.r {
+           color: #f00;
+         }
+
+         strong.g {
+           color: #690;
+         }
+
+       table.pedido thead tr th.state {
+         text-align: right;
+         
+       }
+
+       table.pedido tbody tr td, table.pedido tbody tr th {
+         width: 25%;
+         border-top: 1px dotted #ccc;
+         padding: 5px;
+         font-size: 12px;
+         vertical-align: top;
+       }
+
+       table.pedido tbody tr th {
+         color: #000;
+         font-weight: bold;
+         text-align: right;
+       }
+
+       table.pedido tfoot tr td {
+         text-align: center;
+         border-top: 1px solid #ccc;
+         font-size: 14px;
+         font-weight: bold;
+         padding: 5px;
+       }
+
+       table.pedido thead tr.red th {
+         background: #FFCCCE;
+         color: #f00;
+       }
+
+       table.pedido thead tr.green th {
+         background: #F5FFCC;
+         color: #690;
+       }
+
+       div.oo h3 {
+         color: #5E9D09;
+       }
+       
+       div.mmform {
+        margin: 16px 0px 16px 80px;
+       }
+       
+       div.mmform label {
+         font-weight: bold;
+         font-size: 12px;
+         color: #000;
+       }
+       
+       img.newmail {
+         display: block;
+         margin: 10px auto;
+       }
+       
+       img.gift {
+       display: block;
+       float: right;
+       margin: -3px 0px 10px 20px;
+       border: 0;
+       }
+       
+       
+       a.right {
+       float: right;
+       white-space: nowrap;
+       }
+       
+       
+       div.goodbye {
+         padding-bottom: 5px;
+         background: #fff url(/red-es/images/julio_verne.png) no-repeat bottom right;
+       }
+
+       div.goodbye h2 {
+       color: #5E9D09;
+       font-size: 24px;
+       text-align: center;
+       padding: 20px;
+       }
+
+       div.textos {
+       width: 50%;
+       margin: 0 0 50px 20px;
+       }
+
+       div.textos p {
+       font-size: 12px;
+       line-height: 14px;
+       margin-bottom: 10px;
+       }
+       
+       div.textos p strong {
+         font-weight: bold;
+       }
+
+      div.textos h4 {
+        color: #5E9D09;
+      }
+
+       div.textos h5 {
+       color: #5E9D09;
+       font-size: 14px;
+       margin: 25px 0 3px 0;
+       }
+
+    ol.centros li {
+      line-height: 24px;
+      margin-bottom: 6px;
+    }
+    
+    ul.centros li {
+      line-height: 18px;
+      margin-bottom: 6px;
+    }
+    

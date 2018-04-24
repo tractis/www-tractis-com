@@ -1,0 +1,2498 @@
+/*  HTML5 ✰ Boilerplate  */
+/*  Tractis color palette variables: BEGIN  *//*  Identity: Pink *//*  Signatures: Green (colores utilizados por Diego en el pasado para botón "Create an acoount" (en class register: #c4ed71, #003300, #669900 y en class register:hover: #77B300, #558000) *//*  Payments: Blue *//*  Hardware: Red (colores utilizados por Diego en el pasado: F00, C00 *//*  Data: Orange *//*  Promotions: Yellow *//*  Webservices: Grey *//*  Support: Violet *//*  General Use: Grey */
+/*  Tractis color palette variables: END  */html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+}
+select,
+input,
+textarea,
+button {
+  font: 99% sans-serif;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+html {
+  overflow-y: scroll;
+}
+a:hover,
+a:active {
+  outline: none;
+}
+ul,
+ol {
+  margin-left: 2em;
+}
+ol {
+  list-style-type: decimal;
+}
+nav ul,
+nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+small {
+  font-size: 85%;
+}
+strong,
+th {
+  font-weight: bold;
+}
+td {
+  vertical-align: top;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+textarea {
+  overflow: auto;
+}
+.ie6 legend,
+.ie7 legend {
+  margin-left: -7px;
+}
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+.ie6 input {
+  vertical-align: text-bottom;
+}
+label,
+input[type="button"],
+input[type="submit"],
+input[type="image"],
+button {
+  cursor: pointer;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+input:invalid,
+textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+::-moz-selection {
+  background: #4aa100;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #4aa100;
+  color: #fff;
+  text-shadow: none;
+}
+a:link {
+  -webkit-tap-highlight-color: #4aa100;
+}
+button {
+  width: auto;
+  overflow: visible;
+}
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+body,
+select,
+input,
+textarea {
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+a,
+a:active,
+a:visited {
+  color: #4aa100;
+  text-decoration: none;
+}
+a:hover {
+  color: #3e8700;
+}
+/**
+ * Primary styles
+ */
+div.header {
+  background: #3c3f48 url(../images/header-bg.png) repeat-x top;
+  border-bottom: 1px solid #2c2e33;
+  font-family: "AlberLight";
+  color: #fff;
+  height: 37px;
+}
+div.header div.fill {
+  width: 984px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+div.header ul {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: #999999;
+}
+div.header ul li {
+  display: inline-block;
+  height: 38px;
+  background: url(../images/divider.png) no-repeat right center;
+  text-shadow: #222222 0 -1px 0;
+}
+div.header ul li + li {
+  margin-left: -3px;
+}
+div.header ul li.selected {
+  background: #2c2e33 url(../images/divider.png) no-repeat right center !important;
+  text-shadow: #000000 0 -1px 0;
+}
+div.header ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 10px 12px 8px;
+  height: 38px;
+  line-height: 42px;
+  margin: 0;
+}
+div.header ul li a:hover {
+  background: #2c2e33 url(../images/divider.png) no-repeat right center;
+}
+div.header ul li.last a:hover {
+  background-image: none;
+}
+div.header ul li.last {
+  background-image: none !important;
+}
+div.header ul.userbar {
+  float: right;
+  height: 38px;
+}
+div.header ul.userbar li.businessuser,
+div.header ul.userbar li.from,
+div.header ul.userbar li.businessuser a {
+  background-image: none !important;
+}
+div.header ul.userbar li.businessuser a {
+  padding-right: 5px;
+}
+div.header ul.userbar li a strong {
+  font-weight: normal;
+}
+div.header div.register {
+  padding-top: 5px;
+}
+div.register a {
+  float: right;
+  font: bold 12px/16px Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin-left: 3px;
+}
+div.register a:link,
+div.register a:visited,
+div.register a:active {
+  border-top: 1px solid #717582;
+  border-left: 1px solid #717582;
+  border-bottom: 1px solid #2c2e33;
+  border-right: 1px solid #2c2e33;
+  background: #181a1e url(../images/topbar-button-bg.png) repeat-x;
+  border-radius: 2px;
+  /* propietary values */
+
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: #000000 0 -1px 0;
+  padding: 5px 10px;
+}
+.userbar li.noadmin strong {
+  background-image: url(/images/divider.png) !important;
+  background-position: right center;
+  background-repeat: no-repeat;
+  line-height: 38px;
+  height: 38px;
+  padding-left: 7px;
+  padding-right: 11px;
+  font-weight: normal !important;
+}
+div.register a:hover {
+  border-top: 1px solid #8F95A5;
+  border-left: 1px solid #8F95A5;
+  background: #000000 url(../images/topbar-button-bg.png) repeat-x;
+}
+div.register a.register:link,
+div.register a.register:visited,
+div.register a.register:active {
+  border-top: 1px solid #7cd700;
+  border-left: 1px solid #7cd700;
+  border-bottom: 1px solid #3b8000;
+  border-right: 1px solid #3b8000;
+  background: #44a100 url(../images/topbar-button-bg.png) repeat-x;
+}
+div.register a.register:hover {
+  border-top: 1px solid #7cd700;
+  border-left: 1px solid #7cd700;
+  border-bottom: 1px solid #3b8000;
+  border-right: 1px solid #3b8000;
+  background: #3b8000 url(../images/topbar-button-bg.png) repeat-x;
+  text-shadow: #44a100 0 -1px 0;
+}
+div.slogan {
+  background: #dce1e4 url(../images/bg-slogan.png) no-repeat top center;
+  /* IE10 */
+  background-image: -ms-radial-gradient(center top, ellipse closest-side, #ffffff 0%, #dce1e4 40%);
+  /* Mozilla Firefox */
+  background-image: -moz-radial-gradient(center top, ellipse closest-side, #ffffff 0%, #dce1e4 40%);
+  /* Opera */
+  background-image: -o-radial-gradient(center top, ellipse closest-side, #ffffff 0%, #dce1e4 40%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(radial, center top, 0, center top, 0, color-stop(0, #ffffff), color-stop(1, #dce1e4));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-radial-gradient(center top, ellipse closest-side, #ffffff 0%, #dce1e4 40%);
+  /* Proposed W3C Markup */
+  background-image: radial-gradient(center top, ellipse closest-side, #ffffff 0%, #dce1e4 40%);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #b6c0c5;
+}
+div.subheader {
+  width: 984px;
+  margin: 30px auto 20px auto;
+  overflow: hidden;
+}
+.reader-home {
+  width: 984px;
+  margin: 0 auto;
+}
+div.subheader h1 {
+  font-family: AlberLight;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -0.035em;
+  color: #2c2e33;
+  width: 290px;
+  height: 50px;
+  margin: 0 0 0 0;
+  padding: 0;
+  float: left;
+}
+div.subheader h1 a {
+  display: block;
+  height: 50px;
+  width: 310px;
+  color: #2c2e33;
+  text-indent: -9999px;
+  background: url(../images/products/undefined/logos/logo-tractis.png);
+  background-repeat: no-repeat;
+}
+div.subheader h1.tractis-identity a {
+  background: url(../images/products/identity/logos/logo-tractis_identity-horizontal.png) no-repeat;
+}
+div.subheader h1.tractis-identity-verifications a {
+  background: url(../images/products/identity/logos/logo-tractis_identity_verifications-horizontal.png) no-repeat;
+}
+div.subheader h1.tractis-signatures a {
+  background: url(../images/products/signatures/logos/logo-tractis_signatures-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-signatures-contracts a {
+  background: url(../images/products/signatures/logos/logo-tractis_signatures_contracts-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-signatures-templates a {
+  background: url(../images/products/signatures/logos/logo-tractis_signatures_templates-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-data a {
+  background: url(../images/products/data/logos/logo-tractis_data-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-data-demographics a {
+  background: url(../images/products/data/logos/logo-tractis_data_demographics-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-data-firmographics a {
+  background: url(../images/products/data/logos/logo-tractis_data_firmographics-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-webservices a {
+  background: url(../images/products/webservices/logos/logo-tractis_webservices-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-webservices-sva a {
+  background: url(../images/products/webservices/logos/logo-tractis_webservices_sva-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-webservices-tsa a {
+  background: url(../images/products/webservices/logos/logo-tractis_webservices_tsa-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-webservices-lta a {
+  background: url(../images/products/webservices/logos/logo-tractis_webservices_lta-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-hardware a {
+  background: url(../images/products/hardware/logos/home-logo-tractis_hardware-horizontal.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-hardware-readers a {
+  background: url(../images/products/hardware/logos/logo-tractis-tractis_hardware_slimreader.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-hardware-stores a {
+  background: url(../images/products/hardware/logos/logo-tractis-hardware_stores.png) no-repeat;
+  width: 310px;
+}
+div.subheader h1.tractis-hardware-campaigns a {
+  background: url(../images/products/hardware/logos/logo-tractis-hardware_campaigns.png) no-repeat;
+  width: 310px;
+}
+/* selector de lenguajes */
+div.language {
+  float: right;
+  background: url(../images/lang_world.png) no-repeat top right;
+}
+.footer .language {
+  background: url(../images/lang_world.png) no-repeat top right;
+  float: right;
+}
+.language a.selector {
+  font-family: Helvetica;
+  font-size: 11px;
+  color: #5a737f;
+  text-transform: uppercase;
+  text-shadow: #fff 0 1px 0;
+  display: block;
+  padding: 4px 40px 5px 15px;
+  background: url(../images/lang_arrow.png) left 7px no-repeat;
+}
+.footer .language .selector {
+  font: 18px/20px LeagueGothicRegular;
+  padding: 0 40px 5px 15px;
+  background: url(../images/lang_arrow.png) left 7px no-repeat;
+  text-align: right;
+}
+.footer .final {
+  text-align: center;
+  padding-top: 20px;
+}
+div.language ul#morelangs,
+.footer #footerlang {
+  background: #fff;
+  border: 1px solid #5a737f;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 0;
+  list-style: none;
+  margin: 0 0 0 5px;
+  font-size: 11px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 300;
+}
+div.language ul#morelangs li,
+.footer #footerlang li {
+  border-top: 1px solid #f1f1f1;
+  display: block;
+}
+div.language ul#morelangs li a,
+.footer #footerlang li a {
+  padding: 5px 10px;
+  display: block;
+}
+div.language ul#morelangs li a:link,
+.footer #footerlang li a:link,
+div.language ul#morelangs li a:visited,
+.footer #footerlang li a:visited,
+div.language ul#morelangs li a:active,
+.footer #footerlang li a:active {
+  color: #5a737f;
+}
+div.language ul#morelangs li a:hover,
+.footer #footerlang li a:hover {
+  color: #485c66;
+  background: #ffc;
+}
+div.language ul#morelangs li a.selected,
+.footer #footerlang li a.selected {
+  font-weight: bold;
+  color: #2d3940;
+}
+div.slogan-content h2 {
+  color: #2c2e33;
+  font-family: AlberLight;
+  font-size: 48px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 53px;
+  letter-spacing: -0.05em;
+  text-shadow: #fff 0 1px 0;
+  margin: 0 0 10px 0;
+}
+div.slogan-content h2 em,
+div.slogan-content h3 em {
+  font-family: AlberLightItalic;
+}
+div.slogan-content h3 strong {
+  font-family: AlberRegular;
+  font-weight: normal;
+}
+div.slogan-content a:link {
+  color: #4aa100;
+  text-decoration: underline;
+  text-shadow: none;
+}
+div.slogan-content h3 {
+  color: #464951;
+  font-family: AlberLight;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  text-align: center;
+  margin: 0 0 18px 0;
+}
+div.slogan-content img {
+  display: block;
+}
+div.slogan-content img.imgcenter {
+  margin: 0 auto;
+}
+div.slogan-prices {
+  margin-bottom: 20px;
+}
+/* content */
+div#content {
+  margin: 0 auto;
+  width: 980px;
+  overflow: auto;
+}
+/* slider home */
+div.slogan-content {
+  overflow: visible;
+}
+div.short {
+  height: 120px;
+}
+div.slogan-reader {
+  background: url(../images/tractis-slimreader-slogan.png) no-repeat;
+}
+div.slogan-reader div.slogan-content {
+  margin-left: 300px;
+}
+div.slogan-reader div.slogan-content h2,
+div.slogan-reader div.slogan-content h3 {
+  text-align: left;
+}
+div.noscript {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #bcc5cb;
+  width: 984px;
+  margin: 40px auto;
+  padding: 20px;
+}
+div.noscript p {
+  font-size: 24px;
+  font-family: AlberLight, Helvetica, Arial;
+  color: #fff;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+div.noscript ol {
+  font-size: 16px;
+  font-family: AlberLight;
+  color: #464951;
+}
+div.noscript a {
+  text-decoration: underline;
+}
+/* clients module */
+div.clients {
+  border-top: 3px solid #cccccc;
+  padding: 40px 0;
+  overflow: hidden;
+}
+div.clients h2,
+div.planlist h2,
+div.buttons div.explanation h2 {
+  color: #464951;
+  font-family: AlberLight;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 38px;
+  letter-spacing: -0.035em;
+  text-align: center !important;
+}
+.clients h2 {
+  margin-bottom: 20px;
+}
+div.planlist h3,
+div.buttons h3 {
+  color: #464951;
+  font-family: AlberLight;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  text-align: center;
+  margin: -10px 0 30px 0;
+}
+div.clients h2 a {
+  text-decoration: underline;
+}
+div.clients img {
+  display: block;
+  margin: 0;
+}
+.clients .clientlogo {
+  display: block;
+  float: left;
+  margin: 5px 0;
+}
+.clients .a2nd {
+  margin-left: 43px !Important;
+}
+/* planes */
+div.planes {
+  overflow: auto;
+  width: 711px;
+  margin: 30px auto;
+}
+div.planes div.plan {
+  float: left;
+  border: 1px solid #a5aeb2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: #c8d3d9 2px 2px 2px;
+  margin: 15px 0 0 10px;
+  width: 225px;
+}
+div.planes div.name {
+  padding: 15px 15px 11px 15px;
+  background: #808594;
+}
+/* inside plan */
+div.planes div.plan div.name h3 {
+  font-family: AlberRegular;
+  font-size: 24px;
+  text-align: ;
+  color: #fff;
+  text-shadow: #3b8000 0 1px 0;
+  margin: 0;
+  line-height: 24px;
+}
+div.planes div.plan div.name h4 {
+  text-align: center;
+  color: #f2f010;
+  text-shadow: #3b8000 0 1px 0;
+}
+div.planes div.business {
+  margin-top: 0;
+}
+div.planes div.business div.name {
+  background: #3c3f48;
+}
+div.planes div.business div.name h3 {
+  color: #fff;
+  font-family: AlberBold;
+  text-shadow: #3b8000 0 1px 0;
+  font-size: 38px;
+  margin: 10px 0 5px 0;
+  text-shadow: #2c2e33 0 1px 0;
+}
+div.planes div.business div.name h4 {
+  color: #cccccc;
+  text-shadow: #2c2e33 0 1px 0;
+}
+div.planes div.freelance {
+  margin-left: 0;
+}
+div.planes div.business {
+  margin-bottom: 3px;
+}
+div.planes div.plan ul {
+  list-style: none;
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #cccccc;
+}
+div.planes div.plan ul li strong {
+  color: #333;
+}
+div.buttons {
+  overflow: auto;
+  margin-bottom: 10px;
+}
+div.buttons a {
+  display: block;
+  text-align: center;
+  font-family: LeagueGothicRegular;
+  text-transform: uppercase;
+}
+div.buttons div.explanation a {
+  display: inline;
+  text-align: left;
+  font-family: Helvetica;
+  text-transform: none;
+  color: #4aa100;
+  background: none;
+  text-decoration: underline;
+}
+div.buttons a.price {
+  float: left;
+  margin-left: 10px;
+  text-decoration: none;
+}
+div.business div.buttons a.price {
+  vertical-align: middle;
+}
+div.planes div.enterprise div.buttons a.button {
+  float: none;
+  margin-left: 10px;
+}
+div.buttons a.price big {
+  font-size: 32px;
+  line-height: 30px;
+  display: block;
+}
+.buttons .price abbr {
+  font-size: 21px;
+}
+div.buttons a.price small {
+  color: #666666;
+  font-size: 18px;
+}
+div.planes div.buttons a.button {
+  display: block;
+  font-family: LeagueGothicRegular;
+  font-size: 24px;
+  background: #666666 url(../images/light.png) repeat-x 0 -4px;
+  border: 2px solid #444;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #444444 0 -1px 0;
+  padding: 1px 7px 0px 7px;
+  margin: 0 10px 0 0;
+  float: right;
+}
+div.planes div.business div.buttons a.button {
+  font-family: LeagueGothicRegular;
+  font-size: 24px;
+  background: #4aa100 url(../images/light.png) repeat-x 0 -4px !important;
+  border: 2px solid #3b8000;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #3b8000 0 -1px 0;
+  padding: 1px 7px 0px 7px;
+  margin: 0 10px 10px 10px;
+}
+div.popular {
+  background: #666666;
+  text-align: center;
+  padding: 10px;
+}
+div.popular p {
+  color: #fff;
+  text-shadow: #333 0 1px 0;
+  margin: 0;
+  font-family: Alberbold;
+  font-size: 16px;
+  line-height: 18px;
+}
+/* lista de planes */
+div.planlist {
+  margin: 30px 0;
+}
+div.planlist h2,
+div.buttons h2 {
+  margin: 0 auto 20px auto;
+}
+div.planlist table,
+div.certs table {
+  margin: 0 auto 30px auto;
+  width: 100%;
+}
+.certs {
+  margin: 40px auto;
+  width: 980px;
+}
+div.certs table {
+  margin: 0 10px 30px 10px;
+  width: 960px;
+}
+div.planlist table thead tr th,
+div.certs table tr th {
+  color: #4aa100;
+  font-family: LeagueGothicRegular;
+  font-weight: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #cccccc;
+  padding: 0 5px 5px 5px;
+}
+.planlist .red thead tr th,
+.planlist .red thead tr th a {
+  color: #f00;
+}
+div.planlist table thead tr th.free {
+  color: #999999;
+  /* prepago */
+
+}
+div.planlist table tbody tr td:nth-child(2),
+div.planlist table tbody tr td:nth-child(4),
+div.planlist table tbody tr td:nth-child(6) {
+  background-color: #f9f9f9;
+}
+.certs table tbody tr td:nth-child(2),
+.certs table tbody tr td:nth-child(4),
+.certs table tbody tr td:nth-child(6),
+.certs table tbody tr td:nth-child(8) {
+  background-color: #f9f9f9;
+}
+div.certs table tr th a {
+  color: #666666;
+}
+.certs p {
+  margin-bottom: 16px;
+}
+.certs .titles h2 {
+  color: #464951;
+  text-align: center;
+  font: normal 36px/38px AlberLight;
+  letter-spacing: -0.035em;
+}
+.certs .titles h3 {
+  font: normal 18px AlberLight;
+  text-align: center;
+  margin: -5px 0 30px 0;
+}
+.certs .forms h3 {
+  font: 25px LeagueGothicRegular;
+  background: #eee;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.certs .forms h3 small {
+  text-align: right;
+  float: right;
+  font-size: 18px;
+  color: #666666;
+  padding: 5px 0 0 0;
+}
+.certs .subheader1 th:first-child {
+  text-align: left;
+}
+.certs .subheader1 th {
+  color: #999999;
+  font-size: 18px;
+  padding: 3px 5px 5px 0px;
+  white-space: nowrap;
+}
+.certs .subheader1 th a {
+  color: #999999;
+}
+.certs tr.header1 th {
+  text-align: left;
+  padding: 10px 0 2px 0;
+}
+.certs tbody tr td {
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  border-bottom: 1px dotted #cccccc;
+}
+.certs tbody tr td:first-child {
+  text-align: left;
+  padding: 10px 5px 10px 0px;
+}
+.certs tbody tr td:nth-child(2) {
+  text-align: left;
+}
+.certs tbody tr:hover td {
+  background: #ffc !important;
+}
+.certs table tbody tr:hover td:nth-child(2),
+.certs table tbody tr:hover td:nth-child(4),
+.certs table tbody tr:hover td:nth-child(6),
+.certs table tbody tr:hover td:nth-child(8) {
+  background-color: #f2f2c2 !important;
+}
+div.planlist table thead tr th.n {
+  color: #999999;
+  text-align: left;
+}
+div.planlist table tbody tr th {
+  text-align: left;
+  padding: 10px 5px;
+  border-bottom: 1px dotted #cccccc;
+  white-space: nowrap;
+}
+div.planlist table tbody tr td {
+  text-align: center;
+  padding: 10px 5px;
+  border-bottom: 1px dotted #cccccc;
+  width: 15%;
+}
+div.planlist tbody tr:hover th,
+div.planlist tbody tr:hover td {
+  background: #ffc !Important;
+}
+div.planlist table tfoot tr td {
+  font-size: 11px;
+  text-align: right;
+  padding: 5px 5px 0 5px;
+}
+div.planlist tfoot tr td a {
+  display: block;
+  font-family: LeagueGothicRegular;
+  font-size: 24px;
+  background: #666666 url(../images/light.png) repeat-x 0 -4px;
+  border: 2px solid #444;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #444444 0 -1px 0;
+  text-align: center;
+  padding: 1px 7px 0px 7px;
+}
+div.planlist tfoot tr td a.special {
+  font-family: LeagueGothicRegular;
+  font-size: 24px;
+  background: #4aa100 url(../images/light.png) repeat-x 0 -4px !important;
+  border: 2px solid #3b8000;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #3b8000 0 -1px 0;
+  padding: 1px 7px 0px 7px;
+}
+div.planlist tfoot tr td a.mini {
+  font-family: Helvetica;
+  font-size: 11px;
+  text-align: right;
+  color: #4aa100;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  padding: 0;
+  display: inline;
+  text-shadow: none;
+  text-transform: none;
+}
+div.planlist .red tfoot tr td a.special {
+  background-color: #f00 !important;
+  text-shadow: #cc0000 0 -1px 0;
+  border-color: #c00;
+}
+div.footer {
+  border-top: 0px solid #cccccc;
+  width: 980px;
+  margin: 20px auto 40px auto;
+  overflow: auto;
+  padding: 10px 0 0 0;
+}
+div.footer dl {
+  width: 65%;
+}
+div.footer dl,
+div.footer p {
+  float: left;
+  font-family: AlberLight;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+div.footer p {
+  width: 160px;
+  float: right;
+  font-family: AlberBold;
+  text-align: right;
+  background: url(../images/products/undefined/logos/logo-footer.png) no-repeat right top;
+  margin: 0 0 0 0;
+  height: 47px;
+  color: transparent;
+}
+div.footer p a {
+  display: block;
+  width: 160px;
+  height: 47px;
+  color: transparent;
+}
+div.footer dl dt {
+  display: block;
+  float: left;
+  width: 80px;
+  font-family: AlberRegular;
+}
+div.footer dl dd {
+  display: block;
+}
+div.videopreview {
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+div.videopreview p {
+  margin: 0;
+}
+div.videopreview p a {
+  font-size: 32px;
+  font-family: LeagueGothicRegular;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 0 50px 0 !important;
+  display: block;
+  height: auto;
+}
+div.videopreview p a strong {
+  color: #666666;
+  font-weight: normal;
+}
+div#menu div.top {
+  padding-top: 30px;
+}
+div#menu div.lightgrey p a {
+  color: #999999;
+}
+/* content products home */
+div.producthomelist {
+  margin: 30px auto 30px auto;
+  overflow: auto;
+}
+div.producthomelist div.description {
+  float: left;
+  width: 580px;
+}
+div.producthomelist div.productslist {
+  float: right;
+  width: 345px;
+}
+div.producthomelist div.description div.module {
+  float: left;
+  margin: 0;
+  width: 260px;
+}
+div.producthomelist div.description div.last {
+  margin-left: 20px;
+}
+div.producthomelist div.description h2 {
+  font-family: AlberLight;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: -0.06em;
+  margin-bottom: 20px;
+}
+div.producthomelist div.description h2 em {
+  font-family: AlberLightItalic;
+}
+div.producthomelist div.description h2 a {
+  text-decoration: underline;
+}
+div.producthomelist div.description div.module ol {
+  margin: 0 0 0 23px;
+}
+div.producthomelist div.description div.module ol li {
+  font-family: AlberRegular;
+  font-size: 18px;
+  color: #4aa100;
+  margin-bottom: 20px;
+}
+div.producthomelist div.description div.module ol li h3 {
+  font-family: AlberRegular;
+  font-weight: normal;
+  color: #464951;
+  letter-spacing: -0.035em;
+}
+div.producthomelist div.description p {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #666666;
+  margin-bottom: 16px;
+}
+div.producthomelist div.description p em,
+div.producthomelist div.description p i {
+  font-style: italic;
+}
+div.producthomelist div.description p a {
+  text-decoration: underline;
+}
+div.producthomelist div.productslist a.button {
+  font-family: LeagueGothicRegular;
+  font-size: 28px;
+  background: #4aa100 url(../images/light.png) repeat-x 0 8px !important;
+  border: 2px solid #3b8000;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #3b8000 0 -1px 0;
+  padding: 1px 7px 3px 7px;
+  display: inline-block;
+  text-align: center;
+  width: 327px;
+  margin: 0 auto 5px auto;
+}
+div.producthomelist div.productslist a.button small {
+  font-family: Helvetica;
+  font-size: 11px;
+  display: block;
+}
+div.producthomelist div.productslist p {
+  font-size: 11px;
+  color: #777;
+  text-align: center;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+div.producthomelist div.productslist p a {
+  text-decoration: underline;
+}
+div.productslist ul {
+  margin: 0;
+  list-style: none;
+}
+div.productslist ul li {
+  margin: 0 0 30px 0;
+}
+div.productslist ul li {
+  display: block;
+  height: 50px;
+  width: 297px;
+  text-indent: -9999px;
+}
+div.productslist ul li.identity {
+  background: url(../images/products/identity/logos/logo-identity-homepage.png) no-repeat;
+}
+div.productslist ul li.signatures {
+  background: url(../images/products/signatures/logos/logo-signatures-homepage.png) no-repeat;
+}
+div.productslist ul li.webservices {
+  background: url(../images/products/webservices/logos/logo-webservices-homepage.png) no-repeat;
+}
+div.productslist ul li.hardware {
+  background: url(../images/products/hardware/logos/logo-hardware-homepage.png) no-repeat;
+}
+div.productslist ul li a {
+  width: 297px;
+  height: 50px;
+  display: block;
+}
+/* 3er nivel */
+div.content3 {
+  width: 590px;
+  float: left;
+}
+div#menu {
+  width: 353px;
+  float: right;
+}
+div.content3 div.module {
+  width: 280px;
+  float: left;
+  margin: 0 0 0 0;
+  padding: 30px 0 30px 0;
+}
+div.content3 div.hardware {
+  background: url(../images/products/hardware/content_markers/content_marker-hardware.png) no-repeat top left;
+}
+div.content3 div.identity {
+  background: url(../images/products/identity/content_markers/content_marker-identity.png) no-repeat top left;
+}
+div.content3 div.signatures {
+  background: url(../images/products/signatures/content_markers/content_marker-signatures.png) no-repeat top left;
+}
+div.content3 div.data {
+  background: url(../images/products/data/content_markers/content_marker-data.png) no-repeat top left;
+}
+div.content3 div.webservices {
+  background: url(../images/products/webservices/content_markers/content_marker-webservices.png) no-repeat top left;
+}
+div.content3 div.module img {
+  float: right;
+  display: block;
+  margin-top: -3px;
+}
+div.content3 div.identity img {
+  background-color: #b42588;
+}
+div.content3 div.signatures img {
+  background-color: #44a100;
+}
+div.content3 div.data img {
+  background-color: #cc6c00;
+}
+div.content3 div.webservices img {
+  background-color: #656565;
+}
+div.content3 div.hardware img {
+  background-color: #d8000a;
+}
+div.content3 div.module p {
+  margin: 0 0 10px 0;
+  color: #666666;
+}
+div.content3 div.module p strong {
+  font-weight: bold;
+  color: #444;
+}
+div.content3 div.line {
+  border-top: 1px solid #cccccc !important;
+}
+div.content3 div.last {
+  clear: right;
+  margin: 0 0 20px 25px;
+}
+.content3 .red a:link,
+.content3 .red a:visited {
+  color: #ff0000;
+}
+.content3 .red a:hover {
+  color: #cc0000;
+}
+div.content3 div.module h2 {
+  font-size: 24px;
+  font-family: AlberRegular;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+}
+div.explanation {
+  overflow: auto;
+  width: 100%;
+  padding: 30px 0 30px 0;
+}
+div.explanation h2 {
+  font-size: 32px;
+  font-family: AlberLight;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  margin-bottom: 30px;
+}
+div#content div.content3 div.explanation div.module {
+  padding: 0 0 20px 0;
+  clear: right;
+}
+div#content div.content3 div.explanation div.module h3,
+div.content3 div.module h3 {
+  font-size: 20px;
+  font-family: AlberRegular;
+  font-weight: normal;
+}
+div.content3 div.module h3 em {
+  font-family: AlberItalic;
+}
+div#menu blockquote {
+  margin: 0 10px;
+}
+div#menu div.quote blockquote p {
+  color: #4aa100;
+  font-family: AlberBold;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+div#menu div.pink blockquote p {
+  color: #b42588;
+  font-family: AlberBold;
+  font-size: 18px;
+}
+div#menu div.grey blockquote p {
+  color: #666666;
+  font-family: AlberBold;
+  font-size: 18px;
+}
+div#menu div.red blockquote p {
+  color: #ff0000;
+}
+div.menu-module {
+  margin-bottom: 30px;
+}
+div.reader-titular {
+  margin: 30px 0;
+}
+div.reader-tour {
+  margin-top: 30px;
+}
+div.reader-tour p.desc1,
+div.reader-tour p.desc2 {
+  margin: 0 0 0 0;
+  text-align: center;
+}
+div.reader-tour p.desc1 {
+  margin-top: 100px;
+}
+div.reader-tour p.desc2 {
+  margin-top: 50px;
+}
+div.titles {
+  clear: both;
+  margin: 30px 0;
+  background: none !important;
+}
+div.titles h2 {
+  font-size: 32px;
+  font-weight: normal;
+  font-family: AlberLight;
+  line-height: 36px;
+  letter-spacing: -0.06em;
+  margin-bottom: 10px;
+}
+div.titles h3 {
+  font-size: 18px;
+  font-family: AlberLight;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  color: #888;
+  margin-bottom: 18px;
+}
+div.reader-titular h2 {
+  font-family: AlberLight;
+  font-size: 42px;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  text-align: center;
+}
+div.titles h2 em,
+div.titles h3 em {
+  font-family: AlberLightItalic;
+}
+div.reader-titular h3 {
+  font-size: 18px;
+  font-family: AlberLight;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: -0.05em;
+}
+div.tractis-slimreader {
+  overflow: auto;
+}
+div.tractis-slimreader div.feature {
+  width: 230px;
+  float: left;
+  margin: 0 15px 30px 0;
+}
+div.tractis-slimreader div.last {
+  float: right;
+  margin-right: 0;
+}
+div.tractis-slimreader h3 {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: AlberRegular;
+  letter-spacing: -0.06em;
+}
+div.tractis-slimreader p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #666666;
+}
+div.nav {
+  width: 680px;
+  margin: 11px auto 5px auto;
+  overflow: auto;
+  float: right;
+}
+div.nav ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  margin: 0;
+  float: right;
+  width: auto;
+  overflow: hidden;
+}
+div.nav ul li {
+  display: inline-block;
+  font-size: 18px;
+  font-family: AlberLight;
+  letter-spacing: -0.06em;
+  margin-left: 15px;
+}
+div.nav ul li a {
+  color: #8696a0;
+  text-shadow: #fff 0 1px 0;
+}
+div.nav ul li a.selected,
+div.nav ul li a:hover {
+  color: #3c3f48;
+}
+div.reader-gallery-titles h2 {
+  font-family: AlberRegular;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  margin: 30px 0 10px 0;
+}
+div.reader-specifications {
+  overflow: auto;
+  margin-top: 30px;
+}
+div.reader-specifications div.reader-portrait {
+  float: left;
+  width: 470px;
+  margin-right: 30px;
+  margin-bottom: 60px;
+}
+div.reader-specifications div.reader-portrait h3 {
+  float: left;
+  width: 48%;
+  margin-bottom: 18px;
+}
+div.reader-specifications div.reader-portrait img {
+  display: block;
+  float: right;
+  width: 230px;
+}
+div.reader-specifications h2 {
+  font-family: AlberLight;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  margin: 0 0 10px 0;
+}
+div.reader-specifications h3 {
+  font-family: AlberLight;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  margin: 0 0 0 0;
+  color: #666666;
+}
+div.reader-specifications div.feature {
+  width: 230px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+div.topf {
+  margin-top: 16px;
+}
+div.reader-specifications div.feature ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 11px;
+  color: #666666;
+}
+div.reader-specifications div.feature ol li {
+  border-top: 1px solid #cccccc;
+  padding: 5px 0;
+}
+div.reader-specifications div.feature table {
+  width: 100%;
+}
+div.reader-specifications div.feature table tr td,
+div.reader-specifications div.feature table tr th {
+  border-top: 1px solid #cccccc;
+  padding: 5px 0 5px 0;
+  font-size: 11px;
+  background: #fff;
+}
+div.reader-specifications div.feature h3 {
+  font-family: AlberRegular;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  margin: 0 0 5px 0;
+  color: #464951;
+}
+div.reader-specifications div.last {
+  margin-right: 0;
+}
+/* products page */
+div.families {
+  overflow: auto;
+}
+div.families div.module {
+  border-top: 1px solid #cccccc;
+  overflow: auto;
+  margin-bottom: 40px;
+}
+div.families div.module div.type {
+  float: left;
+  width: 30%;
+}
+div.families div.module div.type h3 {
+  display: block;
+  text-indent: -9999px;
+  height: 160px;
+}
+div.families div.module div.type h3 a {
+  display: block;
+  width: 294px;
+  height: 160px;
+}
+div.families div.module div.identity h3 {
+  background: url(../images/products/identity/logos/logo-tractis_identity-vertical.png) no-repeat center 30px;
+}
+div.families div.module div.signatures h3 {
+  background: url(../images/products/signatures/logos/logo-tractis_signatures-vertical.png) no-repeat center 30px;
+}
+div.families div.module div.data h3 {
+  background: url(../images/products/data/logos/logo-tractis_data-vertical.png) no-repeat center 30px;
+}
+div.families div.module div.webservices h3 {
+  background: url(../images/products/webservices/logos/logo-tractis_webservices-vertical.png) no-repeat center 30px;
+}
+div.families div.module div.hardware h3 {
+  background: url(../images/products/hardware/logos/logo-tractis_hardware-vertical.png) no-repeat center 30px;
+}
+div.families div.module div.description {
+  float: left;
+  width: 50%;
+  margin-left: 17px;
+  margin-top: 20px;
+}
+div.families div.other div.description {
+  width: 50%;
+}
+div.families div.module div.description h4 {
+  font-family: AlberRegular;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+}
+div.families div.module div.description h4 em {
+  font-family: AlberItalic;
+}
+div.families div.module div.description p {
+  font-family: AlberLight;
+  font-size: 20px;
+  letter-spacing: -0.06em;
+  color: #999999;
+  margin-bottom: 16px;
+}
+div.families div.module div.description p strong {
+  font-family: AlberRegular;
+  font-weight: normal;
+  color: #757575;
+}
+div.families div.module div.description p em {
+  font-family: AlberLightItalic;
+}
+div.families div.products ul {
+  list-style: square;
+  margin-top: 38px;
+  line-height: 18px;
+}
+div.families div.module div.products {
+  float: right;
+  width: 17%;
+  margin-top: 20px;
+}
+div.families div.module sup {
+  background: red;
+  color: #fff;
+  padding: 2px 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  vertical-align: -3px;
+  margin-left: 3px;
+}
+div.steps {
+  padding: 20px 0;
+  margin: 40px 0;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+}
+div.steps hr {
+  margin: 40px 0;
+}
+div.steps h2 {
+  color: #464951;
+  font-family: AlberLight;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 38px;
+  letter-spacing: -0.035em;
+  text-align: center;
+}
+div.steps p {
+  text-align: center;
+}
+div.steps p a.button {
+  font-family: LeagueGothicRegular;
+  font-size: 18px;
+  background: #4aa100 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #326e00;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #326e00 0 -1px 0;
+  padding: 1px 7px 0px 7px;
+  vertical-align: middle;
+}
+div.steps p a.button:hover {
+  background: #326e00 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #265400;
+  text-shadow: #265400 0 -1px 0;
+}
+div.steps h3 {
+  color: #6c828e;
+  font-family: AlberLight;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: -0.035em;
+  text-align: center;
+}
+div.steps table {
+  width: auto;
+  margin: 20px auto;
+}
+div.steps table thead tr th {
+  text-align: center;
+  font-size: 16px;
+  font-family: AlberRegular;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+}
+div.steps table thead tr th span {
+  background: #80d600;
+  color: #fff;
+  -webkit-border-radius: 16px;
+  display: inline-block;
+  padding: 3px 7px 0 7px;
+  margin-left: -5px;
+}
+div.hardware table thead tr th span {
+  background: #f9000e;
+}
+div.identity table thead tr th span {
+  background: #ff4ed4;
+}
+div.signatures table thead tr th span {
+  background: #7cd700;
+}
+div.webservices table thead tr th span {
+  background: #666666;
+}
+div.steps table tbody tr td.arrow {
+  width: 1px;
+  font-size: 60px;
+  color: #cccccc;
+  padding: 0 5px 0 8px;
+}
+div.steps table tbody td {
+  width: 1px;
+}
+div.steps table tbody td.big {
+  padding-top: 60px;
+}
+div.steps table tbody td span {
+  display: block;
+}
+div.steps table tbody td.big span {
+  margin-top: 80px;
+  display: block;
+}
+div.steps table tbody td img {
+  display: block;
+  margin: 0 auto;
+}
+div.steps table tbody td p {
+  font-size: 11px;
+  color: #6c828e;
+  text-align: center;
+}
+div.steps table tbody td p a {
+  text-decoration: underline;
+}
+div.rojo table tbody td p a:link {
+  color: #f00;
+}
+div.rojo table tbody td p a:hover {
+  color: #c00;
+}
+div.steps table tbody td p a.video {
+  background: url(../images/video.png) no-repeat left 2px;
+  padding-left: 14px;
+}
+div.exp div.col {
+  width: 184px;
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+div.exp div.col:first-child {
+  margin-left: 0;
+}
+div.exp div.col h3 {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: AlberBold;
+  letter-spacing: -0.035em;
+}
+div.tour {
+  margin: 40px 0;
+}
+div.tour div.desc div.imgdesc img {
+  display: block;
+}
+div.tour div.desc div.imgdesc img.thumb {
+  border: 1px solid #666666;
+}
+div.tour div.desc div.imgdesc a {
+  display: block;
+  width: 500px;
+  height: 430px;
+  color: #fff;
+  font-family: AlberLight;
+  font-size: 18px;
+  letter-spacing: -0.06em !important;
+  border: 1px solid #666666;
+  -webkit-border-radius: 3px;
+  margin-bottom: 20px;
+}
+div.tour div.desc div.imgdesc a span {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  text-align: right;
+  width: 450px;
+  top: 577px;
+}
+div.faqmodule {
+  background: #e8e8e8;
+  -webkit-border-radius: 5px;
+  border: 1px solid #dedede;
+  padding: 20px 20px 0 20px;
+  overflow: hidden;
+  margin: 40px 0;
+}
+div.faqmodule div.module {
+  width: 48%;
+  float: left;
+  margin-bottom: 20px;
+}
+div.faqmodule div.large {
+  float: none;
+  width: 100%;
+}
+div.faqmodule div.module p {
+  line-height: 16px;
+  margin-bottom: 20px;
+}
+div.faqmodule a {
+  text-decoration: underline;
+}
+div.faqmodule div.module p em {
+  font-style: italic;
+}
+div.faqmodule div.module h3 {
+  font-weight: normal;
+  font-family: AlberRegular;
+  font-size: 18px;
+}
+div.faqmodule div.module h3 em {
+  font-family: AlberItalic;
+}
+div.faqmodule div.last {
+  float: right;
+}
+div.faqmodule hr {
+  display: block;
+  clear: both;
+}
+div.c404 {
+  margin: 200px 0;
+}
+div.c404 h2 {
+  color: #464951;
+  font-family: AlberLight;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 38px;
+  letter-spacing: -0.035em;
+  text-align: center;
+}
+div.c404 p {
+  color: #757a88;
+  font-family: AlberLight;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -0.035em;
+  text-align: center;
+}
+div.c404 a {
+  text-decoration: underline;
+}
+div.prodmenu {
+  padding: 10px 0;
+}
+div.prodmenu h3 {
+  font-family: AlberLight;
+  font-size: 24px;
+  letter-spacing: -0.06em;
+  font-weight: normal;
+}
+div.prodmenu ul {
+  margin: 0 15px 30px 10px;
+  list-style: none;
+  color: #999999;
+  font-family: Helvetica;
+  font-size: 12px;
+  padding-top: 2px;
+}
+div.prodmenu ul li {
+  border-top: 1px dotted #cccccc;
+  padding-top: 2px;
+  line-height: 32px;
+}
+div.prodmenu a strong {
+  color: #666666;
+}
+div.start {
+  text-align: center;
+  margin: 10px 0 40px 0;
+  font-family: LeagueGothicRegular;
+  font-size: 20px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #999999;
+  background: none !important;
+}
+div.start p strong {
+  color: #666666;
+  font-weight: normal;
+}
+div.start p a.button {
+  font-family: LeagueGothicRegular;
+  font-size: 20px;
+  background: #44a100 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #3b8000;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #3b8000 0 -1px 0;
+  padding: 1px 7px 0px 7px;
+}
+div.start p a.button:hover {
+  background: #3b8000 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #3b8000;
+  text-shadow: #3b8000 0 -1px 0;
+}
+div.identity p a.button {
+  font-family: LeagueGothicRegular;
+  font-size: 20px;
+  background: #b42588 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #8d2273;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #8d2273 0 -1px 0;
+  padding: 1px 7px 0px 7px;
+}
+div.identity p a.button:hover {
+  background: #8d2273 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #8d2273;
+  text-shadow: #8d2273 0 -1px 0;
+}
+div.signatures p a.button {
+  font-family: LeagueGothicRegular;
+  font-size: 20px;
+  background: #44a100 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #3b8000;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #3b8000 0 -1px 0;
+  padding: 1px 7px 0px 7px;
+}
+div.data p a.button {
+  font-family: LeagueGothicRegular;
+  font-size: 20px;
+  background: #cc6c00 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #be5106;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #be5106 0 -1px 0;
+  padding: 1px 7px 0px 7px;
+}
+div.data p a.button:hover {
+  background: #be5106 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #be5106;
+  text-shadow: #be5106 0 -1px 0;
+}
+div.signatures p a.button:hover {
+  background: #3b8000 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #3b8000;
+  text-shadow: #3b8000 0 -1px 0;
+}
+div.webservices p a.button {
+  font-family: LeagueGothicRegular;
+  font-size: 20px;
+  background: #656565 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #262626;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #262626 0 -1px 0;
+  padding: 1px 7px 0px 7px;
+}
+div.webservices p a.button:hover {
+  background: #262626 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #262626;
+  text-shadow: #262626 0 -1px 0;
+}
+div.hardware p a.button {
+  font-family: LeagueGothicRegular;
+  font-size: 20px;
+  background: #d8000a url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #bd0006;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #bd0006 0 -1px 0;
+  padding: 1px 7px 0px 7px;
+}
+div.hardware p a.button:hover {
+  background: #bd0006 url(../images/light.png) repeat-x 0 -7px;
+  border: 1px solid #bd0006;
+  text-shadow: #bd0006 0 -1px 0;
+}
+.content3 .red p a.button {
+  background-color: #ff0000;
+  border: 1px solid #cc0000;
+  text-shadow: #cc0000 0 -1px 0;
+  color: #fff;
+}
+.content3 .red p a.button:hover {
+  background-color: #cc0000;
+  border: 1px solid #b20000;
+  text-shadow: #b20000 0 -1px 0;
+  color: #fff;
+}
+div.startplan {
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.startplan a.button {
+  font-family: LeagueGothicRegular;
+  font-size: 28px;
+  background: #666666 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #333333;
+  border-radius: 3px;
+  /* propietary values */
+
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: #333333 0 -1px 0;
+  padding: 1px 7px 3px 7px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 5px auto;
+}
+div.startplan a.button:hover {
+  background: #333333 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #333333;
+  text-shadow: #333333 0 -1px 0;
+}
+div.startplan a.button small {
+  font-size: 11px;
+  font-family: Helvetica, Arial, sans-serif;
+  display: block;
+}
+div.startplan a.hardware {
+  background: #d8000a url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #bd0006;
+  text-shadow: #bd0006 0 -1px 0;
+}
+div.startplan a.hardware:hover {
+  background: #bd0006 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #bd0006;
+  text-shadow: #bd0006 0 -1px 0;
+}
+div.startplan a.identity {
+  background: #b42588 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #8d2273;
+  text-shadow: #8d2273 0 -1px 0;
+}
+div.startplan a.identity:hover {
+  background: #8d2273 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #8d2273;
+  text-shadow: #8d2273 0 -1px 0;
+}
+div.startplan a.signatures {
+  background: #44a100 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #3b8000;
+  text-shadow: #3b8000 0 -1px 0;
+}
+div.startplan a.signatures:hover {
+  background: #3b8000 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #3b8000;
+  text-shadow: #3b8000 0 -1px 0;
+}
+div.startplan a.data {
+  background: #be5106 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #be5106;
+  text-shadow: #be5106 0 -1px 0;
+}
+div.startplan a.data:hover {
+  background: #be5106 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #be5106;
+  text-shadow: #be5106 0 -1px 0;
+}
+div.startplan a.webservices {
+  background: #262626 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #262626;
+  text-shadow: #262626 0 -1px 0;
+}
+div.startplan a.webservices:hover {
+  background: #262626 url(../images/light.png) repeat-x 0 7px !important;
+  border: 2px solid #262626;
+  text-shadow: #262626 0 -1px 0;
+}
+div.calltoarms {
+  background: #f1f1f1;
+  -webkit-border-radius: 5px;
+  border: 1px solid #dedede;
+  padding: 20px 20px 18px 20px;
+  overflow: hidden;
+  margin: 40px 0;
+  text-align: center;
+  color: #999999;
+}
+div.calltoarms p {
+  font-family: LeagueGothicRegular;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+div.calltoarms p a {
+  text-decoration: underline;
+}
+div.callhardware p a {
+  color: #d8000a;
+}
+div.callhardware p a:hover {
+  color: #bd0006;
+}
+div.callidentity p a {
+  color: #b42588;
+}
+div.callidentity p a:hover {
+  color: #8d2273;
+}
+div.callsignatures p a {
+  color: #44a100;
+}
+div.callsignatures p a:hover {
+  color: #3b8000;
+}
+div.calldata p a {
+  color: #cc6c00;
+}
+div.calldata p a:hover {
+  color: #be5106;
+}
+div.callwebservices p a {
+  color: #656565;
+}
+div.callwebservices p a:hover {
+  color: #262626;
+}
+div#alerts {
+  clear: both;
+  top: 0;
+  left: 50%;
+  position: fixed;
+  z-index: 9999;
+  max-width: 500px;
+}
+div#tractis-alert {
+  background: url(../images/bgalerts.png);
+  clear: both;
+  margin: -20px -2px 20px -2px;
+  padding: 0 3px 3px 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+}
+div#alerts div.shader {
+  background: url(../images/bgalerts.png);
+  padding: 0 3px 3px 3px;
+  /* propietary */
+
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+}
+div.flash {
+  background: #cccccc;
+  padding: 5px 10px;
+  /* propietary values */
+
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-left-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 0;
+}
+div.flash h4 {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+div.flash p {
+  font-size: 12px;
+  margin: 0;
+}
+div.error {
+  background: #d52927 url(../images/light.png) repeat-x left 1px;
+  border: 1px solid #A5201E;
+  border-top: 0;
+  color: #fff;
+}
+div.error a {
+  color: #FFC3C3;
+}
+div.warning {
+  background: #ff6600 url(../images/light.png) repeat-x left 1px;
+  border: 1px solid #D35400;
+  border-top: 0;
+  color: #fff;
+}
+div.warning a {
+  color: #FFFFCC;
+}
+div.sucess {
+  background: #5e9d09 url(../images/light.png) repeat-x left 1px;
+  border: 1px solid #447207;
+  border-top: 0;
+  color: #fff;
+}
+div.sucess a {
+  color: #CEE8AA;
+}
+div.system {
+  background: #1f61a5 url(../images/light.png) repeat-x left 1px;
+  border: 1px solid #073B72;
+  border-top: 0;
+  color: #fff;
+}
+div.tractis {
+  background: #a8d351 url(../images/light.png) repeat-x left 1px;
+  border: 1px solid #79B014;
+  border-top: 0;
+  padding-bottom: 10px;
+  color: #fff;
+}
+.buttons .explanation p,
+.buttons .explanation ul,
+.buttons .explanation ol {
+  margin-bottom: 16px;
+}
+.buttons .explanation em {
+  font-style: italic;
+}
+#content .buttons .explanation h2 {
+  color: #464951;
+  font-family: AlberLight;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 38px;
+  letter-spacing: -0.035em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.buttons .module {
+  border-top: 1px solid #cccccc;
+  padding: 20px 0;
+  overflow: hidden;
+}
+.buttons .module .buttonimg {
+  width: 220px;
+  float: left;
+}
+.buttons .module .buttonimg img {
+  display: block;
+}
+.buttons .module .def {
+  width: 760px;
+  float: right;
+}
+.module .def textarea {
+  width: 738px;
+  height: 65px;
+  background: #eee;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+  color: #555;
+  font-family: "Andale Mono", Courier New, Courier;
+  border: none;
+}
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.clear {
+  clear: both;
+}
+@media all and (orientation: portrait) {
+
+}
+@media all and (orientation: landscape) {
+
+}
+@media screen and (max-device-width: 480px) {
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+div.clear {
+  clear: both;
+}
+.buy {
+  background: #3c3f48 url(/static/images/light.png) repeat-x 0 -6px;
+  padding: 4px 7px 0px 7px;
+  border: 1px solid #2c2e33;
+  display: inline-block;
+  border-radius: 10px;
+  text-shadow: #2c2e33 0 -1px 0 !important;
+  color: #fff !important;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>Tractis - Contracts you can enforce</title>
+<!-- Mimic Internet Explorer 7 -->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" type="image/x-icon" href="../images/tractis-help-favicon.ico" />
+<link rel="shortcut icon" type="image/icon" href="../images/tractis-help-favicon.ico" />
+<link rel="apple-touch-icon" href="https://www.tractis.com/images/iphone-favicon.png" />
+<link href="../stylesheets/tractis/main.css%3F1521105613.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/island_tractis.css%3F1521105588.css" media="screen" rel="stylesheet" type="text/css" />
+
+<!--[if lte IE 6]>
+  <link href="/stylesheets/ie6.css?1521105588" media="screen" rel="stylesheet" type="text/css" />    
+  <![endif]-->
+<!--[if gte IE 7]>
+  <link href="/stylesheets/ie7.css?1521105588" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link rel="stylesheet" href="wp-content/themes/tractis/style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+<link rel="stylesheet" href="../stylesheets/print-help.css" type="text/css" media="print" />
+  <script type="text/javascript" src="../jquery/jquery.js%3F1360401146"></script>
+  <script>jQuery.noConflict();</script>
+  
+  	
+  
+</head>
+
+<body id="tractis-help">
+<div id="topbar" class="classname">
+<div class="fill">
+  <ul class="mainbar">
+
+
+
+
+
+      <li><a href="/">Home</a></li>
+
+
+
+
+
+      
+
+
+
+
+
+      
+
+    </ul>
+    
+      <p class="loginbar">
+        
+        
+      </p>
+    
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+<div id="header">
+  <div class="logo">
+    <h1><a href="/">Tractis</a></h1>
+    
+      <ol>
+  <li><strong>Spain</strong></li>
+  
+    <li><div id="change_contry"><a href="index.html%3Fp=182&amp;language=es.html#" onclick="tractis_ajax(&quot;/pagepart/change_country&quot;, 'change_contry'); return false;">Change country</a></div></li>
+  
+</ol>
+<ol>
+  <li><strong>in English</strong></li>
+  <li><a href="index.html%3Fp=182&amp;language=es.html#" onclick="tractis_ajax_link(&quot;/pagepart/change_lang?lang=ca&amp;format=html&quot;, true); return false;">Catalan</a> · <a href="index.html%3Fp=182&amp;language=es.html#" onclick="tractis_ajax_link(&quot;/pagepart/change_lang?lang=es&amp;format=html&quot;, true); return false;">Spanish</a></li>
+</ol>
+
+    
+    <div class="clear"></div>
+  </div>
+
+  
+  
+  <div class="clear"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	window.onload = function() { document.title='Tractis - Seguridad en la validación de firmas'.replace(/</g,'&lt;').replace(/>/g,'&gt;').unescapeHTML() } 
+//]]>
+
+</script>
+<div id="breadcrumb">
+<p><strong>Te encuentras aquí:</strong> <a href="/help">Ayuda</a>  <a href='index.html%3Fp=182&amp;language=es.html'></a> → <a href='index.html%3Fcat=86&amp;language=es.html'>Sobre Tractis</a> → <a href='index.html%3Fcat=105&amp;language=es.html'>Seguridad y validez</a> → <a href='index.html%3Fcat=92&amp;language=es.html'>Seguridad en procesos</a> </p>
+</div>
+<div id="subheader">
+<div class="titles">
+<h2>Ayuda</h2>
+</div>
+<div class="clear"></div>
+</div>
+
+<div id="main">
+<div id="content">
+<div class="help-search">
+	<form method="get" id="searchform" action="index.html">
+	<table border="0" cellpadding="5">
+		<tr>
+			<td class="nowrap" style="width:50%"><label>¿Cómo podemos ayudarte?:</label></td>
+			<td style="width:43%"><input type="text" value="" name="s" id="s" /></td>
+			<td><input type="submit" id="searchsubmit" value="Buscar" /></td>
+		</tr>
+	</table>
+	</form>
+</div>
+		
+
+<div class="post" id="post-182">
+			
+			<div class="post-header">
+				<h3>Seguridad en la validación de firmas</h3>
+			</div>
+
+			<div class="entry">
+				
+				<p>Tractis valida las firmas una vez entran en el sistema y <em>sólo las acepta si éstas son consideradas válidas</em>, tanto por la ley (validez jurídica) como por el cliente (validez semántica). De esta tarea se encarga la &#8220;Autoridad de Validación Semántica&#8221; (&#8220;Semantic Validation Authority&#8221; o &#8220;SVA&#8221;) de Tractis. Este componente garantiza que si el certificado, las claves o la firma generada no son válidas no serán añadidas al contrato. Para ello el sistema valida las firmas teniendo en cuenta los criterios y algoritmos definidos en normativas internacionales al respecto de firmas avanzadas y certificados. En concreto, Tractis realiza todas las comprobaciones detalladas en los procesos de validación de firma descritos en <a href="http://en.wikipedia.org/wiki/Digital_Signature_Services">DSS</a>, <a href="http://en.wikipedia.org/wiki/XML_Signature">XMLDSig</a>, <a href="http://en.wikipedia.org/wiki/XAdES">XAdES</a> y se adhiere a todos los criterios definidos en los RFCs de Certificate Path Building y Certificate Path Validation, para validación del certificado con el que se realiza la firma.</p>
+<p>Con carácter previo a cualquier nueva subida de código al entorno de producción, Tractis realiza baterías de tests para asegurar que cubre la multitud de situaciones descritas y casos particulares que se pueden producir en la validación de certificados. Una de estas baterías, la que la mayoría de los expertos consideran “<em>la batería de tests definitiva en validación de certificados</em>” por su excelente calidad, es la llamada <a href="http://csrc.nist.gov/groups/ST/crypto_apps_infra/pki/pkitesting.html">PKITS</a> que pone a disposición pública el <a href="http://csrc.nist.gov/">NIST</a>. El NIST o “<em>National Institute of Standards and Technology</em>” es la agencia del gobierno estadounidense dedicada a garantizar el cumplimiento de estándares y favorecer la interoperabilidad entre distintos fabricantes. Las pruebas PKITS diseñadas por la “ <a href="http://csrc.nist.gov/"> <em>NIST &#8211; Computer Security Division</em> </a> ” y la <a href="http://www.nsa.gov/">NSA</a> (Agencia de Seguridad Nacional) son utilizadas por las distintas administraciones del gobierno federal estadounidense como un método fiable para medir la calidad de los distintos despliegues PKI del gobierno. Dentro del PKITS, el caso que nos compete es la parte referente a “<a href="http://csrc.nist.gov/groups/ST/crypto_apps_infra/documents/PKITS.pdf">Path Validation Testing Program</a>” diseñada para garantizar un cumplimiento exquisito de las especificaciones <a href="http://en.wikipedia.org/wiki/X.509">X.509</a> y <a href="http://www.ietf.org/rfc/rfc3280.txt">RFC3280</a>. <strong>Tractis supera satisfactoriamente el 100% de tests que “<em>PKITS &#8211; Path Validation Testing Programs</em>” establece.</strong></p>
+<p>Para una explicación en profundidad del proceso de validación de firmas en Tractis, de la conveniencia de validar certificados en el momento de la firma aún cuando la ley no lo exige y de las capacidades de validación semántica de nuestra SVA, recomendamos la lectura de los siguientes artículos en el blog de Tractis:</p>
+<ol>
+<li> <a href="http://blog.negonation.com/es/validacion-de-firmas-en-tractis-1-validacion-de-certificados/">Validación de firmas en Tractis (1): Validación de certificados</a>.</li>
+<li> <a href="http://blog.negonation.com/es/validacion-de-firmas-en-tractis-2-validacion-de-firmas/">Validación de firmas en Tractis (2): Validación de firmas</a>.</li>
+<li> <a href="http://blog.negonation.com/es/validacion-de-firmas-en-tractis-3-validacion-a-prueba-de-fallos/">Validación de firmas en Tractis (3): Validación a prueba de fallos</a>.</li>
+</ol>
+<p>También puedes consultar para obtener los detalles de prestación del servicio de Autoridad de Validación el documento de <a title="DPV Tractis" href="https://www.tractis.com/contracts/379026695">Declaración de Prácticas de Validación</a> de Tractis.</p>
+
+				
+
+			</div>
+
+	</div>
+</div>
+
+	<div id="menu">
+		<script type="text/javascript">function setLang() {document.getElementById("glink").href = "https://translate.google.com/translate?u=http://www.tractis.com/help/?p=182&sl=es&tl=" + document.fgt.tl.value;return;} </script><div class="menus info"><div class="mtitle"><h3>Translate this article</h3></div><form name="fgt" action="https://translate.google.com/translate" method="GET"><input type="hidden" name="u" value="http://www.tractis.com/help/?p=182" /><input name="sl" value="es" type="hidden" /><div class="mcontent"><p>Select your language and translate this article using Google Translate.</p><div class="grilla"><div class="labels"><label>Translate to:</label></div><div class="inputs"><select name="tl" style="width:auto" onChange="setLang()" ><option value='' selected >Choose your language...</option>
+<option value='ar'>Arabic</option>
+<option value='bg'>Bulgarian</option>
+<option value='ca'>Catalan</option>
+<option value='zh-CN'>Chinese (Simplified)</option>
+<option value='zh-TW'>Chinese (Traditional)</option>
+<option value='hr'>Croatian</option>
+<option value='cs'>Czech</option>
+<option value='da'>Danish</option>
+<option value='nl'>Dutch</option>
+<option value='en'>English</option>
+<option value='tl'>Filipino</option>
+<option value='fi'>Finnish</option>
+<option value='fr'>French</option>
+<option value='de'>German</option>
+<option value='el'>Greek</option>
+<option value='iw'>Hebrew</option>
+<option value='hi'>Hindi</option>
+<option value='id'>Indonesian</option>
+<option value='it'>Italian</option>
+<option value='ja'>Japanese</option>
+<option value='ko'>Korean</option>
+<option value='lv'>Latvian</option>
+<option value='lt'>Lithuanian</option>
+<option value='no'>Norwegian</option>
+<option value='pl'>Polish</option>
+<option value='pt'>Portuguese</option>
+<option value='ro'>Romanian</option>
+<option value='ru'>Russian</option>
+<option value='sr'>Serbian</option>
+<option value='sk'>Slovak</option>
+<option value='sl'>Slovenian</option>
+<option value='es'>Spanish</option>
+<option value='sv'>Swedish</option>
+<option value='uk'>Ukrainian</option>
+<option value='vi'>Vietnamese</option>
+</select></div><div class="clear"></div></div></div><div class="mfooter"><a class="button" id="glink" href="index.html%3Fp=182&amp;language=es.html#" >Translate</a></h3></div></form></div>				
+	</div>
+	
+	<div class="clear"></div>
+
+</div>
+
+
+
+
+
+<div id="footer">
+  
+  <h6 class="isologo">Tractis</h6>
+  <p>© 2018 Tractis. ·
+  <a href="https://www.tractis.com/legal_notice">Legal Notice</a> ·
+  <a href="https://www.tractis.com/terms_of_service">Terms of Service</a> ·
+  <a href="https://www.tractis.com/privacy_policy">Privacy Policy</a> ·
+  <a href="https://www.tractis.com/help">Help</a> ·
+  
+  <a href="mailto:tractis@tractis.comm">Contact</a></p>
+  
+  
+  
+  <div class="clear"></div>
+</div>
+
+
+
+<script src="../javascripts/tractis/en.js%3F1502104086" type="text/javascript"></script>
+
+
+
+
+
+<script src="../javascripts/certificate_hunter.js%3F1521105588" type="text/javascript"></script>
+<div id="alerts"><input id="alerts-shown" name="alerts-shown" type="hidden" value="false" /><script type="text/javascript">
+//<![CDATA[
+Alerts.initial(function(){
+  
+});
+//]]>
+</script></div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-128262-1");
+pageTracker._setDomainName(".tractis.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+  </body>
+</html>

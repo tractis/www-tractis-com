@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>Tractis - Contracts you can enforce</title>
+<!-- Mimic Internet Explorer 7 -->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" type="image/x-icon" href="../images/tractis-help-favicon.ico" />
+<link rel="shortcut icon" type="image/icon" href="../images/tractis-help-favicon.ico" />
+<link rel="apple-touch-icon" href="https://www.tractis.com/images/iphone-favicon.png" />
+<link href="../stylesheets/tractis/main.css%3F1521105613.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/island_tractis.css%3F1521105588.css" media="screen" rel="stylesheet" type="text/css" />
+
+<!--[if lte IE 6]>
+  <link href="/stylesheets/ie6.css?1521105588" media="screen" rel="stylesheet" type="text/css" />    
+  <![endif]-->
+<!--[if gte IE 7]>
+  <link href="/stylesheets/ie7.css?1521105588" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link rel="stylesheet" href="wp-content/themes/tractis/style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+<link rel="stylesheet" href="../stylesheets/print-help.css" type="text/css" media="print" />
+  <script type="text/javascript" src="../jquery/jquery.js%3F1360401146"></script>
+  <script>jQuery.noConflict();</script>
+  
+  	
+  
+</head>
+
+<body id="tractis-help">
+<div id="topbar" class="classname">
+<div class="fill">
+  <ul class="mainbar">
+
+
+
+
+
+      <li><a href="/">Home</a></li>
+
+
+
+
+
+      
+
+
+
+
+
+      
+
+    </ul>
+    
+      <p class="loginbar">
+        
+        
+      </p>
+    
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+<div id="header">
+  <div class="logo">
+    <h1><a href="/">Tractis</a></h1>
+    
+      <ol>
+  <li><strong>Spain</strong></li>
+  
+    <li><div id="change_contry"><a href="index.html%3Fp=5354&amp;language=es.html#" onclick="tractis_ajax(&quot;/pagepart/change_country&quot;, 'change_contry'); return false;">Change country</a></div></li>
+  
+</ol>
+<ol>
+  <li><strong>in English</strong></li>
+  <li><a href="index.html%3Fp=5354&amp;language=es.html#" onclick="tractis_ajax_link(&quot;/pagepart/change_lang?lang=ca&amp;format=html&quot;, true); return false;">Catalan</a> · <a href="index.html%3Fp=5354&amp;language=es.html#" onclick="tractis_ajax_link(&quot;/pagepart/change_lang?lang=es&amp;format=html&quot;, true); return false;">Spanish</a></li>
+</ol>
+
+    
+    <div class="clear"></div>
+  </div>
+
+  
+  
+  <div class="clear"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	window.onload = function() { document.title='Tractis - ¿Por qué Tractis realiza resellados de evidencias electrónicas cada 3 meses por defecto?'.replace(/</g,'&lt;').replace(/>/g,'&gt;').unescapeHTML() } 
+//]]>
+
+</script>
+<div id="breadcrumb">
+<p><strong>Te encuentras aquí:</strong> <a href="/help">Ayuda</a>  <a href='index.html%3Fp=5354&amp;language=es.html'></a> → <a href='index.html%3Fcat=250&amp;language=es.html'>Tractis Webservices</a> → <a href='index.html%3Fcat=254&amp;language=es.html'>Tractis Long Term Archive (LTA)</a> → <a href='index.html%3Fcat=310&amp;language=es.html'>Información adicional</a> </p>
+</div>
+<div id="subheader">
+<div class="titles">
+<h2>Ayuda</h2>
+</div>
+<div class="clear"></div>
+</div>
+
+<div id="main">
+<div id="content">
+<div class="help-search">
+	<form method="get" id="searchform" action="index.html">
+	<table border="0" cellpadding="5">
+		<tr>
+			<td class="nowrap" style="width:50%"><label>¿Cómo podemos ayudarte?:</label></td>
+			<td style="width:43%"><input type="text" value="" name="s" id="s" /></td>
+			<td><input type="submit" id="searchsubmit" value="Buscar" /></td>
+		</tr>
+	</table>
+	</form>
+</div>
+		
+
+<div class="post" id="post-5354">
+			
+			<div class="post-header">
+				<h3>¿Por qué Tractis realiza resellados de evidencias electrónicas cada 3 meses por defecto?</h3>
+			</div>
+
+			<div class="entry">
+				
+				<p>En Infraestructura de Clave Pública, para realizar un sello de tiempo se utiliza un componente denominado Autoridad de Sellado de Tiempo (&#8220;Time Stamping Authority&#8221;, o &#8220;TSA&#8221; por sus siglas en inglés). La TSA utiliza un certificado electrónico de sello de tiempo para generar sellos de tiempo. Dicho certificado tiene un periódo de validez, fijado por la Autoridad de Certificación que lo ha emitido, y que puede ser de 1 año o más.</p>
+<p>En un proceso de resellado típico, cada evidencia almacenada recibe un sello de tiempo en el momento de su inserción en el Archivo de Larga Duración (&#8220;Long Term Archive&#8221;, o &#8220;LTA&#8221; por sus siglas en inglés). Antes de que expire el certificado utilizado para realizar el primer sello de tiempo, el LTA aplica un nuevo sello de tiempo sobre la evidencia y los sellos anteriores. Este proceso de &#8220;resellado&#8221; periódico y automático continúa indefinidamente, hasta que la evidencia es retirada del LTA. Asi, cada evidencia es preservada mediante una cadena de sellos de tiempo que garantizan que dicha evidencia no ha sido alterada desde su inserción en el LTA.</p>
+<p>Sin embargo, <a href="http://www.tractis.com/home/webservices/lta">Tractis LTA</a> va un paso más allá y no espera que el certificado utilizado para realizar el sello de tiempo inmediatamente anterior esté a punto de expirar (&#8220;<em>resellado solo cuando es necesario</em>&#8220;), sino que realiza resellados masivos automáticos, de forma periódica y con mayor frecuencia (&#8220;<em>resellado frecuente</em>&#8220;). En concreto, Tractis LTA resella cada 3 meses, por defecto, o incluso en periódos más cortos, a petición del cliente. Este resellado frecuente proporciona mayor protección en caso de que la clave de Tractis TSA se vea comprometida.</p>
+<p>Pongamos un ejemplo para entender mejor las ventajas del &#8220;resellado frecuente&#8221; frente al &#8220;resellado solo cuando es necesario&#8221;. Imagina que dispones de la siguiente infraestructura:</p>
+<ul>
+<li>una TSA para poner sellos de tiempo. El certificado electrónico de sello de tiempo de tu TSA tiene un periódo de vigencia desde el 1 de Enero al 31 de Diciembre, por lo que, cada año, lo cambias por uno nuevo.</li>
+<li>una LTA para realizar resellados periódicos.</li>
+</ul>
+<p>Ahora imagina que tienes una evidencia electrónica X que deseas preservar y, haciendo uso de tu TSA y LTA, le añades un sello de tiempo cada mes: Enero, Febrero, Marzo, Abril y Mayo. Piensa en este proceso de resellado como un conjunto de muñecas rusas, donde cada nueva muñeca rusa contiene a todas las anteriores. Supongamos que tu TSA es comprometida el 15 de Abril (p.ej: alguien roba las claves de la TSA, o bien, penetra en tu infraestructura y cambia el código). Sabes que te puedes fiar de los sellos de tiempo generados hasta el 14 de Abril, pero no de los generados a partir del 15 de Abril. Por tanto, revocas el certificado de tu TSA a fecha 1 de Abril, con lo que los resellados de Abril y Mayo dejan de ser válidos. Gracias a que has resellado cada mes, sabes, y puedes demostrar ante terceros, que tu evidencia electrónica X es válida hasta Marzo. Si solo hubieras resellado cuando era necesario, solo podrías demostrar que tu evidencia electrónica X era válida hasta el 31 de Diciembre del año anterior, fecha en el que cambiaste el certificado de la TSA que ha sido comprometido.</p>
+<p>No es que el &#8220;resellado solo cuando es necesario&#8221; no sea válido o que sea peor que el &#8220;resellado frecuente&#8221;. Dependerá tu caso de uso y tipología de evidencias electrónicas. A algunos clientes les puede bastar con el primero y otros pueden necesitar una mayor granularidad. En cualquier caso, el resellado frecuente nunca hace daño y, en determinadas situaciones, puede llegar a ser muy útil.</p>
+<p>En resumen, el resellado frecuente de evidencias, no es obligatorio, pero sí recomendable para conseguir una protección aún mayor en el uso de sellos de tiempo.</p>
+
+				
+
+			</div>
+
+	</div>
+</div>
+
+	<div id="menu">
+		<script type="text/javascript">function setLang() {document.getElementById("glink").href = "https://translate.google.com/translate?u=http://www.tractis.com/help/?p=5354&sl=es&tl=" + document.fgt.tl.value;return;} </script><div class="menus info"><div class="mtitle"><h3>Translate this article</h3></div><form name="fgt" action="https://translate.google.com/translate" method="GET"><input type="hidden" name="u" value="http://www.tractis.com/help/?p=5354" /><input name="sl" value="es" type="hidden" /><div class="mcontent"><p>Select your language and translate this article using Google Translate.</p><div class="grilla"><div class="labels"><label>Translate to:</label></div><div class="inputs"><select name="tl" style="width:auto" onChange="setLang()" ><option value='' selected >Choose your language...</option>
+<option value='ar'>Arabic</option>
+<option value='bg'>Bulgarian</option>
+<option value='ca'>Catalan</option>
+<option value='zh-CN'>Chinese (Simplified)</option>
+<option value='zh-TW'>Chinese (Traditional)</option>
+<option value='hr'>Croatian</option>
+<option value='cs'>Czech</option>
+<option value='da'>Danish</option>
+<option value='nl'>Dutch</option>
+<option value='en'>English</option>
+<option value='tl'>Filipino</option>
+<option value='fi'>Finnish</option>
+<option value='fr'>French</option>
+<option value='de'>German</option>
+<option value='el'>Greek</option>
+<option value='iw'>Hebrew</option>
+<option value='hi'>Hindi</option>
+<option value='id'>Indonesian</option>
+<option value='it'>Italian</option>
+<option value='ja'>Japanese</option>
+<option value='ko'>Korean</option>
+<option value='lv'>Latvian</option>
+<option value='lt'>Lithuanian</option>
+<option value='no'>Norwegian</option>
+<option value='pl'>Polish</option>
+<option value='pt'>Portuguese</option>
+<option value='ro'>Romanian</option>
+<option value='ru'>Russian</option>
+<option value='sr'>Serbian</option>
+<option value='sk'>Slovak</option>
+<option value='sl'>Slovenian</option>
+<option value='es'>Spanish</option>
+<option value='sv'>Swedish</option>
+<option value='uk'>Ukrainian</option>
+<option value='vi'>Vietnamese</option>
+</select></div><div class="clear"></div></div></div><div class="mfooter"><a class="button" id="glink" href="index.html%3Fp=5354&amp;language=es.html#" >Translate</a></h3></div></form></div>				
+	</div>
+	
+	<div class="clear"></div>
+
+</div>
+
+
+
+
+
+<div id="footer">
+  
+  <h6 class="isologo">Tractis</h6>
+  <p>© 2018 Tractis. ·
+  <a href="https://www.tractis.com/legal_notice">Legal Notice</a> ·
+  <a href="https://www.tractis.com/terms_of_service">Terms of Service</a> ·
+  <a href="https://www.tractis.com/privacy_policy">Privacy Policy</a> ·
+  <a href="https://www.tractis.com/help">Help</a> ·
+  
+  <a href="mailto:tractis@tractis.comm">Contact</a></p>
+  
+  
+  
+  <div class="clear"></div>
+</div>
+
+
+
+<script src="../javascripts/tractis/en.js%3F1502104086" type="text/javascript"></script>
+
+
+
+
+
+<script src="../javascripts/certificate_hunter.js%3F1521105588" type="text/javascript"></script>
+<div id="alerts"><input id="alerts-shown" name="alerts-shown" type="hidden" value="false" /><script type="text/javascript">
+//<![CDATA[
+Alerts.initial(function(){
+  
+});
+//]]>
+</script></div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-128262-1");
+pageTracker._setDomainName(".tractis.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+  </body>
+</html>

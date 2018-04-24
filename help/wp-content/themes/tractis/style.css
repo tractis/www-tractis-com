@@ -1,0 +1,250 @@
+/*
+Theme Name: Tractis Help
+Theme URI: http://tractis.com/
+Description: Theme for Tractis Help Center.
+Version: 1.0
+Author: Diego Martín Lafuente
+Author URI: http://tractis.com/
+Tags: blue, custom header, fixed width, two columns
+*/
+
+div.search { background-color: #D7E1F5 !important; }
+div#nav, div#footer { border-color: #0C6BCD !important; }
+div#breadcrumb { margin: 0 35px -10px 35px; }
+div#breadcrumb p { font-size: 12px; color: #444; margin-bottom: 0; }
+
+div.categ-module h3, div.post-header h3 {font-size: 16px; margin: 0 0 10px 0; padding: 0 0 5px 0; border-bottom: 1px solid #999; }
+div.categ-module h4 {font-size: 12px; margin: 0 0 5px 0; }
+div.categ-module ol li, div.categ-module ul li, div.entry ul li, div.entry ol li, div.entry p { font-size: 12px; line-height: 18px; color: #444; }
+div.categ-module ul ul { margin-bottom: 20px; }
+div.post-header h3 { margin-bottom: 20px; color: #333; }
+
+div.post { margin: 10px 15px; }
+div.entry h3 { font-size: 16px; color: #357FC5; }
+div.entry h4 { margin: 0px 12px; }
+div.entry h5 { margin: 20px 25px -10px; }
+
+div.help-search { padding: 2px 10px; background: #D7E1F5; color: #357FC5; -webkit-border-radius: 3px; -moz-border-radius: 3px; margin-bottom: 20px; }
+div.help-search table { width: 100%; }
+div.help-search table tr td input#s { diplay: block; width: 100%; font-size: 12px; font-family: helvetica; border-top: 1px solid #4589C9; border-left: 1px solid #4589C9; border-bottom: 1px solid #fff; border-right: 1px solid #fff; padding: 3px; }
+div.help-search table tr td input[id=\\\\\\\"searchsubmit\\\\\\\"] { cursor: pointer; background: #3366cc url(../../../../images/light.png) repeat-x 0px -9px; color: #fff; font-weight: bold; font-size: 12px; font-family: helvetica; padding: 3px 7px; border: 1px solid #2952CC; -webkit-border-radius: 2px; -moz-border-radius: 2px; text-shadow: #2952CC 0px -1px 0px; margin: 0; display: block; }
+div.help-search label { font-weight: bold; font-size: 12px; }
+
+
+
+div.entry var { font-style: normal;  _background-image: none !important; }
+div.entry var { background: #7FBADB url(../../../../images/contract-shade-all.png) repeat-x 0px .8em; _background-image: none !important; color: #fff; padding: 3px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+
+/* table.tapi tr td { text-align: left !important; }
+table.tapi tr td code, table.tapi tr th code { color: #000; }
+table tr th.header1 code, table tr th.header2 code, table tr th.header3 code { color: #fff; }
+div.entry table thead tr th a, div.entry table tr th.header1 a, div.entry table tr th.header2 a, div.entry table tr th.header3 a { color: #fff !important; }
+
+table.table-atributes { width: 100%; border: 1px solid #A5D3FF !important; border-collapse: collapse; font-family: Arial, sans-serif; vertical-align: top; }
+table.table-atributes tr th:first-child { text-align: left; }
+table.table-atributes tr th, table.table-atributes tr td { white-space: nowrap; padding: 7px; border: 1px solid #A5D3FF !important; }
+table.table-atributes thead tr th { font-weight: bold; background: #357FC5; color: #fff; font-size: 12px; }
+table.table-atributes tbody tr th { background: #FAFCFF; color: #357FC5; font-size: 13px; font-weight: normal; }
+table.table-atributes tbody tr td img { display: block; margin: 0 auto 0 auto; height: 16px; width: 16px; }
+table.table-atributes tbody tr th.header1 { background: #8EC0D8; font-weight: bold; color: #fff; }
+ble.table-atributes tbody tr th.header2 { font-weight: bold; }
+
+
+table.integrators { width: 100%; border-collapse: collapse; border: 0 !important; }
+table.integrators tr td { vertical-align: top; padding: 0 15px; border: 0 !important; }
+table.integrators tr td + td { width: 35%; }
+
+table.compare tr td.cleft { text-align: left !Important; }
+table.compare tr td.cright { text-align: right !Important; } */
+
+
+table.table-cas { width: 100%; border: 1px solid #36c; border-collapse: collapse; font-family: Helvetica, Arial, sans-serif; vertical-align: top; line-height: 14px; }
+table.table-cas tr th:first-child { text-align: left; }
+table.table-cas tr th, table.table-cas tr td { padding: 7px; font-size: 11px; border: 1px solid #36c !important; }
+table.table-cas thead tr th { vertical-align: bottom; font-weight: bold; background: #85A3E0; color: #fff; font-size: 12px; min-width: 50px; }
+table.table-cas tbody tr th { background: #FAFCFF; color: #357FC5; font-size: 11px; font-weight: normal; }
+
+table.table-cas tbody tr td { text-align: center; min-width: 50px; }
+    table.table-cas tbody tr th.header1 { background: #8EC0D8; font-weight: bold; color: #fff; }
+    table.table-cas tbody tr th.header2 { font-weight: bold; background: #D0EAF6; }
+    span.yes { text-transform: uppercase; background: #690 url(../../../../images/navigation-lightbg-all.png) repeat-x 0px -8px; padding: 4px; -webkit-border-radius: 5px; color: #fff; font-weight: bold; font-size: 11px; margin: 5px 0;}
+    span.no-ok { text-transform: uppercase;  background: #b00 url(../../../../images/navigation-lightbg-all.png) repeat-x 0px -8px; padding: 4px; -webkit-border-radius: 5px; color: #fff; font-weight: bold; font-size: 11px; }
+table.table-cas tbody tr td a.bajar, table.hlptable tbody tr td a.bajar { display: block; width: 24px; height: 24px; background: url(images/download-icon.png) no-repeat; text-indent: -9999px; border: 0; text-decoration: none; margin: 0 auto; }
+ul.certificates_by_country_and_ca ul li ul li { list-style: none !Important; }
+
+/* 
+div.entry table.compare {
+	border: 1px solid #79A0C3;
+	margin: 20px auto;
+	font-size: 12px;
+	border-collapse: collapse;
+	line-height: 18px;
+	clear: both;
+width: 90%;
+	}
+	
+div.entry table.compare thead tr th {
+	background: #578EB9;
+	padding: 5px 10px;
+	text-align: left;
+	border-bottom: 1px solid #CFE0EE;
+	color: #fff;
+	font-weight: bold;
+	vertical-align: top;
+font-size: 14px;
+	}
+
+
+
+	
+div.entry table.compare tbody tr td {
+	padding: 8px 10px;
+	text-align: center;
+	border-bottom: 1px dotted #CFE0EE;
+	vertical-align: top;
+color: #666;
+	}
+
+
+
+	
+div.entry table tbody tr td + td { border-left: 1px solid #CFE0EE; }
+
+div.entry table tbody tr th { padding: 8px 10px; text-align: left; border-top: 1px solid #CFE0EE; color: #36C; border-right: 1px solid #CFE0EE; background: #FAFCFF; vertical-align: top; font-weight: normal; }
+
+div.entry table tbody tr th.header1 {
+background: #8EC0D8;
+border-right: 1px solid #578EB9;
+border-top: 1px solid #578EB9;
+color: #fff;
+font-weight: bold;
+}
+
+div.entry table.compare tbody tr th.header2 {
+background: #D0EAF6;
+border-right: 1px solid #578EB9;
+font-weight: bold;
+}
+
+div.entry table.compare tbody tr th.header3 {
+background: #f6f6f6;
+border-right: 1px solid #578EB9;
+border-top: 1px solid #BED9EB;
+border-bottom: 1px solid #BED9EB;
+font-weight: bold;
+}
+
+
+div.entry table tfoot tr td { padding: 8px 10px; text-align: right !important; background: #f9f9f9; text-transform: uppercase; font-size: 10px; font-weight: bold; }
+
+div.entry table.compare tbody tr th.subheader { border-right: 0; padding: 8px 10px; text-align: left; background: #f2f2f2; font-weight: bold; border-bottom: 1px solid #CFE0EE; }
+
+blockquote.quote { background: url(/images/blockquote.gif) no-repeat top left; padding-left: 23px; }
+blockquote.quote p, div.entry i, blockquote.quote ul li, blockquote.quote ol li { color: #666; font-style: italic; }
+
+div.entry table.compare tr td a, div.entry table.compare tr th a { color: #36c; }
+div.entry table.compare tr th.header1 a, div.entry table.compare tr th.header2 a, div.entry table.compare tr th.header3 a { color: #fff; }
+
+div.entry table thead tr th.center { text-align: center !Important; }
+*/
+
+pre {
+	width: 95%;
+	overflow: auto;
+	font-size: 13px;
+	line-height: 18px;
+	background: #222;
+	padding: 10px;
+	-moz-border-radius: .6em;
+	border-top: 1px solid #f5f5f5;
+	border-left: 1px solid #f5f5f5;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	color: #eee;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+}
+
+pre code {
+	color: #fff;
+	font: 13px \\\\\\\"andale mono\\\\\\\", \\\\\\\"lucida console\\\\\\\", \\\\\\\"courier new\\\\\\\", monospace
+}
+
+p code, ol li code, ul li code {
+	color: #000;
+	font: 13px \\\\\\\"andale mono\\\\\\\", \\\\\\\"lucida console\\\\\\\", \\\\\\\"courier new\\\\\\\", monospace;
+}
+
+ul.certificates_by_country_and_ca ul li h4 { border: 0; }
+
+blockquote.quote { background: url(../../../../images/blockquote.gif) no-repeat top left; padding-left: 23px; }
+blockquote.quote p, div.entry i, blockquote.quote ul li, blockquote.quote ol li { color: #666; font-style: italic; }
+
+div.entry var { font-style: normal;  _background-image: none !important; }
+div.entry var { background: #7FBADB url(../../../../images/light.png) repeat-x 0px .8em; _background-image: none !important; color: #fff; padding: 3px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+strong.labeled { background: #73A41C url(images/contract-shade-all.png) repeat-x 0px .8em; _background-image: none !important; color: #fff; padding: 3px 7px; -moz-border-radius: 4px; -webkit-border-radius: 4px; text-decoration: none; }
+
+
+ol.search-res li big { font-size: 12px; line-height: 18px; font-weight: bold; display: block; }
+ol.search-res li { margin-bottom: 10px; }
+ol.search-res li big a {color: #36c; }
+ol.search-res li small {display: block; font-size: 11px; color: #666; }
+ol.search-res li small a {color: #333; }
+
+div.mcontent ol {padding: 0;
+    margin: 10px 15px; color: #444; }
+div.mcontent ol li { margin-bottom: 5px; }
+
+div#content a:link, div#content a:visited, div#content a:active, div#breadcrumb a:link, div#breadcrumb a:visited, div#breadcrumb a:active { color: #690; }
+div#content a:hover, div#breadcrumb a:hover { color: #444; }
+
+div.mcontent a:link, div.mcontent a:visited, div.mcontent a:active { color: #36c; }
+div.mcontent a:hover { color: #369; }
+
+div.stdhelptable { border: 5px solid #D7E1F5; -moz-border-radius: 3px; -webkit-border-radius: 3px; background: #D7E1F5; width: 95%; margin: 0 auto 20px auto; }
+table.hlptable { border: 1px solid #36c; width: 100%; font-size: 12px; text-align: left; background: #fff; border-collapse: collapse; }
+table.hlptable thead tr th, table.hlptable tbody tr.header1 th { background-color: #36c; color: #fff; border-bottom: 1px solid #36c; padding: 5px; background: #36c url(../../../../images/light.png) left -7px; _background: #36c; text-shadow: #2d59b3 0 -1px 0; white-space: nowrap; }
+table.hlptable tr th {color: #2D59B3; font-weight: bold; vertical-align: top; }
+table.hlptable tr th, table.hlptable tr td { padding: 10px 5px; border-bottom: 1px solid #B4C2E0;  vertical-align: top; }
+table.hlptable tr th a { color: #000 !important; }
+table.hlptable tbody tr.header1 th a { color: #fff !important; } 
+table.hlptable tr th.header1, table.hlptable tr.subheader1 th { background: #B4C2E0; }
+table.hlptable tr th.header2, table.hlptable tr.subheader2 th  { background: #D7E1F5; }
+table.hlptable tr td { color: #555; text-align: center; vertical-align: middle; }
+table.hlptable tr th.center { text-align: center; }
+div.stdhelptable table.hleft tbody tr td { text-align: left !important; }
+
+ul.statuslist li { margin-bottom: 5px; }
+
+ul.certificates_by_country_and_ca { padding: 0; list-style: none; }
+ul.certificates_by_country_and_ca li { margin-bottom: 40px; }
+ul.certificates_by_country_and_ca li h3 { background-color: #D7E1F5;
+    background-image: url(../../../../images/arrows.png);
+    background-repeat: no-repeat;
+    background-position: 10px 8px;
+    color: #357FC5;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px 5px 25px;
+    border-radius: 5px;
+    /* propietary values */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; }
+ul.certificates_by_country_and_ca ul li ul li { list-style: none !Important; }
+ul.certificates_by_country_and_ca ul li ul { padding: 0; margin: 0;  }
+ul li table.table-cas tr th a { color: #fff !Important; }
+
+
+table.hlptable tr.subheader1 th {
+  text-align: center;
+  vertical-align: bottom;
+}
+
+table.hlptable tr.subheader1 th a {
+  color: #36c !important;
+}
+
+table.hlptable tr.subheader1 th:first-child, table.hlptable tr td:first-child {
+  text-align: left;
+}

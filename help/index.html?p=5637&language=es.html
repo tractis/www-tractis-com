@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>Tractis - Contracts you can enforce</title>
+<!-- Mimic Internet Explorer 7 -->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" type="image/x-icon" href="../images/tractis-help-favicon.ico" />
+<link rel="shortcut icon" type="image/icon" href="../images/tractis-help-favicon.ico" />
+<link rel="apple-touch-icon" href="https://www.tractis.com/images/iphone-favicon.png" />
+<link href="../stylesheets/tractis/main.css%3F1521105613.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/island_tractis.css%3F1521105588.css" media="screen" rel="stylesheet" type="text/css" />
+
+<!--[if lte IE 6]>
+  <link href="/stylesheets/ie6.css?1521105588" media="screen" rel="stylesheet" type="text/css" />    
+  <![endif]-->
+<!--[if gte IE 7]>
+  <link href="/stylesheets/ie7.css?1521105588" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link rel="stylesheet" href="wp-content/themes/tractis/style.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+<link rel="stylesheet" href="../stylesheets/print-help.css" type="text/css" media="print" />
+  <script type="text/javascript" src="../jquery/jquery.js%3F1360401146"></script>
+  <script>jQuery.noConflict();</script>
+  
+  	
+  
+</head>
+
+<body id="tractis-help">
+<div id="topbar" class="classname">
+<div class="fill">
+  <ul class="mainbar">
+
+
+
+
+
+      <li><a href="/">Home</a></li>
+
+
+
+
+
+      
+
+
+
+
+
+      
+
+    </ul>
+    
+      <p class="loginbar">
+        
+        
+      </p>
+    
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+<div id="header">
+  <div class="logo">
+    <h1><a href="/">Tractis</a></h1>
+    
+      <ol>
+  <li><strong>Spain</strong></li>
+  
+    <li><div id="change_contry"><a href="index.html%3Fp=5637&amp;language=es.html#" onclick="tractis_ajax(&quot;/pagepart/change_country&quot;, 'change_contry'); return false;">Change country</a></div></li>
+  
+</ol>
+<ol>
+  <li><strong>in English</strong></li>
+  <li><a href="index.html%3Fp=5637&amp;language=es.html#" onclick="tractis_ajax_link(&quot;/pagepart/change_lang?lang=ca&amp;format=html&quot;, true); return false;">Catalan</a> · <a href="index.html%3Fp=5637&amp;language=es.html#" onclick="tractis_ajax_link(&quot;/pagepart/change_lang?lang=es&amp;format=html&quot;, true); return false;">Spanish</a></li>
+</ol>
+
+    
+    <div class="clear"></div>
+  </div>
+
+  
+  
+  <div class="clear"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	window.onload = function() { document.title='Tractis - ¿Como puedo utilizar Tractis LTA REST v2?'.replace(/</g,'&lt;').replace(/>/g,'&gt;').unescapeHTML() } 
+//]]>
+
+</script>
+<div id="breadcrumb">
+<p><strong>Te encuentras aquí:</strong> <a href="/help">Ayuda</a>  <a href='index.html%3Fp=5637&amp;language=es.html'></a> → <a href='index.html%3Fcat=250&amp;language=es.html'>Tractis Webservices</a> → <a href='index.html%3Fcat=254&amp;language=es.html'>Tractis Long Term Archive (LTA)</a> → <a href='index.html%3Fcat=309&amp;language=es.html'>Conceptos básicos</a> </p>
+</div>
+<div id="subheader">
+<div class="titles">
+<h2>Ayuda</h2>
+</div>
+<div class="clear"></div>
+</div>
+
+<div id="main">
+<div id="content">
+<div class="help-search">
+	<form method="get" id="searchform" action="index.html">
+	<table border="0" cellpadding="5">
+		<tr>
+			<td class="nowrap" style="width:50%"><label>¿Cómo podemos ayudarte?:</label></td>
+			<td style="width:43%"><input type="text" value="" name="s" id="s" /></td>
+			<td><input type="submit" id="searchsubmit" value="Buscar" /></td>
+		</tr>
+	</table>
+	</form>
+</div>
+		
+
+<div class="post" id="post-5637">
+			
+			<div class="post-header">
+				<h3>¿Como puedo utilizar Tractis LTA REST v2?</h3>
+			</div>
+
+			<div class="entry">
+				
+				<p>Para poder utilizar Tractis LTA, primero deberás <a href="index.html%3Fp=4426.html">crear una API Key de Tractis LTA</a> y, a continuación, integrar dicha API Key en tu aplicación o servicio web.</p>
+<p>&nbsp;</p>
+<h3>Autenticación</h3>
+<p>Tractis LTA REST v2 está protegida mediante autenticación BASIC AUTH usando el API_KEY como nombre de usuario y el API_SECRET como contraseña:</p>
+<p>Ejemplo de cabecera:</p>
+<pre><code>Authorization: Basic dXNlcjpwYXNzd29yZA==</code></pre>
+<p>Ejemplo curl:</p>
+<pre><code>curl -H 'Content-Type: application/json' -H 'Accept: application/json' -u apikey:apisecret https://api.tractis.com/lta/v2/content/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx</code></pre>
+<p>&nbsp;</p>
+<h3>URL de invocación</h3>
+<p>La URL de invocación del servicio es:</p>
+<pre><code>https://api.tractis.com/lta/v2</code></pre>
+<p>&nbsp;</p>
+<h3>API Content Type</h3>
+<p>Tractis LTA REST v2 funciona sobre JSON tanto en el input como el output, se recomienda usar las cabeceras Content-Type y Accept a &#8216;application/json&#8217; aunque no es estrictamente necesario (por defecto la API espera JSON y devuelve JSON).</p>
+<h3>Resumen de métodos sobre &#8220;content&#8221;</h3>
+<ul>
+<li><strong>POST</strong> /content <em>Add a new content</em></li>
+<li><strong>GET</strong> /content/{id} <em>Find content by ID</em></li>
+<li><strong>DELETE</strong> /content/{id} <em>Deletes the content</em></li>
+<li><strong>GET</strong> /content/findByProperties <em>Finds contents by properties</em></li>
+</ul>
+<p>&nbsp;</p>
+<h3>Add a new content (store)</h3>
+<p><strong>POST</strong> /content <em>Add a new content</em></p>
+<p>Request: Parámetros</p>
+<ul>
+<li><strong>&#8220;content&#8221;:</strong> Contenido a almacenar en base64Binary.
+<ul>
+<li>Requerido: Sí</li>
+<li>Ejemplo: TWkgQ29udGVuaWRv</li>
+<li>Tamaño máximo: 20MB</li>
+</ul>
+</li>
+<li><strong>&#8220;properties&#8221;:</strong> key-value hash de propiedades asociadas al contenido.
+<ul>
+<li>Requerido: Sí</li>
+<li>Ejemplo: {&#8220;my-id&#8221;: &#8220;1234&#8243;, &#8220;my-client-id&#8221;: &#8220;4321&#8243;}</li>
+<li>Al menos debe informarse una propiedad.</li>
+</ul>
+</li>
+<li><strong>&#8220;customRestampDays&#8221;:</strong> Numérico. Cada número de días que se requiere realizar un resellado (90 por defecto).
+<ul>
+<li>Requerido: No</li>
+<li>Ejemplo: 180</li>
+<li>Mayor que 0. Si el número de días es mayor a la fecha de expiración del certificado del último resellado, el resellado se producirá 30 días antes de su fecha de expiración automáticamente.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Request: Ejemplo</strong></p>
+<pre><code>{"content": "TWkgQ29udGVuaWRv", "properties":{"my-id": "1234, "my-client-id": "4321"}, "customRestampDays": 180}</code></pre>
+<p><strong>Response: Codes</strong></p>
+<ul>
+<li><strong>201:</strong> Created</li>
+<li><strong>400:</strong> Bad Request</li>
+<li><strong>406:</strong> Insufficent Funds</li>
+<li><strong>500:</strong> Internal Error</li>
+</ul>
+<p><strong>Response: Datos</strong></p>
+<ul>
+<li><strong>201:</strong>
+<ul>
+<li><strong>&#8220;id&#8221;:</strong> Identificador del contenido, string</li>
+</ul>
+</li>
+<li><strong>400</strong>
+<ul>
+<li><strong>&#8220;error&#8221;:</strong> Descripción del error en el request</li>
+</ul>
+</li>
+<li><strong>406</strong>
+<ul>
+<li><strong>&#8220;error&#8221;:</strong> insufficient_funds</li>
+</ul>
+</li>
+</ul>
+<p><strong>Response: Ejemplo</strong></p>
+<pre><code>{"id":"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"}</code></pre>
+<p>&nbsp;</p>
+<h3>Find content by ID (recover)</h3>
+<p><strong>GET</strong> /content/{id} <em>Find content by ID</em></p>
+<p><strong>Request: Parámetros</strong></p>
+<ul>
+<li><strong>&#8220;id&#8221;:</strong> Identificador del contenido
+<ul>
+<li>Requerido: Sí</li>
+</ul>
+</li>
+</ul>
+<p><strong>Request: Ejemplo</strong></p>
+<pre><code>GET /lta/v2/content/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></pre>
+<p><strong>Response: Codes</strong></p>
+<ul>
+<li><strong>200:</strong> OK</li>
+<li><strong>400:</strong> Bad Request</li>
+<li><strong>404:</strong> No encontrado</li>
+<li><strong>500:</strong> Internal Error</li>
+</ul>
+<p><strong>Response: Datos</strong></p>
+<ul>
+<li><strong>200:</strong>
+<ul>
+<li><strong>&#8220;id&#8221;:</strong> Identificador del contenido</li>
+<li><strong>&#8220;content&#8221;:</strong> Contenido en base64Binary</li>
+<li><strong>&#8220;properties&#8221;:</strong> Hash de propiedades asociadas al contenido</li>
+<li><strong>&#8220;measures&#8221;:</strong> Array de medidas de protección aplicadas al contenido
+<ul>
+<li><strong>&#8220;protectionContent&#8221;:</strong> Sello de tiempo aplicado</li>
+<li><strong>&#8220;protectionType&#8221;:</strong> Tipo de protección (siempre &#8220;application/timestamp-reply&#8221;)</li>
+<li><strong>&#8220;applicationDate&#8221;:</strong> Fecha en la que se realizó el sello de tiempo sobre el contenido</li>
+<li><strong>&#8220;expirationDate&#8221;:</strong> Fecha de caducidad de la medida de protección (fecha de caducidad del certificado con el que realizó el sello de tiempo)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>400</strong>
+<ul>
+<li><strong>&#8220;error&#8221;:</strong> Descripción del error en el request</li>
+</ul>
+</li>
+</ul>
+<p><strong>Response: Ejemplo</strong></p>
+<pre><code>
+{
+ "id":"xxxxxxxx-5a9e-4593-9189-73c62808c4ed",
+ "content":"TWkgQ29udGVuaWRv",
+ "properties":{"my-id": "1234", "my-client-id": "4321"},
+ "measures":[
+  {
+   "protectionContent":"PD94bWwgdmVyc....../.../.....XR1cmU+",
+   "protectionType":"application/timestamp-reply",
+   "applicationDate":"2016-02-04T15:42:00.000Z",
+   "expirationDate":"2020-07-20T22:59:00.000Z"
+  }
+ ]
+}
+</code></pre>
+<p>&nbsp;</p>
+<h3>Delete content by ID (remove)</h3>
+<p><strong>DELETE</strong> /content/{id} <em>Deletes the content</em></p>
+<p><strong>Request: Parámetros</strong></p>
+<ul>
+<li><strong>&#8220;id&#8221;:</strong> Identificador del contenido
+<ul>
+<li>Requerido: Sí</li>
+</ul>
+</li>
+</ul>
+<p><strong>Request: Ejemplo</strong></p>
+<pre><code>DELETE /lta/v2/content/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></pre>
+<p><strong>Response: Codes</strong></p>
+<ul>
+<li><strong>200:</strong> Deleted</li>
+<li><strong>400:</strong> Bad Request</li>
+<li><strong>404:</strong> Contenido no encontrado</li>
+<li><strong>500:</strong> Internal Error</li>
+</ul>
+<p><strong>Response: Datos</strong><br />
+<strong> </strong></p>
+<ul>
+<li><strong>200:</strong> Se retorna el contenido final antes del borrado con todas las medidas de protección aplicadas en el tiempo al contenido.
+<ul>
+<li><strong>&#8220;id&#8221;:</strong> Identificador del contenido</li>
+<li><strong>&#8220;content&#8221;:</strong> Contenido en base64Binary</li>
+<li><strong>&#8220;properties&#8221;:</strong> Hash de propiedades asociadas al contenido</li>
+<li><strong>&#8220;measures&#8221;:</strong> Array de medidas de protección aplicadas al contenido
+<ul>
+<li><strong>&#8220;protectionContent&#8221;:</strong> Sello de tiempo aplicado</li>
+<li><strong>&#8220;protectionType&#8221;:</strong> Tipo de protección (siempre &#8220;application/timestamp-reply&#8221;)</li>
+<li><strong>&#8220;applicationDate&#8221;:</strong> Fecha en la que se realizó el sello de tiempo sobre el contenido</li>
+<li><strong>&#8220;expirationDate&#8221;:</strong> Fecha de caducidad de la medida de protección (fecha de caducidad del certificado con el que realizó el sello de tiempo)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>400</strong>
+<ul>
+<li><strong>&#8220;error&#8221;:</strong> Descripción del error en el request</li>
+</ul>
+</li>
+</ul>
+<p><strong>Response: Ejemplo</strong></p>
+<pre><code>
+{
+ "id":"xxxxxxxx-5a9e-4593-9189-73c62808c4ed",
+ "content":"TWkgQ29udGVuaWRv",
+ "properties":{"my-id": "1234", "my-client-id": "4321"},
+ "measures":[
+  {
+   "protectionContent":"PD94bWwgdmVyc....../.../.....XR1cmU+",
+   "protectionType":"application/timestamp-reply",
+   "applicationDate":"2016-02-04T15:42:00.000Z",
+   "expirationDate":"2020-07-20T22:59:00.000Z"
+  }
+ ]
+}
+</code></pre>
+<p>&nbsp;</p>
+<h3>Finds contents by properties (search)</h3>
+<p><strong>GET</strong> /content/findByProperties <em>Finds contents by properties</em></p>
+<p><strong>Request: Parámetros</strong></p>
+<ul>
+<li><strong>&#8220;key=value&#8221;:</strong> key-value get parameters, uno o varios
+<ul>
+<li>Requerido: Sí</li>
+</ul>
+</li>
+</ul>
+<p><strong>Request: Ejemplo</strong></p>
+<pre><code>GET /lta/v2/content/findByProperties?my-id=1234&amp;my-client-id=4321</code></pre>
+<p><strong>Response: Codes</strong></p>
+<ul>
+<li><strong>200:</strong> OK</li>
+<li><strong>400:</strong> Bad Request</li>
+<li><strong>500:</strong> Internal Error</li>
+</ul>
+<p><strong>Response: Datos</strong></p>
+<ul>
+<li><strong>200:</strong> Se retorna un array de contenidos según el criterio de búsqueda por propiedades.
+<ul>
+<li><strong>&#8220;id&#8221;:</strong> Identificador del contenido</li>
+<li><strong>&#8220;content&#8221;:</strong> Contenido en base64Binary</li>
+<li><strong>&#8220;properties&#8221;:</strong> Hash de propiedades asociadas al contenido</li>
+<li><strong>&#8220;measures&#8221;:</strong> Array de medidas de protección aplicadas al contenido
+<ul>
+<li><strong>&#8220;protectionContent&#8221;:</strong> Sello de tiempo aplicado</li>
+<li><strong>&#8220;protectionType&#8221;:</strong> Tipo de protección (siempre &#8220;application/timestamp-reply&#8221;)</li>
+<li><strong>&#8220;applicationDate&#8221;:</strong> Fecha en la que se realizó el sello de tiempo sobre el contenido</li>
+<li><strong>&#8220;expirationDate&#8221;:</strong> Fecha de caducidad de la medida de protección (fecha de caducidad del certificado con el que realizó el sello de tiempo)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>400</strong>
+<ul>
+<li><strong>&#8220;error&#8221;:</strong> Descripción del error en el request</li>
+</ul>
+</li>
+</ul>
+<p><strong>Response: Ejemplo</strong></p>
+<p>No se encuentra contenido, array vacía:</p>
+<pre><code>[]</code></pre>
+<p>Se encuentra contenido, array de contents:</p>
+<pre><code>
+[{
+ "id":"c363a204-5a9e-4593-9189-73c62808c4ed",
+ "content":"TWkgQ29udGVuaWRv",
+ "properties":{"my-id": "1234", "my-client-id": "4321"},
+ "measures":[
+  {
+   "protectionContent":"PD94bWwgdmVyc....../.../.....XR1cmU+",
+   "protectionType":"application/timestamp-reply",
+   "applicationDate":"2016-02-04T15:42:00.000Z",
+   "expirationDate":"2020-07-20T22:59:00.000Z"
+  }
+ ]
+}]
+</code></pre>
+
+				
+
+			</div>
+
+	</div>
+</div>
+
+	<div id="menu">
+		<script type="text/javascript">function setLang() {document.getElementById("glink").href = "https://translate.google.com/translate?u=http://www.tractis.com/help/?p=5637&sl=es&tl=" + document.fgt.tl.value;return;} </script><div class="menus info"><div class="mtitle"><h3>Translate this article</h3></div><form name="fgt" action="https://translate.google.com/translate" method="GET"><input type="hidden" name="u" value="http://www.tractis.com/help/?p=5637" /><input name="sl" value="es" type="hidden" /><div class="mcontent"><p>Select your language and translate this article using Google Translate.</p><div class="grilla"><div class="labels"><label>Translate to:</label></div><div class="inputs"><select name="tl" style="width:auto" onChange="setLang()" ><option value='' selected >Choose your language...</option>
+<option value='ar'>Arabic</option>
+<option value='bg'>Bulgarian</option>
+<option value='ca'>Catalan</option>
+<option value='zh-CN'>Chinese (Simplified)</option>
+<option value='zh-TW'>Chinese (Traditional)</option>
+<option value='hr'>Croatian</option>
+<option value='cs'>Czech</option>
+<option value='da'>Danish</option>
+<option value='nl'>Dutch</option>
+<option value='en'>English</option>
+<option value='tl'>Filipino</option>
+<option value='fi'>Finnish</option>
+<option value='fr'>French</option>
+<option value='de'>German</option>
+<option value='el'>Greek</option>
+<option value='iw'>Hebrew</option>
+<option value='hi'>Hindi</option>
+<option value='id'>Indonesian</option>
+<option value='it'>Italian</option>
+<option value='ja'>Japanese</option>
+<option value='ko'>Korean</option>
+<option value='lv'>Latvian</option>
+<option value='lt'>Lithuanian</option>
+<option value='no'>Norwegian</option>
+<option value='pl'>Polish</option>
+<option value='pt'>Portuguese</option>
+<option value='ro'>Romanian</option>
+<option value='ru'>Russian</option>
+<option value='sr'>Serbian</option>
+<option value='sk'>Slovak</option>
+<option value='sl'>Slovenian</option>
+<option value='es'>Spanish</option>
+<option value='sv'>Swedish</option>
+<option value='uk'>Ukrainian</option>
+<option value='vi'>Vietnamese</option>
+</select></div><div class="clear"></div></div></div><div class="mfooter"><a class="button" id="glink" href="index.html%3Fp=5637&amp;language=es.html#" >Translate</a></h3></div></form></div>				
+	</div>
+	
+	<div class="clear"></div>
+
+</div>
+
+
+
+
+
+<div id="footer">
+  
+  <h6 class="isologo">Tractis</h6>
+  <p>© 2018 Tractis. ·
+  <a href="https://www.tractis.com/legal_notice">Legal Notice</a> ·
+  <a href="https://www.tractis.com/terms_of_service">Terms of Service</a> ·
+  <a href="https://www.tractis.com/privacy_policy">Privacy Policy</a> ·
+  <a href="https://www.tractis.com/help">Help</a> ·
+  
+  <a href="mailto:tractis@tractis.comm">Contact</a></p>
+  
+  
+  
+  <div class="clear"></div>
+</div>
+
+
+
+<script src="../javascripts/tractis/en.js%3F1502104086" type="text/javascript"></script>
+
+
+
+
+
+<script src="../javascripts/certificate_hunter.js%3F1521105588" type="text/javascript"></script>
+<div id="alerts"><input id="alerts-shown" name="alerts-shown" type="hidden" value="false" /><script type="text/javascript">
+//<![CDATA[
+Alerts.initial(function(){
+  
+});
+//]]>
+</script></div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-128262-1");
+pageTracker._setDomainName(".tractis.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+  </body>
+</html>

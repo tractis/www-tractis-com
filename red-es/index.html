@@ -1,0 +1,302 @@
+
+<!-- saved from url=(0031)https://www.tractis.com/red-es/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>﻿﻿
+
+
+
+  <title>Campaña Lectores 2009</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="Campaña de reparto gratuito de lectores de DNIe 2009.">
+  <link href="./index_files/css.css" rel="stylesheet" type="text/css">
+  <link href="./index_files/jquery.lightbox.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="https://www.tractis.com/images/favicon.png">
+  <script type="text/javascript" src="./index_files/jquery.js"></script>
+  <script type="text/javascript" src="./index_files/jquery.lightbox.js"></script>
+  <script type="text/javascript" charset="utf-8">
+
+  $(document).ready(function(){
+    $('.banner').each(function(){
+      var banner = $(this);
+      var code   = banner.find('.banner-code');
+      var banner = banner.find('div.banner-example');
+      code.val(banner_html(banner.html()));
+      code.click(banner_select);
+      code.keydown(banner_select);
+      code.keyup(banner_select);
+    });
+
+    $('a.lightbox').lightBox({
+
+      imageLoading:  '/red-es/images/lightbox-ico-loading.gif',
+      imageBtnPrev:  '/red-es/images/lightbox-btn-prev.gif',
+      imageBtnNext:  '/red-es/images/lightbox-btn-next.gif',
+      imageBtnClose: '/red-es/images/lightbox-btn-close.gif',
+      imageBlank:    '/red-es/images/lightbox-blank.gif'
+
+    });
+  });
+
+  function banner_html(text) {
+    text = text.replace(/^\s+|\s+$/g, '');
+    text = text.replace(/https?:\/\/[\w\d\.:]+\/images\/lectores/, "http://cdn.tractis.com/readers");
+    return text;
+  }
+
+  function banner_select(event) {
+    var code = $(event.target);
+    var banner = code.parents('.banner').find('.banner-example');
+    code.val(banner_html(banner.html()));
+    code.select();
+  }
+
+  </script>
+
+<div id="super">
+  <div class="header">
+    <h1><a href="/">Tractis</a></h1>
+    <div class="clr"></div>
+  </div>
+
+  <!-- end #header -->
+
+<div class="slogan particip">
+  <h1>Campaña de reparto de lectores de DNIe 2009</h1>
+</div>
+
+<div id="content" class="participa">
+  <div id="col1" class="article faqer">
+
+    <h3 style="margin-bottom: 20px" id="dudas">Preguntas frecuentes</h3>
+    <p>
+      </p><ul>
+      <li><strong>Campaña</strong>
+        <ol>
+          <li><a href="https://www.tractis.com/red-es/#en-que-consistio-la-campa%C3%B1a">¿En qué consistió la campaña?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#cuando-tuvo-lugar-la-campa%C3%B1a">¿Cuando tuvo lugar la campaña?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#que-vias-de-distribucion-se-utilizaron-durante-la-campa%C3%B1a">¿Qué vías de distribución se utilizaron durante la campaña?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#quien-organizaba-la-campa%C3%B1a">¿Quién organizaba la campaña?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#quienes-colaboraron-en-la-campa%C3%B1a">¿Quiénes colaboraron en la campaña?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#quien%E2%80%93pago-por-los-lectores">¿Quien pagó por los lectores?</a></li>
+	  <li><a href="https://www.tractis.com/red-es/#habra-nuevas-campanas-de-reparto">¿Habrá nuevas campañas de reparto?</a></li>
+        </ol>
+      </li>
+      <li><strong>Lectores</strong>
+        <ol>
+          <li><a href="https://www.tractis.com/red-es/#que-modelos-de-lectores-se-repartieron">¿Qué modelos de lectores se repartieron?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#los-lectores-repartidos-funcionan-en-linux-y-mac-os-x">¿Los lectores repartidos funcionan en Linux y Mac OS X?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#que-garantia-tienen-los-lectores">¿Qué garantía tienen los lectores?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#que-se-hizo-con-los-datos-de-los-ciudadanos-que-solicitaron-un-lector-via-web">¿Qué se hizo con los datos de los ciudadanos que solicitaron un lector de DNIe vía Web?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#solicite-un-lector-durante-la-fase-de-reparto-via-web-y-aun-no-lo-he-recibido-que-puedo-hacer">Solicité un lector durante la fase de reparto via web y aún no lo he recibido. ¿Qué puedo hacer?</a></li>
+        </ol>
+      </li>
+      <li><strong>Instalación</strong>
+        <ol>
+          <li><a href="https://www.tractis.com/red-es/#que-necesito-para-poder-utilizar-mi-dnie">¿Qué necesito para poder utilizar mi DNIe?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#que-modelo-de-lector-tengo">¿Qué modelo de lector tengo?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#donde-puedo-conseguir-los-drivers-de-mi-lector">¿Dónde puedo conseguir los drivers de mi lector?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#mi-lector-no-incluye-un-CD-con-los-drivers-de-instalacion">Mi lector no incluye un CD con los drivers de instalación</a></li>
+          <li><a href="https://www.tractis.com/red-es/#mi-cd-de-instalacion-tiene-la-carpeta-de-mac-vacia">Mi CD de instalación tiene la carpeta de Mac vacía.</a></li>
+          <li><a href="https://www.tractis.com/red-es/#podeis-recomendarme-algun-tutorial-de-instalacion-de-lectores-de-dnie">¿Podéis recomendarme algún tutorial de instalación de lectores de DNIe?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#no-consigo-hacer-funcionar-mi-lector-de-dnie-creo-que-mi-lector-est%C3%A1-defectuoso-que-debo-hacer">No consigo hacer funcionar mi lector de DNIe. Creo que mi lector está defectuoso. ¿Qué debo hacer?</a></li>
+        </ol>
+      </li>
+      <li><strong>DNI electrónico</strong>
+        <ol>
+          <li><a href="https://www.tractis.com/red-es/#cuantos-dni-electronicos-se-han-emitido-a-d%C3%ADa-de-hoy">¿Cuantos DNI electrónicos se han emitido a día de hoy?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#donde-puedo-conseguir-un-dni-electronico">¿Dónde puedo conseguir un DNI electrónico?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#donde-puedo-conseguir-un-lector-de-dni-electronico">¿Donde puedo conseguir un lector de DNI electrónico?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#tengo-el-dni-antiguo-y-aun-no-me-toca-renovarlo-puedo-pedir-el-nuevo-dni-electronico">Tengo el DNI antiguo y aún no me toca renovarlo, ¿puedo pedir el nuevo DNI electrónico?</a></li>
+          <li><a href="https://www.tractis.com/red-es/#cuantos-lectores-de-tarjetas-inteligentes-hay-en-espa%C3%B1a">¿Cuantos lectores de tarjetas inteligentes hay en España?</a></li>
+        </ol>
+      </li>
+      </ul>
+    <p></p>
+
+	<b id="campaña"></b>
+	<h4>Campaña</h4>
+
+    		<h5 id="en-que-consistio-la-campaña">¿En qué consistió la campaña?</h5>
+    		<p>La campaña pretendía fomentar el uso del nuevo <a href="http://www.dnielectronico.es/">DNI electrónico</a> (DNIe). Para ello, se regalaron más de 320.000 lectores de DNIe a los ciudadanos.</p>
+
+		<h5 id="cuando-tuvo-lugar-la-campaña">¿Cuando tuvo lugar la campaña?</h5>
+      		<p>La campaña tuvo lugar desde el 1 de Octubre de 2009 hasta el 7 de Enero de 2010.</p>
+
+      		<h5 id="que-vias-de-distribucion-se-utilizaron-durante-la-campaña">¿Qué vías de distribución se utilizaron durante la campaña?</h5>
+      		<p>Durante la duración de la campaña, los lectores de DNIe se repartieron a través de dos vías: Web y Tiendas:
+			</p><ol>
+			<li><u>Reparto vía Web</u>: El reparto de lectores de DNIe vía Web comenzó el 1 de Octubre de 2009 y terminó el 15 de Noviembre de 2009. El ciudadano debía pagar 2€ en concepto de gastos de envío. Durante esta fase se enviaron 95.000 lectores.</li>
+			<li><u>Reparto vía Tiendas</u>: El reparto de lectores de DNIe vía Tiendas comenzo el 23 de Diciembre de 2009 y terminó el 7 de Enero de 2010. El ciudadano solo debía acercarse a una tienda colaboradora para recoger su lector. Durante esta fase se entregaron el resto de los lectores.</li>
+			</ol>
+		<p></p>
+
+    		<h5 id="quien-organizaba-la-campaña">¿Quién organizaba la campaña?</h5>
+    		<p>La campaña estaba organizada por red.es y Tractis:</p>
+    		<ul>
+      		<li><a href="http://www.red.es/">Red.es</a> es la entidad pública empresarial dependiente de la Secretaría de Estado de Telecomunicaciones y para la Sociedad de la Información del Ministerio de Industria, Turismo y Comercio (MITyC) encargada de ejecutar determinados proyectos para el impulso de la Sociedad de la Información interactuando con Comunidades Autónomas, Diputaciones, Entidades Locales y el sector privado en materia de Tecnologías de la Información y la Comunicación (TIC).</li>
+      		<li><a href="https://www.tractis.com/">Tractis</a> es una plataforma web que permite a particulares y empresas realizar negocios online con seguridad. Tractis te permite <a href="https://www.tractis.com/identity">verificar la identidad</a> de la otra parte y <a href="https://www.tractis.com/sign-up">firmar contratos</a> 100% online con total validez legal offline.</li>
+    		</ul>
+
+    		<h5 id="quienes-colaboraron-en-la-campaña">¿Quiénes colaboraron en la campaña?</h5>
+		<p>La campaña de reparto de lectores fue posible gracias a la participación de:
+			</p><ul>
+			<li><u>Colaboradores</u>: <a href="http://blog.negonation.com/es/gracias/">Centenares de Colaboradores</a> decidieron participar de forma totalmente desinteresada en la difusión del primer reparto masivo de lectores de DNIe de la historia de España: bloggers, foros, servicios web, redes de blogs, redes sociales, tiendas online, despachos de abogados, empresas TIC, mayoristas informáticos, autoridades de certificación, entidades financieras, operadoras de telecomunicaciones, agrupaciones políticas, colegios profesionales, asociaciones, administraciones públicas, eventos, medios de comunicación y muchos otros.</li>
+			<li><u>Patrocinadores</u>: <a href="https://www.tractis.com/">Tractis</a>, <a href="http://www.jazztel.com/">Jazztel</a>, <a href="http://www.caixagalicia.es/">Caixa Galicia</a> y <a href="http://www.acens.com/">Acens</a> se encargaron de comprar lectores para las zonas no cubiertas por red.es.
+			</li><li><u>Mayoristas</u>: <a href="http://www.vinzeo.com/web/pages/quienes-somos.htm">Vinzeo</a> y <a href="http://www.techdata.es/">Techdata</a> transportaron decenas de miles de lectores a más de 70 tiendas colaboradoras.</li>
+			<li><u>Distribuidores</u>: <a href="http://www.carrefour.es/">Carrefour</a> y <a href="http://www.mediamarkt.es/">Media Markt</a> entregaron los lectores a miles de ciudadanos.<p></p>
+			</li></ul>
+		<p></p>
+
+		<h5 id="quien–pago-por-los-lectores">¿Quien pagó por los lectores?</h5>
+      		<p>Red.es pagó por los lectores que se repartieron en Galicia, Asturias, Castilla y León, Castilla La Mancha, Extremadura, Andalucía, Comunidad Valenciana, Murcia, Canarias, Ceuta y Melilla.</p>
+      		<p>Los Patrocinadores pagaron por los lectores que se repartieron en Aragón, Baleares, Cantabria, Cataluña, Comunidad de Madrid, La Rioja, Navarra y País Vasco.</p>
+
+		<h5 id="habra-nuevas-campanas-de-reparto">¿Habrá nuevas campañas de reparto?</h5>
+		<p>Sí. Puedes <a href="https://www.tractis.com/mas-lectores">apuntarte para que te informemos del lanzamiento de la próxima campaña</a> de reparto masivo de lectores de DNIe. Apuntarse no da derecho a la reserva u obtención de un lector, únicamente a ser informado del lanzamiento de la campaña. Si necesitas un lector ahora mismo y no puedes esperar a la próxima campaña, puedes <a href="https://www.tractis.com/store">comprar un lector ahora</a>.</p>
+
+	<b id="lectores"></b>
+	<h4>Lectores</h4>
+		<h5 id="que-modelos-de-lectores-se-repartieron">¿Qué modelos de lectores se repartieron?</h5>
+            	<p>Se repartieron varios modelos de lectores:</p>
+            	<ul>
+              	<li>El lector <a href="https://www.google.es/search?q=SCM+SCR+3310&amp;num=50&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=M2j5VJmyIsiuU_GBgbAD&amp;ved=0CAcQ_AUoAQ&amp;biw=1703&amp;bih=1034" rel="nofollow">SCM SCR 3310</a>.</li>
+              	<li>El lector <a href="https://www.google.es/search?biw=1703&amp;bih=1034&amp;tbm=isch&amp;sa=1&amp;q=Gemalto+PC+Twin&amp;oq=Gemalto+PC+Twin&amp;gs_l=img.3...1742.1742.0.2016.1.1.0.0.0.0.0.0..0.0.msedr...0...1c.2.62.img..1.0.0.ZhkdcW1BAOs" rel="nofollow">Gemalto PC Twin</a>.</li>
+		<li>El lector <a href="https://www.google.es/search?q=Bit4id+miniLector&amp;num=50&amp;espv=2&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=e2j5VNDBJIKxUbOygMgI&amp;ved=0CAcQ_AUoAQ&amp;biw=1703&amp;bih=1034" rel="nofollow">Bit4id miniLector</a>.
+              	</li><li>El lector <a href="https://www.google.es/search?espv=2&amp;biw=1703&amp;bih=1034&amp;tbm=isch&amp;sa=1&amp;q=Costar+US777-A+Slim&amp;oq=Costar+US777-A+Slim&amp;gs_l=img.3...243757.243757.0.244102.1.1.0.0.0.0.200.200.2-1.1.0.msedr...0...1c.2.62.img..1.0.0.6uFDNoM12aA" rel="nofollow">Costar US777-A Slim</a>.
+              	</li></ul>
+
+              	<h5 id="los-lectores-repartidos-funcionan-en-linux-y-mac-os-x">¿Los lectores repartidos funcionan en Linux y Mac OS X?</h5>
+              	<p>Sí. Todos los modelos de lectores repartidos han sido probados y funcionan en Linux y Mac OS X.</p>
+              	<p>El SCM SCR3310 requiere instalar drivers. En cambio, el Gemalto PC Twin, el Bit4id Minilector y el Costar US777-A funcionan directamente en un Linux con opensc instalado.</p>
+
+              	<h5 id="que-garantia-tienen-los-lectores">¿Qué garantía tienen los lectores?</h5>
+              	<p>Todos los lectores repartidos tienen una garantía de 2 años.</p>
+
+		<h5 id="que-se-hizo-con-los-datos-de-los-ciudadanos-que-solicitaron-un-lector-via-web">¿Qué se hizo con los datos de los ciudadanos que solicitaron un lector de DNIe vía Web?</h5>
+		<p>Los datos de los ciudadanos que participaron en la fase web han sido utilizados única y exclusivamente para realizar el envío del lector. Una vez terminada la auditoría de la campaña, todos los datos serán destruidos.</p>
+
+		<h5 id="solicite-un-lector-durante-la-fase-de-reparto-via-web-y-aun-no-lo-he-recibido-que-puedo-hacer">Solicité un lector durante la fase de reparto via web y aún no lo he recibido. ¿Qué puedo hacer?</h5>
+		<p>Todos los lectores solicitados durante la fase de reparto vía web han sido envíados. Si no has recibido tu lector, puede deberse a una pérdida o robo del envío. Dado que todos los paquetes se enviaron por correo ordinario, no hay manera de rastrear el envío.</p>
+
+		<p>Tal como se indica en las <a href="https://www.tractis.com/contracts/377747170">condiciones de la promoción</a>: "<em>A fin de minimizar los costes para el solicitante, el envío se realizará por el servicio de Correos (www.correos.es) como si de una carta ordinaria se tratara y sin que Tractis pueda realizar un control de la recepción de los mismos. Tractis garantizará que el envío se ha producido efectivamente por Correos, pero no puede responder en caso de que el lector no se reciba finalmente por la razón que sea (pérdida, robo, etc)</em>".</p>
+
+		<p>La campaña de reparto ha estado supervisada por red.es que, junto con los Patrocinadores de la campaña, se han encargado de auditar y asegurar que el envío de los lectores se realizó correctamente.</p>
+
+	<b id="instalacion"></b>
+	<b id="tengo-disponible-algun-tutorial-de-instalacion"></b>
+	<b id="los-lectores-vienen-con-drivers-o-hay-que-descargarlos-de-algun-lugar"></b>
+	<h4>Instalación</h4>
+		<h5 id="que-necesito-para-poder-utilizar-mi-dnie">¿Qué necesito para poder utilizar mi DNIe?</h5>
+ 		<p>Para poder utilizar tu DNIe necesitas disponer de:
+		</p><ul>
+			<li>Un DNI electrónico, con sus drivers correctamente instalados (<a href="http://www.dnielectronico.es/descargas/index.html">instala los drivers del DNIe</a>).
+			</li><li>Un lector de tarjetas inteligentes, conectado al ordenador y con sus drivers correctamente instalados (<a href="https://www.tractis.com/red-es/#donde-puedo-conseguir-los-drivers-de-mi-lector">instala los drivers de tu lector de DNIe</a>).
+			</li><li>Si planeas utilizar tu DNIe en Tractis, además deberás tener Java instalado en tu ordenador (<a href="http://java.com/es/download/installed.jsp">requiere la versión 1.6 para Windows o 1.5 para Linux/Mac</a>).
+		</li></ul>
+
+		<h5 id="que-modelo-de-lector-tengo">¿Qué modelo de lector tengo?</h5>
+		<p>Durante la campaña se repartieron varios modelos de lectores. Pincha en los enlaces siguientes para ver una foto de cada modelo e identificar el tuyo:</p>
+            		<ul>
+              		<li>Lector SCM SCR 3310: Ver <a href="http://twitpic.com/oitmo">foto realizada por Franflorez</a>.</li>
+              		<li>Lector Gemalto PC Twin: Ver <a href="http://img94.yfrog.com/i/7d6.jpg/">foto realizada por Smiletor</a>.</li>
+			<li>Lector Bit4id miniLector: Ver <a href="http://www.bit4id.com/soporte/images/piano.jpg">foto realizada por Bit4id</a>.</li>
+              		<li>Lector Costar US777-A Slim: Ver <a href="http://picasaweb.google.com/lasarux/Pirata#5403902060312960690">foto realizada por lasarux</a>.</li>
+              		</ul>
+
+              	<h5 id="donde-puedo-conseguir-los-drivers-de-mi-lector">¿Dónde puedo conseguir los drivers de mi lector?</h5>
+              	<ul>
+			<li><strong>Lector SCM SCR3310</strong>: Encontrarás los drivers en el CD de instalación que acompaña al lector. Visita el <a href="http://www.scmmicro.com/">sitio web de SCM</a> para información adicional.
+			</li><li><strong>Lector Gemalto PC Twin</strong>: Encontrarás los drivers en el CD de instalación que acompaña al lector. Visita el <a href="http://www.gemalto.com/">sitio web de Gemalto</a> para información adicional.
+			</li><li><strong>Lector Bit4id miniLector</strong>: Encontrarás los drivers en el CD de instalación que acompaña al lector. Visita el <a href="http://www.bit4id.com/espanol/">sitio web de Bit4id</a> para información adicional así como los manuales oficiales de instalación y uso:
+				<ul>
+              			<li><a href="http://www.bit4id.com/soporte/manuales/ES-WindowsIM.pdf">Instalación</a> y <a href="http://www.bit4id.com/soporte/manuales/ES-miniLectorUM.pdf">uso</a> de Lector Bit4id miniLector en Windows.</li>
+              			<li><a href="http://www.bit4id.com/soporte/manuales/ES-MacLinuxIM.pdf">Instalación</a> de Lector Bit4id miniLector en Mac OS X &amp; Linux.</li>
+ 				<li><a href="http://www.bit4id.com/soporte/manuales/ES-miniLectorStatusIM.pdf">Instalación</a> y <a href="http://www.bit4id.com/soporte/manuales/ES-miniLectorStatusUM.pdf">uso</a> de la aplicación "miniLector Status" (aplicación para verificar el estado de los componentes necesarios para el uso del lector)</li>
+				</ul>
+			</li><li><strong>Lector Costar US777-A Slim Reader</strong>: Puedes <a href="http://www.costar.com.tw/index.php?option=com_flexicontent&amp;view=items&amp;cid=57&amp;id=52&amp;Itemid=71&amp;lang=en">descargar los drivers en el sitio web de Costar</a>.
+		</li></ul>
+
+
+              	<h5 id="mi-lector-no-incluye-un-CD-con-los-drivers-de-instalacion">Mi lector no incluye un CD con los drivers de instalación</h5>
+              	<p>Es normal. No todos los modelos de lectores envíados incluyen CD de instalación.</p>
+			<ul>
+			<li><strong>Lector SCM SCR3310, Lector Gemalto PC Twin o Lector Bit4id miniLector</strong>: incluyen CD de instalación con los drivers correspondientes.
+			</li><li><strong>Lector Costar US777-A Slim Reader</strong>: no incluye CD de instalación. Puedes <a href="http://www.costar.com.tw/index.php?option=com_flexicontent&amp;view=items&amp;cid=57&amp;id=52&amp;Itemid=71&amp;lang=en">descargar los drivers en el sitio web de Costar</a>
+			</li></ul>
+
+
+		<h5 id="mi-cd-de-instalacion-tiene-la-carpeta-de-mac-vacia">Mi CD de instalación tiene la carpeta de Mac vacía.</h5>
+              	<p>Es normal. Mac reconoce los lectores de DNIe de forma automática, sin necesidad de instalar drivers, por eso la carpeta de Mac en tu CD está vacía.</p>
+		<p>Recuerda que, aunque no necesites instalar los drivers del lector en Mac, sigue siendo necesario <a href="http://www.dnielectronico.es/descargas/PKCS11_para_Sistemas_Unix/index.html">instalar los drivers del DNIe</a>. Recuerda reiniciar tu ordenador una vez instalados los drivers del DNIe.</p>
+
+              	<h5 id="podeis-recomendarme-algun-tutorial-de-instalacion-de-lectores-de-dnie">¿Podéis recomendarme algún tutorial de instalación de lectores de DNIe?</h5>
+		<p>Consulta esta lista de <a href="https://www.tractis.com/help/?p=4183&amp;language=es">tutoriales de instalación de DNIe para distintos modelos de lectores y sistemas operativos.</a></p>
+
+              	<h5 id="no-consigo-hacer-funcionar-mi-lector-de-dnie-creo-que-mi-lector-está-defectuoso-que-debo-hacer">No consigo hacer funcionar mi lector de DNIe. Creo que mi lector está defectuoso. ¿Qué debo hacer?</h5>
+		<p>Si tienes problemas para instalar tu lector de DNIe o crees que tu lector está defectuoso, debes contactar y solicitar soporte al fabricante del lector:</p>
+			<ul>
+			<li><strong>Lector SCM SCR3310 o Lector Gemalto PC Twin</strong>: Escribe un email solicitando ayuda a la dirección de email que encontrarás en la hojita que acompaña a tu lector y que contiene la guía rápida de instalación y las <u>condiciones de garantía y el procedimiento para hacerla efectiva</u>.
+			</li><li><strong>Lector Bit4id miniLector</strong>: Rellena el formulario de soporte que encontrarás en la web <a href="http://www.minilector.es/">www.minilector.es</a>.
+			</li><li><strong>Lector Costar US777-A Slim Reader</strong>: Escribe un email solicitando ayuda a la dirección <a href="mailto:SpanishHelp@costar.com.tw">SpanishHelp@costar.com.tw</a>.
+			</li></ul>
+
+
+    <b id="dni-electronico"></b>
+	<h4>DNI electrónico</h4>
+
+              	<h5 id="cuantos-dni-electronicos-se-han-emitido-a-día-de-hoy">¿Cuantos DNI electrónicos se han emitido a día de hoy?</h5>
+		<p>A fecha de Enero de 2010 ya se han emitido más de 14 millones de DNIe. Desde finales de 2008, el 100% de las comisarías solo emiten DNI electrónicos y, a un ritmo de 500.000 DNIe nuevos emitidos por mes, las previsiones oficiales esperan alcanzar <a href="http://www.cincodias.com/articulo/empresas/Gobierno-ultima-plan-impulso-DNI-digital/20081219cdscdiemp_19/cdsemp/" target="_blank">20 millones en 2010 y cobertura total en 2012</a>.</p>
+
+		<h5 id="donde-puedo-conseguir-un-dni-electronico">¿Dónde puedo conseguir un DNI electrónico?</h5>
+		<p>Puedes conseguir tu DNI electrónico en cualquiera de <a href="http://www.policia.es/udoc/dni/mapa_oficinas.htm">las oficinas de expedición del DNIe</a>. Para evitar colas te aconsejamos pedir cita previa por teléfono (902 247 364) o <a href="https://www.citapreviadnie.es/">por internet</a>.</p>
+
+		<h5 id="donde-puedo-conseguir-un-lector-de-dni-electronico">¿Donde puedo conseguir un lector de DNI electrónico?</h5>
+		<p>Ahora que la primera campaña de reparto de lectores de DNIe ha terminado, puedes <a href="https://www.tractis.com/mas-lectores">apuntarte a la próxima campaña de reparto de lectores</a> o <a href="https://www.tractis.com/help/?p=3426&amp;language=es">comprar un lector online</a>.</p>
+
+		<h5 id="tengo-el-dni-antiguo-y-aun-no-me-toca-renovarlo-puedo-pedir-el-nuevo-dni-electronico">Tengo el DNI antiguo y aún no me toca renovarlo, ¿puedo pedir el nuevo DNI electrónico?</h5>
+		<p>Por supuesto que sí. Nuestra recomendación es que solicites <a href="https://www.citapreviadnie.es/" target="_blank">cita previa</a> y lo renueves. La renovación te llevará unos 15 minutos y tendrás que pagar <a href="http://www.dnielectronico.es/obtencion_del_dnie/tasas.html" target="_blank">10€ por renovación anticipada</a> (salvo que puedas justificar cambio de domicilio, en cuyo caso te saldrá gratis).</p>
+
+		<h5 id="cuantos-lectores-de-tarjetas-inteligentes-hay-en-españa">¿Cuantos lectores de tarjetas inteligentes hay en España?</h5>
+		<p>Es difícil responder a esta pregunta ya que los fabricantes de lectores no publican los datos de sus ventas. Una buena pista del número de lectores instalados es el número de operaciones realizadas con DNIe: En Marzo de 2009 hubo <a href="http://www.expansion.com/2009/04/13/funcion-publica/1239603801.html" target="_self">2,5 millones de operaciones en el sector público y 200.000 en el sector privado</a>. Finalmente, las patronales y el gobierno están trabajando con los fabricantes para <a rel="nofollow" href="http://www.cincodias.com/articulo/empresas/Gobierno-patronales-TIC-impulsan-ordenador-lector-DNI-digital/20090407cdscdiemp_2/cdsemp/">conseguir que los ordenadores vengan con el lector de DNIe pre-instalado</a>.</p>
+		<p>Esta campaña de reparto de lectores de tarjetas inteligentes, junto con <a href="http://www.la-moncloa.es/ServiciosdePrensa/NotasPrensa/MIN/_2009/ntpr20091026_DNI.htm">otras iniciativas del gobierno para la difusión del DNIe</a>, ha añadido 800.000 lectores de tarjetas inteligentes a los ya existentes en España.</p>
+
+	</div>
+
+	</div> &nbsp; &nbsp;
+
+	<div class="clear"></div>
+
+	<div id="footer">
+  <div class="apoyo">
+    <p>Organiza:</p>
+    <a href="http://www.tractis.com/" class="tractislogo">Powered By Tractis</a>
+  </div>
+  <div class="partners">
+    <p>Patrocina:</p>
+    <a href="http://www.tractis.com/" class="tractislogo">Powered By Tractis</a>
+    <a href="http://www.jazztel.com/" class="jazztel">Jazztel</a>
+    <a href="http://www.caixagalicia.es/" class="caixagalicia">Caixa Galicia</a>
+  </div>
+  <div class="aloja">
+    <p>Alojamiento:</p>
+    <a href="http://www.acens.com/" class="acens">acens</a>
+  </div>
+  <div class="clr"></div>
+  <img src="./index_files/otroslogos.gif" width="750" height="49" alt="Otroslogos" class="otroslogos">
+  <p class="disclaimer">Proyecto cofinanciado por la Unión Europea a través del Fondo Europeo de Desarrollo Regional (FEDER) en las siguientes Comunidades y Ciudades Autónomas: Andalucía, Asturias, Canarias, Castilla La Mancha, Castilla y León, Ceuta, Comunidad Valenciana, Extremadura, Galicia, Melilla y Murcia.</p>
+</div>
+
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./index_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-128262-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+	</body></html>

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'AlberLight';
+    src: url('alber-light-webfont.eot');
+    src: url('alber-light-webfont.eot?iefix') format('eot'),
+         url('alber-light-webfont.woff') format('woff'),
+         url('alber-light-webfont.ttf') format('truetype'),
+         url('alber-light-webfont.svg#webfontLcc7DrfT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlberLightItalic';
+    src: url('alber-lightitalic-webfont.eot');
+    src: url('alber-lightitalic-webfont.eot?#iefix') format('eot'),
+         url('alber-lightitalic-webfont.woff') format('woff'),
+         url('alber-lightitalic-webfont.ttf') format('truetype'),
+         url('alber-lightitalic-webfont.svg#webfontF19JXAnj') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AlberItalic';
+    src: url('alber-italic-webfont.eot');
+    src: url('alber-italic-webfont.eot?#iefix') format('eot'),
+         url('alber-italic-webfont.woff') format('woff'),
+         url('alber-italic-webfont.ttf') format('truetype'),
+         url('alber-italic-webfont.svg#webfontSTyjxQZM') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AlberBold';
+    src: url('alber-bold-webfont.eot');
+    src: url('alber-bold-webfont.eot?iefix') format('eot'),
+         url('alber-bold-webfont.woff') format('woff'),
+         url('alber-bold-webfont.ttf') format('truetype'),
+         url('alber-bold-webfont.svg#webfont28lp4Pvm') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AlberRegular';
+    src: url('alber-regular-webfont.eot');
+    src: url('alber-regular-webfont.eot?iefix') format('eot'),
+         url('alber-regular-webfont.woff') format('woff'),
+         url('alber-regular-webfont.ttf') format('truetype'),
+         url('alber-regular-webfont.svg#webfontBBb5RRdT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('league_gothic-webfont.eot');
+    src: url('league_gothic-webfont.eot?iefix') format('eot'),
+         url('league_gothic-webfont.woff') format('woff'),
+         url('league_gothic-webfont.ttf') format('truetype'),
+         url('league_gothic-webfont.svg#webfontbfTRXsQ9') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,327 @@
+/* Insignificant stuff, for demo purposes */
+/* Most common stuff you'll need to change */
+/*  Tractis color palette variables: BEGIN  *//*  Identity: Pink *//*  Signatures: Green *//*  Payments: Blue *//*  Hardware: Red (utilizados por Diego en el pasado: F00, C00 *//*  Data: Orange *//*  Promotions: Yellow *//*  Webservices: Grey *//*  Support: Violet *//*  General Use: Grey */
+/*  Tractis color palette variables: END  */.coda-slider-wrapper {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  width: 1076px;
+}
+.tour .coda-slider-wrapper {
+  width: 980px;
+}
+.reader-tour .coda-slider-wrapper {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  width: 980px !important;
+}
+.reader-tour .coda-nav-left,
+.reader-tour .coda-nav-right,
+.reader-gallery .coda-nav-left,
+.reader-gallery .coda-nav-right {
+  display: none;
+}
+.reader-tour {
+  height: 800px;
+}
+.reader-gallery .coda-slider {
+  border: 1px solid #999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+}
+.reader-gallery .coda-slider-wrapper {
+  padding: 0;
+  margin: 0 auto;
+  width: 978px;
+}
+.reader-tour .slogan-content img {
+  display: block;
+  margin: 30px auto;
+}
+.reader-gallery img {
+  display: block;
+}
+/* Use this to keep the slider content contained in a box even when JavaScript is disabled */
+.coda-slider-no-js .coda-slider {
+  height: 200px;
+  overflow: auto !important;
+  padding-right: 20px;
+}
+/* Change the width of the entire slider (without dynamic arrows) */
+.coda-slider,
+.coda-slider .panel {
+  width: 980px;
+}
+.reader-tour .coda-slider,
+.reader-tour .coda-slider {
+  width: 700px;
+}
+.reader-gallery .coda-slider,
+.reader-gallery .coda-slider {
+  width: 966px;
+}
+/* Change margin and width of the slider (with dynamic arrows) */
+.coda-slider-wrapper.arrows .coda-slider,
+.coda-slider-wrapper.arrows .coda-slider .panel {
+  width: 980px;
+}
+.reader-gallery .coda-slider-wrapper.arrows .coda-slider,
+.reader-gallery .coda-slider-wrapper.arrows .coda-slider .panel {
+  width: 976px;
+}
+.coda-slider-wrapper.arrows .coda-slider {
+  margin: 0 10px;
+}
+.reader-tour .coda-slider-wrapper.arrows .coda-slider {
+  margin: 0;
+}
+.reader-gallery .coda-slider-wrapper.arrows .coda-slider {
+  margin: 0;
+}
+/* Arrow styling */
+.coda-nav-left a,
+.coda-nav-right a {
+  opacity: 0;
+  text-indent: -9999px;
+  height: 78px;
+  width: 38px;
+  display: block;
+  margin: 150px 0;
+}
+.coda-nav-left a {
+  background: url(../images/scroll_left.png);
+}
+.coda-nav-right a {
+  background: url(../images/scroll_right.png);
+}
+.coda-slider-wrapper:hover .coda-nav-left a,
+.coda-slider-wrapper:hover .coda-nav-right a {
+  opacity: .50;
+}
+.coda-slider-wrapper .coda-nav-left a:hover,
+.coda-slider-wrapper .coda-nav-right a:hover {
+  opacity: 100;
+}
+p.loading img {
+  display: block;
+  margin: 50px auto;
+}
+/* Tab nav */
+.tour .coda-nav {
+  width: 200px;
+  float: left;
+}
+.tour .coda-nav ul li {
+  display: block;
+  font-family: AlberLight;
+  font-size: 16px;
+  text-align: right;
+  background: #ffffff url(../images/tour/non-active.png) top right repeat-x;
+}
+.tour .coda-nav ul li a {
+  padding: 10px 15px 6px 0;
+  color: #666;
+  background: transparent;
+}
+.tour .coda-nav ul li a.current {
+  color: #fff;
+}
+.tour .identity ul li a.current {
+  background: #b42588 url(../images/tour/active.png) top right;
+  text-shadow: #8d2273 0 -1px 0;
+}
+.tour .signatures ul li a.current {
+  background: #44a100 url(../images/tour/active.png) top right;
+  text-shadow: #3b8000 0 -1px 0;
+}
+.tour .data ul li a.current {
+  background: #cc6c00 url(../images/tour/active.png) top right;
+  text-shadow: #be5106 0 -1px 0;
+}
+.tour .webservices ul li a.current {
+  background: #656565 url(../images/tour/active.png) top right;
+  text-shadow: #262626 0 -1px 0;
+}
+.tour .hardware ul li a.current {
+  background: #d8000a url(../images/tour/active.png) top right;
+  text-shadow: #bd0006 0 -1px 0;
+}
+.tour .coda-nav ul li.last {
+  background: none;
+}
+.tour .panel .desc {
+  overflow: auto;
+  width: 770px;
+}
+.tour .panel .desc .imgdesc {
+  float: left;
+  width: 502px;
+}
+.tour .panel .desc .points {
+  float: right;
+  width: 250px;
+  margin-top: 30;
+}
+.points dl dt {
+  display: inline-block;
+  padding: 5px 9px 0px 9px;
+  background: #016cde;
+  border-radius: 15px;
+  /* propietary values */
+
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  font-family: AlberBold;
+  font-size: 18px;
+  color: #fff;
+  float: left;
+  clear: right;
+}
+.red .points dl dt {
+  background: #f00;
+}
+.red .points dl a:link,
+.red .points dl a:visited,
+.red .points dl a:active {
+  color: #f00;
+}
+.red .points dl a:hover {
+  color: #c00;
+}
+.points dl dd {
+  display: inline-block;
+  float: right;
+  width: 210px;
+  margin-bottom: 20px;
+  clear: right;
+}
+.points dl dd em {
+  font-style: italic;
+}
+.tour .panel .desc .points h3 {
+  font-family: AlberLight;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: -0.06em;
+  margin-bottom: 18px;
+}
+.tour .coda-slider {
+  width: 770px;
+  float: right;
+}
+/* Panel padding */
+.coda-slider .panel-wrapper {
+  padding: 0;
+}
+/* Preloader */
+.coda-slider p.loading {
+  padding: 20px;
+  text-align: center;
+}
+/* Don't change anything below here unless you know what you're doing */
+/* Tabbed nav */
+.coda-nav ul {
+  clear: both;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+}
+.coda-nav ul li {
+  display: inline-block;
+}
+.coda-nav ul li a {
+  background: #fff;
+  color: #fff;
+  display: block;
+  padding: 0;
+  text-decoration: none;
+}
+/* Miscellaneous */
+.coda-slider-wrapper {
+  clear: both;
+  overflow: auto;
+}
+.coda-slider {
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.coda-slider .panel {
+  display: block;
+  float: left;
+}
+.coda-slider .panel-container {
+  position: relative;
+}
+.coda-nav-left,
+.coda-nav-right {
+  float: left;
+}
+.coda-nav-left a,
+.coda-nav-right a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul {
+  border: 1px solid #999;
+  width: 100% !important;
+  display: block;
+  border-top: 0;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  background: #333;
+  padding: 3px 0 1px 0;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li {
+  width: 93px;
+  height: 50px;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab1 {
+  margin-left: 3px;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li a {
+  border: 1px solid #ccc;
+  width: 93px;
+  height: 50px;
+  margin: 0;
+  display: block;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li a.current {
+  border: 2px solid #80d600;
+  width: 93px;
+  height: 50px;
+  margin-top: -1px;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab1 a {
+  background: #ffffff url(../images/tractis/slimreader/gallery/gallery-sprite-01.png) no-repeat !important;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab2 a {
+  background: #ffffff url(../images/tractis/slimreader/gallery/gallery-sprite-02.png) no-repeat !important;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab3 a {
+  background: #ffffff url(../images/tractis/slimreader/gallery/gallery-sprite-03.png) no-repeat !important;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab4 a {
+  background: #ffffff url(../images/tractis/slimreader/gallery/gallery-sprite-04.png) no-repeat !important;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab5 a {
+  background: #ffffff url(../images/tractis/slimreader/gallery/gallery-sprite-05.png) no-repeat !important;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab6 a {
+  background: #ffffff url(../images/tractis/slimreader/gallery/gallery-sprite-06.png) no-repeat !important;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab7 a {
+  background: #ffffff url(../images/tractis/slimreader/gallery/gallery-sprite-07.png) no-repeat !important;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab8 a {
+  background: #ffffff url(../images/tractis/slimreader/gallery/gallery-sprite-08.png) no-repeat !important;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab9 a {
+  background: #ffffff url(../images/tractis/slimreader/gallery/gallery-sprite-09.png) no-repeat !important;
+}
+.reader-gallery .coda-slider-wrapper .coda-nav ul li.tab10 a {
+  background: #ffffff url(../images/tractis/slimreader/gallery/gallery-sprite-10.png) no-repeat !important;
+}

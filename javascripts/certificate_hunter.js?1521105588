@@ -1,0 +1,143 @@
+SignatureController.disableSignButtons = function() {
+  SignatureController.deactivateSign();
+};
+
+//Activates the sign button
+SignatureController.activateSign = function(){
+  var button;
+  button = $('sign_submit');
+  if(!button) button = $('next_button_input');
+  if(button) {
+    button.className = "ok";
+    button.disabled = false;
+  }
+};
+
+//Deactivates the sign button
+SignatureController.deactivateSign = function(){
+  var button;
+  button = $('sign_submit');
+  if(!button) button = $('next_button_input');
+  if(button) {
+    button.className = "";
+    button.disabled = false;
+  }
+};
+
+SignatureController.addGroup = function(label, id){
+  group = document.createElement("optgroup");
+  group.setAttribute("id", id);
+  
+  return group;
+};
+
+SignatureFlow.loadFillData = function(issuer, subject){
+  SignatureComponentManager.sign();
+  //var params = "step[next]=certificate_hunter_last_step&&selected[issuer]="+issuer+"&selected[subject]="+subject;
+  //var fillData = new Ajax.Request('/signature/next', { method: 'post', parameters: params} );
+};
+
+SignatureFlow.proceedToFillData = function() {
+  //An accepted cert was choosen
+  if (SignatureController.isAcceptedCertificateSelected()){
+    this.loadFillData($('selected_issuer').value,$('selected_subject').value);
+  }else{
+    Alerts.show_spinner(_("Sending certificate"));
+    window.location = "/certificate_hunter/cert_info?invalid=true"+
+      "&issuer="+escape($('selected_issuer').value)+
+      "&subject="+escape($('selected_subject').value);
+  }
+};
+
+SignatureFlow.submitCertificate = function() {
+  // nothing to do
+};
+
+SignatureFlow.loadCertDialog = function(){
+  var params  = "step[next]=certificate_hunter_certificate_dialog&load_cert=true&select_cert=true" ;
+  var otherCerts = new Ajax.Request('/signature/next', { method: 'post', parameters: params} );
+};
+
+SignatureController.activateRejectedData = function(selected, rejected){
+  this.enableNextStep();
+  this.setCertificateData();
+};
+
+SignatureController.deactivateRejectedData = function(selected, rejected){
+  this.enableNextStep();
+  this.setCertificateData();
+};
+
+SignatureComponentManager.signOk = function(signature) {
+
+  var additionalCerts = CertificateManager.getAdditionalCertificates();
+
+  Alerts.show_spinner(_("Uploading the signature"));
+
+  new Ajax.Request('/certificate_hunter/store_certificate', {
+    method: 'post',
+    parameters: {signature: signature, additional_certs : additionalCerts}
+  });
+};
+
+SignatureComponentManager.sign = function() {
+  //Once the signature starts the buttons are deactivated		
+  SignatureController.disableSignButtons();
+  SignatureComponentManager.signing = true;
+
+  //Once the signature starts the buttons are deactivated		
+  //The applet is encouraged to perform a signature
+   var signature = CertificateManager.authenticate( new Date(), "Authenticating");
+
+   SignatureComponentManager.signActionFinish(signature);
+};
+
+var CertificateHunter = Class.create(SignatureComponentManager, {
+  run: function() {
+    this.startInterval();
+  }
+});
+
+CertificateHunter.commitmentClicked = function(){
+  if ($('signature_commitment').checked && $('signature_city').value.strip().length > 0){
+    this.activateSign();
+  }else{
+    this.deactivateSign();
+  }
+};
+
+function certificate_hunter_update_input() {
+  var checkbox = $('certificate_hunter_ok');
+  var button = $('certificate_hunter');
+  if (checkbox.checked) {
+    button.addClassName('ok');
+    button.removeClassName('disabled');
+  } else {
+    button.removeClassName('ok');
+    button.addClassName('disabled');
+  }
+};
+
+function loac_certificate_hunter(){
+  var checkbox = $('certificate_hunter_ok');
+  var button = $('certificate_hunter');
+  
+  if(button) {
+    button.observe('click', function(event) {
+      var checkbox = $('certificate_hunter_ok');
+      if (!checkbox || checkbox.checked) {
+        new Ajax.Request('/certificate_hunter/modal_sign', {asynchronous:true, evalScripts:true});
+      } else {
+        Alerts.error(_('You must accept the conditions before processing your request.'), [_('Please, check the box to indicate you agree to these conditions.')]);
+      }
+      Event.stop(event);
+    });
+    
+    if(checkbox) {
+      checkbox.observe('change', certificate_hunter_update_input);
+      certificate_hunter_update_input();
+    }
+  }
+};
+
+loac_certificate_hunter();
