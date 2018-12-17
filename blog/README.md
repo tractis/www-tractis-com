@@ -1,4 +1,4 @@
 # blog.negonation.com archives
 
-- [Español](http://blog.negonation.com/es)
-- [English](http://blog.negonation.com/en)
+- [Español](http//www.tractis.com/blog/es)
+- [English](http://www.tractis.com/blog/en)
