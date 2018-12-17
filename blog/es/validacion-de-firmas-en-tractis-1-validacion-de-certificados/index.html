@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head profile="http://gmpg.org/xfn/11">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        
+	<title>Negonation Blog  &raquo; Blog Archive   &raquo; Validación de firmas en Tractis (1): Validación de certificados</title>
+
+	<meta name="generator" content="WordPress 3.1.3 - really-static 0.5" /> <!-- leave this for stats -->
+	<meta name="verify-v1" content="pXLPIyE5Pjm33fKNgnriuzSR4F0WMO9Ng/jedsJo1Rg=" />
+
+	<link rel="stylesheet" href="/blog/es/wp-content/themes/minid/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/blog/en/wp-content/themes/minid/print.css" type="text/css" media="print" />
+	<link rel="stylesheet" href="/blog/en/wp-content/themes/minid/alternate.css" type="text/css" media="handheld" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/es/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/negonation/blog/es" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/blog/es/feed/atom/" />
+	<link rel="pingback" href="/blog/es/xmlrpc.php" />
+
+
+			<link rel='archives' title='Abril 2018' href='http://blog.negonation.com/es/2018/04/' />
+	<link rel='archives' title='Febrero 2018' href='http://blog.negonation.com/es/2018/02/' />
+	<link rel='archives' title='Agosto 2016' href='http://blog.negonation.com/es/2016/08/' />
+	<link rel='archives' title='Julio 2016' href='http://blog.negonation.com/es/2016/07/' />
+	<link rel='archives' title='Octubre 2015' href='http://blog.negonation.com/es/2015/10/' />
+	<link rel='archives' title='Julio 2015' href='http://blog.negonation.com/es/2015/07/' />
+	<link rel='archives' title='Junio 2015' href='http://blog.negonation.com/es/2015/06/' />
+	<link rel='archives' title='Mayo 2015' href='http://blog.negonation.com/es/2015/05/' />
+	<link rel='archives' title='Noviembre 2014' href='http://blog.negonation.com/es/2014/11/' />
+	<link rel='archives' title='Octubre 2014' href='http://blog.negonation.com/es/2014/10/' />
+	<link rel='archives' title='Septiembre 2014' href='http://blog.negonation.com/es/2014/09/' />
+	<link rel='archives' title='Julio 2014' href='http://blog.negonation.com/es/2014/07/' />
+	<link rel='archives' title='Junio 2014' href='http://blog.negonation.com/es/2014/06/' />
+	<link rel='archives' title='Abril 2014' href='http://blog.negonation.com/es/2014/04/' />
+	<link rel='archives' title='Marzo 2014' href='http://blog.negonation.com/es/2014/03/' />
+	<link rel='archives' title='Febrero 2014' href='http://blog.negonation.com/es/2014/02/' />
+	<link rel='archives' title='Octubre 2013' href='http://blog.negonation.com/es/2013/10/' />
+	<link rel='archives' title='Septiembre 2013' href='http://blog.negonation.com/es/2013/09/' />
+	<link rel='archives' title='Agosto 2013' href='http://blog.negonation.com/es/2013/08/' />
+	<link rel='archives' title='Mayo 2013' href='http://blog.negonation.com/es/2013/05/' />
+	<link rel='archives' title='Abril 2013' href='http://blog.negonation.com/es/2013/04/' />
+	<link rel='archives' title='Marzo 2013' href='http://blog.negonation.com/es/2013/03/' />
+	<link rel='archives' title='Febrero 2013' href='http://blog.negonation.com/es/2013/02/' />
+	<link rel='archives' title='Diciembre 2012' href='http://blog.negonation.com/es/2012/12/' />
+	<link rel='archives' title='Noviembre 2012' href='http://blog.negonation.com/es/2012/11/' />
+	<link rel='archives' title='Octubre 2012' href='http://blog.negonation.com/es/2012/10/' />
+	<link rel='archives' title='Septiembre 2012' href='http://blog.negonation.com/es/2012/09/' />
+	<link rel='archives' title='Agosto 2012' href='http://blog.negonation.com/es/2012/08/' />
+	<link rel='archives' title='Junio 2012' href='http://blog.negonation.com/es/2012/06/' />
+	<link rel='archives' title='Mayo 2012' href='http://blog.negonation.com/es/2012/05/' />
+	<link rel='archives' title='Marzo 2012' href='http://blog.negonation.com/es/2012/03/' />
+	<link rel='archives' title='Febrero 2012' href='http://blog.negonation.com/es/2012/02/' />
+	<link rel='archives' title='Enero 2012' href='http://blog.negonation.com/es/2012/01/' />
+	<link rel='archives' title='Diciembre 2011' href='http://blog.negonation.com/es/2011/12/' />
+	<link rel='archives' title='Noviembre 2011' href='http://blog.negonation.com/es/2011/11/' />
+	<link rel='archives' title='Octubre 2011' href='http://blog.negonation.com/es/2011/10/' />
+	<link rel='archives' title='Junio 2011' href='http://blog.negonation.com/es/2011/06/' />
+	<link rel='archives' title='Mayo 2011' href='http://blog.negonation.com/es/2011/05/' />
+	<link rel='archives' title='Abril 2011' href='http://blog.negonation.com/es/2011/04/' />
+	<link rel='archives' title='Marzo 2011' href='http://blog.negonation.com/es/2011/03/' />
+	<link rel='archives' title='Febrero 2011' href='http://blog.negonation.com/es/2011/02/' />
+	<link rel='archives' title='Enero 2011' href='http://blog.negonation.com/es/2011/01/' />
+	<link rel='archives' title='Diciembre 2010' href='http://blog.negonation.com/es/2010/12/' />
+	<link rel='archives' title='Noviembre 2010' href='http://blog.negonation.com/es/2010/11/' />
+	<link rel='archives' title='Octubre 2010' href='http://blog.negonation.com/es/2010/10/' />
+	<link rel='archives' title='Septiembre 2010' href='http://blog.negonation.com/es/2010/09/' />
+	<link rel='archives' title='Agosto 2010' href='http://blog.negonation.com/es/2010/08/' />
+	<link rel='archives' title='Julio 2010' href='http://blog.negonation.com/es/2010/07/' />
+	<link rel='archives' title='Junio 2010' href='http://blog.negonation.com/es/2010/06/' />
+	<link rel='archives' title='Mayo 2010' href='http://blog.negonation.com/es/2010/05/' />
+	<link rel='archives' title='Abril 2010' href='http://blog.negonation.com/es/2010/04/' />
+	<link rel='archives' title='Marzo 2010' href='http://blog.negonation.com/es/2010/03/' />
+	<link rel='archives' title='Febrero 2010' href='http://blog.negonation.com/es/2010/02/' />
+	<link rel='archives' title='Diciembre 2009' href='http://blog.negonation.com/es/2009/12/' />
+	<link rel='archives' title='Noviembre 2009' href='http://blog.negonation.com/es/2009/11/' />
+	<link rel='archives' title='Octubre 2009' href='http://blog.negonation.com/es/2009/10/' />
+	<link rel='archives' title='Septiembre 2009' href='http://blog.negonation.com/es/2009/09/' />
+	<link rel='archives' title='Agosto 2009' href='http://blog.negonation.com/es/2009/08/' />
+	<link rel='archives' title='Julio 2009' href='http://blog.negonation.com/es/2009/07/' />
+	<link rel='archives' title='Junio 2009' href='http://blog.negonation.com/es/2009/06/' />
+	<link rel='archives' title='Mayo 2009' href='http://blog.negonation.com/es/2009/05/' />
+	<link rel='archives' title='Abril 2009' href='http://blog.negonation.com/es/2009/04/' />
+	<link rel='archives' title='Marzo 2009' href='http://blog.negonation.com/es/2009/03/' />
+	<link rel='archives' title='Febrero 2009' href='http://blog.negonation.com/es/2009/02/' />
+	<link rel='archives' title='Enero 2009' href='http://blog.negonation.com/es/2009/01/' />
+	<link rel='archives' title='Diciembre 2008' href='http://blog.negonation.com/es/2008/12/' />
+	<link rel='archives' title='Noviembre 2008' href='http://blog.negonation.com/es/2008/11/' />
+	<link rel='archives' title='Octubre 2008' href='http://blog.negonation.com/es/2008/10/' />
+	<link rel='archives' title='Septiembre 2008' href='http://blog.negonation.com/es/2008/09/' />
+	<link rel='archives' title='Agosto 2008' href='http://blog.negonation.com/es/2008/08/' />
+	<link rel='archives' title='Julio 2008' href='http://blog.negonation.com/es/2008/07/' />
+	<link rel='archives' title='Junio 2008' href='http://blog.negonation.com/es/2008/06/' />
+	<link rel='archives' title='Mayo 2008' href='http://blog.negonation.com/es/2008/05/' />
+	<link rel='archives' title='Abril 2008' href='http://blog.negonation.com/es/2008/04/' />
+	<link rel='archives' title='Marzo 2008' href='http://blog.negonation.com/es/2008/03/' />
+	<link rel='archives' title='Febrero 2008' href='http://blog.negonation.com/es/2008/02/' />
+	<link rel='archives' title='Enero 2008' href='http://blog.negonation.com/es/2008/01/' />
+	<link rel='archives' title='Diciembre 2007' href='http://blog.negonation.com/es/2007/12/' />
+	<link rel='archives' title='Noviembre 2007' href='http://blog.negonation.com/es/2007/11/' />
+	<link rel='archives' title='Octubre 2007' href='http://blog.negonation.com/es/2007/10/' />
+	<link rel='archives' title='Agosto 2007' href='http://blog.negonation.com/es/2007/08/' />
+	<link rel='archives' title='Abril 2007' href='http://blog.negonation.com/es/2007/04/' />
+	<link rel='archives' title='Febrero 2007' href='http://blog.negonation.com/es/2007/02/' />
+	<link rel='archives' title='Enero 2007' href='http://blog.negonation.com/es/2007/01/' />
+	<link rel='archives' title='Diciembre 2006' href='http://blog.negonation.com/es/2006/12/' />
+	<link rel='archives' title='Noviembre 2006' href='http://blog.negonation.com/es/2006/11/' />
+	<link rel='archives' title='Octubre 2006' href='http://blog.negonation.com/es/2006/10/' />
+	<link rel='archives' title='Septiembre 2006' href='http://blog.negonation.com/es/2006/09/' />
+	<link rel='archives' title='Agosto 2006' href='http://blog.negonation.com/es/2006/08/' />
+	<link rel='archives' title='Julio 2006' href='http://blog.negonation.com/es/2006/07/' />
+	<link rel='archives' title='Junio 2006' href='http://blog.negonation.com/es/2006/06/' />
+	<link rel='archives' title='Mayo 2006' href='http://blog.negonation.com/es/2006/05/' />
+
+		<link rel="alternate" type="application/rss+xml" title="Negonation Blog &raquo; Validación de firmas en Tractis (1): Validación de certificados Comments Feed" href="/blog/es/validacion-de-firmas-en-tractis-1-validacion-de-certificados/feed/" />
+<link rel='stylesheet' id='syntaxhighlighter-core-css'  href='http://blog.negonation.com/es/wp-content/plugins/syntaxhighlighter/syntaxhighlighter/styles/shCore.css?ver=2.0.320' type='text/css' media='all' />
+<link rel='stylesheet' id='syntaxhighlighter-theme-default-css'  href='http://blog.negonation.com/es/wp-content/plugins/syntaxhighlighter/syntaxhighlighter/styles/shThemeDefault.css?ver=2.0.320' type='text/css' media='all' />
+<script type='text/javascript' src='http://blog.negonation.com/es/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://platform.twitter.com/anywhere.js?id=oUDd4jPcGk8Vxc0acwitg&#038;v=1'></script>
+<link rel='index' title='Negonation Blog' href='http://blog.negonation.com/es/' />
+<link rel='start' title='Justicia para Internet' href='http://blog.negonation.com/es/justicia-para-internet/' />
+<link rel='prev' title='Opiniones Sobre Traducción y Despedida' href='http://blog.negonation.com/es/opiniones-sobre-traduccion-y-despedida/' />
+<link rel='next' title='Validación de firmas en Tractis (2): Validación de firmas' href='http://blog.negonation.com/es/validacion-de-firmas-en-tractis-2-validacion-de-firmas/' />
+<meta name="generator" content="WordPress 3.1.3 - really-static 0.5" />
+<link rel='canonical' href='http://blog.negonation.com/es/validacion-de-firmas-en-tractis-1-validacion-de-certificados/' />
+	<style type="text/css">.syntaxhighlighter { font-size: 12px !important; }</style>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-128262-4";
+urchinTracker();
+</script>
+
+<style type="text/css">
+ div.post img {behavior: url(http://blog.negonation.com/es/iepngfix.htc) }
+</style>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="shortcut icon" type="image/icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/iphone-favicon.png" />
+  <script type="text/javascript" src="/jquery/jquery.js?1360401146"></script>
+  <script>jQuery.noConflict();</script>
+  
+</head>
+
+
+
+<body>
+
+   <div id="header-content">
+     <!-- begin shared/nav_public -->
+     <ul id="ulnav">
+           <li><a href="http://www.tractis.com" title="" rel="section">Inicio</a></li>
+           <li><a href="http://blog.negonation.com" title="" class="selected" rel="section">Blog</a></li>
+            <li><a href="http://twitter.com/tractis" title="" rel="section">Twitter</a></li>
+           
+     </ul>
+     <!-- end shared/nav_public -->
+<ul id="ulnav2">
+<li><a href="/blog/es/" rel="start" title="Negonation Blog en Español" lang="es" class="selected">Español</a></li>
+<li><a href="/blog/en/" rel="start"	title="Negonation Blog en Inglés" lang="en">English</a></li>
+</ul>
+	<div class="clear"></div>
+   </div>
+<div id="super">
+		<div id="header">
+
+				
+<h1><a href="/blog/es/"><img src="/wp-content/themes/minid/images/negonation_logo.png" alt="negonation blog" title="Negonation Blog" /></a></h1>
+
+<h2><em>Crearemos una civilización de la Mente en el Ciberespacio. Que sea más humana y hermosa que el mundo que vuestros gobiernos han creado antes.</em><br />
+- John Perry Barlow. <a target="_blank" href="http://biblioweb.sindominio.net/telematica/manif_barlow.html">Declaración de Independencia del Ciberespacio</a></h2>
+
+</div>
+
+		<hr />
+
+<div id="contenedor">
+
+			<div id="content">
+
+											
+  							
+	
+								<div class="post individual" id="post-348">
+
+								<h2><a href="/blog/es/validacion-de-firmas-en-tractis-1-validacion-de-certificados/" rel="bookmark" title="Enlace permanente: Validación de firmas en Tractis (1): Validación de certificados">Validación de firmas en Tractis (1): Validación de certificados</a></h2>
+	
+								<blockquote class="especial"><p>Hoy Lunes 28 de Abril de 2008 marca un hito importante en el roadmap de Tractis. Tenemos el placer de anunciar oficialmente que <strong>Tractis supera la totalidad de tests PKITS del NIST</strong>.</p>
+<p>El <a href="http://csrc.nist.gov/">NIST</a> o &#8220;<em>National Institute of Standards and Technology</em>&#8221; es la agencia del gobierno estadounidense dedicada a garantizar el cumplimiento de estándares y favorecer la interoperabilidad entre distintos fabricantes. Las pruebas diseñadas por la &#8220;<a href="http://csrc.nist.gov/" target="_blank"><em>NIST &#8211; Computer Security Division</em></a>&#8221; y la <a href="http://www.nsa.gov/" target="_blank">NSA</a> (Agencia de Seguridad Nacional) son utilizadas por las distintas administraciones del gobierno federal estadounidense como un método fiable para medir la calidad de los distintos despliegues PKI del gobierno. La semana pasada Tractis superó con éxito el 100% de la <a href="http://csrc.nist.gov/groups/ST/crypto_apps_infra/pki/pkitesting.html" target="_blank">batería de tests PKITS del NIST</a>, diseñados para garantizar un cumplimiento exquisito de las especificaciones X.509 y <a href="http://www.ietf.org/rfc/rfc3280.txt" target="_blank">RFC3280</a>.</p>
+<p>Para celebrarlo, vamos a dedicar esta semana a una serie de tres posts cuyo objetivo es explicar (1) conceptos básicos de validación de certificados, (2) el desafío que supone la validación de firmas electrónicas y  (3) algunas de las técnicas que utilizamos en Tractis para garantizar una validación perfecta y a prueba de fallos.</p></blockquote>
+<h3>Introducción</h3>
+<p>En Tractis ofrecemos un servicio web que permite a particulares y empresas firmar contratos 100% online y con la misma eficacia jurídica que la firma manuscrita. Para ello empleamos tecnologías de firma digital que garantizan la integridad del documento, la identidad de las partes y la no repudiación futura de los compromisos adquiridos por los firmantes.</p>
+<p>Nuestra plataforma no sólo permite un firmado de contratos sin más, sino que <strong>antes de añadir cualquier firma al contrato la validamos para evitar cualquier tipo de irregularidad</strong> en el proceso de firma. El responsable de realizar este proceso en nuestro <em>back-end</em> es un elemento al que denominamos &#8220;Autoridad de Validación Semántica&#8221; (SVA o Semantic Validation Authority). La SVA de Tractis valida desde aspectos criptográficos a temporales y, por supuesto, valida que el certificado empleado para realizar la firma es apto para ello.</p>
+<p>Como el proceso completo de validación de la firma es demasiado complejo para explicar en un solo post (personalmente diría incluso que es demasiado complejo, a secas), en este primer post nos centraremos en el proceso de validar el certificado con el cual se ha realizado la firma.</p>
+<h3>Validación de certificados</h3>
+<p>Para que exista &#8220;firma electrónica reconocida&#8221; (equivalente a firma manuscrita), la legislación europea no requiere que se valide el certificado electrónico con el que se realiza la firma <em>en el mismo momento de la firma</em>. Sin embargo, en Tractis siempre lo hacemos. No es ninguna tontería. Imaginad una empresa que entrega un certificado electrónico a un empleado para que firme contratos electrónicos en representación de la compañía. Ahora imaginad que esa empresa despide al empleado y revoca su certificado. Si se utilizasen herramientas de contratación online que no validan online el estado del certificado, el ex-empleado podría engañar a terceros y utilizar el certificado para firmar en nombre de la empresa <em>¡incluso a pesar de estar despedido!</em>. Las pérdidas podrían ser cuantiosas. No en Tractis. En Tractis no se realiza ninguna firma electrónica reconocida sin antes validar online en tiempo real el estado del certificado. Esto es así para todos los certificados que admitimos, sean del país que sean. Y, ni siquiera haciendo esto, hemos terminado nuestro trabajo.</p>
+<p>Mucha gente piensa que validar un certificado consiste simplemente en lo que hemos comentado: consultar, en el momento de la firma, el estado del certificado a la Autoridad de Certificación que lo emitió  y averiguar  si el certificado es válido y no ha sido revocado. Nada más lejos de la realidad. Validar un certificado de una manera ortodoxa no es algo sencillo. Validar que el certificado no este &#8220;expirado&#8221; o mirando una CRL o consultando un OCSP para ver si está &#8220;revocado&#8221; es sólo una pequeña parte del trabajo.</p>
+<p>El proceso de validar un certificado con garantías suficientes es bastante mas complejo, ya que hay que tener en cuenta la validación de todos los elementos relacionados con el certificado como certificados de Autoridades de Certificación, <a href="http://en.wikipedia.org/wiki/Certificate_revocation_list" target="_blank">listas de revocación</a> (CRL) o mensajes <a href="http://en.wikipedia.org/wiki/OCSP" target="_blank">OCSP</a> que deben ser a su vez validados de manera análoga.</p>
+<p>El porque de tener que validar todos estos componentes deriva de que el encargado de validar el certificado no suele ser el mismo que el emisor de dicho certificado. Nos encontramos entonces con que el validador debe confiar en la información emitida por un tercero para poder emitir un veredicto respecto al certificado a validar. No obstante, antes de poder utilizar esta información para poder emitir un veredicto, ésta debe ser validada. Debemos comprobar que nos hayamos ante información confiable: que no ha sido alterada y que es adecuada para efectuar la validación del certificado en el instante de tiempo en el cual éste debe ser validado. Y es que el momento en el cual se valida el certificado es un punto clave a la hora de efectuar todo este proceso ya que el componente temporal afecta enormemente al proceso de validación. No es lo mismo validar un certificado en el momento actual, que hace 5 años o que de aquí a 5 años.</p>
+<p>Por ello, y por poner un ejemplo sencillo, en el caso de una firma no podemos simplemente validar el certificado en la actualidad sino que debemos determinar de manera fidedigna cuando fue realizada la firma y validar el certificado en ese momento. Veamos un ejemplo: si firmé mi hipoteca y al año siguiente me robaron mi <a href="/blog/es/tarjetas-inteligentes-en-europa-avalancha-de-e-id/">e-ID</a> (sea el que sea: <a href="http://www.dnielectronico.es/">DNIe</a> español, <a href="http://eid.belgium.be/en/navigation/12000/index.html" target="_blank">beID</a> belga, <a href="http://www.cartaodocidadao.pt/">Cartão de Cidadão</a> portugués, Carta d&#8217;dentitá elettronica italiana, <a href="http://www.buergerkarte.at/">Bürgerkarte</a> austriaco, <a href="http://www.fineid.fi/en" target="_blank">FINEID</a> finlandés, <a href="http://www.pass.ee/2.html" target="_blank">ID-Card</a> estonio&#8230;) y lo anulé, no me gustaria que todas las firmas que hice antes de ese momento (incluyendo mi hipoteca) sean consideradas a partir de ese momento como invalidas, ¿no?.</p>
+<p>Aparte de las consideraciones ya comentadas hay además multitud de detalles críticos como la comprobación de longitud de paths, espacios de nombres admitidos, extensiones críticas aceptadas o no, firmas de la información de revocación, etc&#8230; que deben ser tenidos en cuenta.</p>
+<p>Para simplificar, abstrayéndonos un poco de toda esta ingente cantidad de procesos que deben llevarse a cabo, el proceso de validación de un certificado se divide en dos grandes partes: (1) la construcción del <em>path</em> de certificación y (2) la validación del mismo.</p>
+<h3>La necesidad de construir un path&#8230; y validarlo</h3>
+<p>Para validar un certificado, ya sea como parte una validación de firma o validándolo de manera aislada (por ejemplo para logearse en un portal mediante el uso de <a href="http://en.wikipedia.org/wiki/Secure_Sockets_Layer" title="TLS">TLS</a>), es necesario <a href="http://www.ietf.org/rfc/rfc4158.txt" title="Certificate path building">contruir todo su &#8220;<em>certification path</em>&#8220;</a> y <a href="http://www.ietf.org/rfc/rfc3280.txt" title="Certificate path validation">validarlo.</a></p>
+<p>El concepto de &#8220;path&#8221; viene determinado por el como las Autoridades de Certificación emiten sus certificados. Cada <a href="http://en.wikipedia.org/wiki/X.509#Certificates" title="X509 Certificates">certificado de entidad final </a>(el que emiten a personas o entidades ) contiene una serie de atributos tales como &#8220;nombre&#8221;, &#8220;organización&#8221;&#8230; que hacen referencia al sujeto que es objeto de la emisión del mismo. Además, cada certificado incluye una clave pública que será empleada en el proceso de validación criptográfica de toda firma realizada con la clave privada asociada a ese certificado.</p>
+<p>Este certificado es una representación <em>off-line</em> de estos datos en la que un tercero (tu banco, tu gobierno&#8230;) nos garantiza la veracidad de estos atributos para este individuo. Por ejemplo con la emisión de un certificado donde figure mi nombre, apellidos, empresa y DNI, la autoridad que emite el certificado garantiza que esos atributos son constituyentes de mi identidad y además los asocia a una clave pública.</p>
+<p>Como hemos comentado un certificado no es más que un mensaje codificado según una serie de reglas establecidas, pero como es un método de transmisión de información <em>off-line</em> debe haber alguna manera de garantizar la autenticidad de los datos que figuran en el mismo. De esta necesidad de preservar la integridad de los datos viene el requerimiento de que todo certificado debe estar firmado por la autoridad de certificación que lo emite. Así, deberemos validar criptograficamente el certificado de entidad final para garantizar su autenticidad y no alteración, utilizando para ello la clave pública del certificado de la Autoridad de Certificación (CA) emisora.</p>
+<p>Este certificado de CA emisora puede estar emitido a su vez por una CA de grado superior y esta por otra hasta llegar hasta la llamada &#8220;CA raíz&#8221;, un certificado de CA que esta emitido por el mismo y como tal esta firmado con su propia clave privada.</p>
+<p>Para que todo el proceso sea consistente estos &#8220;certificados raíz&#8221; deben ser conocidos por el validador por medios fuera de banda. ¿Os suena el repositorio de certificados que Windows lleva para que os podáis conectar a servidores vía https sin que salgan advertencias de seguridad?, pues es algo así.</p>
+<p>Más aún, una vez construido el path, este debe ser validado teniendo en cuenta un gran número de consideraciones relativas a restricciones sobre el mismo o validar el estado del certificado de entidad final así como de las CAs involucradas (sin contar la raíz) contra CRLs, OCSPs u otros métodos de comprobación del estado de la revocación.</p>
+<p>Y aún hay más, CRLs y OCSPs son objetos firmados con lo cual para poder emplearlos y ser confiables deben ser validados criptográfica y sintácticamente así como validar el certificado con el cual han sido firmados de manera similar a la comentada para los de entidad final: construyendo su path y validándolo.</p>
+<p>Como veis, en la validación de un certificado intervienen una serie de actores adicionales como CAs e información de revocación que debe ser tenida en cuenta, procesada y validada haciendo que la complejidad y el coste de validar un certificado explote.</p>
+<p>Afortunadamente las normas <a href="http://www.ietf.org/rfc/rfc3280.txt" title="Certificate path validation">RFC 3280</a> especifican de manera detallada como debe llevarse a cabo el proceso de validación del path de certificados. Así, este procedimiento queda detallado en un documento y todos los validadores que, como Tractis, dispongan de una implementación que respete RFC3280 validarán siguiendo el mismo conjunto de reglas.</p>
+<h3>Conclusiones</h3>
+<p>El proceso de <strong>validar una firma electrónica es un proceso complejo</strong> que se puede dividir en diferentes procesos complementarios que validan las diferentes partes de la firma: la criptográfica, la relativa al tiempo de firma &#8230; y, como una de las destacadas, la relativa a la validación del certificado con el que se realiza la firma.</p>
+<p>Hemos descrito este proceso a vista de pájaro y de forma resumida pero con el suficiente grado de detalle como para demostrar que <strong>conocer el estado de un certificado de manera diligente es mucho más complicado que consultar a un servicio OCSP de estado de certificados o bien mirar las entradas de una CRL</strong>.</p>
+<p>También hemos visto que, por suerte para los que construimos infraestructuras de este tipo, <strong>existen especificaciones de lo que debe y no debe hacerse en dicho procesos</strong>. Estas especificaciones hacen posible que dispongamos de implementaciones de validación coherentes, respetuosas con estándares abiertos e interoperables entre los diferentes fabricantes.</p>
+<p>&#8211;</p>
+<p>Próximo post:  <a href="/blog/es/validacion-de-firmas-en-tractis-2-validacion-de-firmas/">Validación de firmas en Tractis (2): Validación de firmas</a></p>
+	
+								
+
+<script type="text/javascript"><!--
+if(!mmposts){var mmposts=[];}mmposts[mmposts.length]="348";
+//--></script>
+<!-- mmp mmid:348 mmdate:20080428191637 mmurl:http://blog.negonation.com/es/validacion-de-firmas-en-tractis-1-validacion-de-certificados/ mmtitle:Validación de firmas en Tractis (1): Validación de certificados -->
+
+
+<p class="posted">Por David García<br />Guardado en: <a href="/blog/es/category/firma-digital/" title="Ver todas las entradas en Firma digital" rel="category tag">Firma digital</a>, <a href="/blog/es/category/tecnologia/" title="Ver todas las entradas en Tecnología" rel="category tag">Tecnología</a>, <a href="/blog/es/category/tractis/" title="Ver todas las entradas en Tractis" rel="category tag">Tractis</a> |   <a href="/blog/es/validacion-de-firmas-en-tractis-1-validacion-de-certificados/#comments" title="Comentarios en Validación de firmas en Tractis (1): Validación de certificados">2 comentarios &#187;</a> | 28 de Abril de 2008</p>
+
+								</div>
+
+			
+							
+<!-- You can start editing here. -->
+
+	<h3 id="comments">2 Comentarios en &#8220;Validación de firmas en Tractis (1): Validación de certificados&#8221;</h3>
+
+
+
+	
+
+
+
+	
+			<!-- new comment container -->
+
+			    			      <div class="alt" id="comment-52442">
+			    
+
+				<div class="comment-head">
+			
+				<img src="http://www.gravatar.com/avatar.php?gravatar_id=0c39b828636367fc6e22b7be8c803c74&amp;rating=R&amp;size=32&amp;default=http%3A%2F%2Fblog.negonation.com%2Fes%2Fwp-content%2Fthemes%2Fminid%2Fimages%2Fcobarde-anonimo.png" alt="Gravatar de David Calavera" title="Gravatar de David Calavera" />
+
+				
+			
+				<p><cite><a href='http://thinkincode.net' rel='external nofollow' class='url'>David Calavera</a></cite><br />29 de Abril de 2008 a las <a href="#comment-52442">9:58 am</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+						<div class="clear"></div>
+
+				</div>
+
+				<div class="comment-body">
+					
+
+						<p>que grande, felicidades!!</p>
+
+				
+				</div>
+
+			<!-- end new comment container -->
+			
+			</div>
+
+
+			
+			
+			
+						
+
+	
+<script type="text/javascript"><!--
+if(!mmcomments){var mmcomments=[];}mmcomments[mmcomments.length]="52442";
+//--></script>
+<!-- mmc mmid:52442 mmdate:20080429095847 mmauthor:David Calavera -->
+
+
+
+	
+			<!-- new comment container -->
+
+			    			      <div class="" id="comment-167909">
+			    
+
+				<div class="comment-head">
+			
+				<img src="http://www.gravatar.com/avatar.php?gravatar_id=d41d8cd98f00b204e9800998ecf8427e&amp;rating=R&amp;size=32&amp;default=http%3A%2F%2Fblog.negonation.com%2Fes%2Fwp-content%2Fthemes%2Fminid%2Fimages%2Fcobarde-anonimo.png" alt="Gravatar de Negonation Blog &raquo; Blog Archive &raquo; Seguridad en Tractis (1): Seguridad en Procesos" title="Gravatar de Negonation Blog &raquo; Blog Archive &raquo; Seguridad en Tractis (1): Seguridad en Procesos" />
+
+				
+			
+				<p><cite><a href='http://blog.negonation.com/es/seguridad-en-tractis-1-seguridad-en-procesos/' rel='external nofollow' class='url'>Negonation Blog &raquo; Blog Archive &raquo; Seguridad en Tractis (1): Seguridad en Procesos</a></cite><br />24 de Noviembre de 2009 a las <a href="#comment-167909">5:00 pm</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+						<div class="clear"></div>
+
+				</div>
+
+				<div class="comment-body">
+					
+
+						<p>[...] Validación de firmas en Tractis (1): Validación de certificados. [...]</p>
+
+				
+				</div>
+
+			<!-- end new comment container -->
+			
+			</div>
+
+
+			
+			
+			
+						
+
+	
+<script type="text/javascript"><!--
+if(!mmcomments){var mmcomments=[];}mmcomments[mmcomments.length]="167909";
+//--></script>
+<!-- mmc mmid:167909 mmdate:20091124170057 mmauthor:Negonation Blog &raquo; Blog Archive &raquo; Seguridad en Tractis (1): Seguridad en Procesos -->
+
+
+
+	
+	
+ 
+
+
+<div id="comment-super" style="display: none;">
+
+<h3 id="respond">Deja tu comentario...</h3>
+
+<p>Los comentarios de este blog están moderados utilizando el &#8220;<a href="https://www.tractis.com/wordpress">Plugin de Verificación de Identidad Tractis para WordPress</a>&#8220;. La configuración es la siguiente: los comentarios realizados por usuarios autenticados con cualquiera de los <a href="https://www.tractis.com/supported_certificates">certificados electrónicos soportados en Tractis</a> aparecerán inmediatamente. Los comentarios no autenticados serán moderados y, por tanto, no aparecerán inmediatamente en la página al ser enviados.</p>
+<p>Nuestra intención es conseguir un ambiente agradable donde las personas puedan comentar sin miedo a ser insultados o atacados. Estás en tu perfecto derecho de comentar anónimamente pero, por favor, no utilices el anonimato para decirle a alguien cosas que no le dirías en persona.</p>
+<p>Las descalificaciones personales, los comentarios maleducados, los ataques directos, los insultos de cualquier tipo, los comentarios repetitivos sobre un mismo tema, o con varias identidades (astroturfing) o suplantando a otros comentaristas, etc. serán eliminados.</p>
+
+
+
+<!-- Tractis Identity Verifications Connect Button -->
+<form action="https://www.tractis.com/verifications" method="post">
+	<input id="api_key" name="api_key" type="hidden" value="4d6276fae4047cecd9ab399529158066dafa338a" />
+	<input id="notification_callback" name="notification_callback" type="hidden" value="http://blog.negonation.com/es/validacion-de-firmas-en-tractis-1-validacion-de-certificados/" />	
+	<input id="public_verification" name="public_verification" type="hidden" value="true" />
+	<input type="image" src="http://blog.negonation.com/es/wp-content/plugins/tractis-identity-verifications/images/trac_but_bg_lrg_b_es.png" name="tractis_icon">
+</form>
+<!-- /Tractis Identity Verifications Connect Button -->
+
+<form action="http://blog.negonation.com/es/wp-comments-post.php" method="post" id="commentform">
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Nombre (requerido)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>E-mail (no será publicado) (requerido)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Página web</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+
+<p><textarea name="comment" id="comment" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Enviar comentario" />
+<input type="hidden" name="comment_post_ID" value="348" />
+</p>
+
+
+
+	<p style="clear: both;" class="subscribe-to-comments">
+	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
+	<label for="subscribe">Notify me of followup comments via e-mail</label>
+	</p>
+
+
+
+</form>
+
+</div>
+
+
+
+			<h3 id="moreentry">Más entradas en Negonation Blog</h3>
+
+			<div class="navigation">
+
+				<div class="alignleft">&laquo; <a href="/blog/es/opiniones-sobre-traduccion-y-despedida/" rel="prev">Opiniones Sobre Traducción y Despedida</a></div>
+
+				<div class="alignright"><a href="/blog/es/validacion-de-firmas-en-tractis-2-validacion-de-firmas/" rel="next">Validación de firmas en Tractis (2): Validación de firmas</a> &raquo;</div>
+
+			<div class="clear"></div>
+			
+		</div>
+
+	
+							
+							
+			</div>
+
+			<div id="menus">
+
+				<div class="metadata">
+
+				<h3>Sobre esta entrada...</h3>
+				
+				<p>Esta entrada fue publicada el Lunes 28 de Abril de 2008 a la/s 7:16 pm y está guardada dentro de la categoría <a href="/blog/es/category/firma-digital/" title="Ver todas las entradas en Firma digital" rel="category tag">Firma digital</a>, <a href="/blog/es/category/tecnologia/" title="Ver todas las entradas en Tecnología" rel="category tag">Tecnología</a>, <a href="/blog/es/category/tractis/" title="Ver todas las entradas en Tractis" rel="category tag">Tractis</a>. Puedes seguir los comentarios desde cualquier lector de <em lang="en">feeds</em> usando este <em lang="en">feed</em> <a href='http://blog.negonation.com/es/validacion-de-firmas-en-tractis-1-validacion-de-certificados/feed/'>RSS 2.0</a>. 
+						
+													Puedes <a href="#respond">dejar un comentario</a>, o un <a href="/blog/es/validacion-de-firmas-en-tractis-1-validacion-de-certificados/trackback/" rel="trackback">trackback</a> desde tu propio sitio.
+						
+						</p>
+
+	</div>
+
+
+<div class="tools">
+	
+<div class="principal">
+
+		
+
+		<h3>Categorías</h3>
+		
+			<ul>
+					<li class="cat-item cat-item-3"><a href="/blog/es/category/anuncios/" title="Ver todas las entradas de Anuncios">Anuncios</a> (211)
+</li>
+	<li class="cat-item cat-item-20"><a href="/blog/es/category/bloggers-invitados/" title="Ver todas las entradas de Bloggers invitados">Bloggers invitados</a> (4)
+</li>
+	<li class="cat-item cat-item-10"><a href="/blog/es/category/blogging/" title="Ver todas las entradas de Blogging">Blogging</a> (5)
+</li>
+	<li class="cat-item cat-item-25"><a href="/blog/es/category/business/" title="Ver todas las entradas de Business">Business</a> (21)
+</li>
+	<li class="cat-item cat-item-33"><a href="/blog/es/category/clientes/" title="Ver todas las entradas de Clientes">Clientes</a> (7)
+</li>
+	<li class="cat-item cat-item-18"><a href="/blog/es/category/conferencias/" title="Ver todas las entradas de Conferencias">Conferencias</a> (10)
+</li>
+	<li class="cat-item cat-item-23"><a href="/blog/es/category/diseno/" title="Ver todas las entradas de Diseño">Diseño</a> (20)
+</li>
+	<li class="cat-item cat-item-38"><a href="/blog/es/category/eid/" title="Ver todas las entradas de eID">eID</a> (50)
+</li>
+	<li class="cat-item cat-item-22"><a href="/blog/es/category/empowerment/" title="Ver todas las entradas de Empowerment">Empowerment</a> (14)
+</li>
+	<li class="cat-item cat-item-5"><a href="/blog/es/category/emprendedores/" title="Ver todas las entradas de Emprendedores">Emprendedores</a> (34)
+</li>
+	<li class="cat-item cat-item-9"><a href="/blog/es/category/firma-digital/" title="Ver todas las entradas de Firma digital">Firma digital</a> (59)
+</li>
+	<li class="cat-item cat-item-21"><a href="/blog/es/category/frases/" title="Ver todas las entradas de Frases">Frases</a> (75)
+</li>
+	<li class="cat-item cat-item-28"><a href="/blog/es/category/glider/" title="Ver todas las entradas de Glider">Glider</a> (6)
+</li>
+	<li class="cat-item cat-item-4"><a href="/blog/es/category/hacking/" title="Ver todas las entradas de Hacking">Hacking</a> (3)
+</li>
+	<li class="cat-item cat-item-27"><a href="/blog/es/category/identidad/" title="Ver todas las entradas de Identidad">Identidad</a> (15)
+</li>
+	<li class="cat-item cat-item-13"><a href="/blog/es/category/internet/" title="Ver todas las entradas de Internet">Internet</a> (27)
+</li>
+	<li class="cat-item cat-item-2"><a href="/blog/es/category/justicia/" title="Ver todas las entradas de Justicia">Justicia</a> (7)
+</li>
+	<li class="cat-item cat-item-29"><a href="/blog/es/category/legal/" title="Ver todas las entradas de Legal">Legal</a> (11)
+</li>
+	<li class="cat-item cat-item-7"><a href="/blog/es/category/libros/" title="Ver todas las entradas de Libros">Libros</a> (4)
+</li>
+	<li class="cat-item cat-item-39"><a href="/blog/es/category/otp/" title="Ver todas las entradas de OTP">OTP</a> (1)
+</li>
+	<li class="cat-item cat-item-48"><a href="/blog/es/category/partnerships/" title="Ver todas las entradas de Partnerships">Partnerships</a> (2)
+</li>
+	<li class="cat-item cat-item-37"><a href="/blog/es/category/plantillas/" title="Ver todas las entradas de Plantillas">Plantillas</a> (4)
+</li>
+	<li class="cat-item cat-item-17"><a href="/blog/es/category/pranks/" title="Ver todas las entradas de Pranks">Pranks</a> (7)
+</li>
+	<li class="cat-item cat-item-24"><a href="/blog/es/category/programacion/" title="Ver todas las entradas de Programación">Programación</a> (27)
+</li>
+	<li class="cat-item cat-item-31"><a href="/blog/es/category/rails/" title="Ver todas las entradas de Rails">Rails</a> (3)
+</li>
+	<li class="cat-item cat-item-30"><a href="/blog/es/category/ruby/" title="Ver todas las entradas de Ruby">Ruby</a> (1)
+</li>
+	<li class="cat-item cat-item-34"><a href="/blog/es/category/seguridad/" title="Ver todas las entradas de Seguridad">Seguridad</a> (7)
+</li>
+	<li class="cat-item cat-item-8"><a href="/blog/es/category/tecnologia/" title="Ver todas las entradas de Tecnología">Tecnología</a> (17)
+</li>
+	<li class="cat-item cat-item-14"><a href="/blog/es/category/tractis/" title="Ver todas las entradas de Tractis">Tractis</a> (182)
+<ul class='children'>
+	<li class="cat-item cat-item-47"><a href="/blog/es/category/tractis/tractis-accounts/" title="Ver todas las entradas de Tractis Accounts">Tractis Accounts</a> (1)
+</li>
+	<li class="cat-item cat-item-45"><a href="/blog/es/category/tractis/tractis-hardware/" title="Ver todas las entradas de Tractis Hardware">Tractis Hardware</a> (5)
+</li>
+	<li class="cat-item cat-item-46"><a href="/blog/es/category/tractis/tractis-identity/" title="Ver todas las entradas de Tractis Identity">Tractis Identity</a> (8)
+</li>
+	<li class="cat-item cat-item-42"><a href="/blog/es/category/tractis/tractis-promotions/" title="Ver todas las entradas de Tractis Promotions">Tractis Promotions</a> (2)
+</li>
+	<li class="cat-item cat-item-43"><a href="/blog/es/category/tractis/tractis-signatures/" title="Ver todas las entradas de Tractis Signatures">Tractis Signatures</a> (14)
+</li>
+	<li class="cat-item cat-item-44"><a href="/blog/es/category/tractis/tractis-webservices/" title="Ver todas las entradas de Tractis Webservices">Tractis Webservices</a> (2)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-15"><a href="/blog/es/category/venture-capital/" title="Ver todas las entradas de Venture Capital">Venture Capital</a> (10)
+</li>
+			</ul>
+
+</div>
+<div class="extra">
+
+			<h3>Archivos</h3>
+			
+				<ul>
+					<li><a href='http://blog.negonation.com/es/2018/04/' title='Abril 2018'>Abril 2018</a></li>
+	<li><a href='http://blog.negonation.com/es/2018/02/' title='Febrero 2018'>Febrero 2018</a></li>
+	<li><a href='http://blog.negonation.com/es/2016/08/' title='Agosto 2016'>Agosto 2016</a></li>
+	<li><a href='http://blog.negonation.com/es/2016/07/' title='Julio 2016'>Julio 2016</a></li>
+	<li><a href='http://blog.negonation.com/es/2015/10/' title='Octubre 2015'>Octubre 2015</a></li>
+	<li><a href='http://blog.negonation.com/es/2015/07/' title='Julio 2015'>Julio 2015</a></li>
+	<li><a href='http://blog.negonation.com/es/2015/06/' title='Junio 2015'>Junio 2015</a></li>
+	<li><a href='http://blog.negonation.com/es/2015/05/' title='Mayo 2015'>Mayo 2015</a></li>
+	<li><a href='http://blog.negonation.com/es/2014/11/' title='Noviembre 2014'>Noviembre 2014</a></li>
+	<li><a href='http://blog.negonation.com/es/2014/10/' title='Octubre 2014'>Octubre 2014</a></li>
+	<li><a href='http://blog.negonation.com/es/2014/09/' title='Septiembre 2014'>Septiembre 2014</a></li>
+	<li><a href='http://blog.negonation.com/es/2014/07/' title='Julio 2014'>Julio 2014</a></li>
+	<li><a href='http://blog.negonation.com/es/2014/06/' title='Junio 2014'>Junio 2014</a></li>
+	<li><a href='http://blog.negonation.com/es/2014/04/' title='Abril 2014'>Abril 2014</a></li>
+	<li><a href='http://blog.negonation.com/es/2014/03/' title='Marzo 2014'>Marzo 2014</a></li>
+	<li><a href='http://blog.negonation.com/es/2014/02/' title='Febrero 2014'>Febrero 2014</a></li>
+	<li><a href='http://blog.negonation.com/es/2013/10/' title='Octubre 2013'>Octubre 2013</a></li>
+	<li><a href='http://blog.negonation.com/es/2013/09/' title='Septiembre 2013'>Septiembre 2013</a></li>
+	<li><a href='http://blog.negonation.com/es/2013/08/' title='Agosto 2013'>Agosto 2013</a></li>
+	<li><a href='http://blog.negonation.com/es/2013/05/' title='Mayo 2013'>Mayo 2013</a></li>
+	<li><a href='http://blog.negonation.com/es/2013/04/' title='Abril 2013'>Abril 2013</a></li>
+	<li><a href='http://blog.negonation.com/es/2013/03/' title='Marzo 2013'>Marzo 2013</a></li>
+	<li><a href='http://blog.negonation.com/es/2013/02/' title='Febrero 2013'>Febrero 2013</a></li>
+	<li><a href='http://blog.negonation.com/es/2012/12/' title='Diciembre 2012'>Diciembre 2012</a></li>
+	<li><a href='http://blog.negonation.com/es/2012/11/' title='Noviembre 2012'>Noviembre 2012</a></li>
+	<li><a href='http://blog.negonation.com/es/2012/10/' title='Octubre 2012'>Octubre 2012</a></li>
+	<li><a href='http://blog.negonation.com/es/2012/09/' title='Septiembre 2012'>Septiembre 2012</a></li>
+	<li><a href='http://blog.negonation.com/es/2012/08/' title='Agosto 2012'>Agosto 2012</a></li>
+	<li><a href='http://blog.negonation.com/es/2012/06/' title='Junio 2012'>Junio 2012</a></li>
+	<li><a href='http://blog.negonation.com/es/2012/05/' title='Mayo 2012'>Mayo 2012</a></li>
+	<li><a href='http://blog.negonation.com/es/2012/03/' title='Marzo 2012'>Marzo 2012</a></li>
+	<li><a href='http://blog.negonation.com/es/2012/02/' title='Febrero 2012'>Febrero 2012</a></li>
+	<li><a href='http://blog.negonation.com/es/2012/01/' title='Enero 2012'>Enero 2012</a></li>
+	<li><a href='http://blog.negonation.com/es/2011/12/' title='Diciembre 2011'>Diciembre 2011</a></li>
+	<li><a href='http://blog.negonation.com/es/2011/11/' title='Noviembre 2011'>Noviembre 2011</a></li>
+	<li><a href='http://blog.negonation.com/es/2011/10/' title='Octubre 2011'>Octubre 2011</a></li>
+	<li><a href='http://blog.negonation.com/es/2011/06/' title='Junio 2011'>Junio 2011</a></li>
+	<li><a href='http://blog.negonation.com/es/2011/05/' title='Mayo 2011'>Mayo 2011</a></li>
+	<li><a href='http://blog.negonation.com/es/2011/04/' title='Abril 2011'>Abril 2011</a></li>
+	<li><a href='http://blog.negonation.com/es/2011/03/' title='Marzo 2011'>Marzo 2011</a></li>
+	<li><a href='http://blog.negonation.com/es/2011/02/' title='Febrero 2011'>Febrero 2011</a></li>
+	<li><a href='http://blog.negonation.com/es/2011/01/' title='Enero 2011'>Enero 2011</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/12/' title='Diciembre 2010'>Diciembre 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/11/' title='Noviembre 2010'>Noviembre 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/10/' title='Octubre 2010'>Octubre 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/09/' title='Septiembre 2010'>Septiembre 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/08/' title='Agosto 2010'>Agosto 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/07/' title='Julio 2010'>Julio 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/06/' title='Junio 2010'>Junio 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/05/' title='Mayo 2010'>Mayo 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/04/' title='Abril 2010'>Abril 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/03/' title='Marzo 2010'>Marzo 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2010/02/' title='Febrero 2010'>Febrero 2010</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/12/' title='Diciembre 2009'>Diciembre 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/11/' title='Noviembre 2009'>Noviembre 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/10/' title='Octubre 2009'>Octubre 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/09/' title='Septiembre 2009'>Septiembre 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/08/' title='Agosto 2009'>Agosto 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/07/' title='Julio 2009'>Julio 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/06/' title='Junio 2009'>Junio 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/05/' title='Mayo 2009'>Mayo 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/04/' title='Abril 2009'>Abril 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/03/' title='Marzo 2009'>Marzo 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/02/' title='Febrero 2009'>Febrero 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2009/01/' title='Enero 2009'>Enero 2009</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/12/' title='Diciembre 2008'>Diciembre 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/11/' title='Noviembre 2008'>Noviembre 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/10/' title='Octubre 2008'>Octubre 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/09/' title='Septiembre 2008'>Septiembre 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/08/' title='Agosto 2008'>Agosto 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/07/' title='Julio 2008'>Julio 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/06/' title='Junio 2008'>Junio 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/05/' title='Mayo 2008'>Mayo 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/04/' title='Abril 2008'>Abril 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/03/' title='Marzo 2008'>Marzo 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/02/' title='Febrero 2008'>Febrero 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2008/01/' title='Enero 2008'>Enero 2008</a></li>
+	<li><a href='http://blog.negonation.com/es/2007/12/' title='Diciembre 2007'>Diciembre 2007</a></li>
+	<li><a href='http://blog.negonation.com/es/2007/11/' title='Noviembre 2007'>Noviembre 2007</a></li>
+	<li><a href='http://blog.negonation.com/es/2007/10/' title='Octubre 2007'>Octubre 2007</a></li>
+	<li><a href='http://blog.negonation.com/es/2007/08/' title='Agosto 2007'>Agosto 2007</a></li>
+	<li><a href='http://blog.negonation.com/es/2007/04/' title='Abril 2007'>Abril 2007</a></li>
+	<li><a href='http://blog.negonation.com/es/2007/02/' title='Febrero 2007'>Febrero 2007</a></li>
+	<li><a href='http://blog.negonation.com/es/2007/01/' title='Enero 2007'>Enero 2007</a></li>
+	<li><a href='http://blog.negonation.com/es/2006/12/' title='Diciembre 2006'>Diciembre 2006</a></li>
+	<li><a href='http://blog.negonation.com/es/2006/11/' title='Noviembre 2006'>Noviembre 2006</a></li>
+	<li><a href='http://blog.negonation.com/es/2006/10/' title='Octubre 2006'>Octubre 2006</a></li>
+	<li><a href='http://blog.negonation.com/es/2006/09/' title='Septiembre 2006'>Septiembre 2006</a></li>
+	<li><a href='http://blog.negonation.com/es/2006/08/' title='Agosto 2006'>Agosto 2006</a></li>
+	<li><a href='http://blog.negonation.com/es/2006/07/' title='Julio 2006'>Julio 2006</a></li>
+	<li><a href='http://blog.negonation.com/es/2006/06/' title='Junio 2006'>Junio 2006</a></li>
+	<li><a href='http://blog.negonation.com/es/2006/05/' title='Mayo 2006'>Mayo 2006</a></li>
+				</ul>
+
+				
+</div>
+
+<div class="clear"></div>
+
+
+</div>
+				
+			</div>
+
+			<div class="clear"></div>
+		
+	</div>
+
+<hr />
+
+<div id="footer">
+
+	<p>Content is <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.es" lang="en"><cite>Attribution-NonComm-NoDerivs 2.0</cite></a>
+
+<br/>
+
+<a href="http://feeds.feedburner.com/negonation/blog/es">Entradas RSS</a> & <a href="/blog/es/comments/feed/">Comentarios RSS</a>
+
+<br/>
+
+<a href="http://www.minid.net/2005/08/29/i-haev-styel-tema-para-wordpress-15x/" rel="chapter" title="Tema gráfico para Wordpress 1.5" lang="en">I HAEV STYEL</a></p>
+
+</div>
+
+</div>
+
+
+		<script type='text/javascript' src='http://platform.twitter.com/widgets.js'></script>
+</body>
+</html>

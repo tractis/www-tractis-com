@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head profile="http://gmpg.org/xfn/11">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        
+	<title>Negonation Blog   &raquo; Getting started with AJAX&#8230;</title>
+
+	<meta name="generator" content="WordPress 3.1.3 - really-static 0.5" /> <!-- leave this for stats -->
+	<meta name="verify-v1" content="pXLPIyE5Pjm33fKNgnriuzSR4F0WMO9Ng/jedsJo1Rg=" />
+
+	<link rel="stylesheet" href="/blog/es/wp-content/themes/minid/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/blog/en/wp-content/themes/minid/print.css" type="text/css" media="print" />
+	<link rel="stylesheet" href="/blog/en/wp-content/themes/minid/alternate.css" type="text/css" media="handheld" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/es/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/negonation/blog/es" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/blog/es/feed/atom/" />
+	<link rel="pingback" href="/blog/es/xmlrpc.php" />
+
+
+			<link rel='archives' title='Abril 2018' href='/es/2018/04/' />
+	<link rel='archives' title='Febrero 2018' href='/es/2018/02/' />
+	<link rel='archives' title='Agosto 2016' href='/es/2016/08/' />
+	<link rel='archives' title='Julio 2016' href='/es/2016/07/' />
+	<link rel='archives' title='Octubre 2015' href='/es/2015/10/' />
+	<link rel='archives' title='Julio 2015' href='/es/2015/07/' />
+	<link rel='archives' title='Junio 2015' href='/es/2015/06/' />
+	<link rel='archives' title='Mayo 2015' href='/es/2015/05/' />
+	<link rel='archives' title='Noviembre 2014' href='/es/2014/11/' />
+	<link rel='archives' title='Octubre 2014' href='/es/2014/10/' />
+	<link rel='archives' title='Septiembre 2014' href='/es/2014/09/' />
+	<link rel='archives' title='Julio 2014' href='/es/2014/07/' />
+	<link rel='archives' title='Junio 2014' href='/es/2014/06/' />
+	<link rel='archives' title='Abril 2014' href='/es/2014/04/' />
+	<link rel='archives' title='Marzo 2014' href='/es/2014/03/' />
+	<link rel='archives' title='Febrero 2014' href='/es/2014/02/' />
+	<link rel='archives' title='Octubre 2013' href='/es/2013/10/' />
+	<link rel='archives' title='Septiembre 2013' href='/es/2013/09/' />
+	<link rel='archives' title='Agosto 2013' href='/es/2013/08/' />
+	<link rel='archives' title='Mayo 2013' href='/es/2013/05/' />
+	<link rel='archives' title='Abril 2013' href='/es/2013/04/' />
+	<link rel='archives' title='Marzo 2013' href='/es/2013/03/' />
+	<link rel='archives' title='Febrero 2013' href='/es/2013/02/' />
+	<link rel='archives' title='Diciembre 2012' href='/es/2012/12/' />
+	<link rel='archives' title='Noviembre 2012' href='/es/2012/11/' />
+	<link rel='archives' title='Octubre 2012' href='/es/2012/10/' />
+	<link rel='archives' title='Septiembre 2012' href='/es/2012/09/' />
+	<link rel='archives' title='Agosto 2012' href='/es/2012/08/' />
+	<link rel='archives' title='Junio 2012' href='/es/2012/06/' />
+	<link rel='archives' title='Mayo 2012' href='/es/2012/05/' />
+	<link rel='archives' title='Marzo 2012' href='/es/2012/03/' />
+	<link rel='archives' title='Febrero 2012' href='/es/2012/02/' />
+	<link rel='archives' title='Enero 2012' href='/es/2012/01/' />
+	<link rel='archives' title='Diciembre 2011' href='/es/2011/12/' />
+	<link rel='archives' title='Noviembre 2011' href='/es/2011/11/' />
+	<link rel='archives' title='Octubre 2011' href='/es/2011/10/' />
+	<link rel='archives' title='Junio 2011' href='/es/2011/06/' />
+	<link rel='archives' title='Mayo 2011' href='/es/2011/05/' />
+	<link rel='archives' title='Abril 2011' href='/es/2011/04/' />
+	<link rel='archives' title='Marzo 2011' href='/es/2011/03/' />
+	<link rel='archives' title='Febrero 2011' href='/es/2011/02/' />
+	<link rel='archives' title='Enero 2011' href='/es/2011/01/' />
+	<link rel='archives' title='Diciembre 2010' href='/es/2010/12/' />
+	<link rel='archives' title='Noviembre 2010' href='/es/2010/11/' />
+	<link rel='archives' title='Octubre 2010' href='/es/2010/10/' />
+	<link rel='archives' title='Septiembre 2010' href='/es/2010/09/' />
+	<link rel='archives' title='Agosto 2010' href='/es/2010/08/' />
+	<link rel='archives' title='Julio 2010' href='/es/2010/07/' />
+	<link rel='archives' title='Junio 2010' href='/es/2010/06/' />
+	<link rel='archives' title='Mayo 2010' href='/es/2010/05/' />
+	<link rel='archives' title='Abril 2010' href='/es/2010/04/' />
+	<link rel='archives' title='Marzo 2010' href='/es/2010/03/' />
+	<link rel='archives' title='Febrero 2010' href='/es/2010/02/' />
+	<link rel='archives' title='Diciembre 2009' href='/es/2009/12/' />
+	<link rel='archives' title='Noviembre 2009' href='/es/2009/11/' />
+	<link rel='archives' title='Octubre 2009' href='/es/2009/10/' />
+	<link rel='archives' title='Septiembre 2009' href='/es/2009/09/' />
+	<link rel='archives' title='Agosto 2009' href='/es/2009/08/' />
+	<link rel='archives' title='Julio 2009' href='/es/2009/07/' />
+	<link rel='archives' title='Junio 2009' href='/es/2009/06/' />
+	<link rel='archives' title='Mayo 2009' href='/es/2009/05/' />
+	<link rel='archives' title='Abril 2009' href='/es/2009/04/' />
+	<link rel='archives' title='Marzo 2009' href='/es/2009/03/' />
+	<link rel='archives' title='Febrero 2009' href='/es/2009/02/' />
+	<link rel='archives' title='Enero 2009' href='/es/2009/01/' />
+	<link rel='archives' title='Diciembre 2008' href='/es/2008/12/' />
+	<link rel='archives' title='Noviembre 2008' href='/es/2008/11/' />
+	<link rel='archives' title='Octubre 2008' href='/es/2008/10/' />
+	<link rel='archives' title='Septiembre 2008' href='/es/2008/09/' />
+	<link rel='archives' title='Agosto 2008' href='/es/2008/08/' />
+	<link rel='archives' title='Julio 2008' href='/es/2008/07/' />
+	<link rel='archives' title='Junio 2008' href='/es/2008/06/' />
+	<link rel='archives' title='Mayo 2008' href='/es/2008/05/' />
+	<link rel='archives' title='Abril 2008' href='/es/2008/04/' />
+	<link rel='archives' title='Marzo 2008' href='/es/2008/03/' />
+	<link rel='archives' title='Febrero 2008' href='/es/2008/02/' />
+	<link rel='archives' title='Enero 2008' href='/es/2008/01/' />
+	<link rel='archives' title='Diciembre 2007' href='/es/2007/12/' />
+	<link rel='archives' title='Noviembre 2007' href='/es/2007/11/' />
+	<link rel='archives' title='Octubre 2007' href='/es/2007/10/' />
+	<link rel='archives' title='Agosto 2007' href='/es/2007/08/' />
+	<link rel='archives' title='Abril 2007' href='/es/2007/04/' />
+	<link rel='archives' title='Febrero 2007' href='/es/2007/02/' />
+	<link rel='archives' title='Enero 2007' href='/es/2007/01/' />
+	<link rel='archives' title='Diciembre 2006' href='/es/2006/12/' />
+	<link rel='archives' title='Noviembre 2006' href='/es/2006/11/' />
+	<link rel='archives' title='Octubre 2006' href='/es/2006/10/' />
+	<link rel='archives' title='Septiembre 2006' href='/es/2006/09/' />
+	<link rel='archives' title='Agosto 2006' href='/es/2006/08/' />
+	<link rel='archives' title='Julio 2006' href='/es/2006/07/' />
+	<link rel='archives' title='Junio 2006' href='/es/2006/06/' />
+	<link rel='archives' title='Mayo 2006' href='/es/2006/05/' />
+
+		<link rel="alternate" type="application/rss+xml" title="Negonation Blog &raquo; Getting started with AJAX&#8230; Comments Feed" href="/blog/es/getting-started-with-ajax/feed/" />
+<link rel='stylesheet' id='syntaxhighlighter-core-css'  href='/es/wp-content/plugins/syntaxhighlighter/syntaxhighlighter/styles/shCore.css?ver=2.0.320' type='text/css' media='all' />
+<link rel='stylesheet' id='syntaxhighlighter-theme-default-css'  href='/es/wp-content/plugins/syntaxhighlighter/syntaxhighlighter/styles/shThemeDefault.css?ver=2.0.320' type='text/css' media='all' />
+<script type='text/javascript' src='/es/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://platform.twitter.com/anywhere.js?id=oUDd4jPcGk8Vxc0acwitg&#038;v=1'></script>
+<link rel='index' title='Negonation Blog' href='/es/' />
+<link rel='prev' title='Getting started&#8230;' href='/es/getting-started/' />
+<link rel='next' title='Getting started with Entrepreneurship&#8230;' href='/es/getting-started-with-entrepreneurship/' />
+<meta name="generator" content="WordPress 3.1.3 - really-static 0.5" />
+<link rel='canonical' href='/es/getting-started-with-ajax/' />
+	<style type="text/css">.syntaxhighlighter { font-size: 12px !important; }</style>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-128262-4";
+urchinTracker();
+</script>
+
+<style type="text/css">
+ div.post img {behavior: url(/es/iepngfix.htc) }
+</style>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="shortcut icon" type="image/icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/iphone-favicon.png" />
+  <script type="text/javascript" src="/jquery/jquery.js?1360401146"></script>
+  <script>jQuery.noConflict();</script>
+  
+</head>
+
+
+
+<body>
+
+   <div id="header-content">
+     <!-- begin shared/nav_public -->
+     <ul id="ulnav">
+           <li><a href="http://www.tractis.com" title="" rel="section">Inicio</a></li>
+           <li><a href="http://blog.negonation.com" title="" class="selected" rel="section">Blog</a></li>
+            <li><a href="http://twitter.com/tractis" title="" rel="section">Twitter</a></li>
+           
+     </ul>
+     <!-- end shared/nav_public -->
+<ul id="ulnav2">
+<li><a href="/blog/es/" rel="start" title="Negonation Blog en Español" lang="es" class="selected">Español</a></li>
+<li><a href="/blog/en/" rel="start"	title="Negonation Blog en Inglés" lang="en">English</a></li>
+</ul>
+	<div class="clear"></div>
+   </div>
+<div id="super">
+		<div id="header">
+
+				
+<h1><a href="/blog/es/"><img src="/wp-content/themes/minid/images/negonation_logo.png" alt="negonation blog" title="Negonation Blog" /></a></h1>
+
+<h2><em>Crearemos una civilización de la Mente en el Ciberespacio. Que sea más humana y hermosa que el mundo que vuestros gobiernos han creado antes.</em><br />
+- John Perry Barlow. <a target="_blank" href="http://biblioweb.sindominio.net/telematica/manif_barlow.html">Declaración de Independencia del Ciberespacio</a></h2>
+
+</div>
+
+		<hr />
+
+<div id="contenedor">
+
+			<div id="content">
+
+					
+        
+		<div class="post individual" id="post-98">
+		
+		<h2>Getting started with AJAX&#8230;</h2>
+
+			<div class="entrytext">
+
+				<p>We use Ajax in the development of <a target="_blank" href="http://www.tractis.com"><strong>Tractis</strong></a>, a web service that allows you to negotiate, manage and sign contracts online. The following list includes very useful resources to learn Ajax. Check them out!!</p>
+<h3 class="special">Recursos en Español</h3>
+<h4>Introduction</h4>
+<ul>
+<li><a target="_blank" href="http://www.tabernadelturco.com/2005/05/07/ajax/">Ajax</a> &#8211; 2005.05.07 &#8211; La Taberna del Turco. Introducción a Ajax y enlaces interesantes con ejemplos de uso.</li>
+<li><a target="_blank" href="http://usalo.es/71/ajax-y-usabilidad/">Ajax y Usabilidad</a> &#8211; Juan Carlos García Gómez &#8211; 2005.07.05 &#8211; <a target="_blank" href="http://usalo.es"> Úsalo. Usabilidad para todos</a></li>
+</ul>
+<h3 class="special">Resources in English</h3>
+<h4>Introduction</h4>
+<ul><a target="_blank" href="http://www.econsultant.com/web-developer/ajax-tutorials"> </a><a target="_blank" href="http://www.econsultant.com/web-developer/ajax-tutorials"> </a><a target="_blank" href="http://www.econsultant.com/web-developer/ajax-tutorials"> 	</a></p>
+<li><a target="_blank" href="http://www.adaptivepath.com/publications/essays/archives/000385.php">Ajax: A New Approach to Web Applications</a> &#8211; Jesse James Garrett &#8211; 18.02.2005 &#8211; <a target="_blank" href="http://developer.mozilla.org/en/docs/AJAX:Getting_Started">Adaptive Path</a></li>
+</ul>
+<h4>Ajax Tutorials</h4>
+<p>Just choose one or two!!</p>
+<ul>
+<li><a target="_blank" href="http://developer.mozilla.org/en/docs/AJAX:Getting_Started">Ajax:Getting started</a> &#8211; Mozilla Development Center: This article guides you through the AJAX basics and gives you two simple hands-on examples to get you started</li>
+<li><a target="_blank" href="http://www.brainjar.com/dhtml/ajax/">Getting started with AJAX</a> &#8211; M. Hall &#8211; Brainjar</li>
+<li><a target="_blank" href="http://www.alistapart.com/articles/gettingstartedwithajax">Getting Started with AJAX</a> &#8211;  Aaron Gustafson &#8211; A List Apart &#8211; 2006.03.06: excerpt from Chapter 27 of Web Design in a Nutshell, 3rd Edition</li>
+<li><a target="_blank" href="http://www.xul.fr/en-xml-ajax.html">Ajax and XMLHttpRequest</a> &#8211; XUL.fr: Ajax tutorial for creating dynamic web pages, client side</li>
+<li><a target="_blank" href="http://www.ajaxlessons.com/">Ajax Lessons</a>: Simple Ajax Tutorials <sup>NEW</sup></li>
+<li><a target="_blank" href="http://www.yourhtmlsource.com/javascript/ajax.html">Ajax Tutorial</a> by <a target="_blank" href="http://www.yourhtmlsource.com">HTMLSource</a>. A good introductory Ajax article that demonstrates the use of a library to ease browser incompatibility issues <sup>NEW</sup></li>
+<li><a target="_blank" href="http://dhtmlnirvana.com/ajax/ajax_tutorial/">Ajax: What is it Good For?</a> &#8211; E. Traversa &#8211; 2006.01.07 &#8211; DHTMLNirvana <sup>NEW</sup></li>
+<li><a target="_blank" href="http://codinginparadise.org/projects/tutorials/"><span id="description" /></a><a target="_blank" href="http://codinginparadise.org/projects/tutorials/">     Brad Neuberg&#8217;s Ajax Tutorials</a> &#8211; Codinginparadise <sup>NEW</sup><a target="_blank" href="http://codinginparadise.org/projects/tutorials/"><br />
+</a></li>
+<li><a target="_blank" href="http://blog.coderlab.us/rasmus-30-second-ajax-tutorial/">Rasmus&#8217; 30 second Ajax Tutorial</a> &#8211; Coderlab&#8217;s Blog <sup>NEW</sup></li>
+<li><a target="_blank" href="http://www.sematopia.com/?p=34">How to learn Ajax in 20 minutes</a> &#8211; Sematopia <sup>NEW</sup></li>
+<li><a target="_blank" href="http://www.javapassion.com/ajaxcodecamp/">Free 10-week Ajax Programming (with Passion!!) Online Course</a>: designed for Java developers</li>
+<li><a target="_blank" href="http://www-128.ibm.com/developerworks/web/library/wa-ajaxtop1/index.html?ca=drs-">Considering Ajax, Part 1: Cut through the hype</a> &#8211; C. Laffra &#8211; 2006.05.09 &#8211; IBM Developer Networks: Learn when and how to implement this new technology</li>
+<li>Mastering Ajax Series &#8211; B. McLaughlin &#8211; IBM developerWorks <sup>NEW</sup></li>
+<ul>
+<li>Part 1: <a target="_blank" href="http://www.ibm.com/developerworks/web/library/wa-ajaxintro1.html">Introduction to Ajax</a></li>
+<li>Part 2: <a target="_blank" href="http://www.ibm.com/developerworks/web/library/wa-ajaxintro2/">XMLHttpRequest for Web requests</a></li>
+<li>Part 3: <a target="_blank" href="http://www.ibm.com/developerworks/web/library/wa-ajaxintro3/">Advanced requests and responses</a></li>
+<li>Part 4: <a target="_blank" href="http://www.ibm.com/developerworks/web/library/wa-ajaxintro4/">Exploiting DOM for Web response</a></li>
+<li>Part 5: <a target="_blank" href="http://www-128.ibm.com/developerworks/web/library/wa-ajaxintro5/index.html">Mastering Ajax, Part 5: Manipulate the DOM</a></li>
+</ul>
+</ul>
+<p><strong>Other lists of Ajax Tutorials</strong></p>
+<ul>
+<li><a target="_blank" href="http://www.maxkiesler.com/index.php/weblog/comments/42_recent_ajax_tutorials/">42 Recent Ajax Tutorials</a> &#8211; M. Kiesler &#8211; 2006.07.04 &#8211; ideacodes</li>
+<li><a target="_blank" href="http://www.maxkiesler.com/index.php/weblog/comments/round_up_of_30_ajax_tutorials">Round-up of 30 AJAX Tutorials</a>  <sup>NEW</sup></li>
+<li><a target="_blank" href="http://www.econsultant.com/web-developer/ajax-tutorials">Top 126 Ajax Tutorials</a>  <sup>NEW</sup></li>
+</ul>
+<h4>Ajax Libraries</h4>
+<ul>
+<li><a target="_blank" href="http://developer.yahoo.net/yui/%20Yahoo%21">User Interface Library</a>: Mature, extensively tested cross-browser JavaScript libraries for animation, event handling, DOM wrangling, XMLHttpRequest and Drag and Drop. All the components in the Yahoo! User Interface Library have been released as open source under a BSD license and are free for all uses. See also <a target="_blank" href="http://developer.yahoo.net/ypatterns/"> Yahoo! Design Pattern Library</a> for design patterns on Auto-complete, Breadcrumbs, <a target="_blank" href="http://developer.yahoo.net/ypatterns/pattern_dragdropmodules.php"> Drag-n-drop modules</a>, Module tabs, Navigation tabs, Object pagination, Search pagination, etc</li>
+<li><a target="_blank" href="http://script.aculo.us/">Script.aculo.us</a>: Building upon the wonderful <a target="_blank" href="http://prototype.conio.net/">Prototype JavaScript library</a>, script.aculo.us provides you with some great additional ingredients to mix in</li>
+<li><a target="_blank" href="http://bennolan.com/behaviour/">Behaviour</a>: Better smarter Javascript: Behaviour is a really simple and elegant solution. Write the code as you are use to and then declare selectors (div#ajax) in Javascript to return an element</li>
+<li><a target="_blank" href="http://prototype.conio.net/">Prototype</a>: (<a target="_blank" href="http://www.sergiopereira.com/articles/prototype.js.html">Prototype Documentation</a>) Prototype is a JavaScript framework that aims to ease development of dynamic web applications. Featuring a unique, easy-to-use toolkit for class-driven development and the nicest Ajax library around, Prototype is quickly becoming the codebase of choice for Web 2.0 developers everywhere. Prototype is enjoying a great deal of success. It&#8217;s simple and has Ruby-native-support. <a target="_blank" href="http://icebeat.bitacoras.com/archivo/173/"> Icebeat</a> thinks that this library is too heavy</li>
+<li><a target="_blank" href="http://www.encytemedia.com/event-selectors/">CSS event:Selectors</a>: event:Selectors allow you to apply an event such as mouseover, mouseout, click, et al using a CSS style syntax. It keeps your layers separated and greatly reduces the amount of code you have to write. CSS event:Selectors was designed to add functionality which was previously available only in the Behaviour to the Prototype library</li>
+<li><a target="_blank" href="http://openrico.org/">Rico</a>: An open- source JavaScript library for creating rich internet applications. Rico provides full Ajax support, drag and drop management and a cinematic effects library</li>
+<li><a target="_blank" href="http://www.crockford.com/JSON/">JSON</a>: JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition &#8211; December 1999. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.</li>
+<li><a target="_blank" href="http://dojotoolkit.org/">DoJo</a>: Open Source JavaScript toolkit that (..) it fills in the gaps where JavaScript and browsers don&#8217;t go quite far enough, and gives you powerful, portable, lightweight, and tested tools for constructing dynamic interfaces. Dojo lets you prototype interactive widgets quickly, animate transitions, and build Ajax requests with the most powerful and easiest to use abstractions available.</li>
+<li><a target="_blank" href="http://www.zimbra.com/community/ajaxtk_download.html">AjaxTK</a> is a client developer library, similar in style to traditional object-oriented widget libraries like Eclipse&#8217;s SWT, albeit for Javascript. AjaxTK hides implementation details and browser quirks and substantially simplifies Ajax development. AjaxTK can reduce the programming work required for typical browser applications by 80% or more, increase application portability across browsers, as well as make those applications far easier to evolve going forward. For further information, please see the <a target="_blank" href="http://www.zimbra.com/pdf/Zimbra%20AJAX%20TK%20Whitepaper.pdf">Zimbra AjaxTK Whitepaper</a></li>
+<li><a target="_blank" href="http://jquery.com/">JQuery</a>: jQuery is a new type of Javascript library. It is not a huge one, bloated with functionality. Instead it focus in making javascript easier to write and taking common, repetitive, tasks, stripping out all the unnecessary markup, and leaving them short, smart and understandable</li>
+<li><a target="_blank" href="http://sarissa.sourceforge.net/doc/">Sarissa</a> is an ECMAScript library acting as a cross-browser wrapper for native XML APIs. It offers various XML related goodies like Document instantiation, XML loading from URLs or strings, XSLT transformations, XPath queries, etc. <sup>NEW</sup>.</li>
+<li><a target="_blank" href="http://www.cameronolthuis.com/2006/06/top-10-web-developer-libraries/">Top 10 Web Developer Libraries</a> &#8211; C. Olthuis &#8211; 2006.06.16</li>
+<li><a target="_blank" href="http://www.dhtmlgoodies.com/index.html">DHTML Goodies</a>: A library of nice looking DHTML(dynamic HTML) scripts. Includes: dynamic list, dynamic content, fly-to-basket, dragable boxes ala netvibes.com, etc.</li>
+</ul>
+<p><strong>Ajax Lightweight libraries</strong></p>
+<ul>
+<li><a target="_blank" href="http://moofx.mad4milk.net/">moo.fx</a> (3kb): written with <a target="_blank" href="http://prototype.conio.net/"> Prototype</a></li>
+<li><a target="_blank" href="http://celtickane.com/programming/code/ajax.php">Feather Ajax</a> (under 1kb) <sup>NEW</sup></li>
+</ul>
+<h4>Ajax Modal Windows</h4>
+<ul>
+<li><a target="_blank" href="http://www.huddletogether.com/projects/lightbox/">Lightbox</a>: The original technique?. Only shows images. See also <a target="_blank" href="http://particletree.com/examples/lightbox/">Particletree&#8217;s Lightbox Gone Wild</a></li>
+<li><a target="_blank" href="http://amix.dk/greybox/demo.html">Greybox</a>. Inspired by Lightbox. Shows images and webpages.</li>
+<li><a target="_blank" href="http://codylindley.com/Javascript/257/thickbox-one-box-to-rule-them-all">Thickbox</a>, same functionality Greybox but lighter (uses &#8220;<a target="_blank" href="http://jquery.com/">JQuery</a>&#8221; -20k) than Prototype y Scriptaculous (100k)</li>
+</ul>
+<h4>Compressing Javascript</h4>
+<ul>
+<li><a target="_blank" href="http://www.crockford.com/javascript/jsmin.html">JSMin &#8211; The Javascript Minifier</a> &#8211; 2003.12.04 &#8211; D. Crockford <sup>NEW</sup></li>
+</ul>
+<h4>Ajax Debugging</h4>
+<ul>
+<li><a target="_blank" href="http://www.mozilla.org/projects/venkman/">Venkman Javascript Debugger</a>: Venkman is the code name for Mozilla&#8217;s JavaScript Debugger</li>
+<li><a target="_blank" href="https://addons.mozilla.org/firefox/1843/">Firebug</a>. Debuging Ajax/javascript with firefox</li>
+<li><a target="_blank" href="http://www.squarefree.com/shell/">Squarefree Javascript Shell</a>: Extremely useful for debugging AJAX</li>
+<li><a target="_blank" href="http://www.webmonkey.com/06/19/index3a.html">Simple JavaScript Debugging</a> &#8211; C. Klimass &#8211; 2006.05.10 &#8211; WebMonkey</li>
+<li><a target="_blank" href="http://www.tatanka.com.br/ies4linux/index-en.html">IEs4linux</a>: IEs4Linux is the simpler way to have Microsoft Internet Explorer running on Linux. Useful for WebDesigners that want to move to Linux but still need to test their sites on IE</li>
+<li><a target="_blank" href="http://mir.aculo.us/articles/2006/09/16/adventures-in-javascript-testing">Adventures in Javascript Testing</a> (<a target="_blank" href="http://wiki.script.aculo.us/scriptaculous/show/UnitTesting">code</a>)- T. Fuchs &#8211; 2006.09.18 &#8211; RailsConf Europe: complete set of classes and methods for <a class="existingWikiWord" href="http://wiki.script.aculo.us/scriptaculous/show/JavaScript">Java Script</a> <a class="existingWikiWord" href="http://wiki.script.aculo.us/scriptaculous/show/UnitTesting">Unit Testing</a>.</li>
+</ul>
+<h4>Ajax Forums</h4>
+<ul>
+<li><a target="_blank" href="http://ajaxcamp.com/">Ajaxcamp</a>: Ajax Camp is a community for learning, interacting, and asking questions about web-based development using Javascript and Ajax</li>
+</ul>
+<h4>Ajax Reference Sites</h4>
+<ul>
+<li><a target="_blank" href="http://www.ajaxian.com/">Ajaxian</a>: A site about Ajax improvements, sites and developments</li>
+<li><a target="_blank" href="http://www.ajaxmatters.com">AJAX Matters</a> is an informational site about Ajax and how these technologies are applied to web development <sup>NEW</sup></li>
+<li><a target="_blank" href="http://ajax.phpmagazine.net/">Ajax Magazine</a> <sup>NEW</sup></li>
+</ul>
+<p><strong>Other lists of Ajax Reference Sites</strong></p>
+<ul>
+<li><a target="_blank" href="http://www.maxkiesler.com/index.php/weblog/comments/50_ajax_reference_websites_from_around_the_world/">50 AJAX Reference Websites From Around the World</a> &#8211; M. Kiesler &#8211; 2006.06.10 &#8211; maxkiesler.com</li>
+</ul>
+<h4>Ajax and Ruby on Rails</h4>
+<ul>
+<li><a target="_blank" href="http://www.onlamp.com/pub/a/onlamp/2005/06/09/rails_ajax.html">Ajax on Rails</a> &#8211; C. Hibbs &#8211; 2005.09.06 &#8211; O&#8217;Reilly</li>
+</ul>
+<h4>Ajax and PHP</h4>
+<ul>
+<li><a target="_blank" href="http://www.xajaxproject.org/">XajaProject</a></li>
+</ul>
+<h4>Ajax and Microsoft.NET</h4>
+<ul>
+<li><a target="_blank" href="http://atlas.asp.net/Default.aspx?tabid=47">Microsorft ATLAS Framework</a></li>
+<li><a target="_blank" href="http://www.ajaxpro.info/">Ajax.NET Professional</a></li>
+</ul>
+<h4>Ajax and Java</h4>
+<ul>
+<li><a target="_blank" href="http://www.javarss.com/ajax/j2ee-ajax.html">AJAX in Action</a>: Here is real working example of AJAX for a perfect scenario and how the people at <a target="_blank" href="http://www.javarss.com/"> Javarss</a> are using it in JavaRSS.com.</li>
+<li><a target="_blank" href="http://getahead.ltd.uk/dwr/">DWR</a> &#8211; Direct Web Remoting&#8221;: or Easy Ajax for Java.</li>
+<li><a target="_blank" href="http://java.sun.com/developer/EJTechTips/2005/tt1122.html#1?feed=JSC"> Ajax with Java &#8211; Enterprise Java Technologies &#8211; 22.11.2005</a>. This issue describes how to use AJAX with Java Technology.</li>
+<li><a target="_blank" href="https://ajax.dev.java.net/">Project jMaki</a>: use JavaScript in your Java based applications as either a JSP tag library or a JSF component</li>
+</ul>
+<p><strong>Ajax and Java: Sun resources</strong></p>
+<ul>
+<li><a target="_blank" href="http://developers.sun.com/ajax/">AJAX Developer Resource Center</a>: Ajax and Java by Sun.</li>
+<li><a target="_blank" href="http://developers.sun.com/prodtech/javatools/jscreator/ea/jsc2/learning/tutorials/jscintro.html"> Tutorial: Get Started with Sun Java Studio Creator</a>. Roll up your sleeves for a hands-on tutorial and great how-to tips on building Web applications with the Sun Java Studio Creator integrated development environment</li>
+<li><a target="_blank" href="https://bpcatalog.dev.java.net/nonav/ajax/jsf-ajax/frames.html">Using JavaServer Faces Technology with AJAX</a>. Understand the pros and cons of various strategies for incorporating AJAX into JavaServer Faces technology applications</li>
+<li><a target="_blank" href="http://java.sun.com/developer/EJTechTips/2005/tt1122.html#1">Turbocharge Web Applications with AJAX</a> . Get valuable tips on how to use AJAX for richer, more efficient user interactions with Web pages. Check out a practical example on building auto-complete into Web forms</li>
+<li><a target="_blank" href="http://java.sun.com/developer/technicalArticles/J2EE/AJAX/">Overview: What’s AJAX and Why It’s Important</a> . Servlet specification lead Grey Murray surveys the new breed of dynamic Web applications – and how AJAX lets you build these interactive applications faster and more simply</li>
+<li><a target="_blank" href="http://developers.sun.com/channel/">Ajax made Easy</a> &#8211; Sun Developer Network</li>
+<li><a target="_blank" href="http://java.sun.com/blueprints/ajax.html">Sun Java BluePrints Solutions Catalog with AJAX</a>. Comprehensive collection of AJAX BluePrints resources, including solutions catalogs, FAQs, and a wealth of tips on using AJAX with Java EE 5, J2EE 1.4, and NetBeans</li>
+</ul>
+<h4>Ajax Books</h4>
+<ul>
+<li><a target="_blank" href="http://pragmaticprogrammer.com/titles/ajax/index.html">Pragmatic Ajax &#8211; A Web 2.0 Primer</a> &#8211; Feb 2006 &#8211; J. Gehtland &#8211; The Pragmatic Programmers</li>
+<li><a target="_blank" href="http://www.amazon.com/gp/product/1932394613/ref=pd_sxp_f/002-8581881-7086402?s=books&#038;v=glance&#038;n=283155">Ajax in Action</a> &#8211; 2006 &#8211; E. Pascarello et al &#8211; Manning</li>
+<li><a target="_blank" href="http://www.amazon.com/gp/product/1590595823/ref=pd_sxp_elt_l1/002-8581881-7086402?n=283155">Foundations of Ajax (Foundation)</a> &#8211; 2006 &#8211; R. Asleson &#8211; Apress</li>
+<li><a target="_blank" href="http://www.amazon.com/gp/product/0596101694/">Ajax Hacks</a> &#8211; 2006 &#8211; B. Perry &#8211; O&#8217;Reilly</li>
+<li><a target="_blank" href="http://www.amazon.com/gp/product/0596102259/103-8742158-3923804?v=glance&#038;n=283155">Head Rush Ajax</a> &#8211; 1ed &#8211; 2006 &#8211; B. McLaughlin &#8211; O&#8217;Reilly</li>
+<li><a target="_blank" href="http://www.oreilly.com/catalog/ajaxdp/index.html">Ajax Design Patterns</a> &#8211; 1ed &#8211; June 2006 &#8211; M. <span style="white-space: nowrap">Mahemoff &#8211; O&#8217;Reilly</span></li>
+<li><a target="_blank" href="http://www.oreilly.com/catalog/jscript5/?CMP=ILC-GG7423313304&#038;ATT=jscript5">JavaScript: The Definitive Guide</a> &#8211;  5ed &#8211; August 2006 &#8211; D. Flanagan &#8211; O&#8217;Reilly</li>
+</ul>
+<p><strong>Upcomming titles</strong></p>
+<ul>
+<li>Ajax on Java &#8211; 1ed &#8211; May 2006 &#8211; S. Olson &#8211; O&#8217;Reilly</li>
+</ul>
+<h4>Ajax Do&#8217;s and Dont&#8217;s</h4>
+<ul>
+<li><a target="_blank" href="http://www.sourcelabs.com/blogs/ajb/2005/12/10_places_you_must_use_ajax.html">10 places you must use Ajax</a> &#8211; A. Bosworth &#8211; 2005.12.01 &#8211; SourceLabs</li>
+<li><a target="_blank" href="http://swik.net/Ajax/Places+To+Use+Ajax">Places to use Ajax</a></li>
+<li><a target="_blank" href="http://sourcelabs.com/ajb/archives/2005/05/ajax_mistakes.html">Ajax Mistakes</a> &#8211; A. Bosworth &#8211; 2005.05.18 &#8211; SourceLabs (<a target="_blank" href="http://swik.net/Ajax/Ajax+Mistakes">Ajax Mistakes wiki</a>)</li>
+<li><a target="_blank" href="http://www.contentwithstyle.co.uk/Articles/38/fixing-the-back-button-and-enabling-bookmarking-for-ajax-apps">Fixing the Back Button and Enabling Bookmarking for AJAX Apps</a> &#8211; M. Stenhouse &#8211; 2005.06.13 &#8211; Content with Style</li>
+</ul>
+<h4>Miscellanea</h4>
+<ul>
+<li><a target="_blank" href="http://snyke.net/blog/2006/02/05/ajax-design-patterns/">AJAX Design Patterns</a> &#8211; 2006.05.02 &#8211; Fading Roses &#038; Raging Viruses</li>
+<li><a target="_blank" href="http://www.aptana.com">Aptana</a>: An IDE for web 2.</li>
+</ul>
+<p>Share: <a target="_blank" href="http://www.digg.com/submit?phase=2&#038;url=/es/getting-started-with-ajax/">Digg this</a> • <a target="_blank" href="http://del.icio.us/post?url=/es/getting-started-with-ajax/&#038;title=Getting%20started%20with%20%20Ajax...">Add to del.icio.us</a> • <a target="_blank" href="http://meneame.net/submit.php?url=/es/getting-started-with-ajax/">Meneame</a></p>
+<p>Do you have more interesting links? <a href="mailto:blog@negonation.com">Tell us!</a></p>
+<p>Back to the &#8220;<a href="/blog/es/getting-started/">Getting Started with..</a>.&#8221; Index</p>
+	
+				
+<p class="posted">Por David Blanco<br />Guardado en:  |   <a href="/blog/es/getting-started-with-ajax/#comments" title="Comentarios en Getting started with AJAX&#8230;">1 comentario &#187;</a> | 25 de Agosto de 2006</p>
+
+				<div class="clear"></div>
+	
+			</div>
+                        <br><br><br><br><br><br>
+<!-- You can start editing here. -->
+
+	<h3 id="comments">Un comentario en &#8220;Getting started with AJAX&#8230;&#8221;</h3>
+
+
+
+	
+
+
+
+	
+			<!-- new comment container -->
+
+			    			      <div class="alt" id="comment-385">
+			    
+
+				<div class="comment-head">
+			
+				<img src="http://www.gravatar.com/avatar.php?gravatar_id=d41d8cd98f00b204e9800998ecf8427e&amp;rating=R&amp;size=32&amp;default=http%3A%2F%2Fblog.negonation.com%2Fes%2Fwp-content%2Fthemes%2Fminid%2Fimages%2Fcobarde-anonimo.png" alt="Gravatar de Negonation Blog &raquo; Blog Archive &raquo; Quiero aprender Ajax&#8230;" title="Gravatar de Negonation Blog &raquo; Blog Archive &raquo; Quiero aprender Ajax&#8230;" />
+
+				
+			
+				<p><cite><a href='/es/quiero-aprender-ajax/' rel='external nofollow' class='url'>Negonation Blog &raquo; Blog Archive &raquo; Quiero aprender Ajax&#8230;</a></cite><br />25 de Agosto de 2006 a las <a href="#comment-385">5:55 pm</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+						<div class="clear"></div>
+
+				</div>
+
+				<div class="comment-body">
+					
+
+						<p>[...] Ayer añadimos al blog una nueva página con enlaces para aprender Ajax. Aquí encontrarás información muy buena para aprender/dominar Ajax que vamos recopilando a medida que desarrollamos Tractis. Hemos seleccionado solo lo mejor. Sea cual sea tu nivel de programación de Ajax, seguro que encuentras algo interesante. [...]</p>
+
+				
+				</div>
+
+			<!-- end new comment container -->
+			
+			</div>
+
+
+			
+			
+			
+						
+
+	
+<script type="text/javascript"><!--
+if(!mmcomments){var mmcomments=[];}mmcomments[mmcomments.length]="385";
+//--></script>
+<!-- mmc mmid:385 mmdate:20060825175542 mmauthor:Negonation Blog &raquo; Blog Archive &raquo; Quiero aprender Ajax&#8230; -->
+
+
+
+	
+	
+ 
+
+
+<div id="comment-super" style="display: none;">
+
+<h3 id="respond">Deja tu comentario...</h3>
+
+<p>Los comentarios de este blog están moderados utilizando el &#8220;<a href="https://www.tractis.com/wordpress">Plugin de Verificación de Identidad Tractis para WordPress</a>&#8220;. La configuración es la siguiente: los comentarios realizados por usuarios autenticados con cualquiera de los <a href="https://www.tractis.com/supported_certificates">certificados electrónicos soportados en Tractis</a> aparecerán inmediatamente. Los comentarios no autenticados serán moderados y, por tanto, no aparecerán inmediatamente en la página al ser enviados.</p>
+<p>Nuestra intención es conseguir un ambiente agradable donde las personas puedan comentar sin miedo a ser insultados o atacados. Estás en tu perfecto derecho de comentar anónimamente pero, por favor, no utilices el anonimato para decirle a alguien cosas que no le dirías en persona.</p>
+<p>Las descalificaciones personales, los comentarios maleducados, los ataques directos, los insultos de cualquier tipo, los comentarios repetitivos sobre un mismo tema, o con varias identidades (astroturfing) o suplantando a otros comentaristas, etc. serán eliminados.</p>
+
+
+
+<!-- Tractis Identity Verifications Connect Button -->
+<form action="https://www.tractis.com/verifications" method="post">
+	<input id="api_key" name="api_key" type="hidden" value="4d6276fae4047cecd9ab399529158066dafa338a" />
+	<input id="notification_callback" name="notification_callback" type="hidden" value="/blog/es/getting-started-with-ajax/" />	
+	<input id="public_verification" name="public_verification" type="hidden" value="true" />
+	<input type="image" src="/blog/es/wp-content/plugins/tractis-identity-verifications/images/trac_but_bg_lrg_b_es.png" name="tractis_icon">
+</form>
+<!-- /Tractis Identity Verifications Connect Button -->
+
+<form action="/blog/es/wp-comments-post.php" method="post" id="commentform">
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Nombre (requerido)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>E-mail (no será publicado) (requerido)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Página web</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+
+<p><textarea name="comment" id="comment" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Enviar comentario" />
+<input type="hidden" name="comment_post_ID" value="98" />
+</p>
+
+
+
+	<p style="clear: both;" class="subscribe-to-comments">
+	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
+	<label for="subscribe">Notify me of followup comments via e-mail</label>
+	</p>
+
+
+
+</form>
+
+</div>
+
+
+			
+		</div>
+		
+	  
+	  
+		
+
+							
+			</div>
+
+			<div id="menus">
+
+				
+<div class="tools">
+	
+<div class="principal">
+
+		
+
+		<h3>Categorías</h3>
+		
+			<ul>
+					<li class="cat-item cat-item-3"><a href="/blog/es/category/anuncios/" title="Ver todas las entradas de Anuncios">Anuncios</a> (211)
+</li>
+	<li class="cat-item cat-item-20"><a href="/blog/es/category/bloggers-invitados/" title="Ver todas las entradas de Bloggers invitados">Bloggers invitados</a> (4)
+</li>
+	<li class="cat-item cat-item-10"><a href="/blog/es/category/blogging/" title="Ver todas las entradas de Blogging">Blogging</a> (5)
+</li>
+	<li class="cat-item cat-item-25"><a href="/blog/es/category/business/" title="Ver todas las entradas de Business">Business</a> (21)
+</li>
+	<li class="cat-item cat-item-33"><a href="/blog/es/category/clientes/" title="Ver todas las entradas de Clientes">Clientes</a> (7)
+</li>
+	<li class="cat-item cat-item-18"><a href="/blog/es/category/conferencias/" title="Ver todas las entradas de Conferencias">Conferencias</a> (10)
+</li>
+	<li class="cat-item cat-item-23"><a href="/blog/es/category/diseno/" title="Ver todas las entradas de Diseño">Diseño</a> (20)
+</li>
+	<li class="cat-item cat-item-38"><a href="/blog/es/category/eid/" title="Ver todas las entradas de eID">eID</a> (50)
+</li>
+	<li class="cat-item cat-item-22"><a href="/blog/es/category/empowerment/" title="Ver todas las entradas de Empowerment">Empowerment</a> (14)
+</li>
+	<li class="cat-item cat-item-5"><a href="/blog/es/category/emprendedores/" title="Ver todas las entradas de Emprendedores">Emprendedores</a> (34)
+</li>
+	<li class="cat-item cat-item-9"><a href="/blog/es/category/firma-digital/" title="Ver todas las entradas de Firma digital">Firma digital</a> (59)
+</li>
+	<li class="cat-item cat-item-21"><a href="/blog/es/category/frases/" title="Ver todas las entradas de Frases">Frases</a> (75)
+</li>
+	<li class="cat-item cat-item-28"><a href="/blog/es/category/glider/" title="Ver todas las entradas de Glider">Glider</a> (6)
+</li>
+	<li class="cat-item cat-item-4"><a href="/blog/es/category/hacking/" title="Ver todas las entradas de Hacking">Hacking</a> (3)
+</li>
+	<li class="cat-item cat-item-27"><a href="/blog/es/category/identidad/" title="Ver todas las entradas de Identidad">Identidad</a> (15)
+</li>
+	<li class="cat-item cat-item-13"><a href="/blog/es/category/internet/" title="Ver todas las entradas de Internet">Internet</a> (27)
+</li>
+	<li class="cat-item cat-item-2"><a href="/blog/es/category/justicia/" title="Ver todas las entradas de Justicia">Justicia</a> (7)
+</li>
+	<li class="cat-item cat-item-29"><a href="/blog/es/category/legal/" title="Ver todas las entradas de Legal">Legal</a> (11)
+</li>
+	<li class="cat-item cat-item-7"><a href="/blog/es/category/libros/" title="Ver todas las entradas de Libros">Libros</a> (4)
+</li>
+	<li class="cat-item cat-item-39"><a href="/blog/es/category/otp/" title="Ver todas las entradas de OTP">OTP</a> (1)
+</li>
+	<li class="cat-item cat-item-48"><a href="/blog/es/category/partnerships/" title="Ver todas las entradas de Partnerships">Partnerships</a> (2)
+</li>
+	<li class="cat-item cat-item-37"><a href="/blog/es/category/plantillas/" title="Ver todas las entradas de Plantillas">Plantillas</a> (4)
+</li>
+	<li class="cat-item cat-item-17"><a href="/blog/es/category/pranks/" title="Ver todas las entradas de Pranks">Pranks</a> (7)
+</li>
+	<li class="cat-item cat-item-24"><a href="/blog/es/category/programacion/" title="Ver todas las entradas de Programación">Programación</a> (27)
+</li>
+	<li class="cat-item cat-item-31"><a href="/blog/es/category/rails/" title="Ver todas las entradas de Rails">Rails</a> (3)
+</li>
+	<li class="cat-item cat-item-30"><a href="/blog/es/category/ruby/" title="Ver todas las entradas de Ruby">Ruby</a> (1)
+</li>
+	<li class="cat-item cat-item-34"><a href="/blog/es/category/seguridad/" title="Ver todas las entradas de Seguridad">Seguridad</a> (7)
+</li>
+	<li class="cat-item cat-item-8"><a href="/blog/es/category/tecnologia/" title="Ver todas las entradas de Tecnología">Tecnología</a> (17)
+</li>
+	<li class="cat-item cat-item-14"><a href="/blog/es/category/tractis/" title="Ver todas las entradas de Tractis">Tractis</a> (182)
+<ul class='children'>
+	<li class="cat-item cat-item-47"><a href="/blog/es/category/tractis/tractis-accounts/" title="Ver todas las entradas de Tractis Accounts">Tractis Accounts</a> (1)
+</li>
+	<li class="cat-item cat-item-45"><a href="/blog/es/category/tractis/tractis-hardware/" title="Ver todas las entradas de Tractis Hardware">Tractis Hardware</a> (5)
+</li>
+	<li class="cat-item cat-item-46"><a href="/blog/es/category/tractis/tractis-identity/" title="Ver todas las entradas de Tractis Identity">Tractis Identity</a> (8)
+</li>
+	<li class="cat-item cat-item-42"><a href="/blog/es/category/tractis/tractis-promotions/" title="Ver todas las entradas de Tractis Promotions">Tractis Promotions</a> (2)
+</li>
+	<li class="cat-item cat-item-43"><a href="/blog/es/category/tractis/tractis-signatures/" title="Ver todas las entradas de Tractis Signatures">Tractis Signatures</a> (14)
+</li>
+	<li class="cat-item cat-item-44"><a href="/blog/es/category/tractis/tractis-webservices/" title="Ver todas las entradas de Tractis Webservices">Tractis Webservices</a> (2)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-15"><a href="/blog/es/category/venture-capital/" title="Ver todas las entradas de Venture Capital">Venture Capital</a> (10)
+</li>
+			</ul>
+
+</div>
+<div class="extra">
+
+			<h3>Archivos</h3>
+			
+				<ul>
+					<li><a href='/es/2018/04/' title='Abril 2018'>Abril 2018</a></li>
+	<li><a href='/es/2018/02/' title='Febrero 2018'>Febrero 2018</a></li>
+	<li><a href='/es/2016/08/' title='Agosto 2016'>Agosto 2016</a></li>
+	<li><a href='/es/2016/07/' title='Julio 2016'>Julio 2016</a></li>
+	<li><a href='/es/2015/10/' title='Octubre 2015'>Octubre 2015</a></li>
+	<li><a href='/es/2015/07/' title='Julio 2015'>Julio 2015</a></li>
+	<li><a href='/es/2015/06/' title='Junio 2015'>Junio 2015</a></li>
+	<li><a href='/es/2015/05/' title='Mayo 2015'>Mayo 2015</a></li>
+	<li><a href='/es/2014/11/' title='Noviembre 2014'>Noviembre 2014</a></li>
+	<li><a href='/es/2014/10/' title='Octubre 2014'>Octubre 2014</a></li>
+	<li><a href='/es/2014/09/' title='Septiembre 2014'>Septiembre 2014</a></li>
+	<li><a href='/es/2014/07/' title='Julio 2014'>Julio 2014</a></li>
+	<li><a href='/es/2014/06/' title='Junio 2014'>Junio 2014</a></li>
+	<li><a href='/es/2014/04/' title='Abril 2014'>Abril 2014</a></li>
+	<li><a href='/es/2014/03/' title='Marzo 2014'>Marzo 2014</a></li>
+	<li><a href='/es/2014/02/' title='Febrero 2014'>Febrero 2014</a></li>
+	<li><a href='/es/2013/10/' title='Octubre 2013'>Octubre 2013</a></li>
+	<li><a href='/es/2013/09/' title='Septiembre 2013'>Septiembre 2013</a></li>
+	<li><a href='/es/2013/08/' title='Agosto 2013'>Agosto 2013</a></li>
+	<li><a href='/es/2013/05/' title='Mayo 2013'>Mayo 2013</a></li>
+	<li><a href='/es/2013/04/' title='Abril 2013'>Abril 2013</a></li>
+	<li><a href='/es/2013/03/' title='Marzo 2013'>Marzo 2013</a></li>
+	<li><a href='/es/2013/02/' title='Febrero 2013'>Febrero 2013</a></li>
+	<li><a href='/es/2012/12/' title='Diciembre 2012'>Diciembre 2012</a></li>
+	<li><a href='/es/2012/11/' title='Noviembre 2012'>Noviembre 2012</a></li>
+	<li><a href='/es/2012/10/' title='Octubre 2012'>Octubre 2012</a></li>
+	<li><a href='/es/2012/09/' title='Septiembre 2012'>Septiembre 2012</a></li>
+	<li><a href='/es/2012/08/' title='Agosto 2012'>Agosto 2012</a></li>
+	<li><a href='/es/2012/06/' title='Junio 2012'>Junio 2012</a></li>
+	<li><a href='/es/2012/05/' title='Mayo 2012'>Mayo 2012</a></li>
+	<li><a href='/es/2012/03/' title='Marzo 2012'>Marzo 2012</a></li>
+	<li><a href='/es/2012/02/' title='Febrero 2012'>Febrero 2012</a></li>
+	<li><a href='/es/2012/01/' title='Enero 2012'>Enero 2012</a></li>
+	<li><a href='/es/2011/12/' title='Diciembre 2011'>Diciembre 2011</a></li>
+	<li><a href='/es/2011/11/' title='Noviembre 2011'>Noviembre 2011</a></li>
+	<li><a href='/es/2011/10/' title='Octubre 2011'>Octubre 2011</a></li>
+	<li><a href='/es/2011/06/' title='Junio 2011'>Junio 2011</a></li>
+	<li><a href='/es/2011/05/' title='Mayo 2011'>Mayo 2011</a></li>
+	<li><a href='/es/2011/04/' title='Abril 2011'>Abril 2011</a></li>
+	<li><a href='/es/2011/03/' title='Marzo 2011'>Marzo 2011</a></li>
+	<li><a href='/es/2011/02/' title='Febrero 2011'>Febrero 2011</a></li>
+	<li><a href='/es/2011/01/' title='Enero 2011'>Enero 2011</a></li>
+	<li><a href='/es/2010/12/' title='Diciembre 2010'>Diciembre 2010</a></li>
+	<li><a href='/es/2010/11/' title='Noviembre 2010'>Noviembre 2010</a></li>
+	<li><a href='/es/2010/10/' title='Octubre 2010'>Octubre 2010</a></li>
+	<li><a href='/es/2010/09/' title='Septiembre 2010'>Septiembre 2010</a></li>
+	<li><a href='/es/2010/08/' title='Agosto 2010'>Agosto 2010</a></li>
+	<li><a href='/es/2010/07/' title='Julio 2010'>Julio 2010</a></li>
+	<li><a href='/es/2010/06/' title='Junio 2010'>Junio 2010</a></li>
+	<li><a href='/es/2010/05/' title='Mayo 2010'>Mayo 2010</a></li>
+	<li><a href='/es/2010/04/' title='Abril 2010'>Abril 2010</a></li>
+	<li><a href='/es/2010/03/' title='Marzo 2010'>Marzo 2010</a></li>
+	<li><a href='/es/2010/02/' title='Febrero 2010'>Febrero 2010</a></li>
+	<li><a href='/es/2009/12/' title='Diciembre 2009'>Diciembre 2009</a></li>
+	<li><a href='/es/2009/11/' title='Noviembre 2009'>Noviembre 2009</a></li>
+	<li><a href='/es/2009/10/' title='Octubre 2009'>Octubre 2009</a></li>
+	<li><a href='/es/2009/09/' title='Septiembre 2009'>Septiembre 2009</a></li>
+	<li><a href='/es/2009/08/' title='Agosto 2009'>Agosto 2009</a></li>
+	<li><a href='/es/2009/07/' title='Julio 2009'>Julio 2009</a></li>
+	<li><a href='/es/2009/06/' title='Junio 2009'>Junio 2009</a></li>
+	<li><a href='/es/2009/05/' title='Mayo 2009'>Mayo 2009</a></li>
+	<li><a href='/es/2009/04/' title='Abril 2009'>Abril 2009</a></li>
+	<li><a href='/es/2009/03/' title='Marzo 2009'>Marzo 2009</a></li>
+	<li><a href='/es/2009/02/' title='Febrero 2009'>Febrero 2009</a></li>
+	<li><a href='/es/2009/01/' title='Enero 2009'>Enero 2009</a></li>
+	<li><a href='/es/2008/12/' title='Diciembre 2008'>Diciembre 2008</a></li>
+	<li><a href='/es/2008/11/' title='Noviembre 2008'>Noviembre 2008</a></li>
+	<li><a href='/es/2008/10/' title='Octubre 2008'>Octubre 2008</a></li>
+	<li><a href='/es/2008/09/' title='Septiembre 2008'>Septiembre 2008</a></li>
+	<li><a href='/es/2008/08/' title='Agosto 2008'>Agosto 2008</a></li>
+	<li><a href='/es/2008/07/' title='Julio 2008'>Julio 2008</a></li>
+	<li><a href='/es/2008/06/' title='Junio 2008'>Junio 2008</a></li>
+	<li><a href='/es/2008/05/' title='Mayo 2008'>Mayo 2008</a></li>
+	<li><a href='/es/2008/04/' title='Abril 2008'>Abril 2008</a></li>
+	<li><a href='/es/2008/03/' title='Marzo 2008'>Marzo 2008</a></li>
+	<li><a href='/es/2008/02/' title='Febrero 2008'>Febrero 2008</a></li>
+	<li><a href='/es/2008/01/' title='Enero 2008'>Enero 2008</a></li>
+	<li><a href='/es/2007/12/' title='Diciembre 2007'>Diciembre 2007</a></li>
+	<li><a href='/es/2007/11/' title='Noviembre 2007'>Noviembre 2007</a></li>
+	<li><a href='/es/2007/10/' title='Octubre 2007'>Octubre 2007</a></li>
+	<li><a href='/es/2007/08/' title='Agosto 2007'>Agosto 2007</a></li>
+	<li><a href='/es/2007/04/' title='Abril 2007'>Abril 2007</a></li>
+	<li><a href='/es/2007/02/' title='Febrero 2007'>Febrero 2007</a></li>
+	<li><a href='/es/2007/01/' title='Enero 2007'>Enero 2007</a></li>
+	<li><a href='/es/2006/12/' title='Diciembre 2006'>Diciembre 2006</a></li>
+	<li><a href='/es/2006/11/' title='Noviembre 2006'>Noviembre 2006</a></li>
+	<li><a href='/es/2006/10/' title='Octubre 2006'>Octubre 2006</a></li>
+	<li><a href='/es/2006/09/' title='Septiembre 2006'>Septiembre 2006</a></li>
+	<li><a href='/es/2006/08/' title='Agosto 2006'>Agosto 2006</a></li>
+	<li><a href='/es/2006/07/' title='Julio 2006'>Julio 2006</a></li>
+	<li><a href='/es/2006/06/' title='Junio 2006'>Junio 2006</a></li>
+	<li><a href='/es/2006/05/' title='Mayo 2006'>Mayo 2006</a></li>
+				</ul>
+
+						
+				
+					
+				
+				
+				
+</div>
+
+<div class="clear"></div>
+
+
+</div>
+
+	</div>
+
+			<div class="clear"></div>
+		
+	</div>
+
+<hr />
+
+<div id="footer">
+
+	<p>Content is <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.es" lang="en"><cite>Attribution-NonComm-NoDerivs 2.0</cite></a>
+
+<br/>
+
+<a href="http://feeds.feedburner.com/negonation/blog/es">Entradas RSS</a> & <a href="/blog/es/comments/feed/">Comentarios RSS</a>
+
+<br/>
+
+<a href="http://www.minid.net/2005/08/29/i-haev-styel-tema-para-wordpress-15x/" rel="chapter" title="Tema gráfico para Wordpress 1.5" lang="en">I HAEV STYEL</a></p>
+
+</div>
+
+</div>
+
+
+		<script type='text/javascript' src='http://platform.twitter.com/widgets.js'></script>
+</body>
+</html>

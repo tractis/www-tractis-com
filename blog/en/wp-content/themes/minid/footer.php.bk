@@ -1,0 +1,17 @@
+<hr />
+
+<div id="footer">
+
+	<p>Content is <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" lang="en"><cite>Attribution-NonCommercial-NoDerivs 2.0</cite></a>.  <a href="<?php bloginfo('rss2_url'); ?>">Entradas (RSS)</a> & <a href="<?php bloginfo('comments_rss2_url'); ?>">Comments RSS</a>. <a href="http://www.minid.net/2005/08/29/i-haev-styel-tema-para-wordpress-15x/" rel="chapter" title="Tema gráfico para Wordpress 1.5" lang="en">I HAEV STYEL</a></p>
+
+</div>
+
+</div>
+
+
+		<?php wp_footer(); ?>
+
+<script type="text/javascript" src="http://tracker.measuremap.com/a/1707"></script>
+
+</body>
+</html>

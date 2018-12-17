@@ -1,0 +1,998 @@
+/* Syntax highlighting  */
+.ruby { background-color: #F1F1F3; overflow: auto; }
+.ruby .normal {}
+.ruby .comment { color: #00AA33 ; font-style: italic; }
+.ruby .keyword { color: #A00; font-weight: bold; }
+.ruby .method { color: #077; }
+.ruby .class { color: #074; }
+.ruby .module { color: #050; }
+.ruby .punct { color: #447; font-weight: bold; }
+.ruby .symbol { color: #099; }
+.ruby .string { color: #944; background: #FFE; }
+.ruby .char { color: #F07; }
+.ruby .ident { color: #004; }
+.ruby .constant { color: #07F; }
+.ruby .regex { color: #B66; background: #FEF; }
+.ruby .number { color: #F99; }
+.ruby .attribute { color: #5bb; }
+.ruby .global { color: #7FB; }
+.ruby .expr { color: #227; }
+.ruby .escape { color: #277; }
+
+
+/* ---- GENERIC ELEMENTS ---- */
+
+body {
+        background: #333;
+	color: #555;
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	}
+
+hr {
+	display: none;
+}
+
+
+img {
+	border: 0;
+}
+
+div.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+        /* --- TRACTIS HEADER ---- */
+        /* - Added by Jose Gordo - */
+        /* tabs */
+div#header-content {
+			border-bottom: 1px solid #555;
+		}
+	
+	
+			div#header-content p {
+				font-size: .7em;
+				margin: 0;
+				text-align: right;
+				padding: 10px 0px 0px 0px;
+				width: 40%;
+				float: right;
+				white-space: nowrap;
+				}
+				
+				
+				/* defines the link nature on the right side of the header */
+
+				div#header-content p a {
+					text-decoration: none;
+					text-align: right;
+					}
+					
+					
+					
+				/* define the tabs of the main nav */
+				
+				div#header-content {
+					margin: 0 auto;
+					padding: 0 40px 0 35px;
+                                        border-bottom: 1px solid #5D5D5D;
+                                        background:#555;
+					}
+					
+					
+					div#header-content ul#ulnav {
+						width: 57%;
+						float: left;
+						font-size: .7em; /* could be specified at a higher level */
+						margin: 0;
+						padding: 5px 0 0 0;
+						}
+
+div#header-content ul#ulnav2 {
+						width: 15%;
+						float: right;
+						font-size: .7em; /* could be specified at a higher level */
+						margin: 0;
+						padding: 5px 0 0 0;
+						}
+
+						
+					div#header-content ul#ulnav li, div#header-content ul#ulnav2 li {
+						float: left;
+						margin: 0; 
+						padding: 0;
+						display: inline;
+						list-style: none;
+						}
+						
+						
+						/* defines the nature of the link on main nav */
+						
+						div#header-content ul#ulnav li a, div#header-content ul#ulnav2 li a {
+							float: left;
+							line-height: 20px;
+							text-decoration: none;
+							margin: 0 1px 0 1px;
+							padding: 2px 5px;
+						}
+						
+						div#header-content ul#ulnav li a.selected, div#header-content ul#ulnav2 li a.selected {
+							float: left;
+							line-height: 20px;
+							margin: 0 1px 0 1px;
+							text-decoration: none;
+							padding: 2px 5px;
+						}
+
+
+
+
+/* HEADER OF THE APPLICATION */
+		
+		div#header-content {
+			background: #555;
+			border-bottom-color: #5d5d5d;
+		}
+		
+		div#header-content p {
+			color: #ccc;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/* login off and settings links on the header */
+		
+		
+		div#header-content p a:link, div#header-content p a:visited, div#header-content p a:active {
+			color: #cf0;
+		}
+		
+		div#header-content p a:hover {
+			color: #fff;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/* main nav links */
+		
+		div#header-content ul#ulnav li a:link, div#header-content ul#ulnav2 li a:link, div#header-content ul#ulnav li a:visited, div#header-content ul#ulnav2 li a:visited {
+			border-bottom: 2px solid #555;
+			color: #999;
+			}
+			
+			div#header-content ul#ulnav li a:hover, div#header-content ul#ulnav2 li a:hover {
+			        border-bottom: 2px solid #cf0;
+				color: #fff;
+				}
+				
+	    div#header-content ul#ulnav li a.selected, div#header-content ul#ulnav2 li a.selected {
+			border-bottom: 2px solid #cf0;
+			color: #fff;
+		}
+				
+		div#header-content ul#ulnav li a.selected:link, div#header-content ul#ulnav2 li a.selected:link, div#header-content ul#ulnav li a.selected:visited, div#header-content ul#ulnav2 li a.selected:visited, div#header-content ul#ulnav li a:hover, div#header-content ul#ulnav li a.selected:hover {
+				border-bottom: 2px solid #cf0;
+				color: #fff;
+				}
+        /* --- end tabs --- */
+        /* --- end jgordor Modifications --- */
+
+	/* --- UNIVERSAL DIVS ---- */
+
+
+	#super {
+		width: 750px;
+		margin: 0px auto;
+	}
+
+
+	#header {
+	}
+
+
+	#contenedor {
+		padding: 0 0 3em 0;
+	}
+
+
+
+
+	/* ---- HEADER ---- */
+
+
+	#header h1 {
+		width: 178px;
+		height: 25px;
+		margin: 0;
+		padding: 100px 20px 5px 55px;
+	}
+
+				#header h1 img {
+					display: block;
+					width: 178px;
+					height: 25px;
+				}
+
+
+
+	#header h2 {
+		margin: 0 0 40px 100px;
+		font-size: 11px;
+		color: #eee;
+		font-size: 11px;
+	}
+
+
+
+div#header h2 a:link, div#header h2 a:visited, div#header h2 a:active {
+color: #cf0;
+}
+
+div#header h2 a:hover {
+color: #fff;
+}
+
+	/*  ---- CONTENIDO ---- */
+
+.portrait {
+border: 2px solid #666;
+-moz-border-radius: .3em;
+margin: 0 0 0 5px;
+float: right;
+}
+
+
+				div#content {
+					float: right;
+					width: 470px;
+					padding: 15px 0px 30px 0px;
+		
+				}
+
+
+				div.post {
+					padding-bottom: 7em;
+			
+				}
+
+				div.post h2 {
+					font: bold 1.5em/1.4em "Lucida Grande", Arial, sans-serif;
+					margin: 0 !important;
+					color: #fff;
+				}
+				
+								div.post h3, div.post h4, div.post h5 {
+									color: #fff; /* this one adds colors to all <h*> in the post body */
+									font-weight: bold;
+								}
+
+
+blockquote.big p {
+font: 1.2em/1.6em "Lucida Grande" !Important;
+color: #cf0 !important;
+font-style: normal;
+}
+
+
+								div.post h3 {
+									font-size: .9em;
+									margin: 40px 0 0 0 !important;
+								}
+
+								div.post h4 {
+									font-style: normal;
+									font-size: .8em;
+									margin: 40px 0 0 0;
+								}
+
+								div.post h3.special {
+									font-size: 1em;
+									margin: 30px 0 -20px 0;
+									color: #cf0;
+								}
+
+
+					div.post h2 a {
+						text-decoration: none;
+						color: #fff !important;
+						border: 0 !important;
+						padding: 0 !important;
+						color: #f00;
+					}
+
+					div.individual h2 {
+						font-size: 1.5em;
+						line-height: 1.4em;
+						color: #fff;
+						margin: 0px !Important;
+					}
+
+
+					div.post p {
+						font: .8em/1.8em "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+						color: #ccc;
+					}
+
+						div.post ul li, div.post ol li  {
+							font: .8em/1.8em "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+							color: #ccc;
+						}
+
+									div.post ul li p, div.post ol li p {
+										font-size: 1em; /* This one hacks for em size when you use a <p> inside a <li> */
+									}
+
+										div.post ul li ul li p, div.post ol li ol li p {
+											font-size: 1.2em;
+										}
+
+
+									div.comment-body ol li, div.comment-body ul li {
+										font: 11px/1.6em "Trebuchet MS", Arial, sans-serif;
+										color: #333;
+										}
+										
+										div.comment-body ol li a, div.comment-body ul li a {
+											color: #000 !important;
+											border-bottom: 1px solid #000 !important;
+										}
+
+
+div.post blockquote p {
+font-style: italic !important;
+}
+
+
+					/* ---- LISTS ARCHIVES ---- */
+
+
+					table.listados {
+						width: 100%;
+						margin: 2em 0;
+					}
+
+						table.listados td {
+							padding: 10px 10px 10px 0px;
+							font: .7em/1.6em "Lucida Grande","Trebuchet MS", Arial, sans-serif;
+							background: url(/es/wp-content/themes/minid/images/dot_line.png) repeat-x bottom;
+							vertical-align: top;		
+						}
+
+						.ref {
+							white-space: nowrap;
+						}
+
+						table.listados td strong {
+							font-size: 1.1em;
+						}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+					/* ---- IMAGE SET ---- */
+
+						img.right {
+							float: right;
+							display: block;
+							margin: .3em 0 1em 1em;
+						}
+
+						img.center {
+							margin: 1em auto;
+							display: block;
+						}
+
+
+					div.post p.posted {
+						font: .6em Geneva, Arial, sans-serif;
+						color: #666;
+					}
+
+
+
+
+
+
+			/* ---- MENU ---- */
+
+			#menus {
+				width: 230px;
+				float: left;
+				padding-top: 70px;
+			}
+
+							div.principal, div.extra {
+								width: 130px;
+								float: right;
+								clear: both;
+							}
+
+
+						
+
+					div.principal h3, div.extra h3 {
+						font: bold .8em/1.6em "Lucida Grande", Arial, sans-serif;
+						margin: 0 0 5px 0;
+						color: #fff;
+						border-bottom: 1px dotted #999;
+						text-align: right;
+					}
+
+							div.principal ul, div.extra ul {
+								margin: 0 0 15px 0;
+								padding: 0;
+								list-style: none;
+								font-family:  "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+								text-align: right;
+							}
+
+							div.principal ul li {
+								line-height: 1.7em;
+							}
+
+							div.principal ul li ul, div.extra ul li ul {
+								margin: 0;
+							}
+
+										div.principal ul li, div.extra ul li {
+												font-size: .7em;
+												line-height: 1.7em;
+										}
+
+											div.principal ul li ul li, div.extra ul li ul li {
+												padding-left: 10px;
+												font-size: 1em;
+											}
+
+		
+
+			/* ---- SERACH ---- */
+
+			div.search {
+				margin: 0 0 25px 0;
+				padding: 15px 0;
+			}
+
+			div.search label {
+				font: bold .7em/1.6em "Lucida Grande", Arial, sans-serif;
+				display: block;
+				color: #ccc;
+				margin-bottom: 5px;
+			}
+
+
+				div.autor {
+					padding-bottom: 25px;
+					text-align: right;
+				}
+
+
+										div.autor h3 {
+											color: #fff;
+											font: bold .8em/1.6em "Lucida Grande", Arial, sans-serif;
+											margin: 0;
+										}
+
+										
+							
+							
+										div.autor p {
+											font: .7em/1.6em "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+											color: #ccc;
+
+										}
+							
+
+					div.tools {
+						padding: 0px 0px 15px 0px;
+					}
+
+
+
+					div.metadata {
+						padding: 15px 0;
+						margin-bottom: 15px;
+						text-align: right;
+					}
+
+
+								div.metadata p {
+									font: .7em/1.7em "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+									color: #999;
+									margin-top: 0px;
+								}
+
+								div.metadata h3 {
+									font: bold .8em/1.6em Arial, sans-serif;
+									color: #fff;
+									margin: 0 0 0 0;
+								}
+					
+
+					/* ---- enlaces ---- */
+
+						div#content a, div.tools a, div#menus a, div#footer a {
+							text-decoration: none;
+						}
+
+					
+						div#content a:link,  div.tools a:link, div#menus a:link, div#footer a:link {
+						        	  color: #D9FA56;
+										}
+						
+						
+						div#content a:visited, div.tools a:link, div#menus a:visited, div#footer a:visited {
+						        	color: #D9FA56;
+										}
+						
+						
+						div#content a:active, div.tools a:active, div#menus a:active, div#footer a:active {
+						        color: #D9FA56;
+										}
+						
+						
+						div#content a:hover, div.tools a:hover, div#menus a:hover, div#footer a:hover {
+						        		color: #000;
+										background: #D9FA56;
+										}
+
+
+
+
+										
+
+
+							/* ---- COMMENTS ---- */
+
+
+						div.comment-head {
+							border-left: 1px solid #333;
+							border-right: 1px solid #333;
+							background: #333 url(http://blog.negonation.com/es/wp-content/themes/minid/images/msg-comment.png) bottom left no-repeat;
+							padding-bottom: 10px;
+							clear: both;
+color: #666;
+						}
+
+									div.minid-head, div.mini-d-head, div.Blanco-head, div.Santos-head, div.Lafuente-head, div.Garcia-head, div.Jiménez-head {
+										background: #333 url(http://blog.negonation.com/es/wp-content/themes/minid/images/msg-comment-minid.png) bottom left no-repeat;
+color: #666 !important;
+									}
+
+									div.comment-head img {
+										padding: 1px;
+										background: #333;
+										border: 1px solid #ccc;
+										float: left;
+										width: 32px;
+										height: 32px;
+										margin: 0px 25px 0px 15px;
+									}
+
+
+						div.comment-head p {
+							float: left;
+							font: .7em/1.4em "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+							margin: 0px 0 0 0px !important;
+							color: #ccc;
+						}
+						
+							div.comment-head p cite {
+								color: #ccc;
+							}
+
+
+						div.comment-body {
+							background: #787878;
+							-moz-border-radius: .5em;
+							padding: 5px 15px 5px 15px;
+							border-bottom: 1px solid #222;
+							border-right: 1px solid #222;
+							margin-bottom: 20px;
+						}
+
+
+
+div.Lafuente, div.Blanco, div.Santos, div.Garcia, div.Jiménez {
+                                                        background: #C6E78F;
+							-moz-border-radius: .5em;
+							padding: 5px 15px 5px 15px;
+							border-bottom: 1px solid #9EB872;
+							border-right: 1px solid #9EB872;
+							margin-bottom: 20px;
+}
+						
+							div.comment-body p {
+								font: .7em/1.4em "Lucida Grande", Arial, sans-serif !important;
+								color: #eee !important;
+							}
+							
+								div.mini-d p, div.Blanco p, div.Santos p, div.Lafuente p, div.Garcia p, div.Jiménez p {
+									color: #333 !important;
+								}
+
+div.Blanco p a, div.mini-d p a, div.Santos p a, div.Lafuente p a, div.Diego p a, div.Garcia p a, div.Jiménez p a {
+color: #5F7736 !important;
+}
+									div.mini-d blockquote, div.Garcia blockquote, div.Jiménez blockquote, div.Blanco blockquote, div.Santos blockquote, div.Lafuente blockquote, div.Diego blockquote div.comment-body blockquote {
+												padding: 5px 10px 5px 10px;
+												-moz-border-radius: .5em;
+												
+												}
+												
+									div.comment-body blockquote {
+										background: #999;
+										border-top: 1px solid #fff;
+												border-left: 1px solid #fff;
+												border-bottom: 1px solid #ddd;
+												border-right: 1px solid #ddd;
+										}
+										
+									div.mini-d blockquote, div.Blanco blockquote, div.Santos blockquote, div.Lafuente blockquote,  div.Diego blockquote {
+										background: #FFFFF5 !important;
+										border-top: 1px solid #fff;
+										border-left: 1px solid #fff;
+										border-bottom: 1px solid #F2F2BA;
+										border-right: 1px solid #F2F2BA;
+										}
+										
+										
+
+
+						
+
+
+																div.modera {
+																	background: #333 url(http://blog.negonation.com/es/wp-content/themes/minid/images/bg-nav-diag.png);
+																	padding: 10px;
+																	color: #f00 !important;
+																	font: .8em/1.6em "Trebuchet MS", Arial, sans-serif !important;
+																	-moz-border-radius: .8em;
+																}
+
+
+																pre {
+																	width: 90%;
+																	overflow: auto;
+																	font-size: .9em;
+																	line-height: 1.5em;
+																	margin-left: 25px;
+																	}
+
+																code {
+																	color: #681;
+																	font: 1.1em "andale mono", "lucida console", "courier new", monospace
+																	}
+
+
+
+																div.modera2 {
+																	margin-top: 35px;
+																}
+
+																		div.modera p {
+																			margin: 0px;
+																			color: #C4FA56;
+																			background: url(http://blog.negonation.com/es/wp-content/themes/minid/images/exclamation.png) no-repeat left top;
+																			padding-left: 60px;
+																		}
+
+																				div.comment-body p {
+																					font: .8em/1.6em "Trebuchet MS", Arial, sans-serif;
+																					color: #555;
+																				}
+
+																				/* inputs */
+
+																				div#comment-super {
+																					background: #BCE27F;
+																					padding: 15px;
+																					margin: 35px 0px;
+																					border-top: 1px solid #D2EBA8;
+																					border-left: 1px solid #D2EBA8;
+																					border-bottom: 1px solid #678934;
+																					border-right: 1px solid #678934;
+																					-moz-border-radius: .8em;
+																				}
+
+																				div#comment-super p {
+																					color: #333;
+																					font-size: .7em;
+																				}
+
+
+																			h3#comments, h3#respond, h3#moreentry {
+																				border-bottom: 1px solid #ABCB76;
+																				font: 1em/1.6em "Lucida Grande", Arial, sans-serif;
+																				color: #5D7A2E;
+																				margin: 0px 0px 25px 0px;
+																				padding: 0px 0px 3px 0px;
+																			}
+
+
+																			#comment {
+																				width: 99%;
+																			}
+
+
+
+																		div.navigation {
+																			font: .7em/1.6em "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+																		}
+
+																				div.navigation div.alignleft {
+																					float: left;
+																					width: 45%;
+																				}
+
+																				div.navigation div.alignright {
+																					float: right;
+																					width: 45%;
+																					text-align: right;
+																				}
+
+
+																/* ---- COMPARE ---- */
+
+																table.compare {
+																	width: 99%;
+																	border: 1px solid #999;
+																	margin: 2.5em 0em 2.5em 0em;
+
+																	}
+
+																table.compare thead tr th {
+																	background: #FFC;
+																	padding: 5px 10px;
+																	text-align: left;
+																	font: .8em/1.6em "Trebuchet MS", Arial, sans-serif;
+																	border-bottom: 1px dotted #999;
+																	color: #222;
+																	}
+
+																table.compare tbody tr td {
+																	padding: 8px 10px;
+																	text-align: left;
+																	font: .8em/1.6em "Trebuchet MS", Arial, sans-serif;
+																	border-bottom: 1px dotted #ccc;
+																	vertical-align: top;
+																	}
+
+																table.compare tbody tr th {
+																	padding: 8px 10px;
+																	text-align: left;
+																	font: bold .8em/1.6em "Trebuchet MS", Arial, sans-serif;
+																	border-bottom: 1px dotted #ccc;
+																	white-space: nowrap;
+																	color: #333;
+																	background: #fffffa;
+																	vertical-align: top;
+																	}
+
+																table.compare tfoot tr td {
+																	padding: 8px 10px;
+																	text-align: right;
+																	font: .6em/1.6em "Trebuchet MS", Arial, sans-serif;
+																	background: #f9f9f9;
+																	text-transform: uppercase;
+																	}
+
+
+													/* ---- FOOTER ---- */
+
+
+													#footer {
+														padding: 15px;
+														font: .7em/1.6em "Trebuchet MS", Arial, sans-serif;
+														color: #666;
+														text-align: center;
+													}
+													
+													 div.Blanco {
+							background: #BCE27F !important;
+							border-bottom: 1px solid #6D8745;
+							border-right: 1px solid #6D8745;
+						}
+
+
+						div.modera {
+							background: #333 url(http://blog.negonation.com/es/wp-content/themes/minid/images/bg-nav-diag.png);
+							padding: 10px;
+							color: #f00 !important;
+							font: .8em/1.6em "Trebuchet MS", Arial, sans-serif !important;
+							-moz-border-radius: .8em;
+						}
+
+
+						pre {
+							width: 90%;
+							overflow: auto;
+							font-size: .9em;
+							line-height: 1.5em;
+							margin-left: 25px;
+							}
+							
+						code {
+							color: #681;
+							font: 1.1em "andale mono", "lucida console", "courier new", monospace
+							}
+
+
+
+						div.modera2 {
+							margin-top: 35px;
+						}
+
+								div.modera p {
+									margin: 0px;
+									color: #C4FA56;
+									background: url(http://blog.negonation.com/es/wp-content/themes/minid/images/exclamation.png) no-repeat left top;
+									padding-left: 60px;
+								}
+
+										div.comment-body p {
+											font: .8em/1.6em "Trebuchet MS", Arial, sans-serif;
+											color: #555;
+										}
+										
+										/* inputs */
+										
+										div#comment-super {
+											background: #BCE27F;
+											padding: 15px;
+											margin: 35px 0px;
+											border-top: 1px solid #D2EBA8;
+											border-left: 1px solid #D2EBA8;
+											border-bottom: 1px solid #678934;
+											border-right: 1px solid #678934;
+											-moz-border-radius: .8em;
+										}
+
+										div#comment-super p {
+											color: #333;
+											font-size: .7em;
+										}
+
+
+									h3#comments, h3#respond, h3#moreentry {
+										border-bottom: 1px solid #ABCB76;
+										font: 1em/1.6em "Lucida Grande", Arial, sans-serif;
+										color: #5D7A2E;
+										margin: 0px 0px 25px 0px;
+										padding: 0px 0px 3px 0px;
+									}
+
+
+									#comment {
+										width: 99%;
+									}
+
+
+
+								div.navigation {
+									font: .7em/1.6em "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+								}
+
+										div.navigation div.alignleft {
+											float: left;
+											width: 45%;
+										}
+
+										div.navigation div.alignright {
+											float: right;
+											width: 45%;
+											text-align: right;
+										}
+										
+										
+						/* ---- COMPARE ---- */
+						
+						table.compare {
+							width: 99%;
+							border: 1px solid #999;
+							margin: 2.5em 0em 2.5em 0em;
+							
+							}
+							
+						table.compare thead tr th {
+							background: #FFC;
+							padding: 5px 10px;
+							text-align: left;
+							font: .8em/1.6em "Trebuchet MS", Arial, sans-serif;
+							border-bottom: 1px dotted #999;
+							color: #222;
+							}
+							
+						table.compare tbody tr td {
+							padding: 8px 10px;
+							text-align: left;
+							font: .8em/1.6em "Trebuchet MS", Arial, sans-serif;
+							border-bottom: 1px dotted #ccc;
+							vertical-align: top;
+							}
+							
+						table.compare tbody tr th {
+							padding: 8px 10px;
+							text-align: left;
+							font: bold .8em/1.6em "Trebuchet MS", Arial, sans-serif;
+							border-bottom: 1px dotted #ccc;
+							white-space: nowrap;
+							color: #333;
+							background: #fffffa;
+							vertical-align: top;
+							}
+							
+						table.compare tfoot tr td {
+							padding: 8px 10px;
+							text-align: right;
+							font: .6em/1.6em "Trebuchet MS", Arial, sans-serif;
+							background: #f9f9f9;
+							text-transform: uppercase;
+							}
+
+
+			/* ---- FOOTER ---- */
+
+
+			#footer {
+				padding: 15px;
+				font: .7em/1.6em "Trebuchet MS", Arial, sans-serif;
+				color: #666;
+				text-align: center;
+			}
+
+
+div.post ol li ul li {
+font-size: 1em;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #999;
+cursor: help;
+}
+
+blockquote.especial {
+  border: 5px solid #BCE27F;
+  background: #E5F6C9;
+  padding: 5px 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+blockquote.especial p {
+  color: #000;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+blockquote.especial a {
+  color: #000 !important;
+  text-decoration: underline !important;
+}

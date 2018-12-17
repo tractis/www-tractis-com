@@ -1,0 +1,139 @@
+<?php /* If this is the frontpage */ if ( is_home() ) { ?>
+
+<div class="autor">
+
+        <div class="metadata">
+
+	<h3>Acerca de Negonation Blog <a href="http://feeds.feedburner.com/negonation/blog/es" target="_blank" title="Subscríbete al Feed RSS de Negonation Blog" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="border:0"/></a></h3>
+
+	<p>Proporcionar un sistema legal a la nación internet es un desafío enorme. Mientras lo conseguimos o perecemos en el intento, hemos montado este blog para compartir avances, dudas y reflexiones. Nuestro primer servicio se llama <a href="http://www.tractis.com"><b>Tractis</b></a>, una plataforma de negociación y administración de contratos online que consume nuestros días y nuestras noches. Bienvenido a Negonation Blog. Comentarios bienvenidos.</p>
+
+  <p><a title="Quienes somos" href="http://blog.negonation.com/es/quiero-saber/">Saber</a> | <a title="Enlaces útiles en la creación de Tractis" href="http://blog.negonation.com/es/getting-started/">Aprender</a> <sup>*</sup> | <a title="Colabora en el proyecto Tractis" href="http://blog.negonation.com/es/quiero-colaborar/">Colaborar</a> | <a target="_blank" title="No seas tímido" href="mailto:blog@negonation.com">Contactar</a></p>
+
+        <br />
+
+<h3>Sospechosos habituales</h3>
+
+<br />
+
+<p><a href="http://blog.negonation.com/es/author/david_blanco/"><img src="http://blog.negonation.com/es/wp-content/uploads/2006/07/david-blanco.png" alt="David Blanco" class="portrait" />David Blanco</a><br/><cite>ceofilus geekadictivus</cite></p>
+
+<div class="clear"></div>
+
+<p><a href="http://blog.negonation.com/es/author/manuel_santos/"><img src="http://blog.negonation.com/es/wp-content/uploads/2006/07/manolo.png" alt="Manolo Santos" class="portrait" />Manolo Santos</a><br/><cite>rubyonrailes codefiqiteur</cite></p>
+
+<div class="clear"></div>
+
+<p><a href="http://blog.negonation.com/es/author/diego_lafuente/"><img src="http://blog.negonation.com/es/wp-content/uploads/2006/07/diego-lafuente.png" alt="Diego Lafuente" class="portrait" />Diego Lafuente</a><br /><cite>arquitectus mancillae</cite></p>
+
+<div class="clear"></div>
+
+<br />
+
+	<h3>Notificaciones por email</a></h3>
+
+        <p><form padding:3px;text-align:right;" action="http://www.feedburner.com/fb/a/emailverify" method="post" target="popupwindow" onsubmit="window.open('http://www.feedburner.com', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Escribe tu email y recibirás un correo<br>cada vez que actualicemos el blog:</p><p><input type="text" style="width:110px" name="email"/><input type="hidden" value="http://feeds.feedburner.com/~e?ffid=309590" name="url"/><input type="hidden" value="Negonation Blog - Español" name="title"/>    <input type="submit" style="width:80px" value="Subscribir" /></form></p>
+
+        </div>
+
+</div>
+
+<div class="search">
+
+	<label>Busca en <?php echo bloginfo('name'); ?>:</label>
+	<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+	
+</div>
+
+<?php /* If this is a category archive */ } elseif (is_category()) { ?>
+
+			<div class="metadata">
+
+					<h3>¿Qué es esta sección?</h3>
+	
+					<p>Ahora estás visitando la página de la categoría "<strong><?php single_cat_title(''); ?></strong>". Si es lo que buscabas, genial. Si no, más abajo de este texto tienes el listado de las categorías y el archivo temporal de <?php echo bloginfo('name'); ?>.</p>
+
+			</div>
+
+			
+<?php /* If this is a yearly archive */ } elseif (is_day()) { ?>
+
+			<div class="metadata">
+
+					<h3>¿Qué es esta sección?</h3>
+
+					<p>Ahora estás leyendo una página que pertenece a los archivos anuales de entradas de <a href="<?php echo get_settings('siteurl'); ?>"><?php echo bloginfo('name'); ?></a> de la fecha <?php the_time('n \d\e F \d\e Y') ?>.</p>
+
+			</div>
+			
+			<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
+
+			<div class="metadata">
+
+			<h3>Archivos mensuales de <?php the_time('F \d\e\l Y'); ?></h3>
+			
+			<p>Ahora estás navegador una página que pertenece a los archivos mensuales de entradas de <a href="<?php echo get_settings('siteurl'); ?>"><?php echo bloginfo('name'); ?></a> de la fecha <?php the_time('F \d\e\l Y'); ?>.</p>
+
+			</div>
+
+      <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
+
+      			<div class="metadata">
+
+			<h3>Archivos anuales de <?php the_time('Y'); ?></h3>
+			
+			<p>Ahora estás navegador una página que pertenece a los archivos anuales de entradas de <a href="<?php echo get_settings('siteurl'); ?>"><?php echo bloginfo('name'); ?></a> para el año <?php the_time('Y'); ?>.</p>
+
+			</div>
+			
+		 <?php /* If this is a monthly archive */ } elseif (is_search()) { ?>
+
+			<div class="metadata">
+
+				<h3>Información sobre tu búsqueda</h3>
+
+				<p>Has buscado en los archivos de <a href="<?php echo get_settings('siteurl'); ?>"><?php echo bloginfo('name'); ?></a> la palabra o frase <q><strong><?php echo wp_specialchars($s); ?></strong></q>. Si no puedes encontrar nada con esto, inténtalo de nuevo usando palabras similares.</p>
+				
+			</div>
+		 
+
+			<?php /* If this is a monthly archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+
+			<p>Actualmente estás navegador los archivos de <a href="<?php echo get_settings('siteurl'); ?>"><?php echo bloginfo('name'); ?></a>.</p>
+
+			<?php } ?>
+
+<div class="tools">
+	
+<div class="principal">
+
+		
+
+		<h3>Categorías</h3>
+		
+			<ul>
+				<?php wp_list_cats('sort_column=name&optioncount=1'); ?>
+			</ul>
+
+</div>
+<div class="extra">
+
+			<h3>Archivos</h3>
+			
+				<ul>
+				<?php wp_get_archives('type=monthly'); ?>
+				</ul>
+
+			<?php /* If this is the frontpage */ if ( is_home() || is_page() ) { ?>			
+				
+					
+				
+				
+			<?php } ?>
+	
+</div>
+
+<div class="clear"></div>
+
+
+</div>

@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head profile="http://gmpg.org/xfn/11">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        
+	<title>Negonation Blog  &raquo; Blog Archive   &raquo; Decisiones Técnicas en Tractis: Componente de creación de firma</title>
+
+	<meta name="generator" content="WordPress 3.1.3 - really-static 0.5" /> <!-- leave this for stats -->
+	<meta name="verify-v1" content="pXLPIyE5Pjm33fKNgnriuzSR4F0WMO9Ng/jedsJo1Rg=" />
+
+	<link rel="stylesheet" href="/blog/es/wp-content/themes/minid/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/blog/en/wp-content/themes/minid/print.css" type="text/css" media="print" />
+	<link rel="stylesheet" href="/blog/en/wp-content/themes/minid/alternate.css" type="text/css" media="handheld" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/es/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/negonation/blog/es" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/blog/es/feed/atom/" />
+	<link rel="pingback" href="/blog/es/xmlrpc.php" />
+
+
+			<link rel='archives' title='Abril 2018' href='/es/2018/04/' />
+	<link rel='archives' title='Febrero 2018' href='/es/2018/02/' />
+	<link rel='archives' title='Agosto 2016' href='/es/2016/08/' />
+	<link rel='archives' title='Julio 2016' href='/es/2016/07/' />
+	<link rel='archives' title='Octubre 2015' href='/es/2015/10/' />
+	<link rel='archives' title='Julio 2015' href='/es/2015/07/' />
+	<link rel='archives' title='Junio 2015' href='/es/2015/06/' />
+	<link rel='archives' title='Mayo 2015' href='/es/2015/05/' />
+	<link rel='archives' title='Noviembre 2014' href='/es/2014/11/' />
+	<link rel='archives' title='Octubre 2014' href='/es/2014/10/' />
+	<link rel='archives' title='Septiembre 2014' href='/es/2014/09/' />
+	<link rel='archives' title='Julio 2014' href='/es/2014/07/' />
+	<link rel='archives' title='Junio 2014' href='/es/2014/06/' />
+	<link rel='archives' title='Abril 2014' href='/es/2014/04/' />
+	<link rel='archives' title='Marzo 2014' href='/es/2014/03/' />
+	<link rel='archives' title='Febrero 2014' href='/es/2014/02/' />
+	<link rel='archives' title='Octubre 2013' href='/es/2013/10/' />
+	<link rel='archives' title='Septiembre 2013' href='/es/2013/09/' />
+	<link rel='archives' title='Agosto 2013' href='/es/2013/08/' />
+	<link rel='archives' title='Mayo 2013' href='/es/2013/05/' />
+	<link rel='archives' title='Abril 2013' href='/es/2013/04/' />
+	<link rel='archives' title='Marzo 2013' href='/es/2013/03/' />
+	<link rel='archives' title='Febrero 2013' href='/es/2013/02/' />
+	<link rel='archives' title='Diciembre 2012' href='/es/2012/12/' />
+	<link rel='archives' title='Noviembre 2012' href='/es/2012/11/' />
+	<link rel='archives' title='Octubre 2012' href='/es/2012/10/' />
+	<link rel='archives' title='Septiembre 2012' href='/es/2012/09/' />
+	<link rel='archives' title='Agosto 2012' href='/es/2012/08/' />
+	<link rel='archives' title='Junio 2012' href='/es/2012/06/' />
+	<link rel='archives' title='Mayo 2012' href='/es/2012/05/' />
+	<link rel='archives' title='Marzo 2012' href='/es/2012/03/' />
+	<link rel='archives' title='Febrero 2012' href='/es/2012/02/' />
+	<link rel='archives' title='Enero 2012' href='/es/2012/01/' />
+	<link rel='archives' title='Diciembre 2011' href='/es/2011/12/' />
+	<link rel='archives' title='Noviembre 2011' href='/es/2011/11/' />
+	<link rel='archives' title='Octubre 2011' href='/es/2011/10/' />
+	<link rel='archives' title='Junio 2011' href='/es/2011/06/' />
+	<link rel='archives' title='Mayo 2011' href='/es/2011/05/' />
+	<link rel='archives' title='Abril 2011' href='/es/2011/04/' />
+	<link rel='archives' title='Marzo 2011' href='/es/2011/03/' />
+	<link rel='archives' title='Febrero 2011' href='/es/2011/02/' />
+	<link rel='archives' title='Enero 2011' href='/es/2011/01/' />
+	<link rel='archives' title='Diciembre 2010' href='/es/2010/12/' />
+	<link rel='archives' title='Noviembre 2010' href='/es/2010/11/' />
+	<link rel='archives' title='Octubre 2010' href='/es/2010/10/' />
+	<link rel='archives' title='Septiembre 2010' href='/es/2010/09/' />
+	<link rel='archives' title='Agosto 2010' href='/es/2010/08/' />
+	<link rel='archives' title='Julio 2010' href='/es/2010/07/' />
+	<link rel='archives' title='Junio 2010' href='/es/2010/06/' />
+	<link rel='archives' title='Mayo 2010' href='/es/2010/05/' />
+	<link rel='archives' title='Abril 2010' href='/es/2010/04/' />
+	<link rel='archives' title='Marzo 2010' href='/es/2010/03/' />
+	<link rel='archives' title='Febrero 2010' href='/es/2010/02/' />
+	<link rel='archives' title='Diciembre 2009' href='/es/2009/12/' />
+	<link rel='archives' title='Noviembre 2009' href='/es/2009/11/' />
+	<link rel='archives' title='Octubre 2009' href='/es/2009/10/' />
+	<link rel='archives' title='Septiembre 2009' href='/es/2009/09/' />
+	<link rel='archives' title='Agosto 2009' href='/es/2009/08/' />
+	<link rel='archives' title='Julio 2009' href='/es/2009/07/' />
+	<link rel='archives' title='Junio 2009' href='/es/2009/06/' />
+	<link rel='archives' title='Mayo 2009' href='/es/2009/05/' />
+	<link rel='archives' title='Abril 2009' href='/es/2009/04/' />
+	<link rel='archives' title='Marzo 2009' href='/es/2009/03/' />
+	<link rel='archives' title='Febrero 2009' href='/es/2009/02/' />
+	<link rel='archives' title='Enero 2009' href='/es/2009/01/' />
+	<link rel='archives' title='Diciembre 2008' href='/es/2008/12/' />
+	<link rel='archives' title='Noviembre 2008' href='/es/2008/11/' />
+	<link rel='archives' title='Octubre 2008' href='/es/2008/10/' />
+	<link rel='archives' title='Septiembre 2008' href='/es/2008/09/' />
+	<link rel='archives' title='Agosto 2008' href='/es/2008/08/' />
+	<link rel='archives' title='Julio 2008' href='/es/2008/07/' />
+	<link rel='archives' title='Junio 2008' href='/es/2008/06/' />
+	<link rel='archives' title='Mayo 2008' href='/es/2008/05/' />
+	<link rel='archives' title='Abril 2008' href='/es/2008/04/' />
+	<link rel='archives' title='Marzo 2008' href='/es/2008/03/' />
+	<link rel='archives' title='Febrero 2008' href='/es/2008/02/' />
+	<link rel='archives' title='Enero 2008' href='/es/2008/01/' />
+	<link rel='archives' title='Diciembre 2007' href='/es/2007/12/' />
+	<link rel='archives' title='Noviembre 2007' href='/es/2007/11/' />
+	<link rel='archives' title='Octubre 2007' href='/es/2007/10/' />
+	<link rel='archives' title='Agosto 2007' href='/es/2007/08/' />
+	<link rel='archives' title='Abril 2007' href='/es/2007/04/' />
+	<link rel='archives' title='Febrero 2007' href='/es/2007/02/' />
+	<link rel='archives' title='Enero 2007' href='/es/2007/01/' />
+	<link rel='archives' title='Diciembre 2006' href='/es/2006/12/' />
+	<link rel='archives' title='Noviembre 2006' href='/es/2006/11/' />
+	<link rel='archives' title='Octubre 2006' href='/es/2006/10/' />
+	<link rel='archives' title='Septiembre 2006' href='/es/2006/09/' />
+	<link rel='archives' title='Agosto 2006' href='/es/2006/08/' />
+	<link rel='archives' title='Julio 2006' href='/es/2006/07/' />
+	<link rel='archives' title='Junio 2006' href='/es/2006/06/' />
+	<link rel='archives' title='Mayo 2006' href='/es/2006/05/' />
+
+		<link rel="alternate" type="application/rss+xml" title="Negonation Blog &raquo; Decisiones Técnicas en Tractis: Componente de creación de firma Comments Feed" href="/blog/es/decisiones-tecnicas-en-tractis-componente-de-creacion-de-firma/feed/" />
+<link rel='stylesheet' id='syntaxhighlighter-core-css'  href='/es/wp-content/plugins/syntaxhighlighter/syntaxhighlighter/styles/shCore.css?ver=2.0.320' type='text/css' media='all' />
+<link rel='stylesheet' id='syntaxhighlighter-theme-default-css'  href='/es/wp-content/plugins/syntaxhighlighter/syntaxhighlighter/styles/shThemeDefault.css?ver=2.0.320' type='text/css' media='all' />
+<script type='text/javascript' src='/es/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://platform.twitter.com/anywhere.js?id=oUDd4jPcGk8Vxc0acwitg&#038;v=1'></script>
+<link rel='index' title='Negonation Blog' href='/es/' />
+<link rel='start' title='Justicia para Internet' href='/es/justicia-para-internet/' />
+<link rel='prev' title='Decisiones técnicas en Tractis' href='/es/decisiones-tecnicas-en-tractis/' />
+<link rel='next' title='Nueva legislación española sobre contratación electrónica' href='/es/nueva-legislacion-espanola-sobre-contratacion-electronica/' />
+<meta name="generator" content="WordPress 3.1.3 - really-static 0.5" />
+<link rel='canonical' href='/es/decisiones-tecnicas-en-tractis-componente-de-creacion-de-firma/' />
+	<style type="text/css">.syntaxhighlighter { font-size: 12px !important; }</style>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-128262-4";
+urchinTracker();
+</script>
+
+<style type="text/css">
+ div.post img {behavior: url(/es/iepngfix.htc) }
+</style>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="shortcut icon" type="image/icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/iphone-favicon.png" />
+  <script type="text/javascript" src="/jquery/jquery.js?1360401146"></script>
+  <script>jQuery.noConflict();</script>
+  
+</head>
+
+
+
+<body>
+
+   <div id="header-content">
+     <!-- begin shared/nav_public -->
+     <ul id="ulnav">
+           <li><a href="http://www.tractis.com" title="" rel="section">Inicio</a></li>
+           <li><a href="http://blog.negonation.com" title="" class="selected" rel="section">Blog</a></li>
+            <li><a href="http://twitter.com/tractis" title="" rel="section">Twitter</a></li>
+           
+     </ul>
+     <!-- end shared/nav_public -->
+<ul id="ulnav2">
+<li><a href="/blog/es/" rel="start" title="Negonation Blog en Español" lang="es" class="selected">Español</a></li>
+<li><a href="/blog/en/" rel="start"	title="Negonation Blog en Inglés" lang="en">English</a></li>
+</ul>
+	<div class="clear"></div>
+   </div>
+<div id="super">
+		<div id="header">
+
+				
+<h1><a href="/blog/es/"><img src="/wp-content/themes/minid/images/negonation_logo.png" alt="negonation blog" title="Negonation Blog" /></a></h1>
+
+<h2><em>Crearemos una civilización de la Mente en el Ciberespacio. Que sea más humana y hermosa que el mundo que vuestros gobiernos han creado antes.</em><br />
+- John Perry Barlow. <a target="_blank" href="http://biblioweb.sindominio.net/telematica/manif_barlow.html">Declaración de Independencia del Ciberespacio</a></h2>
+
+</div>
+
+		<hr />
+
+<div id="contenedor">
+
+			<div id="content">
+
+											
+  							
+	
+								<div class="post individual" id="post-282">
+
+								<h2><a href="/blog/es/decisiones-tecnicas-en-tractis-componente-de-creacion-de-firma/" rel="bookmark" title="Enlace permanente: Decisiones Técnicas en Tractis: Componente de creación de firma">Decisiones Técnicas en Tractis: Componente de creación de firma</a></h2>
+	
+								<p>En el post anterior comenzábamos a describir decisiones arquitectónicas y de diseño que tomamos en el desarrollo de Tractis. Comentábamos nuestra experiencia a la hora de afrontar el reto de crear una infraestructura como la nuestra, donde diversos componentes heterogéneos en su función y base tecnológica se unen para componer un único servicio.</p>
+<p>Como ya explicamos, podríamos haber optado por emplear una única tecnología para dar solución a todos los problemas. De este modo usaríamos un único lenguaje, un único paradigma y una única plataforma para dar solución a todos los retos que nos encontrábamos.</p>
+<p>No obstante, descartamos esta idea ya que no existía una única tecnología óptima a la hora de cubrir todos los requisitos funcionales que se nos planteaban.</p>
+<p>Así optamos por usar Ruby on Rails para la confección de nuestro frontal web,  dado el enorme potencial para desarrollar aplicaciones de este.</p>
+<p>Pero no solo por un tema de rapidez, sino sobretodo por su robustez y una capacidad de evolución y crecimiento excelentes.</p>
+<p>No obstante a la hora de desarrollar Tractis no solo tuvimos que desarrollar un website a la usanza sino que este “<em>frontend</em>” ,aún siendo la más palpable por el usuario , es sólo una parte de nuestra infraestructura.</p>
+<p>Nos topamos con una serie de decisiones tecnológicas y arquitectónicas que escapaban de lo que Ruby on Rails podía ofrecernos que venían derivadas de una de las funcionalidades más valiosas de las que aportamos: la firma de contratos.</p>
+<h3>El proceso de firma</h3>
+<p>Para nosotros con Tractis la gente que nos use debe poder firmar y además no debe poder firmar de cualquier modo, sino debe poder firmar con las garantías necesarias.Estas afirmaciones pueden parecer obvias y sin demasiado contenido, pero si nos paramos a analizar las consecuencias técnicas derivadas de ellas veremos que no es tan trivial.</p>
+<p>Nuestros usuarios son gente que usa diferentes tecnologías de firma como tokens, tarjetas de identidad o certificados software que son emitidos por diferentes prestadores, de diferentes países y corriendo sobre diferentes navegadores y sistemas operativos.</p>
+<p>Además las firmas deben ser fiables, con lo cual debemos dar las máximas garantías de que el firmante esta capacitado para poder ejercer la firma, validándola posteriormente para evitar fraudes.</p>
+<p>Posteriormente debemos archivarla de manera segura, aplicando medios de preservación electrónica longeva por si en un futuro surgen disputas poder aportar las pruebas necesarias.</p>
+<p>Estos condicionantes delimitan claramente diversos componentes complementarios de nuestra infraestructura: una aplicación de creación de firma, una aplicación de validación y una de custodia de documentos firmados.</p>
+<p>Hablar de todos dos componentes sería demasiado para un post así que lo espaciaré en varios para hacer menos denso el contenido de los mismos.</p>
+<p>Empezaré explicando nuestro componente de creación de firma para ver con un poco más de detalle todo lo que involucra el acto de “Apretar el botón de firma”.</p>
+<h3>Componente de creación de firma</h3>
+<p>El proceso de firma se diferencia principalmente del común de los procesos que se llevan a cabo en internet en que se invierte el paradigma productor/consumidor. Normalmente los navegadores piden un contenido a los servidores y una vez recibido se encargan de “renderizarlo” para mostrarlo al cliente. En el caso de la firma el servidor es el que requiere una acción del cliente (que realice la firma) que una vez realizada será validada y almacenada por éste.</p>
+<p>Este proceso es así ya que las claves con las cuales el cliente firmará se encuentran dentro de un dispositivo criptográfico, hardware o software, y estas no salen del equipo del cliente en ningún momento, con el fin de que la custodia de las claves sea ejercida íntegramente por el usuario.</p>
+<p>Como ya hemos comentado el cliente no tiene un perfil tecnológico concreto, desde el punto de vista de escenario desde el que se realizara la firma.</p>
+<p>Así podemos tener un cliente que firme con Internet Explorer utilizando certificados almacenados en su Electronic Id Card (en el caso español sería nuestro dnie) mientras que otro puede firmar usando Linux con un token criptográfico desde Firefox y en ambos la experiencia y resultado de la firma deben ser equivalentes.</p>
+<p>Este escenario se complica cuantos mas casuísticas intentamos cubrir, dado que la complejidad se multiplica con cada nuevo actor que vamos introduciendo. Así que no podíamos optar por una solución ligada a una tecnología concreta.</p>
+<p>Hay muchos y buenos componentes de firma ligados a tecnologías o navegadores concretos. En estas categorías podemos encontrar por ejemplo componentes de firma Active X de Microsoft para su Internet Explorer o librerías de firma de Mozilla para su uso desde Javascript.</p>
+<p>El problema es que estos componentes están ligados a la tecnología sobre la que corren y eso implica que intentar introducir navegadores/sistemas operativos nuevos en escena implica un coste de desarrollo y mantenimiento terrible.</p>
+<h3>Y entonces llegó Java</h3>
+<p>Una de las principales bondades de Java ,o almenos en sus inicios fue una de las mas laureadas, era el que solo debía llevarse a cabo un único desarrollo, compilar una única vez y el resultado podía ser distribuido y ejecutado en cualquier máquina.</p>
+<p>Pero como dice el refrán : “hecha la ley, hecha la trampa” y la trampa en este caso es que debes tener una máquina virtual Java para poder correr programas realizados en éste lenguaje.</p>
+<p>Aún así, es algo fenomenal el poder realizar un único desarrollo que corra de la misma manera en cualquier plataforma, sobretodo en el mundo internet. Desgraciadamente Java en internet en el lado del cliente es algo que comenzó con mucha fuerza cuando el Applet era aún un componente respetado, pero que ha caído en ,un inmerecido todo sea dicho, desuso.</p>
+<p>A nuestro juicio, un de los errores mas comunes con  los Applets es que eran usados para tareas en las que no destacan demasiado como por ejemplo como componente visual cuando para tal fin existían tecnologías muy superiores como flash o similares.</p>
+<p>No obstante los Applets tienen un enorme potencial en otros campos mas cercanos a la lógica de negocio y alejados de la presentación de contenidos, dado que permiten correr aplicaciones Java dentro del navegador. Si algo podemos decir sobre Java es que dispone de un increíblemente bien diseñado sistema de librerías criptográficas, que además puede ser empleado en su totalidad dentro de los Applets.</p>
+<h4>Java y la firma digital.</h4>
+<p>Una de las cosas que nos hicieron decantarnos por Java como tecnología para implementar la infraestructura de creación de firma fue el excelente soporte que tiene para la criptografía y en especial para la firma digital.</p>
+<p>No solo dispone de diferentes proveedores criptográficos, con lo cual no debes limitarte al uso del proveedor creado por el Sun, sino que puedes emplear proveedores de otros fabricantes e incluso de diferentes naturalezas y todo esto sin alterar la lógica de tu aplicación.</p>
+<p>Ésto significa que podemos tener, mediante un único código, un componente que realice operaciones criptográficas que de soporte a diferentes tipos de dispositivos criptográficos y sobre diferentes plataformas.</p>
+<p>Así, la complejidad de tratar con los diferentes dispositivos queda asumida por la máquina virtual y nosotros vemos su manejo a mucho mas alto nivel, evitando adaptar nuestro código a funcionamientos ad-hoc de cada tecnología de firma concreta.</p>
+<p>De este modo trabajamos entonces con claves, certificados y firmas según interficies definidas y a muy alto nivel, sin la necesidad de bajar a detalles para particularizar el como o dónde se almacenan los certificados y las claves del usuario.</p>
+<p>Esta abstracción revierte también en la simplicidad, robustez y reducción de tamaño del Applet, gran ventaja si es un componente que el usuario debe descargar a su navegador antes de poder firmar.</p>
+<p>Para profundizar en el tema de criptografía en Java y para quien tenga interés en el tema recomiendo consultar alguna de la amplia documentación sobre la arquitectura criptográfica de Java como por ejemplo la  <a title="Sun JCA/JCA spec" href="http://java.sun.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html">editada por Sun</a> o por  grupos dedicados  como <a title="Bouncy castle" href="http://www.bouncycastle.org/java.html">Bouncy Castle</a>.</p>
+<h4>Usando Java 1.6</h4>
+<p>Una de las decisiones más complicadas a tomar en el campo de aplicaciones que requieren el uso de Applets y Java en general es cual debe ser la versión mínima soportada de máquina virtual. Aquí, si escoges una versión demasiado novedosa tus usuarios deben actualizar su máquina virtual, mientras que si eliges dar soporte a máquinas virtuales ya obsoletas dejas fuera las funcionalidades añadidas en las últimas versiones.</p>
+<p>En nuestro caso optamos por usar la última versión de máquina virtual de Java disponible actualmente, la máquina virtual de Java 1.6 (o 6.0). Esta versión aporta un gran número de mejoras sobre las capacidades criptográficas de Java sobretodo en el campo de soporte a las diferentes tecnologías de almacenamiento de certificados.</p>
+<p>Usando ésta nueva versión podemos dar soporte de firma en Tractis a los certificados almacenados en ciertos tipos de repositorios hasta ahora no soportados por la máquina virtual sin el uso de librerias adicionales, como por ejemplo los que provee Windows mediante su Crypto API.<br />
+Dar soporte a este tipo de tecnología es vital para cumplir el fin de intentar hacer llegar la firma de Tractis  al mayor número de usuarios posibles ya que són un gran porcentaje en el mercado actual de los certificados que se almacenan usando esta tecnología.</p>
+<p>Y es que en la <a title="Nuevos proveedores criptográficos de Sun" href="http://java.sun.com/javase/6/docs/technotes/guides/security/SunProviders.html">versión 1.6 de Java Sun ha añadido soporte para nuevos tipos de repositorios </a>a los tradicionales JKS, PKCS#12 y demás.  Así, sin la necesidad de requerir ninguna librería extra, nuestro componente de firma local puede abarcar mas tipos de repositorios, facilitando un poco más la integración de diferentes tipos de certificados .</p>
+<h3>Conclusiones</h3>
+<p>En este primer post sobre los componentes de firma hemos esbozado brevemente algunas de las razones que nos llevaron a adoptar Java como tecnología para la confección de nuestro componente de creación de firma. Hemos comentado además el porque de que el componente de firma sea local y como es posible que podamos dar soporte multi navegador/sistema operativo.</p>
+<p>En próximos posts hablaremos de decisiones de diseño similares pero referidas al sistema de validación y custodia de firmas que empleamos como parte de nuestro backend de firma digital cerrando el círculo de los componentes empleados para asegurar los contratos en Tractis.</p>
+	
+								
+
+<script type="text/javascript"><!--
+if(!mmposts){var mmposts=[];}mmposts[mmposts.length]="282";
+//--></script>
+<!-- mmp mmid:282 mmdate:20080204122842 mmurl:/es/decisiones-tecnicas-en-tractis-componente-de-creacion-de-firma/ mmtitle:Decisiones Técnicas en Tractis: Componente de creación de firma -->
+
+
+<p class="posted">Por David García<br />Guardado en: <a href="/blog/es/category/anuncios/" title="Ver todas las entradas en Anuncios" rel="category tag">Anuncios</a> |   <a href="/blog/es/decisiones-tecnicas-en-tractis-componente-de-creacion-de-firma/#comments" title="Comentarios en Decisiones Técnicas en Tractis: Componente de creación de firma">5 comentarios &#187;</a> | 4 de Febrero de 2008</p>
+
+								</div>
+
+			
+							
+<!-- You can start editing here. -->
+
+	<h3 id="comments">5 Comentarios en &#8220;Decisiones Técnicas en Tractis: Componente de creación de firma&#8221;</h3>
+
+
+
+	
+
+
+
+	
+			<!-- new comment container -->
+
+			    			      <div class="alt" id="comment-47654">
+			    
+
+				<div class="comment-head">
+			
+				<img src="http://www.gravatar.com/avatar.php?gravatar_id=63cedf07804258a80fa8d1c59b919e57&amp;rating=R&amp;size=32&amp;default=http%3A%2F%2Fblog.negonation.com%2Fes%2Fwp-content%2Fthemes%2Fminid%2Fimages%2Fcobarde-anonimo.png" alt="Gravatar de Francisco" title="Gravatar de Francisco" />
+
+				
+			
+				<p><cite><a href='http://francisco.hernandezmarcos.net' rel='external nofollow' class='url'>Francisco</a></cite><br />4 de Febrero de 2008 a las <a href="#comment-47654">3:05 pm</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+						<div class="clear"></div>
+
+				</div>
+
+				<div class="comment-body">
+					
+
+						<p>Como siempre, muchas gracias por tan excelente post, que sin duda ayuda a los que estamos metidos en iniciativas emprendedoras. <img src='/es/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> </p>
+
+				
+				</div>
+
+			<!-- end new comment container -->
+			
+			</div>
+
+
+			
+			
+			
+						
+
+	
+<script type="text/javascript"><!--
+if(!mmcomments){var mmcomments=[];}mmcomments[mmcomments.length]="47654";
+//--></script>
+<!-- mmc mmid:47654 mmdate:20080204150523 mmauthor:Francisco -->
+
+
+
+	
+			<!-- new comment container -->
+
+			    			      <div class="" id="comment-48674">
+			    
+
+				<div class="comment-head">
+			
+				<img src="http://www.gravatar.com/avatar.php?gravatar_id=b846f0ff59bad908eaf50f74be446164&amp;rating=R&amp;size=32&amp;default=http%3A%2F%2Fblog.negonation.com%2Fes%2Fwp-content%2Fthemes%2Fminid%2Fimages%2Fcobarde-anonimo.png" alt="Gravatar de Roger Carhuatocto" title="Gravatar de Roger Carhuatocto" />
+
+				
+			
+				<p><cite><a href='http://blog.intix.info' rel='external nofollow' class='url'>Roger Carhuatocto</a></cite><br />21 de Febrero de 2008 a las <a href="#comment-48674">4:01 pm</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+						<div class="clear"></div>
+
+				</div>
+
+				<div class="comment-body">
+					
+
+						<p>Hola David!<br />
+Esta misma situación pasamos hace algunos añitos: &#8220;¿qué tecnologia usamos para firma digital en el lado cliente web?&#8221;, pues el problema fue la interoperabilidad en el lado cliente pero no por la creación de firma, sino por el <b>acceso a las claves</b> durante la creación de la firma.</p>
+<p>La solución fue también Java applet y el soporte de la comunidad Open Source. Encontramos un Java Applet Open Source que firma y que accede a las claves/certificados. Lo interesante de este applet es su capacidad de acceder a diferentes keys storages (pkcs12, smart card via pkcs11 y/o CAPI,etc.) a través de java plugins y que funciona en windows al 100% y en linux algo menos del 100%. </p>
+<p>Puedes crear una interfase Java-JavaScript para controlar el applet, ya hay unos ejemplos. También puedes crear tu plugin para que acceda al DNIe y dejar el rendering del documento y su firma a Ajax, DHTML, PDF&#8230; o cualquier equipo de futbol.</p>
+<p>En fin, el applet se llama OpenSign y el link es: <a href="http://www.openoces.org/opensign" rel="nofollow">http://www.openoces.org/opensign</a></p>
+<p>Bon profit!!</p>
+<p>-roger</p>
+
+				
+				</div>
+
+			<!-- end new comment container -->
+			
+			</div>
+
+
+			
+			
+			
+						
+
+	
+<script type="text/javascript"><!--
+if(!mmcomments){var mmcomments=[];}mmcomments[mmcomments.length]="48674";
+//--></script>
+<!-- mmc mmid:48674 mmdate:20080221160134 mmauthor:Roger Carhuatocto -->
+
+
+
+	
+			<!-- new comment container -->
+
+			    			      <div class="alt" id="comment-48678">
+			    
+
+				<div class="comment-head">
+			
+				<img src="http://www.gravatar.com/avatar.php?gravatar_id=b63ef6c94ca1868cff87c893dac13620&amp;rating=R&amp;size=32&amp;default=http%3A%2F%2Fblog.negonation.com%2Fes%2Fwp-content%2Fthemes%2Fminid%2Fimages%2Fcobarde-anonimo.png" alt="Gravatar de David Garcia" title="Gravatar de David Garcia" />
+
+				
+			
+				<p><cite><a href='http://blog.negonation.com/' rel='external nofollow' class='url'>David Garcia</a></cite><br />21 de Febrero de 2008 a las <a href="#comment-48678">4:32 pm</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+						<div class="clear"></div>
+
+				</div>
+
+				<div class="comment-body">
+					
+
+						<p>Muchas gracias por el comentario Roger. Es agradable ver que profesionales con tanto peso en el sector nos leen <img src='/es/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  .</p>
+<p>Hay muchas soluciones open source y opensign es una bastante buena. De hecho las primeras versiones de tractis lo usaban pero optamos por desarollar nuestro propio componente ya que debemos dar soporte a Windows, Linux y Mac y permitimos el uso de certificados y claves dentro del repositorio de windows, del de Mac dentro de PKCS#11 y PKCS#12.</p>
+<p>Además esto para las diferentes autoridades de certificación del país que usan desde Tokens, tarjetas &#8230; cada una de un fabricante y no todas las que soportamos estan perfectamente integradas en Java.</p>
+<p>De hecho esta semana salimos dando soporte al eID Belga , no soportado por la máquina virtual de Java (nisiquiera con la 1.6), pero que en tractis hemos conseguido hacer funcionar con un poco de ayudita de amigos Belgas . </p>
+<p>un saludo</p>
+<p>Dave Garcia</p>
+
+				
+				</div>
+
+			<!-- end new comment container -->
+			
+			</div>
+
+
+			
+			
+			
+						
+
+	
+<script type="text/javascript"><!--
+if(!mmcomments){var mmcomments=[];}mmcomments[mmcomments.length]="48678";
+//--></script>
+<!-- mmc mmid:48678 mmdate:20080221163218 mmauthor:David Garcia -->
+
+
+
+	
+			<!-- new comment container -->
+
+			    			      <div class="" id="comment-50019">
+			    
+
+				<div class="comment-head">
+			
+				<img src="http://www.gravatar.com/avatar.php?gravatar_id=8d2b5c57148e9f18fe0a59b3a879fd6c&amp;rating=R&amp;size=32&amp;default=http%3A%2F%2Fblog.negonation.com%2Fes%2Fwp-content%2Fthemes%2Fminid%2Fimages%2Fcobarde-anonimo.png" alt="Gravatar de perikitown" title="Gravatar de perikitown" />
+
+				
+			
+				<p><cite>perikitown</cite><br />17 de Marzo de 2008 a las <a href="#comment-50019">7:42 pm</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+						<div class="clear"></div>
+
+				</div>
+
+				<div class="comment-body">
+					
+
+						<p>Ya que usais gran cantidad de componentes open source, ¿os habeis planteado la posibilidad de devolver parte de lo recibido desinteresadamente a la comunidad open source? El soporte de nuevos medios de firma para Opensign puede ser un magnífico ejemplo.</p>
+<p>Felicidades por el éxito merecido.</p>
+
+				
+				</div>
+
+			<!-- end new comment container -->
+			
+			</div>
+
+
+			
+			
+			
+						
+
+	
+<script type="text/javascript"><!--
+if(!mmcomments){var mmcomments=[];}mmcomments[mmcomments.length]="50019";
+//--></script>
+<!-- mmc mmid:50019 mmdate:20080317194200 mmauthor:perikitown -->
+
+
+
+	
+			<!-- new comment container -->
+
+			    			      <div class="administrator" id="comment-50052">
+			    
+
+				<div class="comment-head">
+			
+				<img src="http://www.gravatar.com/avatar.php?gravatar_id=b63ef6c94ca1868cff87c893dac13620&amp;rating=R&amp;size=32&amp;default=http%3A%2F%2Fblog.negonation.com%2Fes%2Fwp-content%2Fthemes%2Fminid%2Fimages%2Fcobarde-anonimo.png" alt="Gravatar de David García" title="Gravatar de David García" />
+
+				
+			
+				<p><cite><a href='http://blog.negonation.es' rel='external nofollow' class='url'>David García</a></cite><br />18 de Marzo de 2008 a las <a href="#comment-50052">1:07 pm</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+						<div class="clear"></div>
+
+				</div>
+
+				<div class="comment-body">
+					
+
+						<p>Estamos considerando el ir gradualmente contribuyendo componentes de nuestra infrastructura como open source. Las primeras acciones incluirian componentes como la funcionalidad de firma, pero de momento estamos en procesos de decisión del como y cuando podremos estar en disposición de hacerlo.</p>
+<p>Muchas gracias y un saludo</p>
+<p>Dave Garcia</p>
+
+				
+				</div>
+
+			<!-- end new comment container -->
+			
+			</div>
+
+
+			
+			
+			
+						
+
+	
+<script type="text/javascript"><!--
+if(!mmcomments){var mmcomments=[];}mmcomments[mmcomments.length]="50052";
+//--></script>
+<!-- mmc mmid:50052 mmdate:20080318130738 mmauthor:David García -->
+
+
+
+	
+	
+ 
+
+
+<div id="comment-super" style="display: none;">
+
+<h3 id="respond">Deja tu comentario...</h3>
+
+<p>Los comentarios de este blog están moderados utilizando el &#8220;<a href="https://www.tractis.com/wordpress">Plugin de Verificación de Identidad Tractis para WordPress</a>&#8220;. La configuración es la siguiente: los comentarios realizados por usuarios autenticados con cualquiera de los <a href="https://www.tractis.com/supported_certificates">certificados electrónicos soportados en Tractis</a> aparecerán inmediatamente. Los comentarios no autenticados serán moderados y, por tanto, no aparecerán inmediatamente en la página al ser enviados.</p>
+<p>Nuestra intención es conseguir un ambiente agradable donde las personas puedan comentar sin miedo a ser insultados o atacados. Estás en tu perfecto derecho de comentar anónimamente pero, por favor, no utilices el anonimato para decirle a alguien cosas que no le dirías en persona.</p>
+<p>Las descalificaciones personales, los comentarios maleducados, los ataques directos, los insultos de cualquier tipo, los comentarios repetitivos sobre un mismo tema, o con varias identidades (astroturfing) o suplantando a otros comentaristas, etc. serán eliminados.</p>
+
+
+
+<!-- Tractis Identity Verifications Connect Button -->
+<form action="https://www.tractis.com/verifications" method="post">
+	<input id="api_key" name="api_key" type="hidden" value="4d6276fae4047cecd9ab399529158066dafa338a" />
+	<input id="notification_callback" name="notification_callback" type="hidden" value="/blog/es/decisiones-tecnicas-en-tractis-componente-de-creacion-de-firma/" />	
+	<input id="public_verification" name="public_verification" type="hidden" value="true" />
+	<input type="image" src="/blog/es/wp-content/plugins/tractis-identity-verifications/images/trac_but_bg_lrg_b_es.png" name="tractis_icon">
+</form>
+<!-- /Tractis Identity Verifications Connect Button -->
+
+<form action="/blog/es/wp-comments-post.php" method="post" id="commentform">
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Nombre (requerido)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>E-mail (no será publicado) (requerido)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Página web</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+
+<p><textarea name="comment" id="comment" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Enviar comentario" />
+<input type="hidden" name="comment_post_ID" value="282" />
+</p>
+
+
+
+	<p style="clear: both;" class="subscribe-to-comments">
+	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
+	<label for="subscribe">Notify me of followup comments via e-mail</label>
+	</p>
+
+
+
+</form>
+
+</div>
+
+
+
+			<h3 id="moreentry">Más entradas en Negonation Blog</h3>
+
+			<div class="navigation">
+
+				<div class="alignleft">&laquo; <a href="/blog/es/decisiones-tecnicas-en-tractis/" rel="prev">Decisiones técnicas en Tractis</a></div>
+
+				<div class="alignright"><a href="/blog/es/nueva-legislacion-espanola-sobre-contratacion-electronica/" rel="next">Nueva legislación española sobre contratación electrónica</a> &raquo;</div>
+
+			<div class="clear"></div>
+			
+		</div>
+
+	
+							
+							
+			</div>
+
+			<div id="menus">
+
+				<div class="metadata">
+
+				<h3>Sobre esta entrada...</h3>
+				
+				<p>Esta entrada fue publicada el Lunes 4 de Febrero de 2008 a la/s 12:28 pm y está guardada dentro de la categoría <a href="/blog/es/category/anuncios/" title="Ver todas las entradas en Anuncios" rel="category tag">Anuncios</a>. Puedes seguir los comentarios desde cualquier lector de <em lang="en">feeds</em> usando este <em lang="en">feed</em> <a href='/es/decisiones-tecnicas-en-tractis-componente-de-creacion-de-firma/feed/'>RSS 2.0</a>. 
+						
+													Puedes <a href="#respond">dejar un comentario</a>, o un <a href="/blog/es/decisiones-tecnicas-en-tractis-componente-de-creacion-de-firma/trackback/" rel="trackback">trackback</a> desde tu propio sitio.
+						
+						</p>
+
+	</div>
+
+
+<div class="tools">
+	
+<div class="principal">
+
+		
+
+		<h3>Categorías</h3>
+		
+			<ul>
+					<li class="cat-item cat-item-3"><a href="/blog/es/category/anuncios/" title="Ver todas las entradas de Anuncios">Anuncios</a> (211)
+</li>
+	<li class="cat-item cat-item-20"><a href="/blog/es/category/bloggers-invitados/" title="Ver todas las entradas de Bloggers invitados">Bloggers invitados</a> (4)
+</li>
+	<li class="cat-item cat-item-10"><a href="/blog/es/category/blogging/" title="Ver todas las entradas de Blogging">Blogging</a> (5)
+</li>
+	<li class="cat-item cat-item-25"><a href="/blog/es/category/business/" title="Ver todas las entradas de Business">Business</a> (21)
+</li>
+	<li class="cat-item cat-item-33"><a href="/blog/es/category/clientes/" title="Ver todas las entradas de Clientes">Clientes</a> (7)
+</li>
+	<li class="cat-item cat-item-18"><a href="/blog/es/category/conferencias/" title="Ver todas las entradas de Conferencias">Conferencias</a> (10)
+</li>
+	<li class="cat-item cat-item-23"><a href="/blog/es/category/diseno/" title="Ver todas las entradas de Diseño">Diseño</a> (20)
+</li>
+	<li class="cat-item cat-item-38"><a href="/blog/es/category/eid/" title="Ver todas las entradas de eID">eID</a> (50)
+</li>
+	<li class="cat-item cat-item-22"><a href="/blog/es/category/empowerment/" title="Ver todas las entradas de Empowerment">Empowerment</a> (14)
+</li>
+	<li class="cat-item cat-item-5"><a href="/blog/es/category/emprendedores/" title="Ver todas las entradas de Emprendedores">Emprendedores</a> (34)
+</li>
+	<li class="cat-item cat-item-9"><a href="/blog/es/category/firma-digital/" title="Ver todas las entradas de Firma digital">Firma digital</a> (59)
+</li>
+	<li class="cat-item cat-item-21"><a href="/blog/es/category/frases/" title="Ver todas las entradas de Frases">Frases</a> (75)
+</li>
+	<li class="cat-item cat-item-28"><a href="/blog/es/category/glider/" title="Ver todas las entradas de Glider">Glider</a> (6)
+</li>
+	<li class="cat-item cat-item-4"><a href="/blog/es/category/hacking/" title="Ver todas las entradas de Hacking">Hacking</a> (3)
+</li>
+	<li class="cat-item cat-item-27"><a href="/blog/es/category/identidad/" title="Ver todas las entradas de Identidad">Identidad</a> (15)
+</li>
+	<li class="cat-item cat-item-13"><a href="/blog/es/category/internet/" title="Ver todas las entradas de Internet">Internet</a> (27)
+</li>
+	<li class="cat-item cat-item-2"><a href="/blog/es/category/justicia/" title="Ver todas las entradas de Justicia">Justicia</a> (7)
+</li>
+	<li class="cat-item cat-item-29"><a href="/blog/es/category/legal/" title="Ver todas las entradas de Legal">Legal</a> (11)
+</li>
+	<li class="cat-item cat-item-7"><a href="/blog/es/category/libros/" title="Ver todas las entradas de Libros">Libros</a> (4)
+</li>
+	<li class="cat-item cat-item-39"><a href="/blog/es/category/otp/" title="Ver todas las entradas de OTP">OTP</a> (1)
+</li>
+	<li class="cat-item cat-item-48"><a href="/blog/es/category/partnerships/" title="Ver todas las entradas de Partnerships">Partnerships</a> (2)
+</li>
+	<li class="cat-item cat-item-37"><a href="/blog/es/category/plantillas/" title="Ver todas las entradas de Plantillas">Plantillas</a> (4)
+</li>
+	<li class="cat-item cat-item-17"><a href="/blog/es/category/pranks/" title="Ver todas las entradas de Pranks">Pranks</a> (7)
+</li>
+	<li class="cat-item cat-item-24"><a href="/blog/es/category/programacion/" title="Ver todas las entradas de Programación">Programación</a> (27)
+</li>
+	<li class="cat-item cat-item-31"><a href="/blog/es/category/rails/" title="Ver todas las entradas de Rails">Rails</a> (3)
+</li>
+	<li class="cat-item cat-item-30"><a href="/blog/es/category/ruby/" title="Ver todas las entradas de Ruby">Ruby</a> (1)
+</li>
+	<li class="cat-item cat-item-34"><a href="/blog/es/category/seguridad/" title="Ver todas las entradas de Seguridad">Seguridad</a> (7)
+</li>
+	<li class="cat-item cat-item-8"><a href="/blog/es/category/tecnologia/" title="Ver todas las entradas de Tecnología">Tecnología</a> (17)
+</li>
+	<li class="cat-item cat-item-14"><a href="/blog/es/category/tractis/" title="Ver todas las entradas de Tractis">Tractis</a> (182)
+<ul class='children'>
+	<li class="cat-item cat-item-47"><a href="/blog/es/category/tractis/tractis-accounts/" title="Ver todas las entradas de Tractis Accounts">Tractis Accounts</a> (1)
+</li>
+	<li class="cat-item cat-item-45"><a href="/blog/es/category/tractis/tractis-hardware/" title="Ver todas las entradas de Tractis Hardware">Tractis Hardware</a> (5)
+</li>
+	<li class="cat-item cat-item-46"><a href="/blog/es/category/tractis/tractis-identity/" title="Ver todas las entradas de Tractis Identity">Tractis Identity</a> (8)
+</li>
+	<li class="cat-item cat-item-42"><a href="/blog/es/category/tractis/tractis-promotions/" title="Ver todas las entradas de Tractis Promotions">Tractis Promotions</a> (2)
+</li>
+	<li class="cat-item cat-item-43"><a href="/blog/es/category/tractis/tractis-signatures/" title="Ver todas las entradas de Tractis Signatures">Tractis Signatures</a> (14)
+</li>
+	<li class="cat-item cat-item-44"><a href="/blog/es/category/tractis/tractis-webservices/" title="Ver todas las entradas de Tractis Webservices">Tractis Webservices</a> (2)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-15"><a href="/blog/es/category/venture-capital/" title="Ver todas las entradas de Venture Capital">Venture Capital</a> (10)
+</li>
+			</ul>
+
+</div>
+<div class="extra">
+
+			<h3>Archivos</h3>
+			
+				<ul>
+					<li><a href='/es/2018/04/' title='Abril 2018'>Abril 2018</a></li>
+	<li><a href='/es/2018/02/' title='Febrero 2018'>Febrero 2018</a></li>
+	<li><a href='/es/2016/08/' title='Agosto 2016'>Agosto 2016</a></li>
+	<li><a href='/es/2016/07/' title='Julio 2016'>Julio 2016</a></li>
+	<li><a href='/es/2015/10/' title='Octubre 2015'>Octubre 2015</a></li>
+	<li><a href='/es/2015/07/' title='Julio 2015'>Julio 2015</a></li>
+	<li><a href='/es/2015/06/' title='Junio 2015'>Junio 2015</a></li>
+	<li><a href='/es/2015/05/' title='Mayo 2015'>Mayo 2015</a></li>
+	<li><a href='/es/2014/11/' title='Noviembre 2014'>Noviembre 2014</a></li>
+	<li><a href='/es/2014/10/' title='Octubre 2014'>Octubre 2014</a></li>
+	<li><a href='/es/2014/09/' title='Septiembre 2014'>Septiembre 2014</a></li>
+	<li><a href='/es/2014/07/' title='Julio 2014'>Julio 2014</a></li>
+	<li><a href='/es/2014/06/' title='Junio 2014'>Junio 2014</a></li>
+	<li><a href='/es/2014/04/' title='Abril 2014'>Abril 2014</a></li>
+	<li><a href='/es/2014/03/' title='Marzo 2014'>Marzo 2014</a></li>
+	<li><a href='/es/2014/02/' title='Febrero 2014'>Febrero 2014</a></li>
+	<li><a href='/es/2013/10/' title='Octubre 2013'>Octubre 2013</a></li>
+	<li><a href='/es/2013/09/' title='Septiembre 2013'>Septiembre 2013</a></li>
+	<li><a href='/es/2013/08/' title='Agosto 2013'>Agosto 2013</a></li>
+	<li><a href='/es/2013/05/' title='Mayo 2013'>Mayo 2013</a></li>
+	<li><a href='/es/2013/04/' title='Abril 2013'>Abril 2013</a></li>
+	<li><a href='/es/2013/03/' title='Marzo 2013'>Marzo 2013</a></li>
+	<li><a href='/es/2013/02/' title='Febrero 2013'>Febrero 2013</a></li>
+	<li><a href='/es/2012/12/' title='Diciembre 2012'>Diciembre 2012</a></li>
+	<li><a href='/es/2012/11/' title='Noviembre 2012'>Noviembre 2012</a></li>
+	<li><a href='/es/2012/10/' title='Octubre 2012'>Octubre 2012</a></li>
+	<li><a href='/es/2012/09/' title='Septiembre 2012'>Septiembre 2012</a></li>
+	<li><a href='/es/2012/08/' title='Agosto 2012'>Agosto 2012</a></li>
+	<li><a href='/es/2012/06/' title='Junio 2012'>Junio 2012</a></li>
+	<li><a href='/es/2012/05/' title='Mayo 2012'>Mayo 2012</a></li>
+	<li><a href='/es/2012/03/' title='Marzo 2012'>Marzo 2012</a></li>
+	<li><a href='/es/2012/02/' title='Febrero 2012'>Febrero 2012</a></li>
+	<li><a href='/es/2012/01/' title='Enero 2012'>Enero 2012</a></li>
+	<li><a href='/es/2011/12/' title='Diciembre 2011'>Diciembre 2011</a></li>
+	<li><a href='/es/2011/11/' title='Noviembre 2011'>Noviembre 2011</a></li>
+	<li><a href='/es/2011/10/' title='Octubre 2011'>Octubre 2011</a></li>
+	<li><a href='/es/2011/06/' title='Junio 2011'>Junio 2011</a></li>
+	<li><a href='/es/2011/05/' title='Mayo 2011'>Mayo 2011</a></li>
+	<li><a href='/es/2011/04/' title='Abril 2011'>Abril 2011</a></li>
+	<li><a href='/es/2011/03/' title='Marzo 2011'>Marzo 2011</a></li>
+	<li><a href='/es/2011/02/' title='Febrero 2011'>Febrero 2011</a></li>
+	<li><a href='/es/2011/01/' title='Enero 2011'>Enero 2011</a></li>
+	<li><a href='/es/2010/12/' title='Diciembre 2010'>Diciembre 2010</a></li>
+	<li><a href='/es/2010/11/' title='Noviembre 2010'>Noviembre 2010</a></li>
+	<li><a href='/es/2010/10/' title='Octubre 2010'>Octubre 2010</a></li>
+	<li><a href='/es/2010/09/' title='Septiembre 2010'>Septiembre 2010</a></li>
+	<li><a href='/es/2010/08/' title='Agosto 2010'>Agosto 2010</a></li>
+	<li><a href='/es/2010/07/' title='Julio 2010'>Julio 2010</a></li>
+	<li><a href='/es/2010/06/' title='Junio 2010'>Junio 2010</a></li>
+	<li><a href='/es/2010/05/' title='Mayo 2010'>Mayo 2010</a></li>
+	<li><a href='/es/2010/04/' title='Abril 2010'>Abril 2010</a></li>
+	<li><a href='/es/2010/03/' title='Marzo 2010'>Marzo 2010</a></li>
+	<li><a href='/es/2010/02/' title='Febrero 2010'>Febrero 2010</a></li>
+	<li><a href='/es/2009/12/' title='Diciembre 2009'>Diciembre 2009</a></li>
+	<li><a href='/es/2009/11/' title='Noviembre 2009'>Noviembre 2009</a></li>
+	<li><a href='/es/2009/10/' title='Octubre 2009'>Octubre 2009</a></li>
+	<li><a href='/es/2009/09/' title='Septiembre 2009'>Septiembre 2009</a></li>
+	<li><a href='/es/2009/08/' title='Agosto 2009'>Agosto 2009</a></li>
+	<li><a href='/es/2009/07/' title='Julio 2009'>Julio 2009</a></li>
+	<li><a href='/es/2009/06/' title='Junio 2009'>Junio 2009</a></li>
+	<li><a href='/es/2009/05/' title='Mayo 2009'>Mayo 2009</a></li>
+	<li><a href='/es/2009/04/' title='Abril 2009'>Abril 2009</a></li>
+	<li><a href='/es/2009/03/' title='Marzo 2009'>Marzo 2009</a></li>
+	<li><a href='/es/2009/02/' title='Febrero 2009'>Febrero 2009</a></li>
+	<li><a href='/es/2009/01/' title='Enero 2009'>Enero 2009</a></li>
+	<li><a href='/es/2008/12/' title='Diciembre 2008'>Diciembre 2008</a></li>
+	<li><a href='/es/2008/11/' title='Noviembre 2008'>Noviembre 2008</a></li>
+	<li><a href='/es/2008/10/' title='Octubre 2008'>Octubre 2008</a></li>
+	<li><a href='/es/2008/09/' title='Septiembre 2008'>Septiembre 2008</a></li>
+	<li><a href='/es/2008/08/' title='Agosto 2008'>Agosto 2008</a></li>
+	<li><a href='/es/2008/07/' title='Julio 2008'>Julio 2008</a></li>
+	<li><a href='/es/2008/06/' title='Junio 2008'>Junio 2008</a></li>
+	<li><a href='/es/2008/05/' title='Mayo 2008'>Mayo 2008</a></li>
+	<li><a href='/es/2008/04/' title='Abril 2008'>Abril 2008</a></li>
+	<li><a href='/es/2008/03/' title='Marzo 2008'>Marzo 2008</a></li>
+	<li><a href='/es/2008/02/' title='Febrero 2008'>Febrero 2008</a></li>
+	<li><a href='/es/2008/01/' title='Enero 2008'>Enero 2008</a></li>
+	<li><a href='/es/2007/12/' title='Diciembre 2007'>Diciembre 2007</a></li>
+	<li><a href='/es/2007/11/' title='Noviembre 2007'>Noviembre 2007</a></li>
+	<li><a href='/es/2007/10/' title='Octubre 2007'>Octubre 2007</a></li>
+	<li><a href='/es/2007/08/' title='Agosto 2007'>Agosto 2007</a></li>
+	<li><a href='/es/2007/04/' title='Abril 2007'>Abril 2007</a></li>
+	<li><a href='/es/2007/02/' title='Febrero 2007'>Febrero 2007</a></li>
+	<li><a href='/es/2007/01/' title='Enero 2007'>Enero 2007</a></li>
+	<li><a href='/es/2006/12/' title='Diciembre 2006'>Diciembre 2006</a></li>
+	<li><a href='/es/2006/11/' title='Noviembre 2006'>Noviembre 2006</a></li>
+	<li><a href='/es/2006/10/' title='Octubre 2006'>Octubre 2006</a></li>
+	<li><a href='/es/2006/09/' title='Septiembre 2006'>Septiembre 2006</a></li>
+	<li><a href='/es/2006/08/' title='Agosto 2006'>Agosto 2006</a></li>
+	<li><a href='/es/2006/07/' title='Julio 2006'>Julio 2006</a></li>
+	<li><a href='/es/2006/06/' title='Junio 2006'>Junio 2006</a></li>
+	<li><a href='/es/2006/05/' title='Mayo 2006'>Mayo 2006</a></li>
+				</ul>
+
+				
+</div>
+
+<div class="clear"></div>
+
+
+</div>
+				
+			</div>
+
+			<div class="clear"></div>
+		
+	</div>
+
+<hr />
+
+<div id="footer">
+
+	<p>Content is <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.es" lang="en"><cite>Attribution-NonComm-NoDerivs 2.0</cite></a>
+
+<br/>
+
+<a href="http://feeds.feedburner.com/negonation/blog/es">Entradas RSS</a> & <a href="/blog/es/comments/feed/">Comentarios RSS</a>
+
+<br/>
+
+<a href="http://www.minid.net/2005/08/29/i-haev-styel-tema-para-wordpress-15x/" rel="chapter" title="Tema gráfico para Wordpress 1.5" lang="en">I HAEV STYEL</a></p>
+
+</div>
+
+</div>
+
+
+		<script type='text/javascript' src='http://platform.twitter.com/widgets.js'></script>
+</body>
+</html>
