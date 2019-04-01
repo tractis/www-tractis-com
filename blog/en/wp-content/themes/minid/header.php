@@ -35,7 +35,7 @@ urchinTracker();
 </script>
 
 <style type="text/css">
- div.post img {behavior: url(http://blog.negonation.com/en/iepngfix.htc) }
+ div.post img {behavior: url(http://www.tractis.com/blog/en/iepngfix.htc) }
 </style>
   <script type="text/javascript" src="/jquery/jquery.js?1360401146"></script>
   <script>jQuery.noConflict();</script>
@@ -48,7 +48,7 @@ urchinTracker();
      <!-- begin shared/nav_public -->
      <ul id="ulnav">
            <li><a href="http://www.tractis.com" title="" rel="section">Home</a></li>
-           <li><a href="http://blog.negonation.com" title="" class="selected" rel="section">Blog</a></li>
+           <li><a href="http://www.tractis.com/blog/en" title="" class="selected" rel="section">Blog</a></li>
 <li><a href="http://twitter.com/tractis" title="" rel="section">Twitter</a></li>
            
      </ul>
@@ -64,7 +64,7 @@ urchinTracker();
 <div id="super">
 		<div id="header">
 
-				<h1><a href="<?php echo get_settings('home'); ?>/"><img src="http://blog.negonation.com/en/wp-content/themes/minid/images/n
+				<h1><a href="<?php echo get_settings('home'); ?>/"><img src="http://www.tractis.com/blog/en/wp-content/themes/minid/images/n
 egonation_logo.png" alt="negonation blog" title="<?php bloginfo('name'); ?>" /></a></h1>
 
 

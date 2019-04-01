@@ -48,7 +48,7 @@ urchinTracker();
      <!-- begin shared/nav_public -->
      <ul id="ulnav">
            <li><a href="http://www.tractis.com" title="" rel="section">Home</a></li>
-           <li><a href="http://blog.negonation.com" title="" class="selected" rel="section">Blog</a></li>
+           <li><a href="http://www.tractis.com/blog/es" title="" class="selected" rel="section">Blog</a></li>
 <li><a href="http://twitter.com/tractis" title="" rel="section">Twitter</a></li>
            <li><a href="mailto:blog@negonation.com" title="" rel="section">Contact</a></li>
      </ul>

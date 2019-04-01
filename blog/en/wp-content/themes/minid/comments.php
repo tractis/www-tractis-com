@@ -42,7 +42,7 @@
 
 				<div class="comment-head <?php comment_author(); ?>-head">
 			
-				<img src="<?php gravatar("R", 32,  "http://blog.negonation.com/es/wp-content/themes/minid/images/cobarde-anonimo.png"); ?>" alt="Gravatar de <?php comment_author(); ?>" title="Gravatar de <?php comment_author(); ?>" />
+				<img src="<?php gravatar("R", 32,  "http://www.tractis.com/blog/es/wp-content/themes/minid/images/cobarde-anonimo.png"); ?>" alt="Gravatar de <?php comment_author(); ?>" title="Gravatar de <?php comment_author(); ?>" />
 
 				
 			

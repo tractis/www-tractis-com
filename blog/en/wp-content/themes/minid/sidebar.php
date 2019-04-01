@@ -8,7 +8,7 @@
 
 	<p>Providing a legal system for the Internet nation is an enormous challenge. While we achieve this or die in the attempt, we have set up this blog to share advances, doubts and reflections. Our first service is called <a href="http://www.tractis.com"><b>Tractis</b></a>, an online contract negotiation and administration platform, which takes up our days and nights. Welcome to Negonation Blog. Comments are welcome.</p>
 
-  <p><a title="Who we are" href="http://blog.negonation.com/en/i-want-to-know/">Know</a> | <a title="Useful links in the creation of Tractis" href="http://blog.negonation.com/en/getting-started/">Learn</a> | <a target="_blank" title="Don't be shy" href="mailto:blog@negonation.com">Contact</a></p>
+  <p><a title="Who we are" href="http://www.tractis.com/blog/en/i-want-to-know/">Know</a> | <a title="Useful links in the creation of Tractis" href="http://www.tractis.com/blog/en/getting-started/">Learn</a> | <a target="_blank" title="Don't be shy" href="mailto:blog@negonation.com">Contact</a></p>
 
 <br />
 
@@ -17,35 +17,35 @@
 <br />
 
 
-<p><a href="http://blog.negonation.com/en/author/juanjo_bazan/"><img src="http://blog.negonation.com/es/wp-content/uploads/2007/06/juanjo32x32.jpg" alt="Juanjo Bazán" class="portrait" />Juanjo Bazán</a><br/><cite>rails geekadictivus</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/juanjo_bazan/"><img src="http://www.tractis.com/blog/es/wp-content/uploads/2007/06/juanjo32x32.jpg" alt="Juanjo Bazán" class="portrait" />Juanjo Bazán</a><br/><cite>rails geekadictivus</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/david_blanco/"><img src="http://blog.negonation.com/en/wp-content/uploads/2006/07/david-blanco.png" alt="David Blanco" class="portrait" />David Blanco</a><br/><cite>ceofilus geekadictivus</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/david_blanco/"><img src="http://www.tractis.com/blog/en/wp-content/uploads/2006/07/david-blanco.png" alt="David Blanco" class="portrait" />David Blanco</a><br/><cite>ceofilus geekadictivus</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/brian_cclean_i_eyre/"><img src="http://blog.negonation.com/es/wp-content/uploads/2010/04/brian.png" alt="Brian McLean i Eyre" class="portrait" />Brian McLean i Eyre</a><br/><cite>wordus nerdus</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/brian_cclean_i_eyre/"><img src="http://www.tractis.com/blog/es/wp-content/uploads/2010/04/brian.png" alt="Brian McLean i Eyre" class="portrait" />Brian McLean i Eyre</a><br/><cite>wordus nerdus</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/leandro_caldora/ "><img id="image220" src="http://blog.negonation.com/es/wp-content/uploads/2007/10/leandro_caldora.png" alt="Leandro Caldora" class="portrait" />Leandro Caldora</a><br /><cite>financialis directiv</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/leandro_caldora/ "><img id="image220" src="http://www.tractis.com/blog/es/wp-content/uploads/2007/10/leandro_caldora.png" alt="Leandro Caldora" class="portrait" />Leandro Caldora</a><br /><cite>financialis directiv</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/luis_cavalle/ "><img src="http://blog.negonation.com/es/wp-content/uploads/2007/10/luismi-cavalle.png" alt="Luismi Cavallé" class="portrait" />Luismi Cavallé</a><br /><cite>rvbyonrailes zentifiquerae</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/luis_cavalle/ "><img src="http://www.tractis.com/blog/es/wp-content/uploads/2007/10/luismi-cavalle.png" alt="Luismi Cavallé" class="portrait" />Luismi Cavallé</a><br /><cite>rvbyonrailes zentifiquerae</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/david_garcia/"><img src="http://blog.negonation.com/es/wp-content/uploads/2007/06/david-garcia.png" alt="David García" class="portrait" />David García</a><br /><cite>ceteosis unanimere</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/david_garcia/"><img src="http://www.tractis.com/blog/es/wp-content/uploads/2007/06/david-garcia.png" alt="David García" class="portrait" />David García</a><br /><cite>ceteosis unanimere</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/carlos_gonzalez/"><img src="http://blog.negonation.com/es/wp-content/uploads/2007/10/carlos-avatar.png" alt="Carlos González" class="portrait" />Carlos González</a><br /><cite>productae developmentesis</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/carlos_gonzalez/"><img src="http://www.tractis.com/blog/es/wp-content/uploads/2007/10/carlos-avatar.png" alt="Carlos González" class="portrait" />Carlos González</a><br /><cite>productae developmentesis</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/ernesto_jimenez/"><img id="image179" src="http://blog.negonation.com/es/wp-content/uploads/2007/10/ernesto-jimenez.png" alt="Ernesto Jiménez Caballero" class="portrait" />Ernesto Jiménez</a><br /><cite>rvby dominis</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/ernesto_jimenez/"><img id="image179" src="http://www.tractis.com/blog/es/wp-content/uploads/2007/10/ernesto-jimenez.png" alt="Ernesto Jiménez Caballero" class="portrait" />Ernesto Jiménez</a><br /><cite>rvby dominis</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/joan_reixach/"><img src="http://blog.negonation.com/es/wp-content/uploads/2009/07/tractiscom.png" alt="Joan Reixach" title="Joan Reixach" class="portrait" />Joan Reixach</a><br /><cite>comercialis advae</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/joan_reixach/"><img src="http://www.tractis.com/blog/es/wp-content/uploads/2009/07/tractiscom.png" alt="Joan Reixach" title="Joan Reixach" class="portrait" />Joan Reixach</a><br /><cite>comercialis advae</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/diego_lafuente/"><img id="image181" src="http://blog.negonation.com/es/wp-content/uploads/2007/10/diego-lafuente.png" alt="Diego Lafuente" class="portrait" />Diego Lafuente</a><br /><cite>arquitectus mancillae</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/diego_lafuente/"><img id="image181" src="http://www.tractis.com/blog/es/wp-content/uploads/2007/10/diego-lafuente.png" alt="Diego Lafuente" class="portrait" />Diego Lafuente</a><br /><cite>arquitectus mancillae</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/javier_prenafeta/"><img id="image221" src="http://blog.negonation.com/es/wp-content/uploads/2007/10/javier_prenafeta.png" alt="Javier Prenafeta" class="portrait" />Javier Prenafeta</a><br /><cite>ius civile maximum</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/javier_prenafeta/"><img id="image221" src="http://www.tractis.com/blog/es/wp-content/uploads/2007/10/javier_prenafeta.png" alt="Javier Prenafeta" class="portrait" />Javier Prenafeta</a><br /><cite>ius civile maximum</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/jose_gordo/"><img id="image221" src="http://blog.negonation.com/es/wp-content/uploads/2009/01/jose-gordo.png" alt="Jose Luis Gordo Romero" class="portrait" />Jose Luis Gordo Romero</a><br /><cite>sistemus admin imperatio</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/jose_gordo/"><img id="image221" src="http://www.tractis.com/blog/es/wp-content/uploads/2009/01/jose-gordo.png" alt="Jose Luis Gordo Romero" class="portrait" />Jose Luis Gordo Romero</a><br /><cite>sistemus admin imperatio</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/tatiana_nubiola/"><img id="image1sss81" src="http://blog.negonation.com/es/wp-content/uploads/2007/10/tatiana-nubiola1.png" alt="Tatiana Nubiola" class="portrait" />Tatiana Nubiola</a><br /><cite>wordus nerdus</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/tatiana_nubiola/"><img id="image1sss81" src="http://www.tractis.com/blog/es/wp-content/uploads/2007/10/tatiana-nubiola1.png" alt="Tatiana Nubiola" class="portrait" />Tatiana Nubiola</a><br /><cite>wordus nerdus</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/juan_perez/"><img src="http://blog.negonation.com/es/wp-content/uploads/2007/03/juanse.png" alt="Juanse Pérez" class="portrait" />Juanse Pérez</a><br /><cite>traductius sit amet</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/juan_perez/"><img src="http://www.tractis.com/blog/es/wp-content/uploads/2007/03/juanse.png" alt="Juanse Pérez" class="portrait" />Juanse Pérez</a><br /><cite>traductius sit amet</cite></p>
 
-<p><a href="http://blog.negonation.com/en/author/manuel_santos/"><img src="http://blog.negonation.com/es/wp-content/uploads/2007/10/manolo-santos.png" alt="Manolo Santos" class="portrait" />Manolo Santos</a><br/><cite>rvbyonrailes codefiqiteur</cite></p>
+<p><a href="http://www.tractis.com/blog/en/author/manuel_santos/"><img src="http://www.tractis.com/blog/es/wp-content/uploads/2007/10/manolo-santos.png" alt="Manolo Santos" class="portrait" />Manolo Santos</a><br/><cite>rvbyonrailes codefiqiteur</cite></p>
 
 
         <br />
