@@ -627,6 +627,7 @@ h3#comments, h3#respond, h3#moreentry {
   color: #5D7A2E;
   margin: 0px 0px 25px 0px;
   padding: 0px 0px 3px 0px;
+  display: none;
 }
 
 
