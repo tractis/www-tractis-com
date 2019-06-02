@@ -467,6 +467,7 @@ div.principal ul li ul li, div.extra ul li ul li {
 div.search {
   margin: 0 0 25px 0;
   padding: 15px 0;
+  display: none;
 }
 
 div.search label {
