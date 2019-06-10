@@ -359,7 +359,7 @@ table.listados {
 table.listados td {
   padding: 10px 10px 10px 0px;
   font: .7em/1.6em "Lucida Grande","Trebuchet MS", Arial, sans-serif;
-  background: url(/es/wp-content/themes/minid/images/dot_line.png) repeat-x bottom;
+  background: url(/blog/es/wp-content/themes/minid/images/dot_line.png) repeat-x bottom;
   vertical-align: top;		
 }
 
@@ -566,7 +566,7 @@ div#content a:hover, div.tools a:hover, div#menus a:hover, div#footer a:hover {
 
 
 div.modera {
-  background: #333 url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/bg-nav-diag.png);
+  background: #333 url(http://"http://www.tractis.com/blog/en/blog/es/wp-content/themes/minid/images/bg-nav-diag.png);
   padding: 10px;
   color: #f00 !important;
   font: .8em/1.6em "Trebuchet MS", Arial, sans-serif !important;
@@ -597,7 +597,7 @@ div.modera2 {
 div.modera p {
   margin: 0px;
   color: #C4FA56;
-  background: url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/exclamation.png) no-repeat left top;
+  background: url(http://"http://www.tractis.com/blog/en/blog/es/wp-content/themes/minid/images/exclamation.png) no-repeat left top;
   padding-left: 60px;
 }
 
@@ -715,7 +715,7 @@ div.Blanco {
 
 
 div.modera {
-  background: #333 url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/bg-nav-diag.png);
+  background: #333 url(http://"http://www.tractis.com/blog/en/blog/es/wp-content/themes/minid/images/bg-nav-diag.png);
   padding: 10px;
   color: #f00 !important;
   font: .8em/1.6em "Trebuchet MS", Arial, sans-serif !important;
@@ -746,7 +746,7 @@ div.modera2 {
 div.modera p {
   margin: 0px;
   color: #C4FA56;
-  background: url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/exclamation.png) no-repeat left top;
+  background: url(http://"http://www.tractis.com/blog/en/blog/es/wp-content/themes/minid/images/exclamation.png) no-repeat left top;
   padding-left: 60px;
 }
 
@@ -861,14 +861,14 @@ blockquote.especial a {
 div.comment-head {
   border-left: 1px solid #333;
   border-right: 1px solid #333;
-  background: #333 url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/msg-comment.png) bottom left no-repeat;
+  background: #333 url(http://"http://www.tractis.com/blog/en/blog/es/wp-content/themes/minid/images/msg-comment.png) bottom left no-repeat;
   padding-bottom: 10px; 
   clear: both;
   color: #666;
 }
 
   div.administrator div.comment-head {
-    background: #333 url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/msg-comment-minid.png) bottom left no-repeat;
+    background: #333 url(http://"http://www.tractis.com/blog/en/blog/es/wp-content/themes/minid/images/msg-comment-minid.png) bottom left no-repeat;
     color: #666;
   }
 
