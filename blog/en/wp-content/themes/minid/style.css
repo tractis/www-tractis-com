@@ -621,7 +621,14 @@ div#comment-super p {
 }
 
 
-h3#comments, h3#respond, h3#moreentry {
+h3#comments, h3#respond {
+  border-bottom: 1px solid #ABCB76;
+  font: 1em/1.6em "Lucida Grande", Arial, sans-serif;
+  color: #5D7A2E;
+  margin: 0px 0px 25px 0px;
+  padding: 0px 0px 3px 0px;
+}
+h3#moreentry {
   border-bottom: 1px solid #ABCB76;
   font: 1em/1.6em "Lucida Grande", Arial, sans-serif;
   color: #5D7A2E;
@@ -629,7 +636,6 @@ h3#comments, h3#respond, h3#moreentry {
   padding: 0px 0px 3px 0px;
   display: none;
 }
-
 
 #comment {
   width: 99%;
@@ -774,7 +780,7 @@ div#comment-super p {
 }
 
 
-h3#comments, h3#respond, h3#moreentry {
+h3#comments, h3#respond {
   border-bottom: 1px solid #ABCB76;
   font: 1em/1.6em "Lucida Grande", Arial, sans-serif;
   color: #5D7A2E;
@@ -782,6 +788,14 @@ h3#comments, h3#respond, h3#moreentry {
   padding: 0px 0px 3px 0px;
 }
 
+h3#moreentry {
+  border-bottom: 1px solid #ABCB76;
+  font: 1em/1.6em "Lucida Grande", Arial, sans-serif;
+  color: #5D7A2E;
+  margin: 0px 0px 25px 0px;
+  padding: 0px 0px 3px 0px;
+  display: none;
+}
 
 #comment {
   /* width: 99%; */
