@@ -134,7 +134,7 @@
 </div>
 <div class="extra">
 
-			<h3>Archives</h3>
+			<br><h3>Archives</h3>
 			
 				<ul>
 				<?php wp_get_archives('type=monthly'); ?>
