@@ -37,7 +37,7 @@ urchinTracker();
 <style type="text/css">
  div.post img {behavior: url(http://blog.negonation.com/en/iepngfix.htc) }
 </style>
-  <script type="text/javascript" src="/jquery/jquery.js?1360401146"></script>
+  <script type="text/javascript" src="/blog/jquery/jquery.js?1360401146"></script>
   <script>jQuery.noConflict();</script>
   
 	</head>
