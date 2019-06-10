@@ -574,14 +574,14 @@ font-style: italic !important;
 						div.comment-head {
 							border-left: 1px solid #333;
 							border-right: 1px solid #333;
-							background: #333 url(http://blog.negonation.com/es/wp-content/themes/minid/images/msg-comment.png) bottom left no-repeat;
+							background: #333 url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/msg-comment.png) bottom left no-repeat;
 							padding-bottom: 10px;
 							clear: both;
 color: #666;
 						}
 
 									div.minid-head, div.mini-d-head, div.Blanco-head, div.Santos-head, div.Lafuente-head {
-										background: #333 url(http://blog.negonation.com/es/wp-content/themes/minid/images/msg-comment-minid.png) bottom left no-repeat;
+										background: #333 url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/msg-comment-minid.png) bottom left no-repeat;
 color: #666 !important;
 									}
 
@@ -669,7 +669,7 @@ color: #5F7736 !important;
 
 
 																div.modera {
-																	background: #333 url(http://blog.negonation.com/es/wp-content/themes/minid/images/bg-nav-diag.png);
+																	background: #333 url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/bg-nav-diag.png);
 																	padding: 10px;
 																	color: #f00 !important;
 																	font: .8em/1.6em "Trebuchet MS", Arial, sans-serif !important;
@@ -699,7 +699,7 @@ color: #5F7736 !important;
 																		div.modera p {
 																			margin: 0px;
 																			color: #C4FA56;
-																			background: url(http://blog.negonation.com/es/wp-content/themes/minid/images/exclamation.png) no-repeat left top;
+																			background: url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/exclamation.png) no-repeat left top;
 																			padding-left: 60px;
 																		}
 
@@ -822,7 +822,7 @@ color: #5F7736 !important;
 
 
 						div.modera {
-							background: #333 url(http://blog.negonation.com/es/wp-content/themes/minid/images/bg-nav-diag.png);
+							background: #333 url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/bg-nav-diag.png);
 							padding: 10px;
 							color: #f00 !important;
 							font: .8em/1.6em "Trebuchet MS", Arial, sans-serif !important;
@@ -852,7 +852,7 @@ color: #5F7736 !important;
 								div.modera p {
 									margin: 0px;
 									color: #C4FA56;
-									background: url(http://blog.negonation.com/es/wp-content/themes/minid/images/exclamation.png) no-repeat left top;
+									background: url(http://"http://www.tractis.com/blog/en/es/wp-content/themes/minid/images/exclamation.png) no-repeat left top;
 									padding-left: 60px;
 								}
 
