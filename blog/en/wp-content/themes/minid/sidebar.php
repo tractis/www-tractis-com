@@ -125,7 +125,7 @@
 
 		
 
-		<h3>Categories</h3>
+		<br /><br /><h3>Categories</h3>
 		
 			<ul>
 				<?php wp_list_cats('sort_column=name&optioncount=1'); ?>
